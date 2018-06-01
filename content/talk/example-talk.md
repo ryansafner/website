@@ -40,3 +40,9 @@ caption = "My caption :smile:"
 +++
 
 Embed your slides or video here using [shortcodes](https://sourcethemes.com/academic/post/writing-markdown-latex/). Further details can easily be added using *Markdown* and $\rm \LaTeX$ math code.
+
+| \# | Lesson Slides | Handouts | Practice Problems | Homework | 
+|----|---------------|----------|-------------------|----------|
+| 1  | ({{% staticref "teaching/ECON306S2018/1. The Economic Way of Thinking.pdf" "newtab" %}}The Economic Way of Thinking CV{{% /staticref %}})| | ||
+| 2  | | | | 
+
