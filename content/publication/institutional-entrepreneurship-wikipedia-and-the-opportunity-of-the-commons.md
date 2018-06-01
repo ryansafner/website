@@ -2,7 +2,7 @@
 title = "Institutional Entrepreneurship, Wikipedia, and the Opportunity of the Commons"
 
 # Date first published.
-date = "2017-12-1"
+date = "2017-12-01"
 
 # Authors. Comma separated list, e.g. `["Bob Smith", "David Jones"]`.
 authors = ["Ryan Safner"]
