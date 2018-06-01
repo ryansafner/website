@@ -273,8 +273,8 @@ enableGitInfo = true
   weight = 3
 
 [[menu.main]]
-  name = "Projects"
-  url = "#projects"
+  name = "Courses"
+  url = "/courses"
   weight = 4
 
 [[menu.main]]
