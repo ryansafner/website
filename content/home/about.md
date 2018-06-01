@@ -10,31 +10,34 @@ weight = 5
 # List your academic interests.
 [interests]
   interests = [
-    "Artificial Intelligence",
-    "Computational Linguistics",
-    "Information Retrieval"
+    "Innovation",
+    "Intellectual Property",
+    "Economic Growth"
   ]
 
 # List your qualifications (such as academic degrees).
 [[education.courses]]
-  course = "PhD in Artificial Intelligence"
-  institution = "Stanford University"
-  year = 2012
+  course = "Ph.D in Economics"
+  institution = "George Mason University"
+  year = 2015
 
 [[education.courses]]
-  course = "MEng in Artificial Intelligence"
-  institution = "Massachusetts Institute of Technology"
-  year = 2009
+  course = "M.A. in Economics"
+  institution = "George Mason University"
+  year = 2013
 
 [[education.courses]]
-  course = "BSc in Artificial Intelligence"
-  institution = "Massachusetts Institute of Technology"
-  year = 2008
+  course = "B.A. in Economics"
+  institution = "University of Connecticut"
+  year = 2011
  
 +++
 
 # Biography
 
-Lena Smith is a professor of artificial intelligence at the Stanford AI Lab. Her research interests include distributed robotics, mobile computing and programmable matter. She leads the Robotic Neurobiology group, which develops self-reconfiguring robots, systems of self-organizing robots, and mobile sensor networks.
+I am Visiting Assistant Professor of Economics at [Hood College](https://www.hood.edu/academics/Economics-and-Management/index.html). Previously I taught at [Wake Forest University](http://college.wfu.edu/economics/).
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed neque elit, tristique placerat feugiat ac, facilisis vitae arcu. Proin eget egestas augue. Praesent ut sem nec arcu pellentesque aliquet. Duis dapibus diam vel metus tempus vulputate. 
+I have a Ph.D and M.A. in Economics from [George Mason University](http://economics.gmu.edu/), and a B.A. in Economics from the [University of Connecticut](http://economics.uconn.edu/). Go Huskies!
+
+My research broadly explores the political economy of public goods, innovation & technological growth, and intellectual property using the tools of [new institutional economics](https://en.wikipedia.org/wiki/New_institutional_economics), [public choice](https://en.wikipedia.org/wiki/Public_choice), and [market process economics](http://www.econlib.org/library/Enc/AustrianSchoolofEconomics.html).
+
