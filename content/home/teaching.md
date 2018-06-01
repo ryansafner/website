@@ -1,7 +1,7 @@
 +++
 # Teaching widget.
 # This widget displays recent publications from `content/courses/`.
-widget = "talks"
+widget = "talks2"
 active = true
 date = 2016-04-20T00:00:00
 
