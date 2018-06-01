@@ -21,3 +21,5 @@ weight = 60
 # Legend: 0 = list, 1 = cards.
 #view = 1
 +++
+
+This is a test. 
