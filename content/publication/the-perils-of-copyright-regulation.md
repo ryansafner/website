@@ -19,12 +19,12 @@ authors = ["Ryan Safner"]
 publication_types = ["2"]
 
 # Publication name and optional abbreviated version.
-publication = "In *Review of Austrian Economics*. You may use *Markdown* for italics etc."
-publication_short = "In *RAE*"
+publication = "In *Review of Austrian Economics*"
+publication_short = "In *Review of Austrian Economics*"
 
 # Abstract and optional shortened version.
 abstract = "The most robust framework for understanding the evolution and consequences of copyright statutes in the United States is the dynamics of interventionism. I apply the framework of Kirzner’s (1985) perils of regulation to the general revision of copyright law in 1976, and explore its effects on entrepreneurship and discovery processes. Critics of copyright commonly recognize the distortions of rent-seeking, but I emphasize the utility of interventionism to explain the \"unsimulated\" and the \"stifled\" discovery processes set in motion by copyright interventions, which use legal processes to allocate resources, and deter future discovery by raising transaction costs."
-abstract_short = "I model the evolution of U.S. copyright law since 1976 using Kirzner's (1985) perils of regulation framework."
+abstract_short = "The most robust framework for understanding the evolution and consequences of copyright statutes in the United States is the dynamics of interventionism. I apply the framework of Kirzner’s (1985) perils of regulation to the general revision of copyright law in 1976, and explore its effects on entrepreneurship and discovery processes. Critics of copyright commonly recognize the distortions of rent-seeking, but I emphasize the utility of interventionism to explain the \"unsimulated\" and the \"stifled\" discovery processes set in motion by copyright interventions, which use legal processes to allocate resources, and deter future discovery by raising transaction costs."
 
 # Featured image thumbnail (optional)
 image_preview = ""
