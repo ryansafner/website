@@ -6,11 +6,11 @@
 baseurl = "/"
 
 # Title of your site
-title = "Academic"
+title = "Ryan Safner"
 
 # Your copyright notice - appears in site footer.
 # To display a copyright symbol, type `&copy;`.
-copyright = "&copy; 2018"
+copyright = "&copy; Ryan Safner 2018"
 
 theme = "academic"
 enableEmoji = true
@@ -62,13 +62,13 @@ enableGitInfo = false
   organizations = [ { name = "Stanford University", url = "" } ]
 
   gravatar = false  # Get your avatar from Gravatar.com? (true/false)
-  avatar = "portrait.jpg"  # Specify an avatar image (in `static/img/` folder) or delete value to disable avatar.
-  email = "test@example.org"
-  address = "Building 1 Room 1, Stanford University, California, 90210, USA"
+  avatar = "wedding.jpg"  # Specify an avatar image (in `static/img/` folder) or delete value to disable avatar.
+  email = "ryansafner@gmail.com"
+  address = "Hood College, 401 Rosemont Avenue, Frederick MD 21701"
   office_hours = "Monday 10:00 to 13:00 or email for appointment"
   phone = "888 888 88 88"
-  skype = "echo123"
-  telegram = ""
+  #skype = "echo123"
+  #telegram = ""
 
   # Enable Keybase in Contact widget by entering your keybase.io username.
   keybase = ""
