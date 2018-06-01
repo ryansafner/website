@@ -17,7 +17,3 @@ folder = "courses"
 weight = 60
 
 +++
-
-## Courses I'm Currently Teaching (Spring 2018)
-
-* ({{% staticref "teaching/ECON306S2018.md" "newtab" %}}ECON 306 - Microeconomic Analysis{{% /staticref %}})
