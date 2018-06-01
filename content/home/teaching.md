@@ -16,10 +16,6 @@ folder = "courses"
 # Order that this section will appear in.
 weight = 60
 
-# View.
-# Customize how projects are displayed.
-# Legend: 0 = list, 1 = cards.
-#view = 1
 +++
 
 This is a test. 
