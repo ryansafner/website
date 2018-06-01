@@ -50,5 +50,4 @@ In between
 
 | Lesson Slides | Handouts | Practice Problems | Homework |
 |---|---|----|---|
-| Economic Way of thinking | None | None | None |
-
+| ({{% staticref "teaching/ECON306S2018/1. The Economic Way of Thinking.pdf" "newtab" %}}The Economic Way of Thinking{{% /staticref %}}) | None | None | None |
