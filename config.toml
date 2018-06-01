@@ -229,11 +229,6 @@ enableGitInfo = true
     link = "mailto:ryansafner@gmail.com"
 
   [[params.social]]
-    icon = "twitter"
-    icon_pack = "fa"
-    link = "//twitter.com/ryansafner"
-
-  [[params.social]]
     icon = "google-scholar"
     icon_pack = "ai"
     link = "https://scholar.google.com/citations?user=GDbo0gsAAAAJ&hl=en"
@@ -242,6 +237,16 @@ enableGitInfo = true
     icon = "github"
     icon_pack = "fa"
     link = "//github.com/ryansafner"
+
+  [[params.social]]
+    icon = "twitter"
+    icon_pack = "fa"
+    link = "//twitter.com/ryansafner"
+
+  [[params.social]]
+    icon = "linkedin"
+    icon_pack = "fa"
+    link = "//linkedin.com/in/ryansafner"
 
 
 # Navigation Links
