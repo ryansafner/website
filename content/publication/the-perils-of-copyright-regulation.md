@@ -2,7 +2,7 @@
 title = "The Perils of Copyright Regulation"
 
 # Date first published.
-date = "2014-10-16"
+date = "2016-06-1"
 
 # Authors. Comma separated list, e.g. `["Bob Smith", "David Jones"]`.
 authors = ["Ryan Safner"]
