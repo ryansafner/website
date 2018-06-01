@@ -1,7 +1,7 @@
 +++
 # Teaching widget.
 # This widget displays recent publications from `content/courses/`.
-widget = "projects"
+widget = "custom"
 active = true
 date = 2016-04-20T00:00:00
 
@@ -19,5 +19,5 @@ weight = 60
 # View.
 # Customize how projects are displayed.
 # Legend: 0 = list, 1 = cards.
-view = 1
+#view = 1
 +++
