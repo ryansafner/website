@@ -46,7 +46,9 @@ Embed your slides or video here using [shortcodes](https://sourcethemes.com/acad
 | 1     | test     |
 | 2     | testy    | 
 
-| \# | Lesson Slides | Handouts | Practice Problems | Homework | 
-|----|---------------|----------|-------------------|----------|
-| 1  | this test     |          |  Yesp             |          |
+In between
+
+| Lesson Slides | Handouts | Practice Problems | Homework | 
+|---------------|----------|-------------------|----------|
+| this test     |          |  Yesp             |          |
 
