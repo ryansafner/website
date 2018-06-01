@@ -1,11 +1,11 @@
 +++
 # Teaching widget.
 # This widget displays recent publications from `content/courses/`.
-widget = "talks"
+widget = "custom"
 active = true
 date = 2016-04-20T00:00:00
 
-title = "Courses"
+title = "Teaching"
 subtitle = ""
 
 # Content
@@ -17,5 +17,3 @@ folder = "courses"
 weight = 60
 
 +++
-
-This is a test. 
