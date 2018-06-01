@@ -48,7 +48,7 @@ Embed your slides or video here using [shortcodes](https://sourcethemes.com/acad
 
 In between
 
-| Lesson Slides | Handouts | Practice Problems | Homework | 
-|---------------|----------|-------------------|----------|
-| this test     |          |  Yesp             |          |
+| Lesson Slides | Handouts | Practice Problems | Homework |
+|---|---|----|---|
+| Economic Way of thinking | None | None | None |
 
