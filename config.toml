@@ -65,9 +65,9 @@ enableGitInfo = true
   avatar = "wedding.jpg"  # Specify an avatar image (in `static/img/` folder) or delete value to disable avatar.
   email = "ryansafner@gmail.com"
   address = "Hood College, 401 Rosemont Avenue, Frederick MD 21701"
-  office_hours = "TuTh"
-  phone = "888 888 88 88"
-  #skype = "echo123"
+  office_hours = ""
+  #phone = ""
+  #skype = ""
   #telegram = ""
 
   # Enable Keybase in Contact widget by entering your keybase.io username.
@@ -96,10 +96,10 @@ enableGitInfo = true
   #   1: Google Maps
   #   2: OpenStreetMap (Mapnik)
   #   3: OpenStreetMap (Mapbox)
-  map = 0
+  map = 2
   map_api_key = ""
-  latitude = "37.4275"
-  longitude = "-122.1697"
+  latitude = "39.4213829"
+  longitude = "-77.4202024"
   zoom = 15
 
   # Date and time format (refer to Go's date format: http://fuckinggodateformat.com )
@@ -185,7 +185,7 @@ enableGitInfo = true
   # Configuration of talk pages.
   [params.talks]
     # Show talk time?
-    time = true
+    time = false
 
   # Configuration of publication pages.
   [params.publications]
