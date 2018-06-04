@@ -263,14 +263,19 @@ enableGitInfo = true
   weight = 1
 
 [[menu.main]]
+  name = "CV"
+  url = "https://www.dropbox.com/s/eegjl34gdv0jdbu/cv.pdf?dl=0"
+  weight = 2
+  
+[[menu.main]]
   name = "Publications"
   url = "#publications_selected"
-  weight = 2
+  weight = 3
 
 [[menu.main]]
   name = "Posts"
   url = "#posts"
-  weight = 3
+  weight = 7
 
 [[menu.main]]
   name = "Courses"
