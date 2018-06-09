@@ -5,7 +5,7 @@ title = "The Network Origins of Economic Growth"
 date = "2018-06-01"
 
 # Authors. Comma separated list, e.g. `["Bob Smith", "David Jones"]`.
-authors = ["Santiago Gangotena", "Alex X. Jerves", "Pedro Romero", Ryan Safner"]
+authors = ["Santiago Gangotena", "Alex X. Jerves", "Pedro Romero", "Ryan Safner"]
 
 # Publication type.
 # Legend:
