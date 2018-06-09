@@ -41,7 +41,6 @@ projects = []
 
 # Links (optional).
 url_pdf = "http://papers.ssrn.com/sol3/papers.cfm?abstract_id=2564232"
-url_custom = ""
 url_preprint = ""
 url_code = ""
 url_dataset = ""
