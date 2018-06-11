@@ -20,5 +20,5 @@ weight = 60
 
 ## Current Courses (Spring 2018)
 
-* {{% staticref "courses/ECON306S2018.md" %}}ECON 306 - Intermediate Microeconomics{{% /staticref %}} 
-* {{% staticref "courses/ECON410S2018.md" %}}ECON 410 - Public Economics{{% /staticref %}} 
+* {{% staticref "courses/ECON306S2018" %}}ECON 306 - Intermediate Microeconomics{{% /staticref %}} 
+* {{% staticref "courses/ECON410S2018" %}}ECON 410 - Public Economics{{% /staticref %}} 
