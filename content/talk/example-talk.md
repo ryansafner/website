@@ -45,9 +45,3 @@ Embed your slides or video here using [shortcodes](https://sourcethemes.com/acad
 |---|---|
 | 1 | test     |
 | 2     | testy    | 
-
-In between
-
-| Lesson Slides | Handouts | Practice Problems | Homework |
-|---|---|----|---|
-| {{% staticref "teaching/ECON306S2018/1. The Economic Way of Thinking.pdf" "newtab" %}}1. The Economic Way of Thinking{{% /staticref %}} | None | None | None |
