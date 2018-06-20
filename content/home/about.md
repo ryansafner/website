@@ -33,7 +33,7 @@ weight = 5
  
 +++
 
-# Biography
+# About
 
 I am Visiting Assistant Professor of Economics at [Hood College](https://www.hood.edu/academics/Economics-and-Management/index.html). Previously I taught at [Wake Forest University](http://college.wfu.edu/economics/).
 
