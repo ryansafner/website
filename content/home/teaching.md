@@ -25,7 +25,7 @@ weight = 60
 
 ## All Courses Taught
 * Hood College (2016-)
-  - {{% staticref "/courses/ECMG212S2017%}}ECMG 212 - Statistics for Economics and Business{{% /staticref%}}
+  - {{% staticref "/courses/ECMG212S2017" %}}ECMG 212 - Statistics for Economics and Business{{% /staticref%}}
   - ECON 205 - Principles of Macroeconomics
   - {{% staticref "courses/ECON304SF017" %}}ECON 304 - International Political Economy{{% /staticref %}}
   - {{% staticref "courses/ECON306S2018" %}}ECON 306 - Intermediate Microeconomics{{% /staticref %}}
