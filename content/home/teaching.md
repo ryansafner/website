@@ -25,14 +25,14 @@ weight = 60
 
 ## All Courses Taught
 * Hood College (2016-)
-  - ECMG 212 - Statistics for Economics and Business
+  - {{% staticref "/courses/ECMG212S2017%}}ECMG 212 - Statistics for Economics and Business{{% /staticref%}}
   - ECON 205 - Principles of Macroeconomics
-  - ECON 304 - International Political Economy
-  - ECON 306 - Intermediate Microeconomics
-  - ECON 324 - International Trade
-  - ECON 326 - Industrial Organization
-  - ECON 410 - Public Economics
-  - ECON 480 - Econometrics
+  - {{% staticref "courses/ECON304SF017" %}}ECON 304 - International Political Economy{{% /staticref %}}
+  - {{% staticref "courses/ECON306S2018" %}}ECON 306 - Intermediate Microeconomics{{% /staticref %}}
+  - {{% staticref "courses/ECON324F2016" %}}ECON 324 - International Trade{{% /staticref %}}
+  - {{% staticref "courses/ECON326S2017" %}}ECON 326 - Industrial Organization{{% /staticref %}}
+  - {{% staticref "courses/ECON410S2018" %}}ECON 410 - Public Economics{{% /staticref%}}
+  - {{% staticref "courses/ECON480F2018" %}}ECON 480 - Econometrics{{% /staticref %}}
   - MGMT 399 - Internship for Business Administration 
 * Wake Forest University (2014-2015)
   - ECN 150 - Introduction to Economics
