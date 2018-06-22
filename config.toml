@@ -23,7 +23,7 @@ paginate = 10
 disqusShortname = ""
 
 # Enable analytics by entering your Google Analytics tracking ID
-googleAnalytics = ""
+googleAnalytics = "UA-12760297-1"
 
 # Default language to use (if you setup multilingual support)
 defaultContentLanguage = "en"
@@ -270,7 +270,7 @@ enableGitInfo = true
 [[menu.main]]
   name = "Publications"
   url = "#publications_selected"
-  weight = 3
+  weight = 4
 
 [[menu.main]]
   name = "Posts"
@@ -285,7 +285,7 @@ enableGitInfo = true
 [[menu.main]]
   name = "Teaching"
   url = "#teaching"
-  weight = 5
+  weight = 3
 
 [[menu.main]]
   name = "Contact"
