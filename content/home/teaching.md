@@ -24,7 +24,7 @@ weight = 60
 * {{% staticref "courses/ECON410S2018" %}}ECON 410 - Public Economics{{% /staticref %}} 
 
 ## All Courses Taught
-* Hood College (2016-)
+* Hood College (2016---)
   - {{% staticref "/courses/ECMG212S2017" %}}ECMG 212 - Statistics for Economics and Business{{% /staticref%}}
   - ECON 205 - Principles of Macroeconomics
   - {{% staticref "courses/ECON304SF017" %}}ECON 304 - International Political Economy{{% /staticref %}}
@@ -34,10 +34,10 @@ weight = 60
   - {{% staticref "courses/ECON410S2018" %}}ECON 410 - Public Economics{{% /staticref%}}
   - {{% staticref "courses/ECON480F2018" %}}ECON 480 - Econometrics{{% /staticref %}}
   - MGMT 399 - Internship for Business Administration 
-* Wake Forest University (2014-2015)
+* Wake Forest University (2014---2015)
   - ECN 150 - Introduction to Economics
   - ECN 272 - Austrian Economics
-* George Mason University (2013-2015)
+* George Mason University (2013---2015)
   - ECON 385 - International Economic Policy
   - ECON 403 - Austrian Economics
   - ICES High School Summer Workshops 
