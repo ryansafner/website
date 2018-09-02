@@ -41,3 +41,4 @@ I have a Ph.D and M.A. in Economics from [George Mason University](http://econom
 
 My research broadly explores the political economy of public goods, innovation & technological growth, and intellectual property using the tools of [new institutional economics](https://en.wikipedia.org/wiki/New_institutional_economics), [public choice](https://en.wikipedia.org/wiki/Public_choice), and [market process economics](http://www.econlib.org/library/Enc/AustrianSchoolofEconomics.html).
 
+I am a newfound advocate of using *R* for data analysis, and using *R Markdown* and *Github* for writing reproducible research, revision control, and managing my workflow. I occasionally blog here about using these tools in my research and teaching.  
