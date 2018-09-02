@@ -1,6 +1,6 @@
 ---
 categories:
-  - rstats
+- rstats
 comments: true
 date: 2018-09-02T02:57:00
 tags:
