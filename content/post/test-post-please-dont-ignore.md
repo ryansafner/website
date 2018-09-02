@@ -1,7 +1,8 @@
 ---
 categories:
+- rstats
 comments: true
-date: 2018-09-02T02:57:00
+date: 2018-09-02T02:57:00Z
 tags:
 - rstats
 - rmarkdown
