@@ -1,13 +1,11 @@
 ---
 categories:
-- rstats
 comments: true
 date: 2018-09-02T02:57:00
 tags:
 - rstats
 - rmarkdown
 - blog
-- code
 title: Test Post Please Don't Ignore
 ---
 
