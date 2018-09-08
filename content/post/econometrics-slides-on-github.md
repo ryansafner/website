@@ -13,7 +13,7 @@ tags:
 title: Econometrics Lecture Slides on GitHub
 ---
 
-This semester, I am posting my lecture slides for my Econometrics class on [GitHub](http://www/github.com/ryansafner/ECON480Fall2018). While I usually post my lecture slides for my courses on my website or link to my Dropbox, those are the final PDF documents. On GitHub, I am posting both the final PDFs as well as the source *.rmd* files. I am primarily doing this for my econometrics students, who will be learning *R* and *R Markdown* for their assignments (which is how I write my slides), but this is also open to anyone.
+This semester, I am posting my lecture slides for my Econometrics class on [GitHub](http://www.github.com/ryansafner/ECON480Fall2018). While I usually post my lecture slides for my courses on my website or link to my Dropbox, those are the final PDF documents. On GitHub, I am posting both the final PDFs as well as the source *.rmd* files. I am primarily doing this for my econometrics students, who will be learning *R* and *R Markdown* for their assignments (which is how I write my slides), but this is also open to anyone.
 
 This brings two benefits. First, it provides an example of how to use *R Markdown* and the benefits of writing plain-text files to convert into PDFs, html and other outputs (more on that in later posts). Second, it is also an example of using GitHub as a version control system for maintaining backups, a platform for collaboration, and exposure to industry tools of the software trade.
 
