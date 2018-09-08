@@ -18,10 +18,11 @@ weight = 8
 
 +++
 
-## Current Courses (Spring 2018)
-
-* {{% staticref "courses/ECON306S2018" %}}ECON 306 - Intermediate Microeconomics{{% /staticref %}} 
-* {{% staticref "courses/ECON410S2018" %}}ECON 410 - Public Economics{{% /staticref %}} 
+## Current Courses (Fall 2018)
+* {{% staticref "courses/ECON205F2018" %}}ECON 205 - Principles of Macroeconomics{{% /staticref %}} 
+* {{% staticref "courses/ECON306F2018" %}}ECON 306 - Intermediate Microeconomics{{% /staticref %}} 
+* {{% staticref "courses/ECON324F2018" %}}ECON 306 - International Trade{{% /staticref %}} 
+* {{% staticref "courses/ECON480F2018" %}}ECON 480 - Econometrics{{% /staticref %}} 
 
 ## All Courses Taught
 * Hood College (2016---)
