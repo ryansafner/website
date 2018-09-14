@@ -20,4 +20,4 @@ This course will have been successful if you are able to apply the economic way 
 | Lesson Slides | Handouts | Practice Problems | Homework |
 |---|---|----|---|
 | [1. The Economic Way of Thinking](https://www.dropbox.com/s/1ypjg1rrg7iougv/Lecture1.pdf?dl=0) | | | |
-| [2. Cooperation and Exchange](https://www.dropbox.com/s/c6a3gg9fps9tvx6/Lesson2.pdf?dl=0) | | | |
+| [2. Cooperation and Exchange](https://www.dropbox.com/s/c6a3gg9fps9tvx6/Lesson2.pdf?dl=0) | | | [HW #1](https://www.dropbox.com/s/s5zijrgo6iv0bbr/homework1.pdf?dl=0) |

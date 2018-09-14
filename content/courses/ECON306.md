@@ -2,7 +2,8 @@
 title = "ECON 306 - Microeconomic Analysis"
 +++
 
- [[**Fall 2018 Syllabus**](https://www.dropbox.com/s/g19k5rr57qtqvzo/ECON_480_F2018_Safner_Syllabus.pdf?dl=0)] | [[Spring 2018.S1 Syllabus](https://www.dropbox.com/s/b5v4jcyxx8k7551/ECON_306_S2018_1_Syllabus_Safner.pdf?dl=0)] | [[Spring 2018.S2 Syllabus](https://www.dropbox.com/s/s3s3ptxdze30sf2/ECON_306_S2018_2_Syllabus_Safner.pdf?dl=0)] | [[Fall 2017 Syllabus](https://www.dropbox.com/s/jak8lkmofaehf0b/ECON_306_F2017_Syllabus_Safner.pdf?dl=0)] | [[Spring 2017 Syllabus](https://www.dropbox.com/s/hqp50iewbb57f5c/ECON_306.3_Syllabus_Safner.pdf?dl=0)] | [[Fall 2016.S1 Syllabus](https://www.dropbox.com/s/e5p0kuhjvwkc5xr/ECON_306.1_Syllabus_Safner.pdf?dl=0)] | [[Fall 2016.S2 Syllabus](https://www.dropbox.com/s/4gwo2re1twyu6ol/ECON_306.2_Syllabus_Safner.pdf?dl=0)] 
+## Syllabus
+[[**Fall 2018**](https://www.dropbox.com/s/g19k5rr57qtqvzo/ECON_480_F2018_Safner_Syllabus.pdf?dl=0)] | [[Spring 2018.S1](https://www.dropbox.com/s/b5v4jcyxx8k7551/ECON_306_S2018_1_Syllabus_Safner.pdf?dl=0)] | [[Spring 2018.S2](https://www.dropbox.com/s/s3s3ptxdze30sf2/ECON_306_S2018_2_Syllabus_Safner.pdf?dl=0)] | [[Fall 2017](https://www.dropbox.com/s/jak8lkmofaehf0b/ECON_306_F2017_Syllabus_Safner.pdf?dl=0)] | [[Spring 2017](https://www.dropbox.com/s/hqp50iewbb57f5c/ECON_306.3_Syllabus_Safner.pdf?dl=0)] | [[Fall 2016.S1](https://www.dropbox.com/s/e5p0kuhjvwkc5xr/ECON_306.1_Syllabus_Safner.pdf?dl=0)] | [[Fall 2016.S2](https://www.dropbox.com/s/4gwo2re1twyu6ol/ECON_306.2_Syllabus_Safner.pdf?dl=0)] 
 
 > The curious task of economics is to demonstrate to men how little they really know about what they imagine they can design. - F.A. Hayek, 1974 Economics Nobel Laureate
 

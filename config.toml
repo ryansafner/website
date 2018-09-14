@@ -278,11 +278,6 @@ enableGitInfo = true
   weight = 7
 
 [[menu.main]]
-  name = "Courses"
-  url = "/courses"
-  weight = 4
-
-[[menu.main]]
   name = "Teaching"
   url = "#teaching"
   weight = 3
