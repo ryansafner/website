@@ -13,8 +13,8 @@ This is an economics course, and as such we use the tools of microeconomics to u
 This course will have been successful if you are able to comprehend and apply the tools and insights of political economy towards explaining differences in real world political, economic, and cultural settings and are able to analyze current events. Primarily, this means applying models of rational choices for individual and firm behavior in different social contexts, and understanding the role of market institutions of property rights, prices, and profit and losses in bringing about social coordination.
 
 | Lesson  | Slides | 
-|---|---|
-| 1. Introduction to IPE| [Slides](https://www.dropbox.com/s/4s93w0gcybvdl03/1.%20Intro%20to%20IPE.pdf?dl=0) | 
+|----|----|
+| 1. Introduction to IPE | [Slides](https://www.dropbox.com/s/4s93w0gcybvdl03/1.%20Intro%20to%20IPE.pdf?dl=0) | 
 | 2. Review of Microeconomics | [Slides](https://www.dropbox.com/s/3q9t3zorrtm7bgt/2.%20Review%20of%20Micro.pdf?dl=0) |
 | 3. Property and the Rule of Law | [Slides](https://www.dropbox.com/s/5wifldasmv1bunf/3.%20Property%20and%20Rule%20of%20Law.pdf?dl=0) |
 | 4. Profit-Seeking and Rent-Seeking | [Slides](https://www.dropbox.com/s/8xaiaz6w1kulvsy/4.%20Profit%20Seeking%20and%20Rent%20Seeking.pdf?dl=0) | 
