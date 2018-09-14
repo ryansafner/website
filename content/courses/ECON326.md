@@ -2,7 +2,7 @@
 title = "ECON 326 - Industrial Organization"
 +++
 
-[Syllabus](https://www.dropbox.com/s/bmq7s5rttjd7s20/ECON_326_Syllabus_Safner.pdf?dl=0)
+[Spring 2017 Syllabus](https://www.dropbox.com/s/bmq7s5rttjd7s20/ECON_326_Syllabus_Safner.pdf?dl=0)
 
 Industrial organization is one of the most common fields of applied microeconomics. It traditionally studies business firms and their relationship to the market - how they make economic decisions, how they are affected by government regulation, how they strategically interact with one another - and how these change in markets that are more or less competitive--monopoly, oligopoly, monopolistic competition, or perfect competition, often with a close connection to antitrust law. 
 

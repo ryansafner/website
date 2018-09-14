@@ -3,7 +3,7 @@ title = "ECMG 212 - Statistics for Economics and Business Administration"
 sharing=false 
 +++
 
-[Syllabus](https://www.dropbox.com/s/26dxgos34p5cfhs/ECON_324_Syllabus_Safner.pdf?dl=0)
+[Spring 2017 Syllabus](https://www.dropbox.com/s/26dxgos34p5cfhs/ECON_324_Syllabus_Safner.pdf?dl=0)
 
 > There are three kinds of lies: lies, damned lies, and statistics. - Benjamin Disraeli, British P.M.
 

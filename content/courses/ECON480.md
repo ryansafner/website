@@ -2,7 +2,7 @@
 title = "ECON 480 - Econometrics"
 +++
 
-[Syllabus](https://www.dropbox.com/s/g19k5rr57qtqvzo/ECON_480_F2018_Safner_Syllabus.pdf?dl=0)
+[Fall 2018 Syllabus](https://www.dropbox.com/s/g19k5rr57qtqvzo/ECON_480_F2018_Safner_Syllabus.pdf?dl=0) | [Fall 2017 Syllabus](https://www.dropbox.com/s/sclrmnmgr055ie0/ECON_480_F2017_Safner_Syllabus.pdf?dl=0) | [Fall 2016 Syllabus](https://www.dropbox.com/s/uw6n6bk0bu0lzit/ECON_480_Safner_Syllabus.pdf?dl=0)
 
 [Course Content on Github](http://github.com/ryansafner/ECON480Fall2018), see [this post](https://ryansafner.com/post/econometrics-slides-on-github/) for more. 
 
@@ -10,13 +10,13 @@ title = "ECON 480 - Econometrics"
 
 Econometrics is the application of statistical tools to quantify and measure economic relationships in the real world. It uses real data to test economic hypotheses, quantitatively estimate causal relationships between economic variables, and to make forecasts of future events. The primary tool that economists use for empirical analysis is ordinary least squares (OLS) linear regression, so the majority of this course will focus on understanding, applying, and extending OLS regressions. 
 
-I have three goals for everyone taking this course: (1) to understand and evaluate statistical and empirical claims<br> (2) to understand research design and hypothesis testing<br> (3) to gain experience working with, interpreting, and communicating real data. I am less concerned with forcing you to memorize and recite proofs of statistical estimator properties, and more concerned with the development of your intuitions and the ability to think critically as an empirical social scientist - although this will require you to demonstrate proficiency with some intermediate statistical and mathematical tools. 
+I have three goals for everyone taking this course:<br> (1) to understand and evaluate statistical and empirical claims<br> (2) to understand research design and hypothesis testing<br> (3) to gain experience working with, interpreting, and communicating real data. I am less concerned with forcing you to memorize and recite proofs of statistical estimator properties, and more concerned with the development of your intuitions and the ability to think critically as an empirical social scientist - although this will require you to demonstrate proficiency with some intermediate statistical and mathematical tools. 
 
 To these ends, in addition to lectures about the estimation methods, you will read several journal articles with an eye to understanding and appraising their empirical claims, use *R*---a leading professional software package---to complete problem sets using data, and write a brief empirical paper using data. By the end, you should feel comfortable working with economic data and understanding the empirical claims of others. *R* is an extremely powerful open source statistical software package that is used by economists, statisticians, and data scientists. It is very valuable and much of this course is geared towards training you how to use and apply it. The best training, of course, is for you to simply learn by doing. 
 
 | Lecture | Date | Slides | Handouts | R Practice Problems | Homework |
 |---|---|----|---|---|---|
-| 1. Introduction to Econometrics | Aug 27 | [Slides](https://github.com/ryansafner/ECON480Fall2018/blob/master/Lecture1.pdf) |  |  |  | |
+| 1. Introduction to Econometrics | Aug 27 | [Slides](https://github.com/ryansafner/ECON480Fall2018/blob/master/Lecture1.pdf) |  | [Stats Preliminary Quiz](https://www.dropbox.com/s/lognhmhv1m8bk29/Econometrics%20Preliminary%20Quiz.pdf?dl=0) ([Answers](https://www.dropbox.com/s/47oqq47s89gtwg5/Econometrics%20Preliminary%20Quiz%20Answers.pdf?dl=0)) |  | |
 | 2. The Quest for Causality | Aug 29 | [Slides](https://github.com/ryansafner/ECON480Fall2018/blob/master/Lecture2.pdf)|  |  |  | |
 | 3. Data and Descriptive Statistics | Sept 5 | [Slides](https://github.com/ryansafner/ECON480Fall2018/blob/master/Lecture3.pdf)| <ul><li>[Probability Review](https://www.dropbox.com/s/g5uwfu5p8yopd67/Probability%20Review.pdf?dl=0)<li>[The Summation Operator](https://www.dropbox.com/s/88961yofeyfiquc/Summation%20Operator.pdf?dl=0)</ul> |  |  | |
 | 4. Random Variables | Sept 10 | [Slides](https://github.com/ryansafner/ECON480Fall2018/blob/master/Lecture3.pdf)|  |  |  | |
