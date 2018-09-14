@@ -2,7 +2,7 @@
 title = "ECON 324 - International Trade"
 +++
 
-[Fall 2018 Syllabus](https://www.dropbox.com/s/26dxgos34p5cfhs/ECON_324_Syllabus_Safner.pdf?dl=0) | [Fall 2016 Syllabus](https://www.dropbox.com/s/26dxgos34p5cfhs/ECON_324_Syllabus_Safner.pdf?dl=0)
+[[**Fall 2018 Syllabus**](https://www.dropbox.com/s/26dxgos34p5cfhs/ECON_324_Syllabus_Safner.pdf?dl=0)] | [[Fall 2016 Syllabus](https://www.dropbox.com/s/26dxgos34p5cfhs/ECON_324_Syllabus_Safner.pdf?dl=0)]
 
 International trade, simply defined, is the movement of goods across political borders. However, this simple concept is both remarkably complex economically, and is a vital ingredient for human civilization to flourish. The biggest difference between the last 250 (or so) years and the entire remainder of human history is the dramatic scale by which we have extended the division of labor. The overwhelming majority of our ancestors mired in what we would today consider abject poverty (for them it was the norm), rarely ever travelled more than a few miles from their birthplace, and to obtain just the basic goods needed for human subsistence - food, clothing, shelter, medicine - they had to make these themselves. Today, each of us consumes a wealth of goods which requires millions of tasks to be performed by people across the globe that we will never meet, and each of us will contribute only a sliver of tasks required to produce wealth to be enjoyed by people across the world we will never meet. 
 

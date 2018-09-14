@@ -21,7 +21,7 @@ weight = 8
 ## Current Courses (Fall 2018)
 * {{% staticref "courses/ECON205" %}}ECON 205 - Principles of Macroeconomics{{% /staticref %}} 
 * {{% staticref "courses/ECON306" %}}ECON 306 - Microeconomic Analysis{{% /staticref %}} 
-* {{% staticref "courses/ECON324" %}}ECON 306 - International Trade{{% /staticref %}} 
+* {{% staticref "courses/ECON324" %}}ECON 324 - International Trade{{% /staticref %}} 
 * {{% staticref "courses/ECON480" %}}ECON 480 - Econometrics{{% /staticref %}} 
 
 ## All Courses Taught

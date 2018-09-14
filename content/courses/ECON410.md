@@ -3,7 +3,7 @@ title = "ECON 410 - Public Economics"
 math = true
 +++
 
-[Spring 2018 Syllabus](https://www.dropbox.com/s/jhwll9ha7vo3tl2/ECON410Spring2017SafnerSyllabus.pdf?dl=0)
+[[Spring 2018 Syllabus](https://www.dropbox.com/s/jhwll9ha7vo3tl2/ECON410Spring2017SafnerSyllabus.pdf?dl=0)]
 
 > What's so great about democracy other than it's democratic? - Gordon Tullock
 

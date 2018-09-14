@@ -2,7 +2,7 @@
 title = "ECON 480 - Econometrics"
 +++
 
-[Fall 2018 Syllabus](https://www.dropbox.com/s/g19k5rr57qtqvzo/ECON_480_F2018_Safner_Syllabus.pdf?dl=0) | [Fall 2017 Syllabus](https://www.dropbox.com/s/sclrmnmgr055ie0/ECON_480_F2017_Safner_Syllabus.pdf?dl=0) | [Fall 2016 Syllabus](https://www.dropbox.com/s/uw6n6bk0bu0lzit/ECON_480_Safner_Syllabus.pdf?dl=0)
+[[**Fall 2018 Syllabus**](https://www.dropbox.com/s/g19k5rr57qtqvzo/ECON_480_F2018_Safner_Syllabus.pdf?dl=0)] | [[Fall 2017 Syllabus](https://www.dropbox.com/s/sclrmnmgr055ie0/ECON_480_F2017_Safner_Syllabus.pdf?dl=0)] | [[Fall 2016 Syllabus](https://www.dropbox.com/s/uw6n6bk0bu0lzit/ECON_480_Safner_Syllabus.pdf?dl=0)]
 
 [Course Content on Github](http://github.com/ryansafner/ECON480Fall2018), see [this post](https://ryansafner.com/post/econometrics-slides-on-github/) for more. 
 

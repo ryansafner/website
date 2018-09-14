@@ -2,7 +2,7 @@
 title = "ECON 205 - Principles of Macroeconomics"
 +++
 
-[Fall 2018 Syllabus](https://www.dropbox.com/s/58bwicaeqy26tci/ECON_205_F2018_Syllabus_Safner.pdf?dl=0)
+[[Fall 2018 Syllabus](https://www.dropbox.com/s/58bwicaeqy26tci/ECON_205_F2018_Syllabus_Safner.pdf?dl=0)]
 
 > The curious task of economics is to demonstrate to men how little they really know about what they imagine they can design. - F.A. Hayek, 1974 Economics Nobel Laureate
 
