@@ -264,7 +264,7 @@ enableGitInfo = true
 
 [[menu.main]]
   name = "CV"
-  url = "https://www.dropbox.com/s/eegjl34gdv0jdbu/cv.pdf?dl=0"
+  url = "https://github.com/ryansafner/CV/raw/master/CV.pdf"
   weight = 2
   
 [[menu.main]]
@@ -275,7 +275,7 @@ enableGitInfo = true
 [[menu.main]]
   name = "Posts"
   url = "#posts"
-  weight = 7
+  weight = 6
 
 [[menu.main]]
   name = "Teaching"
@@ -285,7 +285,7 @@ enableGitInfo = true
 [[menu.main]]
   name = "Contact"
   url = "#contact"
-  weight = 6
+  weight = 7
 
 # Taxonomies.
 [taxonomies]
