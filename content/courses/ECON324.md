@@ -9,9 +9,9 @@ International trade, simply defined, is the movement of goods across political b
 In this course, we will look at trade from this broad framework of extending the division of labor for human betterment. At the same time, we will get into the weeds and survey theories (and evidence) for  understanding international trade flows and foreign trade policy: the purposes for its existence, the gains (and costs) created, and the division of those gains among different groups. As these subjects often intersect with current geopolitical events, especially during election cycles, we will attempt to explain these events using economic theory. Nearly all international trade theories are extensions of basic microeconomics, so this class assumes you have met the *required prerequisite courses* - ECON 205, 206, and 306. 
 
 
-| Lesson | Slides | Practice Problems | Homework | 
+| Lesson Slides | Practice Problems | Homework | 
 |---|---|---|---|
-| 1. The Smithean View of Trade: Division of Labor |  [Slides](https://www.dropbox.com/s/chz3mlpqm4vf3r3/Lesson1.pdf?dl=0) | | | 
-| 2. The Ricardian View of Trade: Comparative Advantage |  [Slides](https://www.dropbox.com/s/0jz926cugahow9m/Lesson2.pdf?dl=0) | [Comparative Advantage Practice](https://www.dropbox.com/s/iz6l2rne3uzxoog/Comparative%20Advantage%20Practice%20Problems.pdf?dl=0) ([Answers](https://www.dropbox.com/s/5aegit2q7ycukyl/Comparative%20Advantage%20Practice%20Problems%20Answers.pdf?dl=0)) | [HW #1](https://www.dropbox.com/s/ai1bb86v9hbii7s/Homework1.pdf?dl=0) | 
-| 3. The Standard (Neoclassical) Trade Model |  [Slides](https://www.dropbox.com/s/zdy8x8btwcmc3k7/Lesson3.pdf?dl=0) | | | 
-| 4. The Hecksher-Ohlin (Factors) Trade Model |  [Slides](https://www.dropbox.com/s/m0iiw3nm0hooe5j/Lesson4.pdf?dl=0) | | | 
+| [1. The Smithean View of Trade: Division of Labor](https://www.dropbox.com/s/chz3mlpqm4vf3r3/Lesson1.pdf?dl=0) | | |
+| [2. The Ricardian View of Trade: Comparative Advantage](https://www.dropbox.com/s/0jz926cugahow9m/Lesson2.pdf?dl=0) | [Comparative Advantage Practice](https://www.dropbox.com/s/iz6l2rne3uzxoog/Comparative%20Advantage%20Practice%20Problems.pdf?dl=0) ([Answers](https://www.dropbox.com/s/5aegit2q7ycukyl/Comparative%20Advantage%20Practice%20Problems%20Answers.pdf?dl=0)) | [HW #1](https://www.dropbox.com/s/ai1bb86v9hbii7s/Homework1.pdf?dl=0) | 
+| [3. The Standard (Neoclassical) Trade Model](https://www.dropbox.com/s/zdy8x8btwcmc3k7/Lesson3.pdf?dl=0) | | | 
+| [4. The Hecksher-Ohlin (Factors) Trade Model](https://www.dropbox.com/s/m0iiw3nm0hooe5j/Lesson4.pdf?dl=0) | | |
