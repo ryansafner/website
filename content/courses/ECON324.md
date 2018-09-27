@@ -11,7 +11,7 @@ In this course, we will look at trade from this broad framework of extending the
 
 | Lesson | Slides | Practice Problems | Homework | 
 |---|---|---|---|
-| 1. The Smithean View of Trade: Division of Labor | [Slides](https://www.dropbox.com/s/chz3mlpqm4vf3r3/Lesson1.pdf?dl=0) | | | 
-| 2. The Ricardian View of Trade: Comparative Advantage | [Slides](https://www.dropbox.com/s/0jz926cugahow9m/Lesson2.pdf?dl=0) | [Comparative Advantage Practice](https://www.dropbox.com/s/iz6l2rne3uzxoog/Comparative%20Advantage%20Practice%20Problems.pdf?dl=0) ([Answers](https://www.dropbox.com/s/5aegit2q7ycukyl/Comparative%20Advantage%20Practice%20Problems%20Answers.pdf?dl=0)) | [HW #1](https://www.dropbox.com/s/ai1bb86v9hbii7s/Homework1.pdf?dl=0) | 
-| 3. The Standard (Neoclassical) Trade Model | [Slides](https://www.dropbox.com/s/zdy8x8btwcmc3k7/Lesson3.pdf?dl=0) | | | 
-| 4. The Hecksher-Ohlin (Factors) Trade Model | [Slides](https://www.dropbox.com/s/m0iiw3nm0hooe5j/Lesson4.pdf?dl=0) | | | 
+| 1. The Smithean View of Trade: Division of Labor |  [Slides](https://www.dropbox.com/s/chz3mlpqm4vf3r3/Lesson1.pdf?dl=0) | | | 
+| 2. The Ricardian View of Trade: Comparative Advantage |  [Slides](https://www.dropbox.com/s/0jz926cugahow9m/Lesson2.pdf?dl=0) | [Comparative Advantage Practice](https://www.dropbox.com/s/iz6l2rne3uzxoog/Comparative%20Advantage%20Practice%20Problems.pdf?dl=0) ([Answers](https://www.dropbox.com/s/5aegit2q7ycukyl/Comparative%20Advantage%20Practice%20Problems%20Answers.pdf?dl=0)) | [HW #1](https://www.dropbox.com/s/ai1bb86v9hbii7s/Homework1.pdf?dl=0) | 
+| 3. The Standard (Neoclassical) Trade Model |  [Slides](https://www.dropbox.com/s/zdy8x8btwcmc3k7/Lesson3.pdf?dl=0) | | | 
+| 4. The Hecksher-Ohlin (Factors) Trade Model |  [Slides](https://www.dropbox.com/s/m0iiw3nm0hooe5j/Lesson4.pdf?dl=0) | | | 

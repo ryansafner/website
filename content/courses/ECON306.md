@@ -21,7 +21,7 @@ This course will have been successful if you are able to comprehend and apply th
 | 3. The Division of Labor | Sept 5 | [Slides](https://www.dropbox.com/s/74669t1he0pff9i/Lecture3.pdf?dl=0) |  |  |  | 
 | 4. Supply and Demand Basics | Sept 7 | [Slides](https://www.dropbox.com/s/l2p9aixq5d253ma/Lecture4.pdf?dl=0) | [Math Review](https://www.dropbox.com/s/eqgf7qam3mdl3o8/Math%20Review.pdf?dl=0)  |  |  | 
 | 5. Comparative Statics | Sept 12 | [Slides](https://www.dropbox.com/s/ghuqdbik5n2i094/Lecture5.pdf?dl=0) | | | | 
-| 6. Price Elasticity | Sept 17 | [Slides](https://www.dropbox.com/s/fbidadmw8l3h625/Lecture6.pdf?dl=0)  | | | [Elasticity Practice](https://www.dropbox.com/s/rgo1ao8n9yc44c2/Elasticity%20Problems.pdf?dl=0) ([Answers](https://www.dropbox.com/s/uu6q1qgt3p31xhe/Elasticity%20Problems%20Answers.pdf?dl=0)) | [HW #1](https://www.dropbox.com/s/klsyrtaurpdjwsm/HW%201.pdf?dl=0) | 
+| 6. Price Elasticity | Sept 17 | [Slides](https://www.dropbox.com/s/fbidadmw8l3h625/Lecture6.pdf?dl=0)  | | [Elasticity Practice](https://www.dropbox.com/s/rgo1ao8n9yc44c2/Elasticity%20Problems.pdf?dl=0) ([Answers](https://www.dropbox.com/s/uu6q1qgt3p31xhe/Elasticity%20Problems%20Answers.pdf?dl=0)) | [HW #1](https://www.dropbox.com/s/klsyrtaurpdjwsm/HW%201.pdf?dl=0) | 
 | 7. Markets and Surpluses | Sept 19 | [Slides](https://www.dropbox.com/s/ksuvzducx1k5x3f/Lecture7.pdf?dl=0) | | | | 
 | 8. The Social Functions of Prices | Sept 26 | [Slides](https://www.dropbox.com/s/nzao0ws29gx2u24/Lecture8.pdf?dl=0) | | | | 
 
