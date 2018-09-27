@@ -20,4 +20,5 @@ This course will have been successful if you are able to apply the economic way 
 | Lesson Slides | Handouts | Practice Problems | Homework |
 |---|---|----|---|
 | [1. The Economic Way of Thinking](https://www.dropbox.com/s/1ypjg1rrg7iougv/Lecture1.pdf?dl=0) | | | |
-| [2. Cooperation and Exchange](https://www.dropbox.com/s/c6a3gg9fps9tvx6/Lesson2.pdf?dl=0) | | | [HW #1](https://www.dropbox.com/s/s5zijrgo6iv0bbr/homework1.pdf?dl=0) |
+| [2. Cooperation and Exchange](https://www.dropbox.com/s/c6a3gg9fps9tvx6/Lesson2.pdf?dl=0) | | [Comparative Advantage Practice](https://www.dropbox.com/s/iz6l2rne3uzxoog/Comparative%20Advantage%20Practice%20Problems.pdf?dl=0) ([Answers](https://www.dropbox.com/s/5aegit2q7ycukyl/Comparative%20Advantage%20Practice%20Problems%20Answers.pdf?dl=0)) | [HW #1](https://www.dropbox.com/s/s5zijrgo6iv0bbr/homework1.pdf?dl=0) |
+| [3. Supply and Demand](https://www.dropbox.com/s/o4vxhmpfxsuqr49/Lesson3.pdf?dl=0) | | [Supply and Demand Practice](https://www.dropbox.com/s/0cbdjpr0weni8jo/Supply%20and%20Demand%20Practice%20Problems.pdf?dl=0) ([Answers](https://www.dropbox.com/s/oqkyymhicibu3e3/Supply%20and%20Demand%20Practice%20Problems%20Answers.pdf?dl=0)) | [HW #1](https://www.dropbox.com/s/s5zijrgo6iv0bbr/homework1.pdf?dl=0) | 

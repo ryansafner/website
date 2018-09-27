@@ -9,15 +9,9 @@ International trade, simply defined, is the movement of goods across political b
 In this course, we will look at trade from this broad framework of extending the division of labor for human betterment. At the same time, we will get into the weeds and survey theories (and evidence) for  understanding international trade flows and foreign trade policy: the purposes for its existence, the gains (and costs) created, and the division of those gains among different groups. As these subjects often intersect with current geopolitical events, especially during election cycles, we will attempt to explain these events using economic theory. Nearly all international trade theories are extensions of basic microeconomics, so this class assumes you have met the *required prerequisite courses* - ECON 205, 206, and 306. 
 
 
-| Lesson | Slides |
+| Lesson | Slides | Practice Problems | Homework | 
 |---|---|
-| 1. The Division of Labor | [Slides](https://www.dropbox.com/s/idq1zkbjfziaewp/1.%20The%20Division%20of%20Labor.pdf?dl=0) |  
-| 2. Comparative Advantage | [Slides](https://www.dropbox.com/s/blx8s682h60435z/2.%20Comparative%20Advantage.pdf?dl=0) |
-| 3. The Standard Trade Model | [Slides](https://www.dropbox.com/s/kfdhdz3yftr710v/3.%20The%20Standard%20Trade%20Model.pdf?dl=0) |
-| 4. The Hecksher-Ohlin Model | [Slides](https://www.dropbox.com/s/ame9rhk2x4dze8f/4.%20The%20Hecksher-Ohlin%20Model.pdf?dl=0) |
-| 5. New Trade Theory | [Slides](https://www.dropbox.com/s/8j8mnasjah8xazq/5.%20New%20Trade%20Theory.pdf?dl=0) |
-| 6. Tariffs | [Slides](https://www.dropbox.com/s/dl62nz31k17qzdb/6.%20Tariffs.pdf?dl=0) |
-| 7. Non-tariff Barriers | [Slides](https://www.dropbox.com/s/6eyc3a1ip2ekzuq/7.%20Non-tariff%20Barriers.pdf?dl=0) |
-| 8. Political Economy of Trade Policy | [Slides](https://www.dropbox.com/s/lcycwfv3r5jycco/8.%20Political%20Economy%20of%20Trade%20Policy.pdf?dl=0) |
-| 9. Money & Exchange Rates | [Slides](https://www.dropbox.com/s/rstbmwzs6u8iy97/9.%20Money%20%26%20Exchange%20Rates.pdf?dl=0) |
-| 10. Economic Integration | [Slides](https://www.dropbox.com/s/alb7aw9fi1dwzry/10%20Economic%20Integration.pdf?dl=0) |
+| 1. The Smithean View of Trade: Division of Labor | [Slides](https://www.dropbox.com/s/chz3mlpqm4vf3r3/Lesson1.pdf?dl=0) | | | 
+| 2. The Ricardian View of Trade: Comparative Advantage | [Slides](https://www.dropbox.com/s/0jz926cugahow9m/Lesson2.pdf?dl=0) | [Comparative Advantage Practice](https://www.dropbox.com/s/iz6l2rne3uzxoog/Comparative%20Advantage%20Practice%20Problems.pdf?dl=0) ([Answers](https://www.dropbox.com/s/5aegit2q7ycukyl/Comparative%20Advantage%20Practice%20Problems%20Answers.pdf?dl=0)) | [HW #1](https://www.dropbox.com/s/ai1bb86v9hbii7s/Homework1.pdf?dl=0) | 
+| 3. The Standard (Neoclassical) Trade Model | [Slides](https://www.dropbox.com/s/zdy8x8btwcmc3k7/Lesson3.pdf?dl=0) | | | 
+| 4. The Hecksher-Ohlin (Factors) Trade Model | [Slides](https://www.dropbox.com/s/m0iiw3nm0hooe5j/Lesson4.pdf?dl=0) | | | 
