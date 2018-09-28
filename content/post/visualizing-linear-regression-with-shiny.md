@@ -16,7 +16,7 @@ For my [econometrics course](http://ryansafner.com/courses/econ480) this semeste
 
 ### Brief Econometrics Review Incoming: 
 
-Ordinary Least Squares (OLS) regression simply chooses the intercept ($\hat{\beta_0}$) and slope ($\hat{\beta_1$}) parameters for the equation of a line that best fits the data:
+Ordinary Least Squares (OLS) regression simply chooses the intercept ($\hat{\beta_0}$) and slope ($\hat{\beta_1}$) parameters for the equation of a line that best fits the data:
 $$\hat{Y_i}=\hat{\beta_0}+\hat{\beta_1}X_i$$ 
 
 by trying to minimize the **Sum of Squared Errors (SSE)**. The error $\epsilon$ (or residual) of an observation is defined as the difference between the *actual* value of $Y$ observed in the data associated with a given value of $X$, and the *predicted* value, $\hat{Y}$ given $X$: 
