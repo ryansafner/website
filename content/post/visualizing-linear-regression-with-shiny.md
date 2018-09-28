@@ -12,7 +12,7 @@ tags:
 title: Visualizing Linear Regression with Shiny
 ---
 
-For my (http://ryansafner.com/courses/econ480)[econometrics course] this semester, I have been using `R` to help students visualize linear regression models. Running a regression in `R` is quite simple, as is intepretting the results, with a little bit of training. However, I emphasize that I want students to *understand* what is happening "inside the black box" of regression. I discourage blindly trusting  `R`'s opaquely simple input and output, and get students to learn what `R` is doing *under the hood*, even if they will never have to manually estimate the model themselves. 
+For my [econometrics course](http://ryansafner.com/courses/econ480) this semester, I have been using `R` to help students visualize linear regression models. Running a regression in `R` is quite simple, as is intepretting the results, with a little bit of training. However, I emphasize that I want students to *understand* what is happening "inside the black box" of regression. I discourage blindly trusting  `R`'s opaquely simple input and output, and get students to learn what `R` is doing *under the hood*, even if they will never have to manually estimate the model themselves. 
 
 ### Brief Econometrics Review Incoming: 
 
