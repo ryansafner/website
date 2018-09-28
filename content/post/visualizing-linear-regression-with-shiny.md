@@ -1,5 +1,4 @@
 ---
-math = true
 categories:
 - rstats
 - teaching
@@ -30,7 +29,7 @@ $$\min_{\hat{\beta_0},\hat{\beta_1}} \sum^n_{i=1} \hat{\epsilon_i}^2$$
 
 This is a calculus problem that is solvable, if tedious. But at least it should be intuitive to understand what OLS does. 
 
-## Visualizing with Shiny 
+### Visualizing with Shiny 
 
 Beyond grinding students down with pure theory, I wrote an [interactive Shiny App](https://ryansafner.shinyapps.io/ols_estimation_by_min_sse/) with `R` that demonstrates this process to choosing the optimal slope and intercept. 
 
