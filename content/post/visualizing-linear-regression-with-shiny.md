@@ -25,7 +25,7 @@ $$\hat{\epsilon}=Y_i-\hat{Y_i}$$
 
 So what OLS does is minimize the sum of the squared errors:
 
-$$ \sum^n_{i=1} \hat{\epsilon_i}^2$$
+$$\min_{\beta_0, \beta_1} \sum^n_{i=1} \hat{\epsilon_i}^2$$
 
 This is a calculus problem that is solvable, if tedious. But at least it should be intuitive to understand what OLS does. 
 
