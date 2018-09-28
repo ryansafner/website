@@ -23,9 +23,9 @@ by trying to minimize the **Sum of Squared Errors (SSE)**. The error $\epsilon$ 
 
 $$\hat{\epsilon}=Y_i-\hat{Y_i}$$
 
-So what OLS does is to minimize the sum of the squared errors:
+So what OLS does is minimize the sum of the squared errors:
 
-$$\min_{\beta_0,\beta_1} \sum^n_{i=1} \hat{\epsilon_i}^2$$
+$$\min_{\beta_0, \beta_1} \sum^n_{i=1} \hat{\epsilon_i}^2$$
 
 This is a calculus problem that is solvable, if tedious. But at least it should be intuitive to understand what OLS does. 
 
@@ -37,4 +37,4 @@ With this example, I have a randomly-generated set of data (within specific para
 
 I would have loved to be able to graph the square of the errors, and display them, to show that OLS minimizes the area of those squares, if drawn. However, I was unable to figure out how to draw a square from each data point and the regression line (for squared error)| instead of a mere dashed line (for error). 
 
-I love Shiny and have only begun to fully understand how it works and the benefits of its application. I have already coded several other models for intuitive visualization that I may post about later, namely a [Calculus of Consent model of the optimal voting rule](https://ryansafner.shinyapps.io/ccmodel/) in [public choice](https://ryansafner.com/courses/ECON410), and the [consumer's constrained optimization problem](https://ryansafner.shinyapps.io/consumer/) in [intermediate microeconomics](https://ryansafner.com/courses/ECON306). Using sliders in shiny allow me to demonstrate the marginal effects of each parameter change on a model's predicted outcome far better than just me proving several theoretical examples by way of equations. Students can instead see the change in real time. 
+I love Shiny and have only begun to fully understand how it works and the benefits of its application. I have already coded several other models for intuitive visualization that I may post about later, namely a [Calculus of Consent model of the optimal voting rule](https://ryansafner.shinyapps.io/ccmodel/) in [public choice](https://ryansafner.com/courses/ECON410), and ambitiously, the [consumer's constrained optimization problem](https://ryansafner.shinyapps.io/consumer/) in [intermediate microeconomics](https://ryansafner.com/courses/ECON306). Using sliders in shiny allow me to demonstrate the marginal effects of each parameter change on a model's predicted outcome far better than just me proving several theoretical examples by way of equations. Students can instead see the change in real time. 
