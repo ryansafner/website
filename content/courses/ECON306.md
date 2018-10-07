@@ -25,4 +25,4 @@ This course will have been successful if you are able to comprehend and apply th
 | 7. Markets and Surpluses | Sept 19 | [Slides](https://www.dropbox.com/s/ksuvzducx1k5x3f/Lecture7.pdf?dl=0) | | | | 
 | 8. The Social Functions of Prices | Sept 26 | [Slides](https://www.dropbox.com/s/nzao0ws29gx2u24/Lecture8.pdf?dl=0) | | | | 
 | 9. Policies that Raise Transaction Costs | Oct 1 | [Slides](https://www.dropbox.com/s/c4k59ewl7zqlf3z/Lecture9.pdf?dl=0) | | | | 
-| 10. Taxation | Oct 3 | [Slides](https://www.dropbox.com/s/tqlteecq6m135mk/Lecture10.pdf?dl=0) | | | [HW #2](https://www.dropbox.com/s/54lbiwdk1s6t51s/HW%202.pdf?dl=0) | 
+| 10. Taxation | Oct 3 | [Slides](https://www.dropbox.com/s/tqlteecq6m135mk/Lecture10.pdf?dl=0) | | [Tax Problem Answers](https://www.dropbox.com/s/exxv9hqkkmod4tq/Tax%20Problem%20Answers.pdf?dl=0) | [HW #2](https://www.dropbox.com/s/54lbiwdk1s6t51s/HW%202.pdf?dl=0) | 
