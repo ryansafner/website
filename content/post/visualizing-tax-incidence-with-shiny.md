@@ -3,7 +3,7 @@ categories:
 - rstats
 - teaching
 comments: true
-date: 2018-19-07T18:35:00
+date: 2018-10-07T18:35:00
 tags:
 - rstats
 - shiny
