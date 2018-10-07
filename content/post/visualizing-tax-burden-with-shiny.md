@@ -3,7 +3,7 @@ categories:
 - rstats
 - teaching
 comments: true
-date: 2018-09-28T15:55:00
+date: 2018-19-07T18:35:00
 tags:
 - rstats
 - shiny
@@ -24,6 +24,6 @@ The visualization can also show the effects of extremes: perfectly elastic deman
 
 To give credit where it is due, I was originally inspired by [this visualization](http://home.uchicago.edu/cbm4/econ260/E260tidemo.html) apparently made in Mathematica for Casey Mulligan's [Public Finance class](http://home.uchicago.edu/cbm4/econ260/) at the University of Chicago. 
 
-[^1] For more on the economics, see Lecture 10 slides on this topic from the course page.
+[^1]: For more on the economics, see Lecture 10 slides on this topic from the course page.
 
-[^2] This is since I calculated each share according to the common formula: $\frac{|\text{elasticity of other party}|}{(|E_D|+E_S)}$. If instead I had calculated the change in Consumer Surplus and change in Producer Surplus, we could get accurate numbers.
+[^2]: This is since I calculated each share according to the common formula: $\frac{|\text{elasticity of other party}|}{(|E_D|+E_S)}$. If instead I had calculated the change in Consumer Surplus and change in Producer Surplus, we could get accurate numbers.
