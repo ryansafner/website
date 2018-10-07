@@ -24,4 +24,5 @@ This course will have been successful if you are able to comprehend and apply th
 | 6. Price Elasticity | Sept 17 | [Slides](https://www.dropbox.com/s/fbidadmw8l3h625/Lecture6.pdf?dl=0)  | | [Elasticity Practice](https://www.dropbox.com/s/rgo1ao8n9yc44c2/Elasticity%20Problems.pdf?dl=0) ([Answers](https://www.dropbox.com/s/uu6q1qgt3p31xhe/Elasticity%20Problems%20Answers.pdf?dl=0)) | [HW #1](https://www.dropbox.com/s/klsyrtaurpdjwsm/HW%201.pdf?dl=0) | 
 | 7. Markets and Surpluses | Sept 19 | [Slides](https://www.dropbox.com/s/ksuvzducx1k5x3f/Lecture7.pdf?dl=0) | | | | 
 | 8. The Social Functions of Prices | Sept 26 | [Slides](https://www.dropbox.com/s/nzao0ws29gx2u24/Lecture8.pdf?dl=0) | | | | 
-
+| 9. Policies that Raise Transaction Costs | Oct 1 | [Slides](https://www.dropbox.com/s/c4k59ewl7zqlf3z/Lecture9.pdf?dl=0) | | | | 
+| 10. Taxation | Oct 3 | [Slides](https://www.dropbox.com/s/tqlteecq6m135mk/Lecture10.pdf?dl=0) | | | [HW #2](https://www.dropbox.com/s/54lbiwdk1s6t51s/HW%202.pdf?dl=0) | 
