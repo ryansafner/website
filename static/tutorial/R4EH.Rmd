@@ -4,7 +4,6 @@ author: "[Ryan Safner](http://ryansafner.com) (safner@hood.edu)"
 date: "Last Updated: `r system('git log -1 --format=%cd',intern=TRUE)`"
 output: 
   html_document:
-    keep_md: true
     theme: simplex
     toc: true
     toc_float: true
@@ -60,7 +59,7 @@ I would recommend some basic concepts
   - `Option -`: insert assignment operator (`<-`) 
   - `Ctrl` (`Cmd` on Mac)+`Shift+M`: insert pipe operator (`%>%`)
   
-## Working Directory (`wd`)
+## Working Directory (`wd`){#Working-directory}
 - *R* assumes a default (often inconvenient) working directory on your computer
     - this is where it thinks it will **load** any files you want to load and **save** anything you want to save by default
 - Find out where *R* currently thinks this is with **`getwd()`**
@@ -183,13 +182,6 @@ summary(reg1$coefficients) # prints coefficients
 ![](images/stackoverflow.png)
 
 - The **only** way to learn coding is by tweaking existing examples, messing up, and searching the internet for help! 
-
-
-### Say Hello to Your New BEST Friend
-
-
-### R Also Plays Along Pretty Nicely
-
 
 # Objects
 
@@ -665,7 +657,7 @@ qplot(n, mean, data = coin_toss, geom = "line") +
 
 - `R` can read almost any type of data (with the proper package)
     - Syntax: `newdf<-read("path/to/file")`
-        - You'll create a new object (typically dataframe) with the data
+        - You'll create a new object (typically dataframe) with the data (e.g. called `newdf`)
         - Use a particular `read` function depending on the data type (see packages below) and package
         - Put the file path of the object in quotes and parentheses
 
@@ -677,6 +669,163 @@ qplot(n, mean, data = coin_toss, geom = "line") +
 | `readxl` | `read_excel()` | `.xls`, `.xlsx` files | 
 where `*` is a placeholder for the file type 
 
+- Depending on where you saved the downloaded data on your computer, you tell `R` where to load it from
+    - If you save/move the data in the same default working directory as `R`, just tell it `newdf<-read("dataname.ext")`
+        - Where `read` should be replaced by the proper function above
+        - `dataname.etx` is the name of the data file and its file type (e.g. `.csv`, `.xslx`, etc)
+        - You can determine where `R` thinks your working directory is again with `getwd()` and change it (poor idea) with `setwd()` (See (Working Directory)[#Working-directory])
+    - If you save/move the data in a different folder:
+        - `path/to/file` should be the path **relative** to your current working directory, using `..` to move up one directory on your computer and `/` to move through folders 
+        - Example: suppose my current working directory is `RyanSafner/Documentss` and I saved my data file in `RyanSafner/Downloads`
+            - My relative path would be `../Downloads/dataname.ext`, since I need to move up one directory (from `RyanSafner/Documents` to just `RyanSafner/'`) and then down into the `Downloads/` folder. 
+
+# Data Wrangling, Tidying, and Cleaning
+
+- 90\% of data work is "wrangling" raw data files into something we can actually work with
+
+- **"Tidy"** data, to use Hadley Wickham's term, has: 
+    - Columns are variables
+    - Rows are observations
+    - One type per dataset 
+- Tidy data are easy to model, visualize, and aggregate (i.e. run `lm`, `ddply` and `ggplot` with)
+- Common causes of "messy" data:
+    - column headers are values, not variable names
+    - multiple variables are stored in one column
+    - variables are stored in both rows and columns
+    - multiple types of experimental unit stored in the same table
+    - one type of experimental unit stored in multiple tables
+
+## The `dplyr` package
+
+- 
+
+### `dplyr` verbs
+
+| Function | Does | 
+|----------|------|
+| `filter` | Keep only selected *observations* | 
+| `select` | Keep only selected *variables* |
+| `arrange` | Reorder rows (e.g. in numerical order) |
+| `mutate` | Create new variables | 
+| `summarize` | Collapse data into summary statistics| 
+| `group_by` | Perform any of the above functions by groups/categories | 
+
+- Syntax for all of these functions is the same: 
+```{r, eval=FALSE}
+dplyrfunction(dataframe, condition)
+# returns a new dataframe
+```
+
+- `filter`ing observations examples (with `gapminder`)
+```{r}
+library("gapminder")
+library("dplyr")
+# Only look at countries in Africa
+filter(gapminder, continent=="Africa")
+
+# Only look at countries in Europe AND 1997
+filter(gapminder, continent=="Europe", year==1997)
+
+# Only look at countries in Europe OR Africa
+filter(gapminder, continent=="Europe" | continent=="Africa")
+
+# Only look at countries in the set of Europe and Asia 
+filter(gapminder, continent %in% c("Europe","Asia"))
+
+
+```
+
+- `select`ing observations examples (with `gapminder`)
+```{r}
+library("gapminder")
+library("dplyr")
+# Only keep country, year, and population variables
+select(gapminder, country, year, pop)
+
+# The "starts_with()", "ends_with()", and "contains()" are also useful functions
+select(gapminder, starts_with("c"), gdpPercap) # i.e. *C*ountry, *C*ontinent
+```
+
+- `rename`ing variables
+```{r}
+rename(gapminder, population=pop, gdppercapita=gdpPercap)
+```
+
+```{r}
+# order by year (smallest to largest)
+arrange(gapminder, year)
+
+# order by country (reverse alphabetical)
+arrange(gapminder, desc(country)) # desc stands for descending()
+
+# order by lifeexp (smallest to largest)
+arrange(gapminder, lifeExp)
+
+# order by lifeexp (largest to smallest)
+arrange(gapminder, desc(lifeExp)) 
+
+```
+
+- `mutate`ing new variables 
+
+```{r}
+# create a GDP variable by multiplying gdpPercap and pop
+mutate(gapminder, gdp = gdpPercap * pop)
+
+# Can create multiple variables at once
+mutate(gapminder, 
+       gdp = gdpPercap * pop,
+       gdp_billions = gdp/1000000000)
+```
+
+- `summarize`ing variables
+
+```{r}
+# get average life expectancy 
+summarize(gapminder, mean_life=mean(lifeExp))
+
+# get standard deviation of life expectancy 
+
+summarize(gapminder, sd_life=sd(lifeExp))
+
+# summarize avg life expectancy by continent with "group_by"
+
+by_continent<-group_by(gapminder, continent)
+summarize(by_continent, mean_life=mean(lifeExp))
+
+# or by year
+
+by_year<-group_by(gapminder, year)
+summarize(by_year, mean_life=mean(lifeExp))
+
+```
+
+- The **pipe operator** `%>%` "pipes" the *output* of the previous command into the *input* of the next command:
+
+```{r}
+gapminder %>% # start with gapminder data 
+  group_by(continent, year) %>% # use gapminder data to create groups of continents and of years 
+  summarize(mean_life = mean(lifeExp)) # use those groups to calculate average life expectancy by group 
+```
+
+- The pipe operator `%>%` works across different functions and packages
+    - Once you learn it, it's hard to give it up because it shortens your code significantly! 
+  
+```{r}
+library("ggplot2")
+
+# we want to plot the change in average life expectancy by continent over time 
+
+gapminder %>% # start with gapminder data 
+  group_by(year, continent) %>% # create groups of years and of continents 
+  summarize(mean_life = mean(lifeExp)) %>% # get average life expectancy for each group 
+  ggplot(aes(year, mean_life, color = continent))+ # plot this over time 
+  geom_point() + geom_smooth(method="lm")
+```
+
+```
+new <- summarise(diamonds, avg_depth = mean(depth), avg_price = mean(price))
+```
 
 # Plotting 
 
