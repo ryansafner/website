@@ -12,7 +12,8 @@ weight = 5
   interests = [
     "Innovation",
     "Intellectual Property",
-    "Economic Growth"
+    "Economic Growth",
+    "Data Analysis with R"
   ]
 
 # List your qualifications (such as academic degrees).
