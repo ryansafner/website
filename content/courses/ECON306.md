@@ -15,7 +15,7 @@ This course will have been successful if you are able to comprehend and apply th
 
 
 | Lesson Slides | Date | Handouts | Practice Problems | Homework |
-|---|---|---|---|---|---|
+|---|---|---|---|---|
 | [1. The Tools of Microeconomics](https://www.dropbox.com/s/xnpbswp9dhhw7u8/Lecture1.pdf?dl=0) | Aug 27 | [Preliminary Math Quiz](https://www.dropbox.com/s/stzapyiioyubpll/mathpretest2.pdf?dl=0) ([Answers](https://www.dropbox.com/s/ulesxb8es2e88pf/mathpretestanswers.pdf?dl=0)) |  |  |
 | [2. Choice and Cost](https://www.dropbox.com/s/m64g26vn05pblky/Lecture2.pdf?dl=0) | Aug 29 |  |  |  |
 | [3. The Division of Labor](https://www.dropbox.com/s/74669t1he0pff9i/Lecture3.pdf?dl=0) | Sept 5 |  |  |  | 
