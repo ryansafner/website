@@ -16,3 +16,5 @@ In this course, we will look at trade from this broad framework of extending the
 | [3. The Standard (Neoclassical) Trade Model](https://www.dropbox.com/s/zdy8x8btwcmc3k7/Lesson3.pdf?dl=0) | | | 
 | [4. The Hecksher-Ohlin (Factors) Trade Model](https://www.dropbox.com/s/m0iiw3nm0hooe5j/Lesson4.pdf?dl=0) | | |
 | [5. New Trade Theory](https://www.dropbox.com/s/sxcrvba5lgdmz2j/Lesson5.pdf?dl=0) | | [HW #2](https://www.dropbox.com/s/py7b4ar8lw7ubcv/Homework2.pdf?dl=0) | 
+| [6. A Brief Economic History of Trade](https://www.dropbox.com/s/lix8z7emcn37y5e/Lesson6.pdf?dl=0) | | | 
+| [7. Trade Policy: Tariffs and Other Trade Barriers](https://www.dropbox.com/s/unrta4dhq2k308s/Lesson7.pdf?dl=0) | | | 
