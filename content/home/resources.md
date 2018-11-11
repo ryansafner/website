@@ -20,5 +20,5 @@ weight = 10
 
 ## R Resources 
 * {{% staticref "tutorial/R4EH" %}}R For Econometrics Handbook (R4EH) {{% /staticref %}} 
-
+* {{% staticref "tutorial/RMDG" %}}R Markdown Guide (RMDG) {{% /staticref %}}
 
