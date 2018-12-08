@@ -38,3 +38,11 @@ To these ends, in addition to lectures about the estimation methods, you will re
 | [19. Difference-in-Difference Models](https://github.com/ryansafner/ECON480Fall2018/blob/master/Lectures/Lecture19.pdf) | Dec 5 | | | | 
 | [20. Instrumental Variables Models](https://github.com/ryansafner/ECON480Fall2018/blob/master/Lectures/Lecture20.pdf) | Dec 10 | | | [HW #6](https://github.com/ryansafner/ECON480Fall2018/blob/master/Homework/HW6.pdf) | 
 
+## Resources
+
+I have put together some short guides about using `R`, `R Markdown`, and `R Projects` for data analysis, writing papers and presentations, and organizing workflow in a reproducible and efficient way. Some of these are hosted on this website, and others are code on GitHub. All lecture files above, along with other resources for this course, are available on GitHub for anyone to inspect the source code (in `R Markdown` `.Rmd` files), as [described in my post](https://ryansafner.com/post/econometrics-slides-on-github/). 
+
+- [This course on GitHub](http://github.com/ryansafner/ECON480Fall2018)
+- [R for Econometrics: A Modest Handbook](http://ryansafner.com/tutorial/R4EH)
+- [R Markdown Guide](http://ryansafner.com/RMDG)
+- [Managing Your Worfklow with RProjects](http://github.com/ryansafner/workflow)
