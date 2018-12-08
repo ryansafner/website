@@ -25,3 +25,5 @@ This course will have been successful if you are able to apply the economic way 
 | [4. Markets and Economic Policy](https://www.dropbox.com/s/66vmw4b2mp0xax6/Lesson4.pdf?dl=0) | | | [Homework #4](https://www.dropbox.com/s/4dkuluhirjki2yh/hw4.pdf?dl=0) | 
 | [5. Measuring the Macroeconomy](https://www.dropbox.com/s/12ckwv9fdvm298a/Lesson5.pdf?dl=0) | | | [Homework #5](https://www.dropbox.com/s/jbh5uc9tua49tkv/hw5.pdf?dl=0) |
 | [6. Economic Growth](https://www.dropbox.com/s/ipup2kxfyldjho5/Lesson6.pdf?dl=0) | | | | 
+| [7. Money and the Financial System](https://www.dropbox.com/s/fpi5favfxmopese/Lesson7.pdf?dl=0) | | | [Homework #6](https://www.dropbox.com/s/6nzg6nqzw42ai28/hw6.pdf?dl=0) | 
+| [8. Monetary and Fiscal Policy](https://www.dropbox.com/s/jzghzf2zvy18xs5/Lesson8.pdf?dl=0) | | | | 
