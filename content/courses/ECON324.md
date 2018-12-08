@@ -18,3 +18,5 @@ In this course, we will look at trade from this broad framework of extending the
 | [5. New Trade Theory](https://www.dropbox.com/s/sxcrvba5lgdmz2j/Lesson5.pdf?dl=0) | | [HW #2](https://www.dropbox.com/s/py7b4ar8lw7ubcv/Homework2.pdf?dl=0) | 
 | [6. A Brief Economic History of Trade](https://www.dropbox.com/s/lix8z7emcn37y5e/Lesson6.pdf?dl=0) | | | 
 | [7. Trade Policy: Tariffs and Other Trade Barriers](https://www.dropbox.com/s/unrta4dhq2k308s/Lesson7.pdf?dl=0) | | | 
+| [8. Industrial Policy](https://www.dropbox.com/s/zhfkcjoj9bd6w1d/Lesson8.pdf?dl=0) | | | 
+| [9. The Political Economy of Trade Policy](https://www.dropbox.com/s/6synro1y066cdbm/Lesson9.pdf?dl=0) | | | 
