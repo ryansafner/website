@@ -1,0 +1,485 @@
+<!DOCTYPE html>
+<html >
+
+<head>
+
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>R For Econometrics: A Modest Handbook</title>
+  <meta name="description" content="This is a simple guide intended for my ECON 480 - Econometrics students at Hood College.">
+  <meta name="generator" content="bookdown 0.7 and GitBook 2.6.7">
+
+  <meta property="og:title" content="R For Econometrics: A Modest Handbook" />
+  <meta property="og:type" content="book" />
+  
+  
+  <meta property="og:description" content="This is a simple guide intended for my ECON 480 - Econometrics students at Hood College." />
+  
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="R For Econometrics: A Modest Handbook" />
+  
+  <meta name="twitter:description" content="This is a simple guide intended for my ECON 480 - Econometrics students at Hood College." />
+  
+
+<meta name="author" content="Ryan Safner (safner@hood.edu)">
+
+
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  
+  
+<link rel="prev" href="index.html">
+<link rel="next" href="objects.html">
+<script src="libs/jquery-2.2.3/jquery.min.js"></script>
+<link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-highlight.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
+
+
+
+
+
+
+
+
+
+<style type="text/css">
+div.sourceCode { overflow-x: auto; }
+table.sourceCode, tr.sourceCode, td.lineNumbers, td.sourceCode {
+  margin: 0; padding: 0; vertical-align: baseline; border: none; }
+table.sourceCode { width: 100%; line-height: 100%; }
+td.lineNumbers { text-align: right; padding-right: 4px; padding-left: 4px; color: #aaaaaa; border-right: 1px solid #aaaaaa; }
+td.sourceCode { padding-left: 5px; }
+code > span.kw { color: #007020; font-weight: bold; } /* Keyword */
+code > span.dt { color: #902000; } /* DataType */
+code > span.dv { color: #40a070; } /* DecVal */
+code > span.bn { color: #40a070; } /* BaseN */
+code > span.fl { color: #40a070; } /* Float */
+code > span.ch { color: #4070a0; } /* Char */
+code > span.st { color: #4070a0; } /* String */
+code > span.co { color: #60a0b0; font-style: italic; } /* Comment */
+code > span.ot { color: #007020; } /* Other */
+code > span.al { color: #ff0000; font-weight: bold; } /* Alert */
+code > span.fu { color: #06287e; } /* Function */
+code > span.er { color: #ff0000; font-weight: bold; } /* Error */
+code > span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
+code > span.cn { color: #880000; } /* Constant */
+code > span.sc { color: #4070a0; } /* SpecialChar */
+code > span.vs { color: #4070a0; } /* VerbatimString */
+code > span.ss { color: #bb6688; } /* SpecialString */
+code > span.im { } /* Import */
+code > span.va { color: #19177c; } /* Variable */
+code > span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+code > span.op { color: #666666; } /* Operator */
+code > span.bu { } /* BuiltIn */
+code > span.ex { } /* Extension */
+code > span.pp { color: #bc7a00; } /* Preprocessor */
+code > span.at { color: #7d9029; } /* Attribute */
+code > span.do { color: #ba2121; font-style: italic; } /* Documentation */
+code > span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+code > span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+</style>
+
+<link rel="stylesheet" href="style.css" type="text/css" />
+</head>
+
+<body>
+
+
+
+  <div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
+
+    <div class="book-summary">
+      <nav role="navigation">
+
+<ul class="summary">
+<li><a href="./">R for Econometrics: A Modest Handbook</a></li>
+
+<li class="divider"></li>
+<li class="chapter" data-level="1" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i><b>1</b> Prerequisites</a><ul>
+<li class="chapter" data-level="1.1" data-path="index.html"><a href="index.html#how-to-read-this-guide"><i class="fa fa-check"></i><b>1.1</b> How to Read this Guide</a></li>
+</ul></li>
+<li class="chapter" data-level="2" data-path="basics.html"><a href="basics.html"><i class="fa fa-check"></i><b>2</b> Basics</a><ul>
+<li class="chapter" data-level="2.1" data-path="basics.html"><a href="basics.html#operating-r-studio"><i class="fa fa-check"></i><b>2.1</b> Operating R Studio</a><ul>
+<li class="chapter" data-level="2.1.1" data-path="basics.html"><a href="basics.html#keyboard-shortcuts"><i class="fa fa-check"></i><b>2.1.1</b> Keyboard Shortcuts</a></li>
+</ul></li>
+<li class="chapter" data-level="2.2" data-path="basics.html"><a href="basics.html#Working-directory"><i class="fa fa-check"></i><b>2.2</b> Working Directory (<code>wd</code>)</a></li>
+<li class="chapter" data-level="2.3" data-path="basics.html"><a href="basics.html#packages"><i class="fa fa-check"></i><b>2.3</b> Packages</a></li>
+<li class="chapter" data-level="2.4" data-path="basics.html"><a href="basics.html#useful-packages"><i class="fa fa-check"></i><b>2.4</b> Useful Packages</a></li>
+<li class="chapter" data-level="2.5" data-path="basics.html"><a href="basics.html#calculations"><i class="fa fa-check"></i><b>2.5</b> Calculations</a></li>
+<li class="chapter" data-level="2.6" data-path="basics.html"><a href="basics.html#hints-for-writing-code"><i class="fa fa-check"></i><b>2.6</b> Hints for Writing Code</a><ul>
+<li class="chapter" data-level="2.6.1" data-path="basics.html"><a href="basics.html#naming-objects"><i class="fa fa-check"></i><b>2.6.1</b> Naming Objects</a></li>
+<li class="chapter" data-level="2.6.2" data-path="basics.html"><a href="basics.html#commenting"><i class="fa fa-check"></i><b>2.6.2</b> Commenting</a></li>
+<li class="chapter" data-level="2.6.3" data-path="basics.html"><a href="basics.html#managing-your-workflow"><i class="fa fa-check"></i><b>2.6.3</b> Managing Your Workflow</a></li>
+</ul></li>
+<li class="chapter" data-level="2.7" data-path="basics.html"><a href="basics.html#getting-help"><i class="fa fa-check"></i><b>2.7</b> Getting Help</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="objects.html"><a href="objects.html"><i class="fa fa-check"></i>Objects</a><ul>
+<li class="chapter" data-level="2.8" data-path="objects.html"><a href="objects.html#vectors"><i class="fa fa-check"></i><b>2.8</b> Vectors</a><ul>
+<li class="chapter" data-level="2.8.1" data-path="objects.html"><a href="objects.html#functions"><i class="fa fa-check"></i><b>2.8.1</b> Functions</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="3" data-path="other-object-types.html"><a href="other-object-types.html"><i class="fa fa-check"></i><b>3</b> Other Object Types</a><ul>
+<li class="chapter" data-level="3.1" data-path="other-object-types.html"><a href="other-object-types.html#lists"><i class="fa fa-check"></i><b>3.1</b> Lists</a></li>
+<li class="chapter" data-level="3.2" data-path="other-object-types.html"><a href="other-object-types.html#matrix"><i class="fa fa-check"></i><b>3.2</b> Matrix</a></li>
+<li class="chapter" data-level="3.3" data-path="other-object-types.html"><a href="other-object-types.html#data-frame"><i class="fa fa-check"></i><b>3.3</b> Data Frame</a></li>
+</ul></li>
+<li class="chapter" data-level="4" data-path="data-classes.html"><a href="data-classes.html"><i class="fa fa-check"></i><b>4</b> Data Classes</a><ul>
+<li class="chapter" data-level="4.0.1" data-path="data-classes.html"><a href="data-classes.html#numeric"><i class="fa fa-check"></i><b>4.0.1</b> Numeric</a></li>
+<li class="chapter" data-level="4.0.2" data-path="data-classes.html"><a href="data-classes.html#double"><i class="fa fa-check"></i><b>4.0.2</b> Double</a></li>
+<li class="chapter" data-level="4.0.3" data-path="data-classes.html"><a href="data-classes.html#logical"><i class="fa fa-check"></i><b>4.0.3</b> Logical</a></li>
+<li class="chapter" data-level="4.0.4" data-path="data-classes.html"><a href="data-classes.html#character"><i class="fa fa-check"></i><b>4.0.4</b> Character</a></li>
+<li class="chapter" data-level="4.0.5" data-path="data-classes.html"><a href="data-classes.html#factor"><i class="fa fa-check"></i><b>4.0.5</b> Factor</a></li>
+<li class="chapter" data-level="4.1" data-path="data-classes.html"><a href="data-classes.html#checking-or-reclassifying-objects"><i class="fa fa-check"></i><b>4.1</b> Checking or Reclassifying Objects</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="data-wrangling.html"><a href="data-wrangling.html"><i class="fa fa-check"></i>Data Wrangling</a><ul>
+<li class="chapter" data-level="4.2" data-path="data-wrangling.html"><a href="data-wrangling.html#packages-1"><i class="fa fa-check"></i><b>4.2</b> Packages</a></li>
+<li class="chapter" data-level="4.3" data-path="data-wrangling.html"><a href="data-wrangling.html#importing-data"><i class="fa fa-check"></i><b>4.3</b> Importing Data</a></li>
+<li class="chapter" data-level="4.4" data-path="data-wrangling.html"><a href="data-wrangling.html#merging-data"><i class="fa fa-check"></i><b>4.4</b> Merging Data</a></li>
+<li class="chapter" data-level="4.5" data-path="data-wrangling.html"><a href="data-wrangling.html#using-the-pipe-operator"><i class="fa fa-check"></i><b>4.5</b> Using the <code>%&gt;%</code> “Pipe” Operator</a></li>
+<li class="chapter" data-level="4.6" data-path="data-wrangling.html"><a href="data-wrangling.html#subsetting"><i class="fa fa-check"></i><b>4.6</b> Subsetting</a></li>
+<li class="chapter" data-level="4.7" data-path="data-wrangling.html"><a href="data-wrangling.html#section"><i class="fa fa-check"></i><b>4.7</b> </a></li>
+</ul></li>
+<li class="chapter" data-level="5" data-path="plotting.html"><a href="plotting.html"><i class="fa fa-check"></i><b>5</b> Plotting</a><ul>
+<li class="chapter" data-level="5.1" data-path="plotting.html"><a href="plotting.html#plotting-in-base-r"><i class="fa fa-check"></i><b>5.1</b> Plotting in Base <code>R</code></a><ul>
+<li class="chapter" data-level="5.1.1" data-path="plotting.html"><a href="plotting.html#histogram"><i class="fa fa-check"></i><b>5.1.1</b> Histogram</a></li>
+<li class="chapter" data-level="5.1.2" data-path="plotting.html"><a href="plotting.html#boxplot"><i class="fa fa-check"></i><b>5.1.2</b> Boxplot</a></li>
+<li class="chapter" data-level="5.1.3" data-path="plotting.html"><a href="plotting.html#scatterplot"><i class="fa fa-check"></i><b>5.1.3</b> Scatterplot</a></li>
+</ul></li>
+<li class="chapter" data-level="5.2" data-path="plotting.html"><a href="plotting.html#with-ggplot2"><i class="fa fa-check"></i><b>5.2</b> With <code>ggplot2</code></a><ul>
+<li class="chapter" data-level="5.2.1" data-path="plotting.html"><a href="plotting.html#two-ways-to-plot"><i class="fa fa-check"></i><b>5.2.1</b> Two Ways to Plot</a></li>
+<li class="chapter" data-level="5.2.2" data-path="plotting.html"><a href="plotting.html#two-ways-to-plot-ii"><i class="fa fa-check"></i><b>5.2.2</b> Two Ways to Plot II</a></li>
+<li class="chapter" data-level="5.2.3" data-path="plotting.html"><a href="plotting.html#gg-histogram-base-layer"><i class="fa fa-check"></i><b>5.2.3</b> <code>gg</code> Histogram: Base Layer</a></li>
+<li class="chapter" data-level="5.2.4" data-path="plotting.html"><a href="plotting.html#gg-histogram-adding-geoms"><i class="fa fa-check"></i><b>5.2.4</b> <code>gg</code> Histogram: Adding Geoms</a></li>
+<li class="chapter" data-level="5.2.5" data-path="plotting.html"><a href="plotting.html#gg-histogram-customizing-geoms"><i class="fa fa-check"></i><b>5.2.5</b> <code>gg</code> Histogram: Customizing Geoms</a></li>
+<li class="chapter" data-level="5.2.6" data-path="plotting.html"><a href="plotting.html#gg-histogram-adding-other-layers"><i class="fa fa-check"></i><b>5.2.6</b> <code>gg</code> Histogram: Adding Other Layers</a></li>
+<li class="chapter" data-level="5.2.7" data-path="plotting.html"><a href="plotting.html#gg-histogram-editing-coordinates-axes"><i class="fa fa-check"></i><b>5.2.7</b> <code>gg</code> Histogram: Editing Coordinates (Axes)</a></li>
+<li class="chapter" data-level="5.2.8" data-path="plotting.html"><a href="plotting.html#gg-other-geoms"><i class="fa fa-check"></i><b>5.2.8</b> <code>gg</code> Other Geoms</a></li>
+<li class="chapter" data-level="5.2.9" data-path="plotting.html"><a href="plotting.html#gg-other-geoms-1"><i class="fa fa-check"></i><b>5.2.9</b> <code>gg</code> Other Geoms</a></li>
+<li class="chapter" data-level="5.2.10" data-path="plotting.html"><a href="plotting.html#gg-boxplot"><i class="fa fa-check"></i><b>5.2.10</b> <code>gg</code> Boxplot</a></li>
+<li class="chapter" data-level="5.2.11" data-path="plotting.html"><a href="plotting.html#scatterplot-1"><i class="fa fa-check"></i><b>5.2.11</b> Scatterplot</a></li>
+<li class="chapter" data-level="5.2.12" data-path="plotting.html"><a href="plotting.html#scatterplot-geom-layer"><i class="fa fa-check"></i><b>5.2.12</b> Scatterplot: Geom Layer</a></li>
+<li class="chapter" data-level="5.2.13" data-path="plotting.html"><a href="plotting.html#scatterplot-geom-layer-options"><i class="fa fa-check"></i><b>5.2.13</b> Scatterplot: Geom Layer Options</a></li>
+<li class="chapter" data-level="5.2.14" data-path="plotting.html"><a href="plotting.html#scatterplot-geom-layer-ii"><i class="fa fa-check"></i><b>5.2.14</b> Scatterplot: Geom Layer II</a></li>
+<li class="chapter" data-level="5.2.15" data-path="plotting.html"><a href="plotting.html#scatterplot-coordinate-layer"><i class="fa fa-check"></i><b>5.2.15</b> Scatterplot: Coordinate Layer</a></li>
+<li class="chapter" data-level="5.2.16" data-path="plotting.html"><a href="plotting.html#scatterplot-coordinate-options"><i class="fa fa-check"></i><b>5.2.16</b> Scatterplot: Coordinate Options</a></li>
+<li class="chapter" data-level="5.2.17" data-path="plotting.html"><a href="plotting.html#scatterplot-coordinate-options-ii"><i class="fa fa-check"></i><b>5.2.17</b> Scatterplot: Coordinate Options II</a></li>
+<li class="chapter" data-level="5.2.18" data-path="plotting.html"><a href="plotting.html#scatterplot-coordinate-options-facetting"><i class="fa fa-check"></i><b>5.2.18</b> Scatterplot: Coordinate Options: Facetting</a></li>
+<li class="chapter" data-level="5.2.19" data-path="plotting.html"><a href="plotting.html#all-together-now"><i class="fa fa-check"></i><b>5.2.19</b> All Together Now</a></li>
+<li class="chapter" data-level="5.2.20" data-path="plotting.html"><a href="plotting.html#advanced-uses-of-ggplot2-maps-see-rmd-for-code"><i class="fa fa-check"></i><b>5.2.20</b> Advanced Uses of <code>ggplot2</code>: Maps (See Rmd for Code)</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="6" data-path="regression-basics.html"><a href="regression-basics.html"><i class="fa fa-check"></i><b>6</b> Regression Basics</a><ul>
+<li class="chapter" data-level="6.1" data-path="regression-basics.html"><a href="regression-basics.html#ordinary-least-squares-ols-regression"><i class="fa fa-check"></i><b>6.1</b> Ordinary Least Squares (OLS) Regression</a><ul>
+<li class="chapter" data-level="6.1.1" data-path="regression-basics.html"><a href="regression-basics.html#diagnostics"><i class="fa fa-check"></i><b>6.1.1</b> Diagnostics</a></li>
+</ul></li>
+<li class="chapter" data-level="6.2" data-path="regression-basics.html"><a href="regression-basics.html#prediction"><i class="fa fa-check"></i><b>6.2</b> Prediction</a></li>
+<li class="chapter" data-level="6.3" data-path="regression-basics.html"><a href="regression-basics.html#residual-plots"><i class="fa fa-check"></i><b>6.3</b> Residual Plots</a></li>
+<li class="chapter" data-level="6.4" data-path="regression-basics.html"><a href="regression-basics.html#regression-output-table"><i class="fa fa-check"></i><b>6.4</b> Regression Output Table</a></li>
+</ul></li>
+<li class="chapter" data-level="7" data-path="advanced-regression.html"><a href="advanced-regression.html"><i class="fa fa-check"></i><b>7</b> Advanced Regression</a><ul>
+<li class="chapter" data-level="7.1" data-path="advanced-regression.html"><a href="advanced-regression.html#multivariate-regression"><i class="fa fa-check"></i><b>7.1</b> Multivariate Regression</a></li>
+<li class="chapter" data-level="7.2" data-path="advanced-regression.html"><a href="advanced-regression.html#dummy-variables"><i class="fa fa-check"></i><b>7.2</b> Dummy Variables</a></li>
+<li class="chapter" data-level="7.3" data-path="advanced-regression.html"><a href="advanced-regression.html#polynomial-regression"><i class="fa fa-check"></i><b>7.3</b> Polynomial Regression</a></li>
+</ul></li>
+<li class="divider"></li>
+<li><a href="https://ryansafner.com" target="blank">Ryan Safner</a></li>
+
+</ul>
+
+      </nav>
+    </div>
+
+    <div class="book-body">
+      <div class="body-inner">
+        <div class="book-header" role="navigation">
+          <h1>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">R For Econometrics: A Modest Handbook</a>
+          </h1>
+        </div>
+
+        <div class="page-wrapper" tabindex="-1" role="main">
+          <div class="page-inner">
+
+            <section class="normal" id="section-">
+<div id="basics" class="section level1">
+<h1><span class="header-section-number">Chapter 2</span> Basics</h1>
+<div id="operating-r-studio" class="section level2">
+<h2><span class="header-section-number">2.1</span> Operating R Studio</h2>
+<ul>
+<li>There are a few ways you can use R Studio:</li>
+</ul>
+<ol style="list-style-type: decimal">
+<li><strong>Command line/Console</strong>: writing each command by itself and copying down the result as needed
+<ul>
+<li>Great for testing individual commands to see what happens</li>
+<li>Not reproducible! Not saved! NOT RECOMMENDED!</li>
+</ul></li>
+<li><strong>.R files</strong>: A sequence of commands (and hopefully comments) saved as a script, the entire script is run all at once
+<ul>
+<li>Can test individual commands in command line and then put good commands in <em>.R</em> file</li>
+<li>Equivalent to a <em>.do</em> file for Stata</li>
+<li>Reproducible, saved, commented</li>
+</ul></li>
+<li><strong>R Markdown (<em>.Rmd</em>) files</strong>: A plain text document written in <em>R Markdown</em> language
+<ul>
+<li>Allows for individual chunks of <em>R</em> code to be run individually (great for testing one command instead of all at once)</li>
+<li>Reproducible, saved, commented as if a normal document</li>
+<li>Can write an entire document (text, equations, R commands, figures, tables, etc) with one file!</li>
+<li>Can export to html, MS Word, Beamer, etc!</li>
+<li>Markdown is a language that is intuitive, simple, human- and machine-readable</li>
+</ul></li>
+</ol>
+<div class="figure">
+<img src="images/rstudio.png" alt="Rstudio Windows" />
+<p class="caption">Rstudio Windows</p>
+</div>
+<div id="keyboard-shortcuts" class="section level3">
+<h3><span class="header-section-number">2.1.1</span> Keyboard Shortcuts</h3>
+<ul>
+<li><code>Ctrl+2</code>: move cursor to console</li>
+<li><code>Ctrl</code> (<code>Cmd</code> on Mac)<code>+Enter</code>: run current line (from editor) in console</li>
+<li><code>Ctrl</code> (<code>Cmd</code> on Mac)<code>+Enter</code></li>
+<li><code>Uparrow</code>: retrieve recent commands in console</li>
+<li><code>Ctrl</code> (<code>Cmd</code> on Mac)<code>+Uparrow</code>: search previous commands</li>
+<li><code>Option -</code>: insert assignment operator (<code>&lt;-</code>)</li>
+<li><code>Ctrl</code> (<code>Cmd</code> on Mac)+<code>Shift+M</code>: insert pipe operator (<code>%&gt;%</code>)</li>
+</ul>
+</div>
+</div>
+<div id="Working-directory" class="section level2">
+<h2><span class="header-section-number">2.2</span> Working Directory (<code>wd</code>)</h2>
+<ul>
+<li><em>R</em> assumes a default (often inconvenient) working directory on your computer
+<ul>
+<li>this is where it thinks it will <strong>load</strong> any files you want to load and <strong>save</strong> anything you want to save by default</li>
+</ul></li>
+<li>Find out where <em>R</em> currently thinks this is with <strong><code>getwd()</code></strong>
+<ul>
+<li>this is often Operating System specific, e.g.:
+<ul>
+<li>Mac: <code>/Users/yourusername/</code></li>
+<li>Windows: <code>C:/Users/yourusername/Documents/</code></li>
+</ul></li>
+<li>you can move everything you want to load into this folder on your computer (and save everything there too), but this may be inconvenient</li>
+</ul></li>
+<li><em>Change</em> the working directory to wherever you plan on keeping your related data and documents with <strong><code>setwd(&quot;/path/to/folder&quot;)</code></strong>
+<ul>
+<li>you can move to a new <code>wd</code> <em>relative</em> to the current working directory:
+<ul>
+<li>move down a folder by typing the folder name with a <code>/</code> after i
+<ul>
+<li>e.g. to move from <code>/Ryansafner/Documents/</code> to <code>/Ryansafner/Documents/Econometrics/</code></li>
+</ul></li>
+<li>move up one folder in a hierarchy with <code>..</code></li>
+<li>e.g. to move from <code>/Ryansafner/Documents/</code> to <code>/Ryansafner/Downloads</code>, use <code>setwd(&quot;../Downloads/&quot;)</code> to move up from the <code>Documents</code> folder to <code>Ryansafner</code> folder, then down to Downloads</li>
+</ul></li>
+</ul></li>
+</ul>
+</div>
+<div id="packages" class="section level2">
+<h2><span class="header-section-number">2.3</span> Packages</h2>
+<ul>
+<li><strong>Packages</strong> are extensions of base <code>R</code> designed by users
+<ul>
+<li>Remember, <code>R</code> is open source, packages are usually published first on <a href="github.com">Github</a></li>
+<li>Official packages distributed and documented through <a href="cran.r-project.org/">CRAN</a></li>
+</ul></li>
+<li><p>To use a (previously-installed) package (note the “”), use the <code>library()</code> command:</p>
+<pre><code>library(&quot;packagename&quot;)</code></pre></li>
+<li><p>If you do not have a package, they are easy to install with (note the plural “s”)</p>
+<pre><code>install.packages(&quot;packagename&quot;)</code></pre></li>
+<li><p>To install or load multiple packages at once, we can use the <code>c()</code> function to select multiple packages (<strong>see below</strong>)</p></li>
+</ul>
+<pre><code>library(c(&quot;gapminder&quot;,&quot;ggplot2&quot;,&quot;dplyr&quot;))</code></pre>
+</div>
+<div id="useful-packages" class="section level2">
+<h2><span class="header-section-number">2.4</span> Useful Packages</h2>
+<ul>
+<li>There are several packages we will use often (and are featured later in this guide)
+<ul>
+<li>Packages are often very well-documented with explanations and examples</li>
+<li>Google each package for more information</li>
+</ul></li>
+</ul>
+
+</div>
+<div id="calculations" class="section level2">
+<h2><span class="header-section-number">2.5</span> Calculations</h2>
+<ul>
+<li><code>R</code> can be used as a calculator
+<ul>
+<li>Basic operations <code>+</code>, <code>-</code>, <code>*</code>, <code>/</code></li>
+<li>More advanced math operators like exponents, logarithms, trigonometric functions, etc</li>
+</ul></li>
+</ul>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="dv">2</span><span class="op">+</span><span class="dv">2</span></code></pre></div>
+<pre><code>## [1] 4</code></pre>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="dv">6</span><span class="op">^</span><span class="dv">2</span> <span class="co"># 6 to the second power (i.e. squared)</span></code></pre></div>
+<pre><code>## [1] 36</code></pre>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="kw">sqrt</span>(<span class="dv">100</span><span class="op">/</span><span class="dv">4</span>) <span class="co"># square root </span></code></pre></div>
+<pre><code>## [1] 5</code></pre>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="kw">log</span>(<span class="dv">5</span>) <span class="co"># logarithm</span></code></pre></div>
+<pre><code>## [1] 1.609438</code></pre>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="kw">sin</span>(<span class="dv">2</span><span class="op">*</span>pi) <span class="co"># sin</span></code></pre></div>
+<pre><code>## [1] -2.449294e-16</code></pre>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="kw">factorial</span>(<span class="dv">5</span>) <span class="co"># factorial (e.g. 5!)</span></code></pre></div>
+<pre><code>## [1] 120</code></pre>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="kw">choose</span>(<span class="dv">2</span>,<span class="dv">6</span>) <span class="co"># binomial choose function</span></code></pre></div>
+<pre><code>## [1] 0</code></pre>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="co"># order of operations matters</span>
+<span class="dv">3</span><span class="op">*</span><span class="dv">3</span><span class="op">+</span><span class="dv">4</span></code></pre></div>
+<pre><code>## [1] 13</code></pre>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="dv">3</span><span class="op">*</span>(<span class="dv">3</span><span class="op">+</span><span class="dv">4</span>)</code></pre></div>
+<pre><code>## [1] 21</code></pre>
+<ul>
+<li><strong>Note on Notation</strong>: <code>R</code> often reports very large (or very small) numbers in scientific notation with <code>e</code>
+<ul>
+<li>For positive <code>e</code>: the number of zeros (or digits after the decimal point) to the right of a number
+<ul>
+<li>e.g. <span class="math inline">\(1.25e6 = 1.25 \times 10^6 = 1,250,000\)</span></li>
+</ul></li>
+<li>For negative <code>e</code>: one less than the number of zeros (or digits after the decimal point) to the left of a number
+<ul>
+<li>e.g. <span class="math inline">\(1.25e-6 = 1.25 \times 10^{-6} = 0.00000125\)</span></li>
+</ul></li>
+</ul></li>
+</ul>
+</div>
+<div id="hints-for-writing-code" class="section level2">
+<h2><span class="header-section-number">2.6</span> Hints for Writing Code</h2>
+<div id="naming-objects" class="section level3">
+<h3><span class="header-section-number">2.6.1</span> Naming Objects</h3>
+<ul>
+<li>Object names cannot start with a digit or contain a space or comma</li>
+<li>FOR THE LOVE OF GOD AVOID SPACES IN GENERAL
+<ul>
+<li>You’ve seen webpages intended to be called <code>&quot;my webpage in html&quot;</code> turned into <code>http://my%20webpage%20in%20html.html</code></li>
+<li>Consider both your <code>R</code> objects and your files and folder names on your computer…(<code>/School/ECON_480_Econometrics/Homeworks_and_Data/</code>)</li>
+</ul></li>
+<li><p>It will be wise to adopt some consistent standard for demarcating names:</p>
+<pre><code>i.use.snake.case
+otherPeopleUseCamelCase
+some_people_use_underscores
+And_aFew.People_RENOUNCEconvention</code></pre></li>
+</ul>
+</div>
+<div id="commenting" class="section level3">
+<h3><span class="header-section-number">2.6.2</span> Commenting</h3>
+<ul>
+<li>Always comment your commands! Describe what you are doing so someone else (or you, 5 years later) can understand what is happening and why!
+<ul>
+<li>Use the hashtag <code>#</code> to start a comment (<code>R</code> ignores everything on that line after the hashtag)</li>
+<li>Can be made its own line or at the end of lines</li>
+<li>e.g.</li>
+</ul></li>
+</ul>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="co"># Run regression of y on x, save as reg1</span>
+reg1&lt;-<span class="kw">lm</span>(y<span class="op">~</span>x, <span class="dt">data=</span>mydata) <span class="co"># runs regression using mydata </span>
+<span class="kw">summary</span>(reg1<span class="op">$</span>coefficients) <span class="co"># prints coefficients</span></code></pre></div>
+</div>
+<div id="managing-your-workflow" class="section level3">
+<h3><span class="header-section-number">2.6.3</span> Managing Your Workflow</h3>
+<ul>
+<li><strong>Save often!</strong>
+<ul>
+<li>Better yet, ask me about version control and GitHub</li>
+</ul></li>
+</ul>
+</div>
+</div>
+<div id="getting-help" class="section level2">
+<h2><span class="header-section-number">2.7</span> Getting Help</h2>
+<ul>
+<li>You can get documentation, explanations, and examples of every command in <code>R</code>
+<ul>
+<li>simply type <code>?commandname</code> or <code>help(&quot;commandname&quot;)</code></li>
+</ul></li>
+<li>Meet your new friend:</li>
+</ul>
+<div class="figure">
+<img src="images/googlehelp.png" />
+
+</div>
+<ul>
+<li>Meet your new <em>best</em> friend:</li>
+</ul>
+<div class="figure">
+<img src="images/stackoverflow.png" />
+
+</div>
+<ul>
+<li>The <strong>only</strong> way to learn coding is by tweaking existing examples, messing up, and searching the internet for help!</li>
+</ul>
+
+</div>
+</div>
+            </section>
+
+          </div>
+        </div>
+      </div>
+<a href="index.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="objects.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+    </div>
+  </div>
+<script src="libs/gitbook-2.6.7/js/app.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/lunr.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-fontsettings.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-bookdown.js"></script>
+<script src="libs/gitbook-2.6.7/js/jquery.highlight.js"></script>
+<script>
+gitbook.require(["gitbook"], function(gitbook) {
+gitbook.start({
+"sharing": {
+"github": false,
+"facebook": true,
+"twitter": true,
+"google": false,
+"linkedin": false,
+"weibo": false,
+"instapper": false,
+"vk": false,
+"all": ["facebook", "google", "twitter", "linkedin", "weibo", "instapaper"]
+},
+"fontsettings": {
+"theme": "white",
+"family": "sans",
+"size": 2
+},
+"edit": {
+"link": null,
+"text": null
+},
+"download": ["R4EH_book.pdf", "R4EH_book.epub"],
+"toc": {
+"collapse": "subsection"
+}
+});
+});
+</script>
+
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    var src = "";
+    if (src === "" || src === "true") src = "https://cdn.bootcss.com/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_CHTML";
+    if (location.protocol !== "file:" && /^https?:/.test(src))
+      src = src.replace(/^https?:/, '');
+    script.src = src;
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
+</body>
+
+</html>
