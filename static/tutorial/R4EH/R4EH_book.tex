@@ -125,7 +125,7 @@
   \postauthor{\par}
   \predate{\centering\large\emph}
   \postdate{\par}
-  \date{Last Updated: 2018-12-15}
+  \date{Last Updated: 2018-12-17}
 
 \usepackage{booktabs}
 
@@ -150,6 +150,16 @@
 \setcounter{tocdepth}{1}
 \tableofcontents
 }
+This is a guide to using \texttt{R} for basic data analysis used in
+econometrics, namely OLS regression and its extensions. This guide is
+merely how to apply basic econometrics knowledge into \texttt{R}
+commands, that is, it assumes you already understand the concepts. This
+is not an econometrics textbook, it will not describe the theory and
+explanation behind various concepts, only a guide of how to model and
+apply them in \texttt{R}. For more on the theoretical background, see
+the lecture slides in my
+\href{http://ryansafner.com/courses/econ480}{Econometrics class}.
+
 \chapter{Prerequisites}\label{prerequisites}
 
 \textbf{Open Source}: The raw (\texttt{.Rmd}) code used to produce this
@@ -1421,7 +1431,7 @@ We can perform mathematical operations on a vector as a whole:
 \end{Shaded}
 
 \begin{verbatim}
-## [1] "December 15 2018"
+## [1] "December 17 2018"
 \end{verbatim}
 
 \begin{Shaded}
@@ -1952,14 +1962,11 @@ loaded with the \texttt{ggplot2} package
 ## # ... with 224 more rows, and 1 more variable: class <chr>
 \end{verbatim}
 
-\subsection{\texorpdfstring{\texttt{gg} Histogram: Base
-Layer}{gg Histogram: Base Layer}}\label{gg-histogram-base-layer}
-
 \begin{itemize}
 \tightlist
 \item
-  Start with the base layer: establish the data source, define \(x\)
-  variable
+  Start with the \textbf{base layer}: establish the data source, define
+  \(x\) variable
 \end{itemize}
 
 \begin{Shaded}
@@ -1971,13 +1978,10 @@ Layer}{gg Histogram: Base Layer}}\label{gg-histogram-base-layer}
 
 \includegraphics{R4EH_book_files/figure-latex/unnamed-chunk-31-1.pdf}
 
-\subsection{\texorpdfstring{\texttt{gg} Histogram: Adding
-Geoms}{gg Histogram: Adding Geoms}}\label{gg-histogram-adding-geoms}
-
 \begin{itemize}
 \tightlist
 \item
-  Add a histogram layer of \texttt{hwy}
+  Add a histogram \texttt{geom\_} layer of \texttt{hwy}
 \end{itemize}
 
 \begin{Shaded}
@@ -1989,13 +1993,10 @@ Geoms}{gg Histogram: Adding Geoms}}\label{gg-histogram-adding-geoms}
 
 \includegraphics{R4EH_book_files/figure-latex/unnamed-chunk-32-1.pdf}
 
-\subsection{\texorpdfstring{\texttt{gg} Histogram: Customizing
-Geoms}{gg Histogram: Customizing Geoms}}\label{gg-histogram-customizing-geoms}
-
 \begin{itemize}
 \tightlist
 \item
-  Edit the histogram (\# of bins, color, etc)
+  Customize the histogram \texttt{geom\_} layer (\# of bins, color, etc)
 \end{itemize}
 
 \begin{Shaded}
@@ -2007,11 +2008,9 @@ Geoms}{gg Histogram: Customizing Geoms}}\label{gg-histogram-customizing-geoms}
 
 \includegraphics{R4EH_book_files/figure-latex/unnamed-chunk-33-1.pdf}
 
-\subsection{\texorpdfstring{\texttt{gg} Histogram: Adding Other
-Layers}{gg Histogram: Adding Other Layers}}\label{gg-histogram-adding-other-layers}
-
 \begin{itemize}
-\tightlist
+\item
+  Adding additional \texttt{geom\_} layers
 \item
   Add a vertical line for the mean with another \texttt{geom} called
   \texttt{vline}
@@ -2027,11 +2026,9 @@ Layers}{gg Histogram: Adding Other Layers}}\label{gg-histogram-adding-other-laye
 
 \includegraphics{R4EH_book_files/figure-latex/unnamed-chunk-34-1.pdf}
 
-\subsection{\texorpdfstring{\texttt{gg} Histogram: Editing Coordinates
-(Axes)}{gg Histogram: Editing Coordinates (Axes)}}\label{gg-histogram-editing-coordinates-axes}
-
 \begin{itemize}
-\tightlist
+\item
+  Editing Coordinates (Axes)
 \item
   Change the labels on the axes with \texttt{xlab()} and \texttt{ylab()}
 \end{itemize}
@@ -2045,8 +2042,7 @@ Layers}{gg Histogram: Adding Other Layers}}\label{gg-histogram-adding-other-laye
 
 \includegraphics{R4EH_book_files/figure-latex/unnamed-chunk-35-1.pdf}
 
-\subsection{\texorpdfstring{\texttt{gg} Other
-Geoms}{gg Other Geoms}}\label{gg-other-geoms}
+Other Geoms
 
 \begin{itemize}
 \tightlist
@@ -2065,9 +2061,6 @@ Geoms}{gg Other Geoms}}\label{gg-other-geoms}
 
 \includegraphics{R4EH_book_files/figure-latex/unnamed-chunk-36-1.pdf}
 
-\subsection{\texorpdfstring{\texttt{gg} Other
-Geoms}{gg Other Geoms}}\label{gg-other-geoms-1}
-
 \begin{itemize}
 \tightlist
 \item
@@ -2084,9 +2077,6 @@ Geoms}{gg Other Geoms}}\label{gg-other-geoms-1}
 \end{Shaded}
 
 \includegraphics{R4EH_book_files/figure-latex/unnamed-chunk-37-1.pdf}
-
-\subsection{\texorpdfstring{\texttt{gg}
-Boxplot}{gg Boxplot}}\label{gg-boxplot}
 
 \begin{itemize}
 \tightlist
@@ -2105,8 +2095,6 @@ Boxplot}{gg Boxplot}}\label{gg-boxplot}
 
 \includegraphics{R4EH_book_files/figure-latex/unnamed-chunk-38-1.pdf}
 
-\subsection{Scatterplot}\label{scatterplot-1}
-
 \begin{itemize}
 \tightlist
 \item
@@ -2124,8 +2112,6 @@ Boxplot}{gg Boxplot}}\label{gg-boxplot}
 
 \includegraphics{R4EH_book_files/figure-latex/unnamed-chunk-39-1.pdf}
 
-\subsection{Scatterplot: Geom Layer}\label{scatterplot-geom-layer}
-
 \begin{Shaded}
 \begin{Highlighting}[]
 \NormalTok{mpg.p<-mpg.p}\OperatorTok{+}\KeywordTok{geom_point}\NormalTok{() }\CommentTok{# specify observations as points on graph}
@@ -2135,9 +2121,6 @@ Boxplot}{gg Boxplot}}\label{gg-boxplot}
 \end{Shaded}
 
 \includegraphics{R4EH_book_files/figure-latex/unnamed-chunk-40-1.pdf}
-
-\subsection{Scatterplot: Geom Layer
-Options}\label{scatterplot-geom-layer-options}
 
 \begin{Shaded}
 \begin{Highlighting}[]
@@ -2149,8 +2132,6 @@ Options}\label{scatterplot-geom-layer-options}
 
 \includegraphics{R4EH_book_files/figure-latex/unnamed-chunk-41-1.pdf}
 
-\subsection{Scatterplot: Geom Layer II}\label{scatterplot-geom-layer-ii}
-
 \begin{Shaded}
 \begin{Highlighting}[]
 \NormalTok{mpg.p<-mpg.p}\OperatorTok{+}\KeywordTok{geom_smooth}\NormalTok{(}\DataTypeTok{method=}\StringTok{"lm"}\NormalTok{, }\DataTypeTok{color=}\StringTok{"black"}\NormalTok{) }\CommentTok{# add a black OLS line }
@@ -2161,9 +2142,6 @@ Options}\label{scatterplot-geom-layer-options}
 
 \includegraphics{R4EH_book_files/figure-latex/unnamed-chunk-42-1.pdf}
 
-\subsection{Scatterplot: Coordinate
-Layer}\label{scatterplot-coordinate-layer}
-
 \begin{Shaded}
 \begin{Highlighting}[]
 \NormalTok{mpg.p<-mpg.p}\OperatorTok{+}\KeywordTok{xlab}\NormalTok{(}\StringTok{"Engine Displacement (Liters)"}\NormalTok{)}\OperatorTok{+}
@@ -2173,9 +2151,6 @@ Layer}\label{scatterplot-coordinate-layer}
 \end{Shaded}
 
 \includegraphics{R4EH_book_files/figure-latex/unnamed-chunk-43-1.pdf}
-
-\subsection{Scatterplot: Coordinate
-Options}\label{scatterplot-coordinate-options}
 
 \begin{itemize}
 \tightlist
@@ -2193,9 +2168,6 @@ Options}\label{scatterplot-coordinate-options}
 
 \includegraphics{R4EH_book_files/figure-latex/unnamed-chunk-44-1.pdf}
 
-\subsection{Scatterplot: Coordinate Options
-II}\label{scatterplot-coordinate-options-ii}
-
 \begin{Shaded}
 \begin{Highlighting}[]
 \NormalTok{mpg.p<-mpg.p}\OperatorTok{+}\KeywordTok{theme_fivethirtyeight}\NormalTok{() }\CommentTok{#make it look like fivethirtyeight}
@@ -2204,9 +2176,6 @@ II}\label{scatterplot-coordinate-options-ii}
 \end{Shaded}
 
 \includegraphics{R4EH_book_files/figure-latex/unnamed-chunk-45-1.pdf}
-
-\subsection{Scatterplot: Coordinate Options:
-Facetting}\label{scatterplot-coordinate-options-facetting}
 
 \begin{Shaded}
 \begin{Highlighting}[]
@@ -2218,8 +2187,6 @@ Facetting}\label{scatterplot-coordinate-options-facetting}
 
 \includegraphics{R4EH_book_files/figure-latex/unnamed-chunk-46-1.pdf}
 
-\subsection{All Together Now}\label{all-together-now}
-
 \begin{Shaded}
 \begin{Highlighting}[]
 \KeywordTok{ggplot}\NormalTok{(}\DataTypeTok{data=}\NormalTok{mpg,}\KeywordTok{aes}\NormalTok{(}\DataTypeTok{x=}\NormalTok{displ, }\DataTypeTok{y=}\NormalTok{hwy))}\OperatorTok{+}\KeywordTok{geom_point}\NormalTok{(}\KeywordTok{aes}\NormalTok{(}\DataTypeTok{color=}\NormalTok{manufacturer))}\OperatorTok{+}
@@ -2230,10 +2197,6 @@ Facetting}\label{scatterplot-coordinate-options-facetting}
 \end{Shaded}
 
 \includegraphics{R4EH_book_files/figure-latex/unnamed-chunk-47-1.pdf}
-
-\subsection{\texorpdfstring{Advanced Uses of \texttt{ggplot2}: Maps (See
-Rmd for
-Code)}{Advanced Uses of ggplot2: Maps (See Rmd for Code)}}\label{advanced-uses-of-ggplot2-maps-see-rmd-for-code}
 
 \includegraphics{R4EH_book_files/figure-latex/unnamed-chunk-48-1.pdf}
 
@@ -2304,7 +2267,7 @@ coefficients (``\texttt{Intercept}'' for \(\hat{\beta_0}\)) and
 ## 
 ## Coefficients:
 ## (Intercept)            x  
-##       2.095        2.057
+##       2.189        1.948
 \end{verbatim}
 
 We can get a more detailed summary by running \texttt{summary()} on our
@@ -2323,18 +2286,18 @@ We can get a more detailed summary by running \texttt{summary()} on our
 ## 
 ## Residuals:
 ##      Min       1Q   Median       3Q      Max 
-## -11.1018  -2.7631   0.0865   2.9730  11.6323 
+## -12.2516  -2.4697  -0.1581   2.5899  11.0668 
 ## 
 ## Coefficients:
 ##             Estimate Std. Error t value Pr(>|t|)    
-## (Intercept)  2.09494    0.36946    5.67 2.42e-08 ***
-## x            2.05739    0.06413   32.08  < 2e-16 ***
+## (Intercept)  2.18873    0.34191   6.402 3.56e-10 ***
+## x            1.94822    0.06038  32.267  < 2e-16 ***
 ## ---
 ## Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1
 ## 
-## Residual standard error: 4.136 on 498 degrees of freedom
-## Multiple R-squared:  0.6739, Adjusted R-squared:  0.6733 
-## F-statistic:  1029 on 1 and 498 DF,  p-value: < 2.2e-16
+## Residual standard error: 3.943 on 498 degrees of freedom
+## Multiple R-squared:  0.6764, Adjusted R-squared:  0.6758 
+## F-statistic:  1041 on 1 and 498 DF,  p-value: < 2.2e-16
 \end{verbatim}
 
 The \texttt{summary()} prints:
@@ -2387,14 +2350,14 @@ check the structure with \texttt{str()}.
 
 \begin{verbatim}
 ## List of 12
-##  $ coefficients : Named num [1:2] 2.09 2.06
+##  $ coefficients : Named num [1:2] 2.19 1.95
 ##   ..- attr(*, "names")= chr [1:2] "(Intercept)" "x"
-##  $ residuals    : Named num [1:500] -3.62 2.2 3.73 2 -1.89 ...
+##  $ residuals    : Named num [1:500] -0.00135 -1.07043 0.32079 3.16189 -5.17863 ...
 ##   ..- attr(*, "names")= chr [1:500] "1" "2" "3" "4" ...
-##  $ effects      : Named num [1:500] -276.27 -132.69 4.06 2.05 -1.89 ...
+##  $ effects      : Named num [1:500] -260.293 127.229 0.346 3.164 -5.254 ...
 ##   ..- attr(*, "names")= chr [1:500] "(Intercept)" "x" "" "" ...
 ##  $ rank         : int 2
-##  $ fitted.values: Named num [1:500] 20.08 21.02 2.26 19.17 22.28 ...
+##  $ fitted.values: Named num [1:500] 13.22 5.67 8.56 11.44 21.13 ...
 ##   ..- attr(*, "names")= chr [1:500] "1" "2" "3" "4" ...
 ##  $ assign       : int [1:2] 0 1
 ##  $ qr           :List of 5
@@ -2403,7 +2366,7 @@ check the structure with \texttt{str()}.
 ##   .. .. ..$ : chr [1:500] "1" "2" "3" "4" ...
 ##   .. .. ..$ : chr [1:2] "(Intercept)" "x"
 ##   .. ..- attr(*, "assign")= int [1:2] 0 1
-##   ..$ qraux: num [1:2] 1.04 1.06
+##   ..$ qraux: num [1:2] 1.04 1.05
 ##   ..$ pivot: int [1:2] 1 2
 ##   ..$ tol  : num 1e-07
 ##   ..$ rank : int 2
@@ -2426,8 +2389,8 @@ check the structure with \texttt{str()}.
 ##   .. ..- attr(*, "dataClasses")= Named chr [1:2] "numeric" "numeric"
 ##   .. .. ..- attr(*, "names")= chr [1:2] "y" "x"
 ##  $ model        :'data.frame':   500 obs. of  2 variables:
-##   ..$ y: num [1:500] 16.46 23.22 5.99 21.17 20.39 ...
-##   ..$ x: num [1:500] 8.743 9.1977 0.0807 8.2981 9.812 ...
+##   ..$ y: num [1:500] 13.21 4.6 8.88 14.6 15.95 ...
+##   ..$ x: num [1:500] 5.66 1.79 3.27 4.75 9.72 ...
 ##   ..- attr(*, "terms")=Classes 'terms', 'formula'  language y ~ x
 ##   .. .. ..- attr(*, "variables")= language list(y, x)
 ##   .. .. ..- attr(*, "factors")= int [1:2, 1] 0 1
@@ -2470,7 +2433,7 @@ elements of the list and subset using \texttt{\$} or
 
 \begin{verbatim}
 ## (Intercept)           x 
-##    2.094943    2.057391
+##    2.188730    1.948219
 \end{verbatim}
 
 \begin{Shaded}
@@ -2480,8 +2443,8 @@ elements of the list and subset using \texttt{\$} or
 \end{Shaded}
 
 \begin{verbatim}
-##         1         2         3         4         5 
-## -3.618573  2.204530  3.732511  1.999283 -1.887456
+##            1            2            3            4            5 
+## -0.001354171 -1.070434904  0.320788367  3.161888727 -5.178630257
 \end{verbatim}
 
 \begin{Shaded}
@@ -2492,7 +2455,7 @@ elements of the list and subset using \texttt{\$} or
 
 \begin{verbatim}
 ##         1         2         3         4         5 
-## 20.082632 21.018127  2.260903 19.167355 22.282027
+## 13.215434  5.673686  8.555406 11.441264 21.126042
 \end{verbatim}
 
 These stored values will come in handy. We can run functions on them,
@@ -2505,8 +2468,8 @@ for example, to discover things about the residuals:
 \end{Shaded}
 
 \begin{verbatim}
-##      Min.   1st Qu.    Median      Mean   3rd Qu.      Max. 
-## -11.10182  -2.76309   0.08653   0.00000   2.97297  11.63227
+##     Min.  1st Qu.   Median     Mean  3rd Qu.     Max. 
+## -12.2516  -2.4697  -0.1581   0.0000   2.5899  11.0668
 \end{verbatim}
 
 \begin{Shaded}
@@ -2516,7 +2479,7 @@ for example, to discover things about the residuals:
 \end{Shaded}
 
 \begin{verbatim}
-## [1] 4.131991
+## [1] 3.939028
 \end{verbatim}
 
 Since these are stored in \texttt{lm} as objects, we can also assign
@@ -2542,17 +2505,17 @@ them to new columns in our original \texttt{data.frame},
 \hline
 x & y & yhat & res\\
 \hline
-8.7429587 & 16.464059 & 20.082632 & -3.618573\\
+5.659889 & 13.214080 & 13.215434 & -0.0013542\\
 \hline
-9.1976582 & 23.222657 & 21.018127 & 2.204530\\
+1.788791 & 4.603251 & 5.673686 & -1.0704349\\
 \hline
-0.0806652 & 5.993414 & 2.260903 & 3.732511\\
+3.267947 & 8.876194 & 8.555406 & 0.3207884\\
 \hline
-8.2980863 & 21.166638 & 19.167355 & 1.999283\\
+4.749227 & 14.603153 & 11.441264 & 3.1618887\\
 \hline
-9.8119796 & 20.394571 & 22.282027 & -1.887456\\
+9.720319 & 15.947411 & 21.126042 & -5.1786303\\
 \hline
-0.0386886 & 4.502773 & 2.174541 & 2.328232\\
+7.930853 & 14.784281 & 17.639770 & -2.8554884\\
 \hline
 \end{tabular}
 
@@ -2574,13 +2537,13 @@ the argument. They will produce the same result as above.
 \end{Shaded}
 
 \begin{verbatim}
-##            x         y      yhat       res
-## 1 8.74295870 16.464059 20.082632 -3.618573
-## 2 9.19765820 23.222657 21.018127  2.204530
-## 3 0.08066519  5.993414  2.260903  3.732511
-## 4 8.29808628 21.166638 19.167355  1.999283
-## 5 9.81197958 20.394571 22.282027 -1.887456
-## 6 0.03868858  4.502773  2.174541  2.328233
+##          x         y      yhat          res
+## 1 5.659889 13.214080 13.215434 -0.001354171
+## 2 1.788791  4.603252  5.673686 -1.070434904
+## 3 3.267947  8.876194  8.555406  0.320788367
+## 4 4.749227 14.603153 11.441264  3.161888727
+## 5 9.720319 15.947411 21.126042 -5.178630257
+## 6 7.930853 14.784281 17.639770 -2.855488443
 \end{verbatim}
 
 \subsection{Diagnostics}\label{diagnostics}
@@ -2595,7 +2558,7 @@ Some of the regression diagnostics are stored (idiosyncratically) in the
 \end{Shaded}
 
 \begin{verbatim}
-## [1] 4.136138
+## [1] 3.942981
 \end{verbatim}
 
 \begin{Shaded}
@@ -2605,7 +2568,7 @@ Some of the regression diagnostics are stored (idiosyncratically) in the
 \end{Shaded}
 
 \begin{verbatim}
-## [1] 0.6739212
+## [1] 0.6764484
 \end{verbatim}
 
 \begin{Shaded}
@@ -2615,7 +2578,7 @@ Some of the regression diagnostics are stored (idiosyncratically) in the
 \end{Shaded}
 
 \begin{verbatim}
-## [1] 0.6732664
+## [1] 0.6757987
 \end{verbatim}
 
 \begin{Shaded}
@@ -2626,7 +2589,7 @@ Some of the regression diagnostics are stored (idiosyncratically) in the
 
 \begin{verbatim}
 ##    value    numdf    dendf 
-## 1029.238    1.000  498.000
+## 1041.167    1.000  498.000
 \end{verbatim}
 
 These might be useful if we wished to perform manual calculations using
@@ -2642,7 +2605,7 @@ correlation coefficient between \(X\) and \(Y\), and we know that
 \end{Shaded}
 
 \begin{verbatim}
-## [1] 0.820927
+## [1] 0.8224648
 \end{verbatim}
 
 \begin{Shaded}
@@ -2653,7 +2616,7 @@ correlation coefficient between \(X\) and \(Y\), and we know that
 \end{Shaded}
 
 \begin{verbatim}
-## [1] 0.820927
+## [1] 0.8224648
 \end{verbatim}
 
 \section{Prediction}\label{prediction}
@@ -2673,7 +2636,7 @@ model.
 
 \begin{verbatim}
 ## (Intercept) 
-##    8.267118
+##    8.033387
 \end{verbatim}
 
 \begin{Shaded}
@@ -2686,7 +2649,7 @@ model.
 \end{Shaded}
 
 \begin{verbatim}
-## [1]  4.152335  8.267118 16.496684 22.668858
+## [1]  4.136949  8.033387 15.826263 21.670921
 \end{verbatim}
 
 \begin{Shaded}
@@ -2700,7 +2663,7 @@ model.
 
 \begin{verbatim}
 ##         1         2         3         4 
-##  4.152335  8.267118 16.496684 22.668858
+##  4.136949  8.033387 15.826263 21.670921
 \end{verbatim}
 
 \section{Residual Plots}\label{residual-plots}
@@ -2737,9 +2700,9 @@ The \texttt{broom} package converts \texttt{lm} objects into a tidy
 \hline
 term & estimate & std.error & statistic & p.value\\
 \hline
-(Intercept) & 2.094943 & 0.3694586 & 5.670306 & 0\\
+(Intercept) & 2.188730 & 0.3419078 & 6.401521 & 0\\
 \hline
-x & 2.057392 & 0.0641297 & 32.081742 & 0\\
+x & 1.948219 & 0.0603778 & 32.267122 & 0\\
 \hline
 \end{tabular}
 
@@ -2755,15 +2718,15 @@ y
 
 x
 
-2.057***
+1.948***
 
-(0.064)
+(0.060)
 
 Constant
 
-2.095***
+2.189***
 
-(0.369)
+(0.342)
 
 Observations
 
@@ -2771,19 +2734,19 @@ Observations
 
 R2
 
-0.674
+0.676
 
 Adjusted R2
 
-0.673
+0.676
 
 Residual Std. Error
 
-4.136 (df = 498)
+3.943 (df = 498)
 
 F Statistic
 
-1,029.238*** (df = 1; 498)
+1,041.167*** (df = 1; 498)
 
 Note:
 
@@ -2799,6 +2762,7 @@ Note:
 \NormalTok{x<-}\KeywordTok{rnorm}\NormalTok{(}\DecValTok{500}\NormalTok{,}\DecValTok{10}\NormalTok{,}\DecValTok{2}\NormalTok{)}
 \NormalTok{z<-}\KeywordTok{runif}\NormalTok{(}\DecValTok{500}\NormalTok{,}\DecValTok{10}\NormalTok{,}\DecValTok{20}\NormalTok{)}
 \NormalTok{y<-}\KeywordTok{rnorm}\NormalTok{(}\DecValTok{500}\NormalTok{,}\DecValTok{2}\OperatorTok{*}\NormalTok{x}\OperatorTok{*}\NormalTok{z,}\DecValTok{2}\NormalTok{)}
+\NormalTok{year<-}\KeywordTok{sample}\NormalTok{(}\KeywordTok{seq}\NormalTok{(}\DecValTok{2000}\NormalTok{,}\DecValTok{2018}\NormalTok{,}\DecValTok{1}\NormalTok{),}\DecValTok{500}\NormalTok{,}\DataTypeTok{replace=}\OtherTok{TRUE}\NormalTok{)}
 
 \CommentTok{# generate categorical variables}
 
@@ -2820,7 +2784,8 @@ Note:
                \DataTypeTok{z=}\NormalTok{z,}
                \DataTypeTok{shape=}\KeywordTok{factor}\NormalTok{(shape),}
                \DataTypeTok{region=}\KeywordTok{factor}\NormalTok{(region),}
-               \DataTypeTok{yes=}\NormalTok{yes)}
+               \DataTypeTok{yes=}\NormalTok{yes,}
+               \DataTypeTok{year=}\KeywordTok{factor}\NormalTok{(year))}
 
 \CommentTok{# look at new df}
 
@@ -2829,13 +2794,13 @@ Note:
 \end{Shaded}
 
 \begin{verbatim}
-##           x        y        z     shape region yes
-## 1  8.747092 264.8931 15.30809  triangle   west   1
-## 2 10.367287 347.6574 16.84861    square  south   1
-## 3  8.328743 227.9193 13.83283 trapezoid  north   1
-## 4 13.190562 517.0824 19.54988  triangle  south   1
-## 5 10.659016 235.8301 11.18357 trapezoid   west   0
-## 6  8.359063 169.6481 10.39100  triangle   west   1
+##           x        y        z     shape region yes year
+## 1  8.747092 264.8931 15.30809 trapezoid   east   0 2009
+## 2 10.367287 347.6574 16.84861  triangle   west   1 2001
+## 3  8.328743 227.9193 13.83283    square   east   0 2016
+## 4 13.190562 517.0824 19.54988    circle   east   0 2008
+## 5 10.659016 235.8301 11.18357 trapezoid  north   1 2018
+## 6  8.359063 169.6481 10.39100 trapezoid   west   0 2009
 \end{verbatim}
 
 It is quite simply to simply add additional covariates to a regression.
@@ -2886,21 +2851,21 @@ In the \texttt{lm} object, we add variables with \texttt{+}.
 ## 
 ## Residuals:
 ##      Min       1Q   Median       3Q      Max 
-## -197.442  -66.094   -8.786   64.039  274.874 
+## -199.739  -65.966   -8.196   64.445  272.577 
 ## 
 ## Coefficients:
 ##             Estimate Std. Error t value Pr(>|t|)    
-## (Intercept)  297.172      5.354  55.506   <2e-16 ***
-## yes            1.936      7.809   0.248    0.804    
+## (Intercept)  296.881      5.324  55.767   <2e-16 ***
+## yes            2.588      7.815   0.331    0.741    
 ## ---
 ## Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1
 ## 
-## Residual standard error: 87.16 on 498 degrees of freedom
-## Multiple R-squared:  0.0001234,  Adjusted R-squared:  -0.001884 
-## F-statistic: 0.06148 on 1 and 498 DF,  p-value: 0.8043
+## Residual standard error: 87.15 on 498 degrees of freedom
+## Multiple R-squared:  0.0002202,  Adjusted R-squared:  -0.001787 
+## F-statistic: 0.1097 on 1 and 498 DF,  p-value: 0.7406
 \end{verbatim}
 
-The effect on \texttt{y} of going from ``No'' to ``Yes'' is 1.94.
+The effect on \texttt{y} of going from ``No'' to ``Yes'' is 2.59.
 
 If we wanted to make a dummy variable for an existing categorical
 variable
@@ -2917,13 +2882,20 @@ variable
 \end{Shaded}
 
 \begin{verbatim}
-##           x        y        z     shape region yes north south east west
-## 1  8.747092 264.8931 15.30809  triangle   west   1     0     0    0    1
-## 2 10.367287 347.6574 16.84861    square  south   1     0     1    0    0
-## 3  8.328743 227.9193 13.83283 trapezoid  north   1     1     0    0    0
-## 4 13.190562 517.0824 19.54988  triangle  south   1     0     1    0    0
-## 5 10.659016 235.8301 11.18357 trapezoid   west   0     0     0    0    1
-## 6  8.359063 169.6481 10.39100  triangle   west   1     0     0    0    1
+##           x        y        z     shape region yes year north south east
+## 1  8.747092 264.8931 15.30809 trapezoid   east   0 2009     0     0    1
+## 2 10.367287 347.6574 16.84861  triangle   west   1 2001     0     0    0
+## 3  8.328743 227.9193 13.83283    square   east   0 2016     0     0    1
+## 4 13.190562 517.0824 19.54988    circle   east   0 2008     0     0    1
+## 5 10.659016 235.8301 11.18357 trapezoid  north   1 2018     1     0    0
+## 6  8.359063 169.6481 10.39100 trapezoid   west   0 2009     0     0    0
+##   west
+## 1    0
+## 2    1
+## 3    0
+## 4    0
+## 5    0
+## 6    1
 \end{verbatim}
 
 Here is where a \texttt{for} loop also can come in handy:
@@ -2957,16 +2929,899 @@ Here is where a \texttt{for} loop also can come in handy:
 \end{Shaded}
 
 \begin{verbatim}
-##           x        y        z     shape region yes north south east west
-## 1  8.747092 264.8931 15.30809  triangle   west   1     0     0    0    1
-## 2 10.367287 347.6574 16.84861    square  south   1     0     1    0    0
-## 3  8.328743 227.9193 13.83283 trapezoid  north   1     1     0    0    0
-## 4 13.190562 517.0824 19.54988  triangle  south   1     0     1    0    0
-## 5 10.659016 235.8301 11.18357 trapezoid   west   0     0     0    0    1
-## 6  8.359063 169.6481 10.39100  triangle   west   1     0     0    0    1
+##           x        y        z     shape region yes year north south east
+## 1  8.747092 264.8931 15.30809 trapezoid   east   0 2009     0     0    1
+## 2 10.367287 347.6574 16.84861  triangle   west   1 2001     0     0    0
+## 3  8.328743 227.9193 13.83283    square   east   0 2016     0     0    1
+## 4 13.190562 517.0824 19.54988    circle   east   0 2008     0     0    1
+## 5 10.659016 235.8301 11.18357 trapezoid  north   1 2018     1     0    0
+## 6  8.359063 169.6481 10.39100 trapezoid   west   0 2009     0     0    0
+##   west
+## 1    0
+## 2    1
+## 3    0
+## 4    0
+## 5    0
+## 6    1
 \end{verbatim}
 
 \section{Polynomial Regression}\label{polynomial-regression}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{x1<-}\KeywordTok{rnorm}\NormalTok{(}\DecValTok{500}\NormalTok{,}\DecValTok{5}\NormalTok{,}\DecValTok{1}\NormalTok{)}
+\NormalTok{y1<-(x1}\OperatorTok{-}\DecValTok{5}\NormalTok{)}\OperatorTok{^}\DecValTok{2}\OperatorTok{+}\DecValTok{2}\OperatorTok{+}\KeywordTok{rnorm}\NormalTok{(}\DecValTok{500}\NormalTok{,}\DecValTok{1}\NormalTok{,}\FloatTok{0.5}\NormalTok{)}
+
+\NormalTok{quad<-}\KeywordTok{data.frame}\NormalTok{(}\DataTypeTok{x=}\NormalTok{x1,}
+                 \DataTypeTok{y=}\NormalTok{y1)}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\KeywordTok{library}\NormalTok{(ggplot2)}
+\KeywordTok{ggplot}\NormalTok{(quad, }\KeywordTok{aes}\NormalTok{(}\DataTypeTok{x=}\NormalTok{x,}\DataTypeTok{y=}\NormalTok{y))}\OperatorTok{+}
+\StringTok{  }\KeywordTok{geom_point}\NormalTok{()}\OperatorTok{+}\KeywordTok{theme_light}\NormalTok{()}
+\end{Highlighting}
+\end{Shaded}
+
+\includegraphics{R4EH_book_files/figure-latex/unnamed-chunk-73-1.pdf}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{reg<-}\KeywordTok{lm}\NormalTok{(y}\OperatorTok{~}\NormalTok{x, }\DataTypeTok{data=}\NormalTok{quad)}
+\KeywordTok{summary}\NormalTok{(reg)}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+## 
+## Call:
+## lm(formula = y ~ x, data = quad)
+## 
+## Residuals:
+##     Min      1Q  Median      3Q     Max 
+## -2.3498 -0.8570 -0.3221  0.4573 12.1560 
+## 
+## Coefficients:
+##             Estimate Std. Error t value Pr(>|t|)    
+## (Intercept)  4.43961    0.34604   12.83   <2e-16 ***
+## x           -0.08518    0.06763   -1.26    0.208    
+## ---
+## Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1
+## 
+## Residual standard error: 1.482 on 498 degrees of freedom
+## Multiple R-squared:  0.003176,   Adjusted R-squared:  0.001174 
+## F-statistic: 1.586 on 1 and 498 DF,  p-value: 0.2084
+\end{verbatim}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{quadreg<-}\KeywordTok{lm}\NormalTok{(y}\OperatorTok{~}\NormalTok{x}\OperatorTok{+}\KeywordTok{I}\NormalTok{(x}\OperatorTok{^}\DecValTok{2}\NormalTok{), }\DataTypeTok{data=}\NormalTok{quad)}
+\KeywordTok{summary}\NormalTok{(quadreg)}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+## 
+## Call:
+## lm(formula = y ~ x + I(x^2), data = quad)
+## 
+## Residuals:
+##      Min       1Q   Median       3Q      Max 
+## -1.51798 -0.32487  0.01175  0.33870  1.39794 
+## 
+## Coefficients:
+##              Estimate Std. Error t value Pr(>|t|)    
+## (Intercept)  28.22753    0.43975   64.19   <2e-16 ***
+## x           -10.05640    0.17820  -56.43   <2e-16 ***
+## I(x^2)        1.00407    0.01777   56.51   <2e-16 ***
+## ---
+## Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1
+## 
+## Residual standard error: 0.5445 on 497 degrees of freedom
+## Multiple R-squared:  0.8657, Adjusted R-squared:  0.8652 
+## F-statistic:  1602 on 2 and 497 DF,  p-value: < 2.2e-16
+\end{verbatim}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\KeywordTok{suppressPackageStartupMessages}\NormalTok{(}\KeywordTok{library}\NormalTok{(dplyr))}
+\NormalTok{quad<-quad }\OperatorTok{%>%}
+\StringTok{  }\KeywordTok{mutate}\NormalTok{(}\DataTypeTok{x2=}\NormalTok{x}\OperatorTok{^}\DecValTok{2}\NormalTok{,}
+         \DataTypeTok{x3=}\NormalTok{x}\OperatorTok{^}\DecValTok{3}\NormalTok{)}
+
+\KeywordTok{head}\NormalTok{(quad)}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+##          x        y       x2        x3
+## 1 6.210004 4.668968 38.56415 239.48352
+## 2 4.247019 3.831857 18.03717  76.60422
+## 3 4.350733 3.239984 18.92888  82.35448
+## 4 4.745756 3.405515 22.52220 106.88484
+## 5 3.703630 4.782279 13.71688  50.80225
+## 6 4.575343 2.538057 20.93376  95.77914
+\end{verbatim}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{quadreg2<-}\KeywordTok{lm}\NormalTok{(y}\OperatorTok{~}\NormalTok{x}\OperatorTok{+}\NormalTok{x2, }\DataTypeTok{data=}\NormalTok{quad)}
+\KeywordTok{summary}\NormalTok{(quadreg2)}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+## 
+## Call:
+## lm(formula = y ~ x + x2, data = quad)
+## 
+## Residuals:
+##      Min       1Q   Median       3Q      Max 
+## -1.51798 -0.32487  0.01175  0.33870  1.39794 
+## 
+## Coefficients:
+##              Estimate Std. Error t value Pr(>|t|)    
+## (Intercept)  28.22753    0.43975   64.19   <2e-16 ***
+## x           -10.05640    0.17820  -56.43   <2e-16 ***
+## x2            1.00407    0.01777   56.51   <2e-16 ***
+## ---
+## Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1
+## 
+## Residual standard error: 0.5445 on 497 degrees of freedom
+## Multiple R-squared:  0.8657, Adjusted R-squared:  0.8652 
+## F-statistic:  1602 on 2 and 497 DF,  p-value: < 2.2e-16
+\end{verbatim}
+
+Estimating marginal effects.
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{marginaleffect<-}\ControlFlowTok{function}\NormalTok{(x)\{}
+\NormalTok{  quadreg}\OperatorTok{$}\NormalTok{coef[}\DecValTok{2}\NormalTok{]}\OperatorTok{+}\DecValTok{2}\OperatorTok{*}\NormalTok{quadreg}\OperatorTok{$}\NormalTok{coef[}\DecValTok{3}\NormalTok{]}\OperatorTok{*}\NormalTok{x}
+\NormalTok{\}}
+\KeywordTok{marginaleffect}\NormalTok{(}\DecValTok{1}\OperatorTok{:}\DecValTok{10}\NormalTok{)}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+##  [1] -8.04826512 -6.04013174 -4.03199837 -2.02386500 -0.01573162
+##  [6]  1.99240175  4.00053513  6.00866850  8.01680187 10.02493525
+\end{verbatim}
+
+\subsection{Higher Polynomials}\label{higher-polynomials}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{cubicreg<-}\KeywordTok{lm}\NormalTok{(y}\OperatorTok{~}\NormalTok{x}\OperatorTok{+}\NormalTok{x2}\OperatorTok{+}\NormalTok{x3, }\DataTypeTok{data=}\NormalTok{quad)}
+\KeywordTok{summary}\NormalTok{(cubicreg)}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+## 
+## Call:
+## lm(formula = y ~ x + x2 + x3, data = quad)
+## 
+## Residuals:
+##     Min      1Q  Median      3Q     Max 
+## -1.5223 -0.3211  0.0116  0.3374  1.3989 
+## 
+## Coefficients:
+##              Estimate Std. Error t value Pr(>|t|)    
+## (Intercept) 28.034692   1.102316  25.433  < 2e-16 ***
+## x           -9.922597   0.723542 -13.714  < 2e-16 ***
+## x2           0.974731   0.154766   6.298 6.65e-10 ***
+## x3           0.002049   0.010738   0.191    0.849    
+## ---
+## Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1
+## 
+## Residual standard error: 0.545 on 496 degrees of freedom
+## Multiple R-squared:  0.8658, Adjusted R-squared:  0.8649 
+## F-statistic:  1066 on 3 and 496 DF,  p-value: < 2.2e-16
+\end{verbatim}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{cubicreg2<-}\KeywordTok{lm}\NormalTok{(y}\OperatorTok{~}\NormalTok{x}\OperatorTok{+}\KeywordTok{I}\NormalTok{(x}\OperatorTok{^}\DecValTok{2}\NormalTok{)}\OperatorTok{+}\KeywordTok{I}\NormalTok{(x}\OperatorTok{^}\DecValTok{3}\NormalTok{), }\DataTypeTok{data=}\NormalTok{quad)}
+\KeywordTok{summary}\NormalTok{(cubicreg2)}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+## 
+## Call:
+## lm(formula = y ~ x + I(x^2) + I(x^3), data = quad)
+## 
+## Residuals:
+##     Min      1Q  Median      3Q     Max 
+## -1.5223 -0.3211  0.0116  0.3374  1.3989 
+## 
+## Coefficients:
+##              Estimate Std. Error t value Pr(>|t|)    
+## (Intercept) 28.034692   1.102316  25.433  < 2e-16 ***
+## x           -9.922597   0.723542 -13.714  < 2e-16 ***
+## I(x^2)       0.974731   0.154766   6.298 6.65e-10 ***
+## I(x^3)       0.002049   0.010738   0.191    0.849    
+## ---
+## Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1
+## 
+## Residual standard error: 0.545 on 496 degrees of freedom
+## Multiple R-squared:  0.8658, Adjusted R-squared:  0.8649 
+## F-statistic:  1066 on 3 and 496 DF,  p-value: < 2.2e-16
+\end{verbatim}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{cubicreg3<-}\KeywordTok{lm}\NormalTok{(y}\OperatorTok{~}\KeywordTok{poly}\NormalTok{(x,}\DecValTok{3}\NormalTok{, }\DataTypeTok{raw=}\OtherTok{TRUE}\NormalTok{), }\DataTypeTok{data=}\NormalTok{quad)}
+\KeywordTok{summary}\NormalTok{(cubicreg3)}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+## 
+## Call:
+## lm(formula = y ~ poly(x, 3, raw = TRUE), data = quad)
+## 
+## Residuals:
+##     Min      1Q  Median      3Q     Max 
+## -1.5223 -0.3211  0.0116  0.3374  1.3989 
+## 
+## Coefficients:
+##                          Estimate Std. Error t value Pr(>|t|)    
+## (Intercept)             28.034692   1.102316  25.433  < 2e-16 ***
+## poly(x, 3, raw = TRUE)1 -9.922597   0.723542 -13.714  < 2e-16 ***
+## poly(x, 3, raw = TRUE)2  0.974731   0.154766   6.298 6.65e-10 ***
+## poly(x, 3, raw = TRUE)3  0.002049   0.010738   0.191    0.849    
+## ---
+## Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1
+## 
+## Residual standard error: 0.545 on 496 degrees of freedom
+## Multiple R-squared:  0.8658, Adjusted R-squared:  0.8649 
+## F-statistic:  1066 on 3 and 496 DF,  p-value: < 2.2e-16
+\end{verbatim}
+
+Finding the maximum or minimum.
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{min.x<-(}\OperatorTok{-}\FloatTok{0.5}\OperatorTok{*}\NormalTok{quadreg}\OperatorTok{$}\NormalTok{coef[}\DecValTok{2}\NormalTok{]}\OperatorTok{/}\NormalTok{quadreg}\OperatorTok{$}\NormalTok{coef[}\DecValTok{3}\NormalTok{])}
+\NormalTok{min.x}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+##        x 
+## 5.007834
+\end{verbatim}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\CommentTok{# the predicted value of y at the minimum}
+\NormalTok{min.yhat<-quadreg}\OperatorTok{$}\NormalTok{coef[}\DecValTok{1}\NormalTok{]}\OperatorTok{+}\NormalTok{quadreg}\OperatorTok{$}\NormalTok{coef[}\DecValTok{2}\NormalTok{]}\OperatorTok{*}\NormalTok{min.x}\OperatorTok{+}\NormalTok{quadreg}\OperatorTok{$}\NormalTok{coef[}\DecValTok{3}\NormalTok{]}\OperatorTok{*}\NormalTok{min.x}
+\NormalTok{min.yhat}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+## (Intercept) 
+##   -17.10504
+\end{verbatim}
+
+\texttt{yhat} reaches a minimum of -17.11 when \texttt{x} is 5.01.
+
+\(F\)-test of nonlinearity, \(H_0: \beta_2=\beta_3=0\)
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\KeywordTok{library}\NormalTok{(car)}
+\KeywordTok{linearHypothesis}\NormalTok{(cubicreg, }\KeywordTok{c}\NormalTok{(}\StringTok{"x2"}\NormalTok{,}\StringTok{"x3"}\NormalTok{))}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+## Linear hypothesis test
+## 
+## Hypothesis:
+## x2 = 0
+## x3 = 0
+## 
+## Model 1: restricted model
+## Model 2: y ~ x + x2 + x3
+## 
+##   Res.Df     RSS Df Sum of Sq      F    Pr(>F)    
+## 1    498 1093.99                                  
+## 2    496  147.34  2    946.66 1593.4 < 2.2e-16 ***
+## ---
+## Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1
+\end{verbatim}
+
+\section{Logarithmic Models}\label{logarithmic-models}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{quad<-quad }\OperatorTok{%>%}
+\StringTok{  }\KeywordTok{mutate}\NormalTok{(}\DataTypeTok{l.x=}\KeywordTok{log}\NormalTok{(x),}
+         \DataTypeTok{l.y=}\KeywordTok{log}\NormalTok{(y))}
+
+\KeywordTok{head}\NormalTok{(quad)}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+##          x        y       x2        x3      l.x       l.y
+## 1 6.210004 4.668968 38.56415 239.48352 1.826162 1.5409380
+## 2 4.247019 3.831857 18.03717  76.60422 1.446217 1.3433495
+## 3 4.350733 3.239984 18.92888  82.35448 1.470344 1.1755685
+## 4 4.745756 3.405515 22.52220 106.88484 1.557251 1.2253962
+## 5 3.703630 4.782279 13.71688  50.80225 1.309314 1.5649173
+## 6 4.575343 2.538057 20.93376  95.77914 1.520682 0.9313989
+\end{verbatim}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\CommentTok{# linear log model}
+\NormalTok{lin_log_reg<-}\KeywordTok{lm}\NormalTok{(y}\OperatorTok{~}\NormalTok{l.x, }\DataTypeTok{data =}\NormalTok{ quad)}
+\KeywordTok{summary}\NormalTok{(lin_log_reg)}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+## 
+## Call:
+## lm(formula = y ~ l.x, data = quad)
+## 
+## Residuals:
+##     Min      1Q  Median      3Q     Max 
+## -2.3562 -0.8767 -0.3256  0.4280 10.6428 
+## 
+## Coefficients:
+##             Estimate Std. Error t value Pr(>|t|)    
+## (Intercept)   6.3950     0.4952  12.914  < 2e-16 ***
+## l.x          -1.4960     0.3082  -4.854 1.62e-06 ***
+## ---
+## Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1
+## 
+## Residual standard error: 1.451 on 498 degrees of freedom
+## Multiple R-squared:  0.04518,    Adjusted R-squared:  0.04326 
+## F-statistic: 23.56 on 1 and 498 DF,  p-value: 1.619e-06
+\end{verbatim}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\CommentTok{# log-linear model}
+\NormalTok{log_lin_reg<-}\KeywordTok{lm}\NormalTok{(l.y}\OperatorTok{~}\NormalTok{x, }\DataTypeTok{data =}\NormalTok{ quad)}
+\KeywordTok{summary}\NormalTok{(log_lin_reg)}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+## 
+## Call:
+## lm(formula = l.y ~ x, data = quad)
+## 
+## Residuals:
+##      Min       1Q   Median       3Q      Max 
+## -0.82126 -0.18617 -0.03703  0.16323  1.44956 
+## 
+## Coefficients:
+##              Estimate Std. Error t value Pr(>|t|)    
+## (Intercept)  1.358081   0.072125  18.829   <2e-16 ***
+## x           -0.004126   0.014096  -0.293     0.77    
+## ---
+## Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1
+## 
+## Residual standard error: 0.3089 on 498 degrees of freedom
+## Multiple R-squared:  0.000172,   Adjusted R-squared:  -0.001836 
+## F-statistic: 0.08567 on 1 and 498 DF,  p-value: 0.7699
+\end{verbatim}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\CommentTok{# log-log model}
+\NormalTok{log_log_reg<-}\KeywordTok{lm}\NormalTok{(l.y}\OperatorTok{~}\NormalTok{l.x, }\DataTypeTok{data =}\NormalTok{ quad)}
+\KeywordTok{summary}\NormalTok{(log_log_reg)}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+## 
+## Call:
+## lm(formula = l.y ~ l.x, data = quad)
+## 
+## Residuals:
+##      Min       1Q   Median       3Q      Max 
+## -0.82359 -0.19326 -0.03528  0.15071  1.20178 
+## 
+## Coefficients:
+##             Estimate Std. Error t value Pr(>|t|)    
+## (Intercept)  1.68170    0.10432   16.12  < 2e-16 ***
+## l.x         -0.21616    0.06492   -3.33 0.000934 ***
+## ---
+## Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1
+## 
+## Residual standard error: 0.3056 on 498 degrees of freedom
+## Multiple R-squared:  0.02178,    Adjusted R-squared:  0.01981 
+## F-statistic: 11.09 on 1 and 498 DF,  p-value: 0.0009342
+\end{verbatim}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\KeywordTok{suppressPackageStartupMessages}\NormalTok{(}\KeywordTok{library}\NormalTok{(stargazer))}
+\KeywordTok{stargazer}\NormalTok{(lin_log_reg, log_lin_reg, log_log_reg, }\DataTypeTok{type=}\StringTok{"html"}\NormalTok{, }\DataTypeTok{column.labels =} \KeywordTok{c}\NormalTok{(}\StringTok{"Linear-Log"}\NormalTok{, }\StringTok{"Log-Linear"}\NormalTok{, }\StringTok{"Log-Log"}\NormalTok{))}
+\end{Highlighting}
+\end{Shaded}
+
+Dependent variable:
+
+y
+
+l.y
+
+Linear-Log
+
+Log-Linear
+
+Log-Log
+
+(1)
+
+(2)
+
+(3)
+
+l.x
+
+-1.496***
+
+-0.216***
+
+(0.308)
+
+(0.065)
+
+x
+
+-0.004
+
+(0.014)
+
+Constant
+
+6.395***
+
+1.358***
+
+1.682***
+
+(0.495)
+
+(0.072)
+
+(0.104)
+
+Observations
+
+500
+
+500
+
+500
+
+R2
+
+0.045
+
+0.0002
+
+0.022
+
+Adjusted R2
+
+0.043
+
+-0.002
+
+0.020
+
+Residual Std. Error (df = 498)
+
+1.451
+
+0.309
+
+0.306
+
+F Statistic (df = 1; 498)
+
+23.564***
+
+0.086
+
+11.086***
+
+Note:
+
+\emph{p\textless{}0.1; \textbf{p\textless{}0.05; }}p\textless{}0.01
+
+Interpretting the coefficients:
+
+\begin{itemize}
+\tightlist
+\item
+  \textbf{Linear-log model}: a 1\% change in \texttt{x} yields a -149.6
+  units change in \texttt{y}
+\item
+  \textbf{Log-linear model}: a 1 unit change in \texttt{x} yields a 0\%
+  change in \texttt{y}
+\item
+  \textbf{Log-log model}: a 1\% change in \texttt{x} yields a -0.22\%
+  change in \texttt{y}
+\end{itemize}
+
+\section{Standardizing Variables}\label{standardizing-variables}
+
+Easiest way is to use the \texttt{scale()} command as part of the
+\texttt{mutate()} command in \texttt{dplyr}.
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\KeywordTok{library}\NormalTok{(gapminder)}
+\NormalTok{gapminder<-gapminder }\OperatorTok{%>%}\StringTok{ }
+\StringTok{  }\KeywordTok{mutate}\NormalTok{(}\DataTypeTok{s.life=}\KeywordTok{scale}\NormalTok{(lifeExp),}
+         \DataTypeTok{s.gdp=}\KeywordTok{scale}\NormalTok{(gdpPercap),}
+         \DataTypeTok{s.pop=}\KeywordTok{scale}\NormalTok{(pop))}
+
+\NormalTok{stdreg<-}\KeywordTok{lm}\NormalTok{(s.life}\OperatorTok{~}\NormalTok{s.gdp}\OperatorTok{+}\NormalTok{s.pop, }\DataTypeTok{data=}\NormalTok{gapminder)}
+\KeywordTok{summary}\NormalTok{(stdreg)}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+## 
+## Call:
+## lm(formula = s.life ~ s.gdp + s.pop, data = gapminder)
+## 
+## Residuals:
+##     Min      1Q  Median      3Q     Max 
+## -6.4065 -0.5996  0.1591  0.6357  1.4348 
+## 
+## Coefficients:
+##              Estimate Std. Error t value Pr(>|t|)    
+## (Intercept) 1.038e-16  1.959e-02    0.00        1    
+## s.gdp       5.858e-01  1.960e-02   29.89  < 2e-16 ***
+## s.pop       7.995e-02  1.960e-02    4.08 4.72e-05 ***
+## ---
+## Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1
+## 
+## Residual standard error: 0.8085 on 1701 degrees of freedom
+## Multiple R-squared:  0.3471, Adjusted R-squared:  0.3463 
+## F-statistic: 452.2 on 2 and 1701 DF,  p-value: < 2.2e-16
+\end{verbatim}
+
+Interpretting the coefficients:
+
+\begin{itemize}
+\tightlist
+\item
+  A 1 standard deviation change in \texttt{gdpPercap} yields a 0.59
+  standard deviation change in \texttt{lifeExp}
+\item
+  A 1 standard deviation change in \texttt{pop} yields a 0.08 standard
+  deviation change in \texttt{lifeExp}
+\end{itemize}
+
+\section{Panel Data}\label{panel-data}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\KeywordTok{str}\NormalTok{(df)}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+## 'data.frame':    500 obs. of  11 variables:
+##  $ x     : num  8.75 10.37 8.33 13.19 10.66 ...
+##  $ y     : num  265 348 228 517 236 ...
+##  $ z     : num  15.3 16.8 13.8 19.5 11.2 ...
+##  $ shape : Factor w/ 5 levels "circle","rectangle",..: 4 5 3 1 4 4 3 1 2 4 ...
+##  $ region: Factor w/ 4 levels "east","north",..: 1 4 1 1 2 4 3 3 1 1 ...
+##  $ yes   : num  0 1 0 0 1 0 1 1 0 0 ...
+##  $ year  : Factor w/ 19 levels "2000","2001",..: 10 2 17 9 19 10 18 1 4 8 ...
+##  $ north : num  0 0 0 0 1 0 0 0 0 0 ...
+##  $ south : num  0 0 0 0 0 0 1 1 0 0 ...
+##  $ east  : num  1 0 1 1 0 0 0 0 1 1 ...
+##  $ west  : num  0 1 0 0 0 1 0 0 0 0 ...
+\end{verbatim}
+
+Using \textbf{Least Squares Dummy Variable (LSDV)} approach
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{reg_fe<-}\KeywordTok{lm}\NormalTok{(y}\OperatorTok{~}\NormalTok{x}\OperatorTok{+}\NormalTok{region, }\DataTypeTok{data =}\NormalTok{ df)}
+\KeywordTok{summary}\NormalTok{(reg_fe)}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+## 
+## Call:
+## lm(formula = y ~ x + region, data = df)
+## 
+## Residuals:
+##      Min       1Q   Median       3Q      Max 
+## -133.702  -46.165   -5.717   49.537  120.099 
+## 
+## Coefficients:
+##             Estimate Std. Error t value Pr(>|t|)    
+## (Intercept)   -9.916     14.659  -0.676    0.499    
+## x             31.333      1.331  23.536   <2e-16 ***
+## regionnorth  -11.107      8.031  -1.383    0.167    
+## regionsouth  -12.089      7.968  -1.517    0.130    
+## regionwest    -2.195      7.945  -0.276    0.782    
+## ---
+## Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1
+## 
+## Residual standard error: 60.02 on 495 degrees of freedom
+## Multiple R-squared:  0.5287, Adjusted R-squared:  0.5249 
+## F-statistic: 138.8 on 4 and 495 DF,  p-value: < 2.2e-16
+\end{verbatim}
+
+De-meaned Method using \texttt{plm} package
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\KeywordTok{library}\NormalTok{(plm)}
+\NormalTok{reg_fe2<-}\KeywordTok{plm}\NormalTok{(y}\OperatorTok{~}\NormalTok{x, }\DataTypeTok{data =}\NormalTok{ df, }\DataTypeTok{index =} \StringTok{"region"}\NormalTok{, }\DataTypeTok{model =} \StringTok{"within"}\NormalTok{)}
+\KeywordTok{summary}\NormalTok{(reg_fe2)}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+## Oneway (individual) effect Within Model
+## 
+## Call:
+## plm(formula = y ~ x, data = df, model = "within", index = "region")
+## 
+## Unbalanced Panel: n = 4, T = 98-137, N = 500
+## 
+## Residuals:
+##      Min.   1st Qu.    Median   3rd Qu.      Max. 
+## -133.7025  -46.1652   -5.7171   49.5375  120.0992 
+## 
+## Coefficients:
+##   Estimate Std. Error t-value  Pr(>|t|)    
+## x  31.3333     1.3313  23.536 < 2.2e-16 ***
+## ---
+## Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1
+## 
+## Total Sum of Squares:    3778400
+## Residual Sum of Squares: 1783000
+## R-Squared:      0.5281
+## Adj. R-Squared: 0.52428
+## F-statistic: 553.946 on 1 and 495 DF, p-value: < 2.22e-16
+\end{verbatim}
+
+\subsection{Two Way Fixed Effects}\label{two-way-fixed-effects}
+
+LSDV method
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{reg_2way_fe<-}\KeywordTok{lm}\NormalTok{(y}\OperatorTok{~}\NormalTok{x}\OperatorTok{+}\NormalTok{region}\OperatorTok{+}\NormalTok{year, }\DataTypeTok{data =}\NormalTok{ df)}
+\KeywordTok{summary}\NormalTok{(reg_2way_fe)}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+## 
+## Call:
+## lm(formula = y ~ x + region + year, data = df)
+## 
+## Residuals:
+##      Min       1Q   Median       3Q      Max 
+## -144.498  -43.865   -3.377   49.134  127.820 
+## 
+## Coefficients:
+##             Estimate Std. Error t value Pr(>|t|)    
+## (Intercept)    5.271     20.281   0.260    0.795    
+## x             30.875      1.356  22.775   <2e-16 ***
+## regionnorth  -11.198      8.199  -1.366    0.173    
+## regionsouth  -11.487      8.156  -1.408    0.160    
+## regionwest    -1.072      8.096  -0.132    0.895    
+## year2001     -26.478     18.142  -1.459    0.145    
+## year2002      -3.579     17.490  -0.205    0.838    
+## year2003     -18.924     17.587  -1.076    0.282    
+## year2004     -22.182     17.521  -1.266    0.206    
+## year2005     -11.986     18.819  -0.637    0.524    
+## year2006     -22.034     18.293  -1.205    0.229    
+## year2007       3.143     18.147   0.173    0.863    
+## year2008       2.870     18.262   0.157    0.875    
+## year2009     -12.448     18.742  -0.664    0.507    
+## year2010     -16.316     17.583  -0.928    0.354    
+## year2011      -4.261     17.522  -0.243    0.808    
+## year2012      -6.719     19.379  -0.347    0.729    
+## year2013     -19.188     19.911  -0.964    0.336    
+## year2014       5.420     18.326   0.296    0.768    
+## year2015     -14.284     19.692  -0.725    0.469    
+## year2016     -11.172     17.851  -0.626    0.532    
+## year2017      -7.987     18.493  -0.432    0.666    
+## year2018     -19.580     17.895  -1.094    0.274    
+## ---
+## Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1
+## 
+## Residual standard error: 60.39 on 477 degrees of freedom
+## Multiple R-squared:  0.5402, Adjusted R-squared:  0.519 
+## F-statistic: 25.47 on 22 and 477 DF,  p-value: < 2.2e-16
+\end{verbatim}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{states<-}\KeywordTok{c}\NormalTok{(}\StringTok{"AL"}\NormalTok{,}\StringTok{"AK"}\NormalTok{,}\StringTok{"AZ"}\NormalTok{,}\StringTok{"AR"}\NormalTok{,}\StringTok{"CA"}\NormalTok{,}\StringTok{"CO"}\NormalTok{,}\StringTok{"CT"}\NormalTok{,}\StringTok{"DE"}\NormalTok{,}\StringTok{"FL"}\NormalTok{,}\StringTok{"GA"}\NormalTok{,}\StringTok{"HI"}\NormalTok{,}\StringTok{"ID"}\NormalTok{,}\StringTok{"IL"}\NormalTok{,}\StringTok{"IN"}\NormalTok{,}\StringTok{"IA"}\NormalTok{,}\StringTok{"KS"}\NormalTok{,}\StringTok{"KY"}\NormalTok{,}\StringTok{"LA"}\NormalTok{,}\StringTok{"ME"}\NormalTok{,}\StringTok{"MD"}\NormalTok{,}\StringTok{"MA"}\NormalTok{,}\StringTok{"MI"}\NormalTok{,}\StringTok{"MN"}\NormalTok{,}\StringTok{"MS"}\NormalTok{,}\StringTok{"MO"}\NormalTok{,}\StringTok{"MT"}\NormalTok{,}\StringTok{"NE"}\NormalTok{,}\StringTok{"NV"}\NormalTok{,}\StringTok{"NH"}\NormalTok{,}\StringTok{"NJ"}\NormalTok{,}\StringTok{"NM"}\NormalTok{,}\StringTok{"NY"}\NormalTok{,}\StringTok{"NC"}\NormalTok{,}\StringTok{"ND"}\NormalTok{,}\StringTok{"OH"}\NormalTok{,}\StringTok{"OK"}\NormalTok{,}\StringTok{"OR"}\NormalTok{,}\StringTok{"PA"}\NormalTok{,}\StringTok{"RI"}\NormalTok{,}\StringTok{"SC"}\NormalTok{,}\StringTok{"SD"}\NormalTok{,}\StringTok{"TN"}\NormalTok{,}\StringTok{"TX"}\NormalTok{,}\StringTok{"UT"}\NormalTok{,}\StringTok{"VT"}\NormalTok{,}\StringTok{"VA"}\NormalTok{,}\StringTok{"WA"}\NormalTok{,}\StringTok{"WV"}\NormalTok{,}\StringTok{"WI"}\NormalTok{,}\StringTok{"WY"}\NormalTok{)}
+
+\NormalTok{df<-}\KeywordTok{data.frame}\NormalTok{() }\CommentTok{# make empty dataframe}
+
+\CommentTok{# for each state, generate data, creates dataframe called df_"state" e.g. df_AL, df_AK, etc. }
+\ControlFlowTok{for}\NormalTok{(i }\ControlFlowTok{in} \KeywordTok{unique}\NormalTok{(states))\{}
+  \KeywordTok{assign}\NormalTok{(}\KeywordTok{paste}\NormalTok{(}\StringTok{"df"}\NormalTok{,i,}\DataTypeTok{sep=}\StringTok{"_"}\NormalTok{),}\KeywordTok{data.frame}\NormalTok{(}\DataTypeTok{state=}\NormalTok{i,}
+                \DataTypeTok{year=}\KeywordTok{seq}\NormalTok{(}\DecValTok{2000}\NormalTok{,}\DecValTok{2018}\NormalTok{,}\DecValTok{1}\NormalTok{),}
+                \DataTypeTok{x=}\KeywordTok{rnorm}\NormalTok{(}\DecValTok{19}\NormalTok{,}\DecValTok{5}\NormalTok{,}\DecValTok{1}\NormalTok{),}
+                \DataTypeTok{y=}\KeywordTok{rnorm}\NormalTok{(}\DecValTok{19}\NormalTok{,}\DecValTok{2}\OperatorTok{*}\NormalTok{(}\KeywordTok{rnorm}\NormalTok{(}\DecValTok{19}\NormalTok{,}\DecValTok{5}\NormalTok{,}\DecValTok{1}\NormalTok{)),}\DecValTok{1}\NormalTok{)) }\CommentTok{# make y approx 2*x }
+\NormalTok{  )}
+\NormalTok{\}}
+
+\CommentTok{# make list of state dataframes}
+\NormalTok{statedfs<-}\KeywordTok{lapply}\NormalTok{(}\KeywordTok{ls}\NormalTok{(}\DataTypeTok{pattern=}\StringTok{"df_"}\NormalTok{),get)}
+
+\CommentTok{# combine state dataframes to df }
+\ControlFlowTok{for}\NormalTok{ (i }\ControlFlowTok{in} \KeywordTok{seq_along}\NormalTok{(statedfs))\{}
+\NormalTok{  df<-}\KeywordTok{rbind}\NormalTok{(df,statedfs[[i]])}
+\NormalTok{\}}
+
+\CommentTok{# remove all individual state dataframes, (e.g. "df_AL") keep only "df"}
+\KeywordTok{rm}\NormalTok{(}\DataTypeTok{list=}\KeywordTok{ls}\NormalTok{(}\DataTypeTok{pattern=}\StringTok{"df_"}\NormalTok{))}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\KeywordTok{library}\NormalTok{(}\StringTok{"plm"}\NormalTok{)}
+\KeywordTok{pdim}\NormalTok{(df, }\DataTypeTok{index=}\KeywordTok{c}\NormalTok{(}\StringTok{"state"}\NormalTok{,}\StringTok{"year"}\NormalTok{))}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+## Balanced Panel: n = 50, T = 19, N = 950
+\end{verbatim}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{reg_2way_fe<-}\KeywordTok{lm}\NormalTok{(y}\OperatorTok{~}\NormalTok{x}\OperatorTok{+}\NormalTok{state}\OperatorTok{+}\KeywordTok{factor}\NormalTok{(year), }\DataTypeTok{data=}\NormalTok{df)}
+\KeywordTok{summary}\NormalTok{(reg_2way_fe)}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+## 
+## Call:
+## lm(formula = y ~ x + state + factor(year), data = df)
+## 
+## Residuals:
+##     Min      1Q  Median      3Q     Max 
+## -5.6800 -1.4700 -0.0804  1.4517  6.7585 
+## 
+## Coefficients:
+##                   Estimate Std. Error t value Pr(>|t|)    
+## (Intercept)      11.381998   0.696423  16.344   <2e-16 ***
+## x                -0.145891   0.073974  -1.972   0.0489 *  
+## stateAL          -0.631120   0.714836  -0.883   0.3775    
+## stateAR          -1.259768   0.714804  -1.762   0.0783 .  
+## stateAZ          -0.407688   0.714868  -0.570   0.5686    
+## stateCA          -0.307402   0.714781  -0.430   0.6673    
+## stateCO          -0.752466   0.714726  -1.053   0.2927    
+## stateCT          -1.308885   0.714850  -1.831   0.0674 .  
+## stateDE          -1.278362   0.714668  -1.789   0.0740 .  
+## stateFL          -1.474282   0.714921  -2.062   0.0395 *  
+## stateGA          -0.884094   0.714773  -1.237   0.2165    
+## stateHI          -0.332327   0.714717  -0.465   0.6421    
+## stateIA          -0.595839   0.715165  -0.833   0.4050    
+## stateID          -0.547163   0.715739  -0.764   0.4448    
+## stateIL          -0.600631   0.714671  -0.840   0.4009    
+## stateIN          -0.848554   0.714770  -1.187   0.2355    
+## stateKS          -0.286170   0.716084  -0.400   0.6895    
+## stateKY          -0.741245   0.715003  -1.037   0.3002    
+## stateLA          -0.419623   0.715409  -0.587   0.5577    
+## stateMA          -0.298273   0.715053  -0.417   0.6767    
+## stateMD          -0.421651   0.714674  -0.590   0.5553    
+## stateME          -0.225449   0.714923  -0.315   0.7526    
+## stateMI          -0.323392   0.715337  -0.452   0.6513    
+## stateMN          -1.409148   0.714844  -1.971   0.0490 *  
+## stateMO           0.301812   0.714674   0.422   0.6729    
+## stateMS          -0.894070   0.716129  -1.248   0.2122    
+## stateMT          -0.401861   0.714677  -0.562   0.5741    
+## stateNC          -0.068496   0.714933  -0.096   0.9237    
+## stateND          -0.165348   0.715353  -0.231   0.8173    
+## stateNE          -0.900076   0.714719  -1.259   0.2082    
+## stateNH          -1.110596   0.714850  -1.554   0.1206    
+## stateNJ          -1.243386   0.714667  -1.740   0.0822 .  
+## stateNM          -1.040089   0.714855  -1.455   0.1460    
+## stateNV          -0.617321   0.714782  -0.864   0.3880    
+## stateNY          -1.373121   0.715528  -1.919   0.0553 .  
+## stateOH          -1.073487   0.714691  -1.502   0.1334    
+## stateOK           0.082996   0.715137   0.116   0.9076    
+## stateOR          -0.076596   0.714784  -0.107   0.9147    
+## statePA          -1.164706   0.714974  -1.629   0.1037    
+## stateRI          -0.145688   0.715129  -0.204   0.8386    
+## stateSC          -1.228907   0.715302  -1.718   0.0861 .  
+## stateSD          -1.082405   0.715272  -1.513   0.1306    
+## stateTN          -0.518475   0.715005  -0.725   0.4686    
+## stateTX          -0.245084   0.714922  -0.343   0.7318    
+## stateUT          -0.166157   0.714669  -0.232   0.8162    
+## stateVA          -0.851774   0.714666  -1.192   0.2336    
+## stateVT          -1.258232   0.714696  -1.761   0.0787 .  
+## stateWA          -1.366209   0.716866  -1.906   0.0570 .  
+## stateWI          -0.378345   0.716385  -0.528   0.5975    
+## stateWV           0.264818   0.714670   0.371   0.7111    
+## stateWY          -1.193296   0.714766  -1.669   0.0954 .  
+## factor(year)2001 -0.639847   0.441018  -1.451   0.1472    
+## factor(year)2002 -0.206312   0.440886  -0.468   0.6399    
+## factor(year)2003  0.272444   0.441398   0.617   0.5372    
+## factor(year)2004  0.495971   0.441746   1.123   0.2618    
+## factor(year)2005 -0.351603   0.440569  -0.798   0.4250    
+## factor(year)2006  0.104295   0.440831   0.237   0.8130    
+## factor(year)2007 -0.181204   0.440577  -0.411   0.6810    
+## factor(year)2008 -0.109937   0.441432  -0.249   0.8034    
+## factor(year)2009  0.071643   0.440802   0.163   0.8709    
+## factor(year)2010  0.077712   0.440860   0.176   0.8601    
+## factor(year)2011  0.008026   0.440651   0.018   0.9855    
+## factor(year)2012 -0.127856   0.440794  -0.290   0.7718    
+## factor(year)2013 -0.067184   0.440720  -0.152   0.8789    
+## factor(year)2014 -0.257845   0.440685  -0.585   0.5586    
+## factor(year)2015 -0.038034   0.440549  -0.086   0.9312    
+## factor(year)2016  0.096685   0.441123   0.219   0.8266    
+## factor(year)2017  0.094541   0.441374   0.214   0.8304    
+## factor(year)2018 -0.778523   0.441417  -1.764   0.0781 .  
+## ---
+## Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1
+## 
+## Residual standard error: 2.203 on 881 degrees of freedom
+## Multiple R-squared:  0.06812,    Adjusted R-squared:  -0.003807 
+## F-statistic: 0.9471 on 68 and 881 DF,  p-value: 0.5995
+\end{verbatim}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{reg_2way_fe2<-}\KeywordTok{plm}\NormalTok{(y}\OperatorTok{~}\NormalTok{x, }\DataTypeTok{data=}\NormalTok{df, }\DataTypeTok{index=}\KeywordTok{c}\NormalTok{(}\StringTok{"state"}\NormalTok{,}\StringTok{"year"}\NormalTok{), }\DataTypeTok{model=}\StringTok{"within"}\NormalTok{, }\DataTypeTok{effect=}\StringTok{"twoways"}\NormalTok{)}
+\KeywordTok{summary}\NormalTok{(reg_2way_fe2)}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+## Twoways effects Within Model
+## 
+## Call:
+## plm(formula = y ~ x, data = df, effect = "twoways", model = "within", 
+##     index = c("state", "year"))
+## 
+## Balanced Panel: n = 50, T = 19, N = 950
+## 
+## Residuals:
+##      Min.   1st Qu.    Median   3rd Qu.      Max. 
+## -5.679977 -1.470018 -0.080427  1.451664  6.758480 
+## 
+## Coefficients:
+##    Estimate Std. Error t-value Pr(>|t|)  
+## x -0.145891   0.073974 -1.9722   0.0489 *
+## ---
+## Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1
+## 
+## Total Sum of Squares:    4293.6
+## Residual Sum of Squares: 4274.7
+## R-Squared:      0.0043955
+## Adj. R-Squared: -0.07245
+## F-statistic: 3.88952 on 1 and 881 DF, p-value: 0.048901
+\end{verbatim}
 
 \bibliography{references.bib}
 
