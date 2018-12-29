@@ -89,11 +89,11 @@ In order to understand what the "fix" in this method is actually doing, we also 
 
 One thing stored in `reg` is the variance-covariance matrix, estimating the covariance of each OLS estimator (the "betas") with every other OLS estimator:
 
-$$ \begin{pmatrix} cov(\hat{\beta_0},\hat{\beta_0}) & cov(\hat{\beta_0},\hat{\beta_1}) & \cdots & cov(\hat{\beta_0},\hat{\beta_k})\\\\\\ cov(\hat{\beta_1},\hat{\beta_0}) & cov(\hat{\beta_1},\hat{\beta_1}) & \cdots & cov(\hat{\beta_1},\hat{\beta_k})\\\\\\ \vdots & \vdots & \ddots & \vdots \\ cov(\hat{\beta_k},\hat{\beta_0}) & cov(\hat{\beta_k},\hat{\beta_1}) & \cdots & cov(\hat{\beta_k},\hat{\beta_k})\\\\\\ \end{pmatrix}$$
+$$ \begin{pmatrix} cov(\hat{\beta_0},\hat{\beta_0}) & cov(\hat{\beta_0},\hat{\beta_1}) & \cdots & cov(\hat{\beta_0},\hat{\beta_k})\\\\\\ cov(\hat{\beta_1},\hat{\beta_0}) & cov(\hat{\beta_1},\hat{\beta_1}) & \cdots & cov(\hat{\beta_1},\hat{\beta_k})\\\\\\ \vdots & \vdots & \ddots & \vdots \\\\\\ cov(\hat{\beta_k},\hat{\beta_0}) & cov(\hat{\beta_k},\hat{\beta_1}) & \cdots & cov(\hat{\beta_k},\hat{\beta_k})\\\\\\ \end{pmatrix}$$
 
 Since the covariance of anything with itself is the variance, the *diagonal* elements of this matrix are the variances of the OLS estimators:
 
-$$\begin{pmatrix}var(\hat{\beta_0}) & cov(\hat{\beta_0},\hat{\beta_1}) & \cdots & cov(\hat{\beta_0},\hat{\beta_k})\\\\\\ cov(\hat{\beta_1}, \hat{\beta_0}) & var(\hat{\beta_1}) & \cdots & cov(\hat{\beta_1},\hat{\beta_k})\\\\\\ \vdots & \vdots & \ddots & \vdots \\ cov(\hat{\beta_k},\hat{\beta_0}) & cov(\hat{\beta_k},\hat{\beta_1}) & \cdots & var(\hat{\beta_k})\\\\\\ \end{pmatrix}$$
+$$\begin{pmatrix}var(\hat{\beta_0}) & cov(\hat{\beta_0},\hat{\beta_1}) & \cdots & cov(\hat{\beta_0},\hat{\beta_k})\\\\\\ cov(\hat{\beta_1}, \hat{\beta_0}) & var(\hat{\beta_1}) & \cdots & cov(\hat{\beta_1},\hat{\beta_k})\\\\\\ \vdots & \vdots & \ddots & \vdots \\\\\\ cov(\hat{\beta_k},\hat{\beta_0}) & cov(\hat{\beta_k},\hat{\beta_1}) & \cdots & var(\hat{\beta_k})\\\\\\ \end{pmatrix}$$
 
 So if we look at the simple $2 \times 2$ variance-covariance matrix in our simple `reg` using `vcov`, we see. 
 
