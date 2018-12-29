@@ -62,21 +62,9 @@ summary(reg)
 
 Let's plot a scatterplot to visualize the data and add the regression line. Clearly, the data is "fan" shaped, centered on the regression line, but with larger and larger residuals (distance between the regression line and the data point, $\hat{\epsilon}_i=\hat{Y}_i-Y_i$) as $X$ gets larger.  
 
-
-```r
-library(ggplot2) 
-p<-ggplot(data, aes(x,y))+ 
-  geom_point(color="blue")+
-  geom_smooth(method=lm, color="red")+
-  scale_x_continuous(breaks=seq(0,10,2))+
-  geom_vline(xintercept=c(0,2,4,6,8,10),linetype="dashed",color="black",size=0.5)+
-  theme_light()
-p
-```
-
 {{< figure src="plot-1.png" title="">}}
 
-<!--![](plot-1.png)-->
+![](plot-1.png)
 
 I have also broken up the scatterplot into 5 different sections over the range of `x` values. Below, I plot density plots of the residuals over each of the 5 different ranges of `x` values, and we can clearly see that the variance of the residuals dramatically increases as `x` increases. 
 
