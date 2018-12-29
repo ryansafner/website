@@ -62,16 +62,13 @@ summary(reg)
 
 Let's plot a scatterplot to visualize the data and add the regression line. Clearly, the data is "fan" shaped, centered on the regression line, but with larger and larger residuals (distance between the regression line and the data point, $\hat{\epsilon}_i=\hat{Y}_i-Y_i$) as $X$ gets larger.  
 
-{{< figure src="plot-1.png" title="">}}
-
 ![](plot-1.png)
 
 I have also broken up the scatterplot into 5 different sections over the range of `x` values. Below, I plot density plots of the residuals over each of the 5 different ranges of `x` values, and we can clearly see that the variance of the residuals dramatically increases as `x` increases. 
 
-{{< figure src="unnamed-chunk-2-1.png" title="" >}}
+![](unnamed-chunk-2-1.png)
 
 Using the `lmtest` package, we can also formally run a Breusch-Pagan test for heteroskedasticity. 
-
 
 ```r
 library("lmtest")
@@ -92,7 +89,7 @@ In order to understand what the "fix" in this method is actually doing, we also 
 
 One thing stored in `reg` is the variance-covariance matrix, estimating the covariance of each OLS estimator (the "betas") with every other OLS estimator:
 
-$$\begin{pmatrix}cov(\hat{\beta_0},\hat{\beta_0}) & cov(\hat{\beta_0},\hat{\beta_1}) & \cdots & cov(\hat{\beta_0},\hat{\beta_k})\\ cov(\hat{\beta_1},\hat{\beta_0}) & cov(\hat{\beta_1},\hat{\beta_1}) & \cdots & cov(\hat{\beta_1},\hat{\beta_k})\\ \vdots & \vdots & \ddots & \vdots \\ cov(\hat{\beta_k},\hat{\beta_0}) & cov(\hat{\beta_k},\hat{\beta_1}) & \cdots & cov(\hat{\beta_k},\hat{\beta_k})\\ \end{pmatrix}$$
+$$ \begin{pmatrix} cov(\hat{\beta_0},\hat{\beta_0}) & cov(\hat{\beta_0},\hat{\beta_1}) & \cdots & cov(\hat{\beta_0},\hat{\beta_k})\\ cov(\hat{\beta_1},\hat{\beta_0}) & cov(\hat{\beta_1},\hat{\beta_1}) & \cdots & cov(\hat{\beta_1},\hat{\beta_k})\\ \vdots & \vdots & \ddots & \vdots \\ cov(\hat{\beta_k},\hat{\beta_0}) & cov(\hat{\beta_k},\hat{\beta_1}) & \cdots & cov(\hat{\beta_k},\hat{\beta_k})\\ \end{pmatrix}$$
 
 Since the covariance of anything with itself is the variance, the *diagonal* elements of this matrix are the variances of the OLS estimators:
 
