@@ -74,13 +74,13 @@ p<-ggplot(data, aes(x,y))+
 p
 ```
 
-{{< figure src="plot-1.png">}}
+{{< figure src="plot-1.png" title="">}}
 
 <!--![](plot-1.png)-->
 
 I have also broken up the scatterplot into 5 different sections over the range of `x` values. Below, I plot density plots of the residuals over each of the 5 different ranges of `x` values, and we can clearly see that the variance of the residuals dramatically increases as `x` increases. 
 
-{{< figure src="unnamed-chunk-2-1.png" >}}
+{{< figure src="unnamed-chunk-2-1.png" title="" >}}
 
 Using the `lmtest` package, we can also formally run a Breusch-Pagan test for heteroskedasticity. 
 
