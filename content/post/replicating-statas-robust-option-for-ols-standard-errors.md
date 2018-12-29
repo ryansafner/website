@@ -34,7 +34,7 @@ data<-data.frame(x,y) # make x and y variables in a dataframe called "data"
 We then run a regression of `y` on `x`: 
 
 
-```r
+```{r}
 reg<-lm(y~x)
 summary(reg)
 ```
