@@ -215,7 +215,7 @@ The key to notice is `se=list(NULL,reg$rse)`, which creates a list of objects fr
 
 A casual search around the internet, as well as the textbook that I use shows that this is the most common or reccomended method for achieving robust standard errors.
 
-## Using `estimatr`
+## Method 2: Using `estimatr`
 
 I recently discovered another package called [`estimatr`](https://github.com/DeclareDesign/estimatr) that achieves the simplicity of changing a single word, just like in Stata. 
 
