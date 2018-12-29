@@ -9,7 +9,7 @@ tags:
 - stata
 - teaching 
 - econometrics
-title: Replicating Stata's 'Robust' Option for OLS Standard Errors
+title: Replicating Stata's 'Robust' Option for OLS Standard Errors in R
 ---
 
 One of the advantages of using Stata for linear regression is that it can automatically use heteroskedasticity-robust standard errors simply by adding `, r` to the end of any regression command. Anyone can more or less use robust standard errors and make more accurate inferences without even thinking about what they represent or how they are determined since it's so easy just to add the letter `r` to any regression.   
@@ -66,7 +66,7 @@ Let's plot a scatterplot to visualize the data and add the regression line. Clea
 
 I have also broken up the scatterplot into 5 different sections over the range of `x` values. Below, I plot density plots of the residuals over each of the 5 different ranges of `x` values, and we can clearly see that the variance of the residuals dramatically increases as `x` increases. 
 
-![](unnamed-chunk-2-1.png)
+![](residualsplots.png)
 
 Using the `lmtest` package, we can also formally run a Breusch-Pagan test for heteroskedasticity. 
 
