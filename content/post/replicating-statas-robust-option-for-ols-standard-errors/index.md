@@ -19,7 +19,7 @@ In `R`, robust standard errors are not "built in" to the base language. There ar
 Below, I will demonstrate the two methods, but first, let's create some random data that will have heteroskedastic residuals. 
 
 
-```r
+```R
 set.seed(20)
 # draw 500 observations from a random uniform distribution (runif) between 0 and 10.  
 x<-runif(500,0,10)
