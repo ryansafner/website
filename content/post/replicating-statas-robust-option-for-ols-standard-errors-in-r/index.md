@@ -180,7 +180,7 @@ coeftest(reg,vcov=vcovHC(reg,"HC1")) # tests with robust SEs
 
 These command simply print the robust standard errors for us to see in the console as we run our analyses. If we want to take these and actually output them in a presentable regression table, we will use the well-known `stargazer` package, used to take `R` regression `lm` objects and print scholarly journal-quality regression tables. 
 
-The nice thing is `stargazer` has an option to set where the standard errors are pulled from. We stored our robust standard errors in `reg` as a vector called `rse`. Below, I print the `stargazer` regression table (with several personalized options) for this webpage, showing the our regression twice, once with the normal standard errors, and the second time with the robust standard errors.  
+The nice thing is `stargazer` has an option to set where the standard errors are pulled from. We stored our robust standard errors in `reg` as a vector called `rse`. Below, I print the `stargazer` regression table (with several personalized options) for this webpage, showing the our regression twice, once with the normal standard errors, and the second time with the robust standard errors. For more, see [Jake Russ' cheat sheet](https://www.jakeruss.com/cheatsheets/stargazer/#robust-standard-errors-replicating-statas-robust-option).  
 
 
 ```r
