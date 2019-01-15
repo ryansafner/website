@@ -19,10 +19,8 @@ weight = 8
 +++
 
 ## Current Courses (Fall 2018)
-* {{% staticref "courses/ECON205" %}}ECON 205 - Principles of Macroeconomics{{% /staticref %}} 
-* {{% staticref "courses/ECON306" %}}ECON 306 - Microeconomic Analysis{{% /staticref %}} 
-* {{% staticref "courses/ECON324" %}}ECON 324 - International Trade{{% /staticref %}} 
-* {{% staticref "courses/ECON480" %}}ECON 480 - Econometrics{{% /staticref %}} 
+* {{% staticref "courses/ECON306" %}}ECON 306 - Microeconomic Analysis{{% /staticref %}}
+* {{% staticref "courses/ECON316" %}}ECON 316 - Game Theory{{% /staticref %}}
 
 ## All Courses Taught
 * Hood College (2016---)
@@ -30,6 +28,7 @@ weight = 8
   - {{% staticref "courses/ECON205" %}}ECON 205 - Principles of Macroeconomics{{% /staticref %}}
   - {{% staticref "courses/ECON304" %}}ECON 304 - International Political Economy{{% /staticref %}}
   - {{% staticref "courses/ECON306" %}}ECON 306 - Intermediate Microeconomics{{% /staticref %}}
+  - {{% staticref "courses/ECON316" %}}ECON 316 - Game Theory{{% /staticref %}}
   - {{% staticref "courses/ECON324" %}}ECON 324 - International Trade{{% /staticref %}}
   - {{% staticref "courses/ECON326" %}}ECON 326 - Industrial Organization{{% /staticref %}}
   - {{% staticref "courses/ECON410" %}}ECON 410 - Public Economics{{% /staticref%}}
