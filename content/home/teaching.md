@@ -18,13 +18,13 @@ weight = 8
 
 +++
 
-## Current Courses (Fall 2018)
+## Current Courses (Spring 2019)
 * {{% staticref "courses/ECON306" %}}ECON 306 - Microeconomic Analysis{{% /staticref %}}
 * {{% staticref "courses/ECON316" %}}ECON 316 - Game Theory{{% /staticref %}}
 
 ## All Courses Taught
 * Hood College (2016---)
-  - {{% staticref "/courses/ECMG212S2017" %}}ECMG 212 - Statistics for Economics and Business{{% /staticref%}}
+  - {{% staticref "courses/ECMG212" %}}ECMG 212 - Statistics for Economics and Business{{% /staticref%}}
   - {{% staticref "courses/ECON205" %}}ECON 205 - Principles of Macroeconomics{{% /staticref %}}
   - {{% staticref "courses/ECON304" %}}ECON 304 - International Political Economy{{% /staticref %}}
   - {{% staticref "courses/ECON306" %}}ECON 306 - Intermediate Microeconomics{{% /staticref %}}
@@ -34,10 +34,10 @@ weight = 8
   - {{% staticref "courses/ECON410" %}}ECON 410 - Public Economics{{% /staticref%}}
   - {{% staticref "courses/ECON480" %}}ECON 480 - Econometrics{{% /staticref %}}
   - MGMT 399 - Internship for Business Administration 
-* Wake Forest University (2014---2015)
-  - ECN 150 - Introduction to Economics
-  - ECN 272 - Austrian Economics
-* George Mason University (2013---2015)
+* Wake Forest University (Fall 2015---Spring 2016)
+  - [ECN 150 - Introduction to Economics](https://www.dropbox.com/s/w03rizmeov387tb/ECN_150C_Syllabus_Safner.pdf?dl=0)
+  - [ECN 272 - Austrian Economics](https://www.dropbox.com/s/f1ddw84rggv7zod/Austrian_Economics_Syllabus.pdf?dl=0)
+* George Mason University (Summer 2013---Summer 2015)
   - ECON 385 - International Economic Policy
   - ECON 403 - Austrian Economics
   - ICES High School Summer Workshops 
