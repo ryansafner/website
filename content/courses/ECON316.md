@@ -2,6 +2,8 @@
 title = "ECON 316 - Game Theory"
 +++
 
+[[Spring 2019 Syllabus](https://www.dropbox.com/s/utj099m7w8ap831/Game_Theory_Syllabus.pdf?dl=0)]
+
 Game theory is the formal study of strategic interactions between rational agents. Game theory is one of the most useful and powerful theoretical innovations in 20^th^ century social science, and has been applied extensively to economics, political science, psychology, sociology, logic, computer science, animal behavior, and evolutionary biology. Twelve economists have won the Nobel Prize for research directly related to game theory (and arguably several more for concepts indirectly related). This is an *economics* course, so the majority of our context and applications will be in economic settings, though we will examine a much wider scope of strategic interactions than the "narrow" economic domain of firms and consumers. 
 
 Please don't get the wrong idea -- this course is *not* the theory of "games" in the colloquial sense (e.g. chess, poker, football, *Fortnite*, etc)! This course is *not* intended to make a you a better [insert sport, board game, video game] player (but it might be a second-order effect!). A "game" in game theory is defined according to certain technical criteria. Furthermore, formal game theory can be very mathematical. I will try to balance formal theory with interesting real world applications, sometimes including colloquial "games."
@@ -19,6 +21,9 @@ Upon completing this course, you will be able to:
 - Become familiar with some of the economics (and other) literatures that use game theoretic tools
 
 
-| Lesson Slides | Practice Problems | Homework | 
-|---|---|---|
-
+| Lesson Slides | Homework |
+|---------------|----------|
+| [1. Introduction to Game Theory](https://www.dropbox.com/s/ortqg63zdeu8ps7/Lesson1.pdf?dl=0) | |
+| [2. Sequential Games](https://www.dropbox.com/s/oy5rul33u2y2i6a/Lesson2.pdf?dl=0) | [HW #1](https://www.dropbox.com/s/2e9kk5p8v9fsh0v/HW1.pdf?dl=0) |
+| [3. Simultaneous Games I: Discrete Strategies](https://www.dropbox.com/s/8lti0o5thzvu1ku/Lesson3.pdf?dl=0) | [HW #2](https://www.dropbox.com/s/2mub4zvigfxex90/HW2.pdf?dl=0) |
+| [4. Simultaneous Games II: Continuous Strategies](https://www.dropbox.com/s/783kcv1hbq0e8s1/Lesson4.pdf?dl=0) | [HW #3]() |
