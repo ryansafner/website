@@ -23,7 +23,7 @@ weight = 8
 * {{% staticref "courses/ECON316" %}}ECON 316 - Game Theory{{% /staticref %}}
 
 ## All Courses Taught
-* Hood College (2016---)
+* Hood College (Fall 2016---)
   - {{% staticref "courses/ECMG212" %}}ECMG 212 - Statistics for Economics and Business{{% /staticref%}}
   - {{% staticref "courses/ECON205" %}}ECON 205 - Principles of Macroeconomics{{% /staticref %}}
   - {{% staticref "courses/ECON304" %}}ECON 304 - International Political Economy{{% /staticref %}}

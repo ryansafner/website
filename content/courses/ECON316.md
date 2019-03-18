@@ -26,4 +26,5 @@ Upon completing this course, you will be able to:
 | [1. Introduction to Game Theory](https://www.dropbox.com/s/ortqg63zdeu8ps7/Lesson1.pdf?dl=0) | |
 | [2. Sequential Games](https://www.dropbox.com/s/oy5rul33u2y2i6a/Lesson2.pdf?dl=0) | [HW #1](https://www.dropbox.com/s/2e9kk5p8v9fsh0v/HW1.pdf?dl=0) |
 | [3. Simultaneous Games I: Discrete Strategies](https://www.dropbox.com/s/8lti0o5thzvu1ku/Lesson3.pdf?dl=0) | [HW #2](https://www.dropbox.com/s/2mub4zvigfxex90/HW2.pdf?dl=0) |
-| [4. Simultaneous Games II: Continuous Strategies](https://www.dropbox.com/s/783kcv1hbq0e8s1/Lesson4.pdf?dl=0) | [HW #3]() |
+| [4. Simultaneous Games II: Continuous Strategies](https://www.dropbox.com/s/783kcv1hbq0e8s1/Lesson4.pdf?dl=0) | [HW #3](https://www.dropbox.com/s/ph9io3cvxhmd3x5/HW3.pdf?dl=0) |
+| [5. Simultaneous Games III: Mixed Strategies](https://www.dropbox.com/s/awi6hxndwjihyop/Lesson5.pdf?dl=0) | [HW #4](https://www.dropbox.com/s/ae3wfjzdl8bnnau/HW4.pdf?dl=0) |
