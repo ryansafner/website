@@ -36,7 +36,7 @@ weight = 5
 
 # About
 
-I am Visiting Assistant Professor of Economics at [Hood College](https://www.hood.edu/academics/Economics-and-Management/index.html). Previously I taught at [Wake Forest University](http://college.wfu.edu/economics/).
+I am Assistant Professor of Economics at [Hood College](https://www.hood.edu/academics/Economics-and-Management/index.html). Previously I taught at [Wake Forest University](http://college.wfu.edu/economics/).
 
 I have a Ph.D and M.A. in Economics from [George Mason University](http://economics.gmu.edu/), and a B.A. in Economics from the [University of Connecticut](http://economics.uconn.edu/). Go Huskies!
 
