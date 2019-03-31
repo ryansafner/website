@@ -28,11 +28,11 @@ Upon completing this course, you will be able to:
 | [3. Simultaneous Games I: Discrete Strategies](https://www.dropbox.com/s/8lti0o5thzvu1ku/Lesson3.pdf?dl=0) | [HW #2](https://www.dropbox.com/s/2mub4zvigfxex90/HW2.pdf?dl=0) |
 | [4. Simultaneous Games II: Continuous Strategies](https://www.dropbox.com/s/783kcv1hbq0e8s1/Lesson4.pdf?dl=0) | [HW #3](https://www.dropbox.com/s/ph9io3cvxhmd3x5/HW3.pdf?dl=0) |
 | [5. Simultaneous Games III: Mixed Strategies](https://www.dropbox.com/s/awi6hxndwjihyop/Lesson5.pdf?dl=0) | [HW #4](https://www.dropbox.com/s/ae3wfjzdl8bnnau/HW4.pdf?dl=0) |
-| [](Midterm) ([Solutions]()) | |
-| [Using Game Theory in Research]() | |
-| [6. Repeated games]() | |
-| [7. Strategic Moves and Commitment]() | |
-| [8. Imperfect and Asymmetric Information]() | | 
-| [9. Evolutionary Game Theory]() | | 
-| [10. Collective Action Problems]() | | 
-| [11. Bargaining and Auctions]() | | 
+| [Midterm](https://www.dropbox.com/s/6yj0gnracavszic/Midterm.pdf?dl=0) ([Solutions]()) | |
+| [Using Game Theory in Research](https://www.dropbox.com/s/4unmmqhf49fdufk/Game_theory_research.pdf?dl=0) | |
+| [6. Repeated games](https://www.dropbox.com/s/bj8p7ua3wp6cb57/Lesson6.pdf?dl=0) | |
+| 7. Strategic Moves and Commitment | |
+| 8. Imperfect and Asymmetric Information | | 
+| 9. Evolutionary Game Theory | | 
+| 10. Collective Action Problems | | 
+| 11. Bargaining and Auctions | | 
