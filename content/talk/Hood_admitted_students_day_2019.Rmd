@@ -1,0 +1,139 @@
+---
+title: "Magic Internet Money?"
+subtitle: "How Blockchain Technology Could Revolutionize the 21^st^ Century Economy"
+author: "Dr. Ryan Safner"
+date: "Hood College Admitted Students Day </br> April 6, 2019"
+output:
+  xaringan::moon_reader:
+    lib_dir: libs
+    seal: false
+    #css: [default] #, metropolis, metropolis-fonts
+    nature:
+      highlightStyle: github
+      highlightLines: true
+      countIncrementalSlides: false
+      ratio: "16:9"
+---
+
+```{r setup, include=FALSE}
+options(htmltools.dir.version = FALSE)
+```
+
+background-image: url(https://ih0.redbubble.net/image.515559128.2008/pp,550x550.u1.jpg)
+background-position: 50% 200%
+class: center, top
+
+# "Magic Internet Money?"
+
+## How Blockchain Technology Could Revolutionize the 21<sup>st</sup> Century Economy
+
+## Dr. Ryan Safner
+
+---
+class: inverse, center, middle
+
+# Bitcoin
+
+---
+
+# Bitcoin
+
+- A radically decentralized peer-to-peer cryptographic currency
+- Created in 2009 by "Satoshi Nakamoto"
+- Open source: software is free and anyone can change it
+- Most recognizable cryptocurrency and application of **blockchain** technology
+
+---
+
+# The Argument for Bitcoin
+
+- Free, instantaneous, usable by anyone (in theory)
+- A fixed supply of money
+- Tamper-proof
+- Requires no trust in any central authority 
+
+---
+
+class: inverse, center, middle
+
+# Some Definitions
+
+---
+
+# Wallet: "Storing" Bitcoins
+
+![](https://www.dropbox.com/s/3bo9ndd5z0pj8of/bitcoinwallet.png?raw=1)
+
+![](http://dropbox.com/s/khbuzt9myvq22yi/bitcoinwallet.jpg?raw=1)
+
+---
+
+# Wallet as Username-Password
+
+![](https://www.dropbox.com/s/cme233mkr4jxkq6/publicprivatekey.png?raw=1)
+
+---
+
+# Node: Run the Software
+
+![](https://www.dropbox.com/s/ofepob32uvr5jol/bitcoinnode1.jpg?raw=1)
+![](https://www.dropbox.com/s/qg53o3zap3n0ihp/bitcoinnodes.PNG?raw=1)
+
+---
+
+
+# Miner: Verify Transactions
+
+![](https://www.dropbox.com/s/4923z1s1anamqup/bitcoinmining.jpg?raw=1)
+
+---
+
+# Blockchain: The Public Ledger
+
+---
+
+class: inverse, center, middle
+
+# The Argument for Bitcoin
+
+---
+
+# Bitcoin is Decentralized
+
+---
+
+# Bitcoin is Open Source
+
+---
+
+# Bitcoin is Secure
+
+![](../Teaching/images/moneyprintingpress.jpg)
+
+---
+
+# Bitcoin Has a Fixed Supply
+
+![](https://www.dropbox.com/s/iotbcvqxc10zejo/moneyprintingpress.jpg?raw=1)
+
+---
+
+class: inverse, center, middle
+
+# Beyond Bitcoin: Blockchain Technology 
+
+---
+
+# Blockchain 
+
+---
+
+class: inverse, center, middle
+
+# Blockchain Applications
+
+---
+
+# Food Safety
+
+---
