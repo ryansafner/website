@@ -31,8 +31,8 @@ Upon completing this course, you will be able to:
 | [Midterm](https://www.dropbox.com/s/6yj0gnracavszic/Midterm.pdf?dl=0) ([Solutions]()) | |
 | [Using Game Theory in Research](https://www.dropbox.com/s/4unmmqhf49fdufk/Game_theory_research.pdf?dl=0) | |
 | [6. Repeated games](https://www.dropbox.com/s/bj8p7ua3wp6cb57/Lesson6.pdf?dl=0) | |
-| 7. Strategic Moves and Commitment | |
-| 8. Imperfect and Asymmetric Information | | 
-| 9. Evolutionary Game Theory | | 
-| 10. Collective Action Problems | | 
+| [7. Strategic Moves and Commitment](https://www.dropbox.com/s/4guj405zn5wyfsn/Lesson7.pdf?dl=0) | [HW #5](https://www.dropbox.com/s/vrdsrys4kiq4t7w/HW5.pdf?dl=0) |
+| [8. Imperfect and Asymmetric Information](https://www.dropbox.com/s/xo5a79phoepskoy/Lesson8.pdf?dl=0) | | 
+| [9. Evolutionary Game Theory](https://www.dropbox.com/s/xv9honhmiweoga3/Lesson9.pdf?dl=0) | [HW #6](https://www.dropbox.com/s/05m9ppt91ou1osk/HW6.pdf?dl=0) | 
+| [10. Collective Action Problems](https://www.dropbox.com/s/j9spx48gn14jj8m/Lesson10.pdf?dl=0) | | 
 | 11. Bargaining and Auctions | | 
