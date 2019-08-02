@@ -18,21 +18,23 @@ weight = 8
 
 +++
 
-## Current Courses (Spring 2019)
-* {{% staticref "courses/ECON306" %}}ECON 306 - Microeconomic Analysis{{% /staticref %}}
-* {{% staticref "courses/ECON316" %}}ECON 316 - Game Theory{{% /staticref %}}
+## Current Courses (Fall 2019)
+* [ECON 306 - Microeconomic Analysis (Course Website)](metricsf19.classes.ryansafner.com)
+* [ECON 317 - Economics of Development (Course Website)](developmentf19.classes.ryansafner.com)
+* [ECON 480 - Econometrics (Course Website)](metricsf19.classes.ryansafner.com)
 
 ## All Courses Taught
 * Hood College (Fall 2016---)
   - {{% staticref "courses/ECMG212" %}}ECMG 212 - Statistics for Economics and Business{{% /staticref%}}
   - {{% staticref "courses/ECON205" %}}ECON 205 - Principles of Macroeconomics{{% /staticref %}}
   - {{% staticref "courses/ECON304" %}}ECON 304 - International Political Economy{{% /staticref %}}
-  - {{% staticref "courses/ECON306" %}}ECON 306 - Intermediate Microeconomics{{% /staticref %}}
+  - {{% staticref "courses/ECON306" %}}ECON 306 - Intermediate Microeconomics{{% /staticref %}} [**New Course Website!**](microf19.classes.ryansafner.com)
   - {{% staticref "courses/ECON316" %}}ECON 316 - Game Theory{{% /staticref %}}
+  - [ECON 317 - Economics of Development](developmentf19.classes.ryansafner.com)
   - {{% staticref "courses/ECON324" %}}ECON 324 - International Trade{{% /staticref %}}
   - {{% staticref "courses/ECON326" %}}ECON 326 - Industrial Organization{{% /staticref %}}
   - {{% staticref "courses/ECON410" %}}ECON 410 - Public Economics{{% /staticref%}}
-  - {{% staticref "courses/ECON480" %}}ECON 480 - Econometrics{{% /staticref %}}
+  - {{% staticref "courses/ECON480" %}}ECON 480 - Econometrics{{% /staticref %}} [**New Course Website!**](metricsf19.classes.ryansafner.com)
   - MGMT 399 - Internship for Business Administration 
 * Wake Forest University (Fall 2015---Spring 2016)
   - [ECN 150 - Introduction to Economics](https://www.dropbox.com/s/w03rizmeov387tb/ECN_150C_Syllabus_Safner.pdf?dl=0)
