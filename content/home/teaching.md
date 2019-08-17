@@ -19,7 +19,7 @@ weight = 8
 +++
 
 ## Current Courses (Fall 2019)
-* {{< figure library="true" src="micro_hex.png" title="A caption" lightbox="true" >}} [ECON 306 - Microeconomic Analysis (Course Website)](http://microf19.classes.ryansafner.com)
+* ![](https://ryansafner.com/img/micro_hex.png) [ECON 306 - Microeconomic Analysis (Course Website)](http://microf19.classes.ryansafner.com)
 * [ECON 317 - Economics of Development (Course Website)](http://devf19.classes.ryansafner.com)
 * [ECON 480 - Econometrics (Course Website)](http://metricsf19.classes.ryansafner.com)
 
