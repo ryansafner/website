@@ -22,9 +22,9 @@ weight = 8
 
 |   |     |
 |----|----|
-| <img src="https://ryansafner.com/img/micro_hex.png" alt="" width="100"/> | [ECON 306 - Microeconomic Analysis](http://microf19.classes.ryansafner.com) |
-| <img src="https://ryansafner.com/img/dev_hex.png" alt="" width="100"/> | [ECON 317 - Economics of Development](http://devf19.classes.ryansafner.com) |
-| <img src="https://ryansafner.com/img/metrics_hex.png" alt="" width="100"/> | [ECON 480 - Econometrics](http://metricsf19.classes.ryansafner.com) |
+| <img src="https://ryansafner.com/img/micro_hex.png" alt="" width="75"/> | [ECON 306 - Microeconomic Analysis](http://microf19.classes.ryansafner.com) |
+| <img src="https://ryansafner.com/img/dev_hex.png" alt="" width="75"/> | [ECON 317 - Economics of Development](http://devf19.classes.ryansafner.com) |
+| <img src="https://ryansafner.com/img/metrics_hex.png" alt="" width="75"/> | [ECON 480 - Econometrics](http://metricsf19.classes.ryansafner.com) |
 
 ## All Courses Taught
 
