@@ -174,7 +174,8 @@ should be appreciated as such.
 
 In any case, I still made a point this year to make [my first R-based
 class](https://metricsf19.classes.ryansafner.com/class/03-class/)
-entirely about Base R without the bells and whistles.[1] Students and
+entirely about Base R without the bells and whistles.^[Though I allude to more complex examples to give them a taste of
+what’s to come!] Students and
 R-users need to understand some basic syntax of functions, as well as
 the object-oriented nature of the language. I made sure that they
 understand the following really well:
@@ -200,7 +201,8 @@ Class 2: Data Visualization with `ggplot2`
 The [second
 R-class](https://metricsf19.classes.ryansafner.com/class/04-class/) I
 taught students all about data visualization with `ggplot2`. Not only do
-I think it is aesthetically superior to anything from Base R,[2] it also
+I think it is aesthetically superior to anything from Base R,^[If it was not clear in my posts by now, I have high aesthetic
+standards.] it also
 allows students to think about the important elements of a plot, and
 optimize each one accordingly, with the “grammar of graphics.” This is a
 pretty steep learning curve compared to typing `plot(y,x)` and seeing a
@@ -240,7 +242,9 @@ possibilities for each layer.
 
 This is also the students’ first exposure to `tidyverse`, though it is
 not yet apparent. My one regret, in retrospect, is that plot layers are
-combined with `+` instead of `%>%`.[3] After learning other `tidyverse`
+combined with `+` instead of `%>%`.^[I believe this is due to the unique history of `ggplot2` coming
+before the `tidyverse` was a full idea. Though I hear in future
+versions, this may be fixed!] After learning other `tidyverse`
 packages such as `dplyr`, students would try to add plot layers with
 `%>%` but I would continuously have to remind them that layers are
 combined with `+`.
@@ -258,9 +262,10 @@ class](https://metricsf19.classes.ryansafner.com/class/05-class/) was
 all about `tidyverse` as a unifying set of packages with a common
 philosophy and grammar. I did discuss several core packages:
 
-1.  `tibble` for friendlier dataframes[4]
+1.  `tibble` for friendlier dataframes^[I simply replaced all dataframes in the course with tibbles.]
 2.  `magrittr` for using the pipe `%>%` to chain code together
-3.  `readr` for importing data (mostly `.csv`[5]
+3.  `readr` for importing data (mostly `.csv`^[And derivative packages such as `readxl` and `haven` for importing
+other types of data such as `.xlsx` or Stata’s `.dat`.]
 4.  `tidyr` for reshaping data
 
 But the primary focus was on `dplyr` and its verbs:
@@ -329,18 +334,3 @@ In any case, after teaching these workflow methods, looking back on the
 first 3 R classes, I am tempted to just start from scratch with projects
 and markdown and make students use them from the beginning. Perhaps next
 year.
-
-[1] Though I allude to more complex examples to give them a taste of
-what’s to come!
-
-[2] If it was not clear in my posts by now, I have high aesthetic
-standards.
-
-[3] I believe this is due to the unique history of `ggplot2` coming
-before the `tidyverse` was a full idea. Though I hear in future
-versions, this may be fixed!
-
-[4] I simply replaced all dataframes in the course with tibbles
-
-[5] And derivative packages such as `readxl` and `haven` for importing
-other types of data such as `.xlsx` or Stata’s `.dat`.
