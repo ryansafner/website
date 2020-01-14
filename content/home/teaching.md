@@ -18,13 +18,13 @@ weight = 8
 
 +++
 
-## Current Courses (Fall 2019)
+## Current Courses (Spring 2020)
 
 |   |     |
 |----|----|
-| <img src="https://ryansafner.com/img/micro_hex.png" alt="" width="75"/> | [ECON 306 - Microeconomic Analysis](http://microf19.classes.ryansafner.com) |
-| <img src="https://ryansafner.com/img/dev_hex.png" alt="" width="75"/> | [ECON 317 - Economics of Development](http://devf19.classes.ryansafner.com) |
-| <img src="https://ryansafner.com/img/metrics_hex.png" alt="" width="75"/> | [ECON 480 - Econometrics](http://metricsf19.classes.ryansafner.com) |
+| <img src="https://ryansafner.com/img/micro_hex.png" alt="" width="75"/> | [ECON 306 - Microeconomic Analysis](http://microS20.classes.ryansafner.com) |
+| <img src="https://ryansafner.com/img/io_hex.png" alt="" width="75"/> | [ECON 326 - Industrial Organization](http://ioS20.classes.ryansafner.com) |
+| <img src="https://ryansafner.com/img/public_hex.png" alt="" width="75"/> | [ECON 410 - Public EConomics](http://publicS20.classes.ryansafner.com) |
 
 ## All Courses Taught
 
@@ -32,13 +32,13 @@ weight = 8
   - {{% staticref "courses/ECMG212" %}}ECMG 212 - Statistics for Economics and Business{{% /staticref%}}
   - {{% staticref "courses/ECON205" %}}ECON 205 - Principles of Macroeconomics{{% /staticref %}}
   - {{% staticref "courses/ECON304" %}}ECON 304 - International Political Economy{{% /staticref %}}
-  - {{% staticref "courses/ECON306" %}}ECON 306 - Intermediate Microeconomics{{% /staticref %}} [(**New Course Website!**)](http://microf19.classes.ryansafner.com)
+  - [ECON 306 - Intermediate Microeconomics](http://microf19.classes.ryansafner.com)
   - {{% staticref "courses/ECON316" %}}ECON 316 - Game Theory{{% /staticref %}}
   - [ECON 317 - Economics of Development](developmentf19.classes.ryansafner.com)
   - {{% staticref "courses/ECON324" %}}ECON 324 - International Trade{{% /staticref %}}
   - {{% staticref "courses/ECON326" %}}ECON 326 - Industrial Organization{{% /staticref %}}
   - {{% staticref "courses/ECON410" %}}ECON 410 - Public Economics{{% /staticref%}}
-  - {{% staticref "courses/ECON480" %}}ECON 480 - Econometrics{{% /staticref %}} [(**New Course Website!**)](http://metricsf19.classes.ryansafner.com)
+  - [ECON 480 - Econometrics](http://metricsf19.classes.ryansafner.com)
   - MGMT 399 - Internship for Business Administration 
 * Wake Forest University (Fall 2015---Spring 2016)
   - [ECN 150 - Introduction to Economics](https://www.dropbox.com/s/w03rizmeov387tb/ECN_150C_Syllabus_Safner.pdf?dl=0)
