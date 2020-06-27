@@ -36,10 +36,11 @@ weight = 8
   - [**ECON 306 - Intermediate Microeconomics**](https://micros20.classes.ryansafner.com)
   - {{% staticref "courses/ECON316" %}}ECON 316 - Game Theory{{% /staticref %}}
   - [**ECON 317 - Economics of Development**](https://devf19.classes.ryansafner.com)
-  - {{% staticref "courses/ECON324" %}}ECON 324 - International Trade{{% /staticref %}}
+  - [**ECON 324 - International Trade**](https://tradef20.classes.ryansafner.com)
   - [**ECON 326 - Industrial Organization**](https://ios20.classes.ryansafner.com)
   - [**ECON 410 - Public Economics**](https://publics20.classes.ryansafner.com)
-  - [**ECON 480 - Econometrics**](https://metricsf19.classes.ryansafner.com)
+  - [**ECON 452 - History of Economic Thought**](https://thoughtf20.classes.ryansafner.com)
+  - [**ECON 480 - Econometrics**](https://metricsf20.classes.ryansafner.com)
   - MGMT 399 - Internship for Business Administration 
 * Wake Forest University (Fall 2015---Spring 2016)
   - [ECN 150 - Introduction to Economics](https://www.dropbox.com/s/w03rizmeov387tb/ECN_150C_Syllabus_Safner.pdf?dl=0)
