@@ -62,7 +62,7 @@ enableGitInfo = true
   organizations = [ { name = "Hood College", url = "http://hood.edu" } ]
 
   gravatar = false  # Get your avatar from Gravatar.com? (true/false)
-  avatar = "wedding.jpg"  # Specify an avatar image (in `static/img/` folder) or delete value to disable avatar.
+  avatar = "summer_2019.jpg"  # Specify an avatar image (in `static/img/` folder) or delete value to disable avatar.
   email = "ryansafner@gmail.com"
   address = "Hood College, 401 Rosemont Avenue, Frederick MD 21701"
   office_hours = ""
