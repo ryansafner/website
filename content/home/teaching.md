@@ -22,7 +22,7 @@ weight = 8
 
 |   |     |
 |----|----|
-| <img src="https://ryansafner.com/img/micro_hex.png" alt="" width="75"/> | [ECON 306 - Microeconomic Analysis](http://microS20.classes.ryansafner.com) |
+| <img src="https://ryansafner.com/img/micro_hex.png" alt="" width="75"/> | [ECON 306 - Microeconomic Analysis](http://microF20.classes.ryansafner.com) |
 | <img src="https://ryansafner.com/img/trade_hex.png" alt="" width="75"/> | [ECON 324 - International Trade](http://tradeF20.classes.ryansafner.com) |
 | <img src="https://ryansafner.com/img/thought_hex.png" alt="" width="75"/> | [ECON 452 - History of Economic Thought](http://thoughtF20.classes.ryansafner.com) |
 | <img src="https://ryansafner.com/img/metrics_hex.png" alt="" width="75"/> | [ECON 480 - Econometrics](http://metricsF20.classes.ryansafner.com) |
