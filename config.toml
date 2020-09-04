@@ -264,7 +264,7 @@ enableGitInfo = true
 
 [[menu.main]]
   name = "CV"
-  url = "https://github.com/ryansafner/CV/blob/master/CV.pdf"
+  url = "https://raw.githubusercontent.com/ryansafner/CV/master/CV.pdf"
   weight = 2
 
 [[menu.main]]
