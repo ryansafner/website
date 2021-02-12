@@ -5,7 +5,7 @@ authors:
 - Santiago Gangotena
 - admin
 date: "2021-01-01T00:00:00Z"
-# url_pdf: "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=2626587"
+url_pdf: "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=2626587"
 featured: false
 projects: []
 publication: 'Working Paper'
