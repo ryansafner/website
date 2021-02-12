@@ -15,5 +15,5 @@ summary: Public goods are traditionally classified according to an exogenous, te
 tags:
 - public goods
 - science
-title: '"Public Good,"" or "Good for the Public?" Political Entrepreneurship and the Public Funding of Scientific Research'
+title: '"Public Good," or "Good for the Public?" Political Entrepreneurship and the Public Funding of Scientific Research'
 ---
