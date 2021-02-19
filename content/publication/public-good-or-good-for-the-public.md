@@ -7,7 +7,7 @@ date: "2021-01-01T00:00:00Z"
 url_pdf: "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=2488655"
 featured: true
 projects: []
-publication: '*Journal of Private Enterprise*, Forthcoming'
+publication: '*Journal of Private Enterprise*, 36(1)'
 publication_short: ""
 publication_types:
 - "2"
