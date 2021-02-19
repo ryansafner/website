@@ -5,10 +5,10 @@ authors:
 - Santiago Gangotena
 - admin
 date: "2021-01-01T00:00:00Z"
-url_pdf: "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=2626587"
+url_pdf: "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3789195"
 featured: false
 projects: []
-publication: 'Under Review'
+publication: 'Working Paper'
 publication_short: ""
 publication_types:
 - "2"
@@ -18,5 +18,6 @@ tags:
 - innovation
 - growth
 - technology
+- economic history
 title: "A Tale of Two Capitals: Modeling the Interaction between Ideas, Physical Capital, and Growth"
 ---
