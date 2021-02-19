@@ -17,5 +17,6 @@ tags:
 - increasing returns
 - innovation
 - growth
+- technology
 title: "The Production of Increasing Returns: Physical Technology, Institutional Technology, and the Pitfalls of Production Functions"
 ---
