@@ -9,12 +9,14 @@ subtitle = ""
 
 +++
 
-## Current Courses (Spring 2021)
+## Current Courses (Fall 2021)
 
 |    |     |
 |:---:|:----|
-| ![](https://nostalgic-mcnulty-931307.netlify.app/img/micro_hex.png) | [ECON 306 - Microeconomic Analysis](http://microS21.classes.ryansafner.com) |
-| ![](https://nostalgic-mcnulty-931307.netlify.app/img/law_hex.png) | [ECON 315 - Economics of the Law](http://lawS21.classes.ryansafner.com) |
+| ![](https://nostalgic-mcnulty-931307.netlify.app/img/micro_hex.png) | [ECON 306 - Microeconomic Analysis](http://microF21.classes.ryansafner.com) |
+| ![](https://nostalgic-mcnulty-931307.netlify.app/img/game_hex.png) | [ECON 316 - Game Theory](http://gameF21.classes.ryansafner.com) |
+| ![](https://nostalgic-mcnulty-931307.netlify.app/img/dev_hex.png) | [ECON 317 - Economic Development](http://devF21.classes.ryansafner.com) |
+| ![](https://nostalgic-mcnulty-931307.netlify.app/img/metrics_hex.png) | [ECON 480 - Econometrics](http://metricsF21.classes.ryansafner.com) |
 
 ## All Courses Taught
 
@@ -27,7 +29,7 @@ subtitle = ""
 |     | [ECON 304 - International Political Economy](courses/ECON-304) |
 | ![](https://nostalgic-mcnulty-931307.netlify.app/img/micro_hex.png) | [ECON 306 - Microeconomic Analysis](http://microF20.classes.ryansafner.com) |
 | ![](https://nostalgic-mcnulty-931307.netlify.app/img/law_hex.png) | [ECON 315 - Economics of the Law](http://lawS21.classes.ryansafner.com) |
-|     | [ECON 316 - Game Theory](courses/ECON-316) |
+| ![](https://nostalgic-mcnulty-931307.netlify.app/img/game_hex.png) | [ECON 316 - Game Theory](courses/ECON-316) |
 | ![](https://nostalgic-mcnulty-931307.netlify.app/img/dev_hex.png) | [ECON 317 - Economics of Development](https://devf19.classes.ryansafner.com) |
 | ![](https://nostalgic-mcnulty-931307.netlify.app/img/trade_hex.png) | [ECON 324 - International Trade](http://tradeF20.classes.ryansafner.com) |
 | ![](https://nostalgic-mcnulty-931307.netlify.app/img/io_hex.png) | [ECON 326 - Industrial Organization](https://ios20.classes.ryansafner.com) |
