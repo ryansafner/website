@@ -13,10 +13,10 @@ subtitle = ""
 
 |    |     |
 |:---:|:----|
-| ![](https://nostalgic-mcnulty-931307.netlify.app/img/micro_hex.png) | [ECON 306 - Microeconomic Analysis](http://microF21.classes.ryansafner.com) |
-| ![](https://nostalgic-mcnulty-931307.netlify.app/img/game_hex.png) | [ECON 316 - Game Theory](http://gameF21.classes.ryansafner.com) |
-| ![](https://nostalgic-mcnulty-931307.netlify.app/img/dev_hex.png) | [ECON 317 - Economic Development](http://devF21.classes.ryansafner.com) |
-| ![](https://nostalgic-mcnulty-931307.netlify.app/img/metrics_hex.png) | [ECON 480 - Econometrics](http://metricsF21.classes.ryansafner.com) |
+| ![](https://ryansafner.com/img/micro_hex.png) | [ECON 306 - Microeconomic Analysis](http://microF21.classes.ryansafner.com) |
+| ![](https://ryansafner.com/img/game_hex.png) | [ECON 316 - Game Theory](http://gameF21.classes.ryansafner.com) |
+| ![](https://ryansafner.com/img/dev_hex.png) | [ECON 317 - Economic Development](http://devF21.classes.ryansafner.com) |
+| ![](https://ryansafner.com/img/metrics_hex.png) | [ECON 480 - Econometrics](http://metricsF21.classes.ryansafner.com) |
 
 ## All Courses Taught
 
@@ -27,15 +27,15 @@ subtitle = ""
 |     | [ECMG 212 - Statistics for Economics and Business](courses/ECMG-212) |
 |     | [ECON 205 - Principles of Macroeconomics](courses/ECON-205) |
 |     | [ECON 304 - International Political Economy](courses/ECON-304) |
-| ![](https://nostalgic-mcnulty-931307.netlify.app/img/micro_hex.png) | [ECON 306 - Microeconomic Analysis](http://microF20.classes.ryansafner.com) |
-| ![](https://nostalgic-mcnulty-931307.netlify.app/img/law_hex.png) | [ECON 315 - Economics of the Law](http://lawS21.classes.ryansafner.com) |
-| ![](https://nostalgic-mcnulty-931307.netlify.app/img/game_hex.png) | [ECON 316 - Game Theory](courses/ECON-316) |
-| ![](https://nostalgic-mcnulty-931307.netlify.app/img/dev_hex.png) | [ECON 317 - Economics of Development](https://devf19.classes.ryansafner.com) |
-| ![](https://nostalgic-mcnulty-931307.netlify.app/img/trade_hex.png) | [ECON 324 - International Trade](http://tradeF20.classes.ryansafner.com) |
-| ![](https://nostalgic-mcnulty-931307.netlify.app/img/io_hex.png) | [ECON 326 - Industrial Organization](https://ios20.classes.ryansafner.com) |
-| ![](https://nostalgic-mcnulty-931307.netlify.app/img/public_hex.png) | [ECON 410 - Public Economics](https://publics20.classes.ryansafner.com) |
-| ![](https://nostalgic-mcnulty-931307.netlify.app/img/thought_hex.png) | [ECON 452 - History of Economic Thought](http://thoughtF20.classes.ryansafner.com) |
-| ![](https://nostalgic-mcnulty-931307.netlify.app/img/metrics_hex.png) | [ECON 480 - Econometrics](http://metricsF20.classes.ryansafner.com) |
+| ![](https://ryansafner.com/img/micro_hex.png) | [ECON 306 - Microeconomic Analysis](http://microF20.classes.ryansafner.com) |
+| ![](https://ryansafner.com/img/law_hex.png) | [ECON 315 - Economics of the Law](http://lawS21.classes.ryansafner.com) |
+| ![](https://ryansafner.com/img/game_hex.png) | [ECON 316 - Game Theory](courses/ECON-316) |
+| ![](https://ryansafner.com/img/dev_hex.png) | [ECON 317 - Economics of Development](https://devf19.classes.ryansafner.com) |
+| ![](https://ryansafner.com/img/trade_hex.png) | [ECON 324 - International Trade](http://tradeF20.classes.ryansafner.com) |
+| ![](https://ryansafner.com/img/io_hex.png) | [ECON 326 - Industrial Organization](https://ios20.classes.ryansafner.com) |
+| ![](https://ryansafner.com/img/public_hex.png) | [ECON 410 - Public Economics](https://publics20.classes.ryansafner.com) |
+| ![](https://ryansafner.com/img/thought_hex.png) | [ECON 452 - History of Economic Thought](http://thoughtF20.classes.ryansafner.com) |
+| ![](https://ryansafner.com/img/metrics_hex.png) | [ECON 480 - Econometrics](http://metricsF20.classes.ryansafner.com) |
 |    | MGMT 399 - Internship for Business Administration |
 
 ### Wake Forest University (Fall 2015---Spring 2016)
