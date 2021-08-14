@@ -29,7 +29,7 @@ subtitle = ""
 |     | [ECON 304 - International Political Economy](courses/ECON-304) |
 | ![](https://ryansafner.com/img/micro_hex.png) | [ECON 306 - Microeconomic Analysis](http://microF20.classes.ryansafner.com) |
 | ![](https://ryansafner.com/img/law_hex.png) | [ECON 315 - Economics of the Law](http://lawS21.classes.ryansafner.com) |
-| ![](https://ryansafner.com/img/game_hex.png) | [ECON 316 - Game Theory](courses/ECON-316) |
+| ![](https://ryansafner.com/img/game_hex.png) | [ECON 316 - Game Theory](http://gameF21.classes.ryansafner.com) |
 | ![](https://ryansafner.com/img/dev_hex.png) | [ECON 317 - Economics of Development](https://devf19.classes.ryansafner.com) |
 | ![](https://ryansafner.com/img/trade_hex.png) | [ECON 324 - International Trade](http://tradeF20.classes.ryansafner.com) |
 | ![](https://ryansafner.com/img/io_hex.png) | [ECON 326 - Industrial Organization](https://ios20.classes.ryansafner.com) |
