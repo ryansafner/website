@@ -13,10 +13,8 @@ subtitle = ""
 
 |    |     |
 |:---:|:----|
-| ![](https://ryansafner.com/img/micro_hex.png) | [ECON 306 - Microeconomic Analysis](http://microF21.classes.ryansafner.com) |
-| ![](https://ryansafner.com/img/game_hex.png) | [ECON 316 - Game Theory](http://gameF21.classes.ryansafner.com) |
-| ![](https://ryansafner.com/img/dev_hex.png) | [ECON 317 - Economic Development](http://devF21.classes.ryansafner.com) |
-| ![](https://ryansafner.com/img/metrics_hex.png) | [ECON 480 - Econometrics](http://metricsF21.classes.ryansafner.com) |
+| ![](https://ryansafner.com/img/micro_hex.png) | [ECON 306 - Microeconomic Analysis](http://microS22.classes.ryansafner.com) |
+| ![](https://ryansafner.com/img/public_hex.png) | [ECON 410 - Public Economoics](http://publicS22.classes.ryansafner.com) |
 
 ## All Courses Taught
 
