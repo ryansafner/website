@@ -9,7 +9,7 @@ subtitle = ""
 
 +++
 
-## Current Courses (Fall 2021)
+## Current Courses (Spring 2022)
 
 |    |     |
 |:---:|:----|
