@@ -1,0 +1,724 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss  xmlns:atom="http://www.w3.org/2005/Atom" 
+      xmlns:media="http://search.yahoo.com/mrss/" 
+      xmlns:content="http://purl.org/rss/1.0/modules/content/" 
+      xmlns:dc="http://purl.org/dc/elements/1.1/" 
+      version="2.0">
+<channel>
+<title>Ryan Safner</title>
+<link>https://ryansafner.com/blog.html</link>
+<atom:link href="https://ryansafner.com/blog.xml" rel="self" type="application/rss+xml"/>
+<description></description>
+<generator>quarto-1.0.37</generator>
+<lastBuildDate>Fri, 18 Oct 2019 04:00:00 GMT</lastBuildDate>
+<item>
+  <title>If You’re Going to Learn R, Learn the Tidyverse</title>
+  <link>https://ryansafner.com/posts/if-youre-going-to-learn-r-learn-the-tidyverse.html</link>
+  <description><![CDATA[ 
+
+
+
+<p>This is an opinionated post based on how I teach <a href="http://metricsf19.classes.ryansafner.com">my undergraduate econometrics course</a>. It will not be for everybody. The title applies mostly to anyone who wants to do <a href="https://ryansafner.com/post/econometrics-data-science-and-causal-inference/">data science or econometrics</a> with R. This is the second time I have taught this course with R, and I have changed it around in many ways that I think optimize the process for students. In this post, I’ll cover just two major changes:</p>
+<ol type="1">
+<li>Learn R before the econometric/statistical theory</li>
+<li>Learn <em>tidyverse</em> R, specifically</li>
+</ol>
+<p>The <a href="http://ryansafner.com/courses/econ480">last time I taught this course</a> (and my first exploration with R), I did neither. Part of this was because I had just learned base R a few months before the course began, and was still learning and discovering new commands as the semester went on. I waited several weeks to introduce R, starting instead with econometric theory and review, and then interspersing bits of R as it became relevant for each task (running regressions, making plots, changing variables, and various different models). While it was fine for most students, there are some changes that will make students’ lives easier.</p>
+<p>I am still partway through the course, so it remains to be seen if students R skills are more developed by the end of the course (as they wrap up their projects) because they learned a lot of R <em>first</em>, versus in bite-sized chunks spread out over the semester.</p>
+<section id="tidyverse-and-opinionated-r" class="level2">
+<h2 class="anchored" data-anchor-id="tidyverse-and-opinionated-r"><code>tidyverse</code> and Opinionated R</h2>
+<blockquote class="blockquote">
+<p>The tidyverse is an opinionated <a href="https://www.tidyverse.org/packages">collection of R packages</a> designed for data science. All packages share an underlying design philosophy, grammar, and data structures. - <a href="https://www.tidyverse.org/">tidyverse.org</a></p>
+</blockquote>
+<p>One of the common refrains about what is awesome/terrible about R is that there are multiple ways to accomplish the same task. Here is where the opinions begin, so I’ll give mine: Code written with tidyverse packages simply looks a lot better and is far easier for <em>humans</em> to read, particularly if you follow the <a href="https://style.tidyverse.org/">style guidelines</a>, as I do.</p>
+<p>For example, the following code takes data from the excellent <a href="https://github.com/jennybc/gapminder">gapminder</a> dataset and package, and subsets the data to:</p>
+<ol type="1">
+<li>look only at U.S. observations</li>
+<li>keep only the <code>year</code>, <code>gdpPercap</code> and <code>pop</code> variables</li>
+<li>create a new variable called <code>GDP</code> by multiplying <code>gdpPercap</code> and <code>pop</code></li>
+</ol>
+<div class="cell">
+<details>
+<summary>Code</summary>
+<div class="sourceCode cell-code" id="cb1" style="background: #f1f3f5;"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1">gapminder1<span class="ot" style="color: #003B4F;">&lt;-</span>gapminder[gapminder<span class="sc" style="color: #5E5E5E;">$</span>country<span class="sc" style="color: #5E5E5E;">==</span><span class="st" style="color: #20794D;">"United States"</span>, <span class="fu" style="color: #4758AB;">c</span>(<span class="st" style="color: #20794D;">"year"</span>, <span class="st" style="color: #20794D;">"gdpPercap"</span>, <span class="st" style="color: #20794D;">"pop"</span>)]</span>
+<span id="cb1-2"></span>
+<span id="cb1-3">gapminder1<span class="sc" style="color: #5E5E5E;">$</span>gdp<span class="ot" style="color: #003B4F;">&lt;-</span>gapminder1<span class="sc" style="color: #5E5E5E;">$</span>gdpPercap<span class="sc" style="color: #5E5E5E;">*</span>gapminder1<span class="sc" style="color: #5E5E5E;">$</span>pop</span></code></pre></div>
+</details>
+</div>
+<p>This is doable in base R, and often requires saving the output as a new object for later use.</p>
+<p>Below, the same procedure is done with <code>dplyr</code> and using the pipe <code>%&gt;%</code> from <code>magrittr</code> (both part of the <code>tidyverse</code>).</p>
+<div class="cell">
+<details>
+<summary>Code</summary>
+<div class="sourceCode cell-code" id="cb2" style="background: #f1f3f5;"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb2-1">gapminder <span class="sc" style="color: #5E5E5E;">%&gt;%</span></span>
+<span id="cb2-2">  <span class="fu" style="color: #4758AB;">filter</span>(country <span class="sc" style="color: #5E5E5E;">==</span> <span class="st" style="color: #20794D;">"United States"</span>) <span class="sc" style="color: #5E5E5E;">%&gt;%</span></span>
+<span id="cb2-3">  <span class="fu" style="color: #4758AB;">select</span>(year, gdpPercap, pop) <span class="sc" style="color: #5E5E5E;">%&gt;%</span></span>
+<span id="cb2-4">  <span class="fu" style="color: #4758AB;">mutate</span>(<span class="at" style="color: #657422;">GDP=</span>gdpPercap <span class="sc" style="color: #5E5E5E;">*</span> pop)</span></code></pre></div>
+</details>
+<div class="cell-output cell-output-stdout">
+<pre><code># A tibble: 12 × 4
+    year gdpPercap       pop     GDP
+   &lt;int&gt;     &lt;dbl&gt;     &lt;int&gt;   &lt;dbl&gt;
+ 1  1952    13990. 157553000 2.20e12
+ 2  1957    14847. 171984000 2.55e12
+ 3  1962    16173. 186538000 3.02e12
+ 4  1967    19530. 198712000 3.88e12
+ 5  1972    21806. 209896000 4.58e12
+ 6  1977    24073. 220239000 5.30e12
+ 7  1982    25010. 232187835 5.81e12
+ 8  1987    29884. 242803533 7.26e12
+ 9  1992    32004. 256894189 8.22e12
+10  1997    35767. 272911760 9.76e12
+11  2002    39097. 287675526 1.12e13
+12  2007    42952. 301139947 1.29e13</code></pre>
+</div>
+</div>
+<p>The beauty of <code>tidyverse</code> (particularly <code>dplyr</code>, which will be used the most for data wrangling) comes from a few features:</p>
+<ol type="1">
+<li>It uses active, common sense, natural language verbs to accomplish most of its tasks. <code>filter</code>, <code>select</code>, and <code>mutate</code> (among others) are easy to understand what is happening at each stage.</li>
+<li>It allows use of the pipe <code>%&gt;%</code> to chain commands into a single sequence (and better yet, every time I use a pipe, I start a new line to make code far more readable).</li>
+<li>It <em>shows</em> you the output by default and does not store (or overwrite) it anywhere until or unless you assign it to an object. This allows you to preview what your code does before you need to worry about saving it.</li>
+</ol>
+<p>Note that this can be done without use of the pipe, and by storing objects, as such:</p>
+<div class="cell">
+<details>
+<summary>Code</summary>
+<div class="sourceCode cell-code" id="cb4" style="background: #f1f3f5;"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb4-1">gapminder_US<span class="ot" style="color: #003B4F;">&lt;-</span><span class="fu" style="color: #4758AB;">filter</span>(gapminder, country <span class="sc" style="color: #5E5E5E;">==</span> <span class="st" style="color: #20794D;">"United States"</span>)</span>
+<span id="cb4-2">gapminder_US<span class="ot" style="color: #003B4F;">&lt;-</span><span class="fu" style="color: #4758AB;">select</span>(gapminder_US, year, gdpPercap, pop)</span>
+<span id="cb4-3">gapminder_US<span class="ot" style="color: #003B4F;">&lt;-</span><span class="fu" style="color: #4758AB;">mutate</span>(gapminder_US, <span class="at" style="color: #657422;">GDP=</span>gdpPercap <span class="sc" style="color: #5E5E5E;">*</span> pop)</span>
+<span id="cb4-4">gapminder_US</span></code></pre></div>
+</details>
+<div class="cell-output cell-output-stdout">
+<pre><code># A tibble: 12 × 4
+    year gdpPercap       pop     GDP
+   &lt;int&gt;     &lt;dbl&gt;     &lt;int&gt;   &lt;dbl&gt;
+ 1  1952    13990. 157553000 2.20e12
+ 2  1957    14847. 171984000 2.55e12
+ 3  1962    16173. 186538000 3.02e12
+ 4  1967    19530. 198712000 3.88e12
+ 5  1972    21806. 209896000 4.58e12
+ 6  1977    24073. 220239000 5.30e12
+ 7  1982    25010. 232187835 5.81e12
+ 8  1987    29884. 242803533 7.26e12
+ 9  1992    32004. 256894189 8.22e12
+10  1997    35767. 272911760 9.76e12
+11  2002    39097. 287675526 1.12e13
+12  2007    42952. 301139947 1.29e13</code></pre>
+</div>
+</div>
+<p><a href="http://varianceexplained.org/r/teach-tidyverse/">I am not alone in this view.</a> As far as it relates to teaching, the implications are clear: The overwhelming majority of students are new to “programming”, so they will be frustrated <em>regardless</em> of what order the content was taught, or in what flavor of language. They do not need to know the “base R” way of doing something just so that they can see that the tidyverse may be better or more efficient - they just need to learn <em>one</em> way to accomplish their task, it might as well be (what I think is) the “better” one.</p>
+<p>So, I began the course (after two days of overview, why this course is important, useful, etc.) with 4 intensive classes of learning R, and tidyverse specifically. First, a day about base R, second, a day about ggplot2 for data visualization, third, a day of data wrangling with tidyverse, and finally a day about workflow and other tools (mainly r markdown). I cover the basics behind each of them, and what I have learned, below:</p>
+</section>
+<section id="class-1-is-base-r-necessary" class="level2">
+<h2 class="anchored" data-anchor-id="class-1-is-base-r-necessary">Class 1: Is Base R Necessary?</h2>
+<p>It somehow seems more “pure” to teach R from the ground up: First we discuss basic R commands, then we build more complicated functions in, then we show how to manipulate data, then we show how to plot, and later: “oh by the way there are these packages that do all of this more elegantly and in half as many lines of code.” That is how I taught econometrics last year.</p>
+<p>We need to remember this is a class in econometrics and data analysis that <em>uses</em> R, not a class in computer science or the R language. In fact, people with a computer science/programming background seem to find R <a href="https://www.youtube.com/watch?v=6S9r_YbqHy8&amp;feature=youtu.be">particularly annoying as a programming language</a>. It is highly domain-specific (that domain chiefly being statistics), and should be appreciated as such.</p>
+<p>In any case, I still made a point this year to make <a href="https://metricsf19.classes.ryansafner.com/class/03-class/">my first R-based class</a> entirely about Base R without the bells and whistles.<sup>1</sup> Students and R-users need to understand some basic syntax of functions, as well as the object-oriented nature of the language. I made sure that they understand the following really well:</p>
+<ol type="1">
+<li>What are packages, how to find, install, and load them.</li>
+<li>How to get help in R and on the internet for R functions.</li>
+<li>Different types of objects: especially <code>vector</code> and <code>data.frame</code></li>
+<li>Different data classes: especially <code>numeric</code> and <code>character</code>, and how to check them</li>
+<li>Some basic functions for making vectors and for getting statistics (<code>c()</code>, <code>mean()</code>, <code>sd()</code>, etc.)</li>
+<li>The basics of data frames: recognizing each column is a vector, how to summarize them, how to subset by row, column, and element</li>
+</ol>
+<p>I try not to go overboard (I omit things like <code>factor</code> and <code>logical</code> classes, <code>list</code> or <code>matrix</code> objects) and tell them not to worry too much about manipulating dataframes in Base R, as that is what <code>tidyverse</code> will accomplish much more intuitively and efficiently.</p>
+</section>
+<section id="class-2-data-visualization-with-ggplot2" class="level2">
+<h2 class="anchored" data-anchor-id="class-2-data-visualization-with-ggplot2">Class 2: Data Visualization with <code>ggplot2</code></h2>
+<p>The <a href="https://metricsf19.classes.ryansafner.com/class/04-class/">second R-class</a> I taught students all about data visualization with <code>ggplot2</code>. Not only do I think it is aesthetically superior to anything from Base R,<sup>2</sup> it also allows students to think about the important elements of a plot, and optimize each one accordingly, with the “grammar of graphics.” This is a pretty steep learning curve compared to typing <code>plot(y,x)</code> and seeing a scatterplot appear, but in the end, it is worth it.</p>
+<p>In class, I build a few plots layer by layer:</p>
+<ol type="1">
+<li><code>data</code></li>
+<li><code>aes</code>thetics</li>
+<li><code>geom</code>etric objects</li>
+<li><code>facets</code></li>
+<li><code>labels</code></li>
+<li><code>scale</code>s</li>
+<li><code>theme</code></li>
+</ol>
+<p>At each layer, I explain what each layer does and many of the possibilities for each layer.</p>
+<div class="cell">
+<details>
+<summary>Code</summary>
+<div class="sourceCode cell-code" id="cb6" style="background: #f1f3f5;"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb6-1"><span class="fu" style="color: #4758AB;">ggplot</span>(<span class="at" style="color: #657422;">data =</span> mpg)<span class="sc" style="color: #5E5E5E;">+</span></span>
+<span id="cb6-2">  <span class="fu" style="color: #4758AB;">aes</span>(<span class="at" style="color: #657422;">x =</span> displ,</span>
+<span id="cb6-3">        <span class="at" style="color: #657422;">y =</span> hwy)<span class="sc" style="color: #5E5E5E;">+</span></span>
+<span id="cb6-4">  <span class="fu" style="color: #4758AB;">geom_point</span>(<span class="fu" style="color: #4758AB;">aes</span>(<span class="at" style="color: #657422;">color =</span> class))<span class="sc" style="color: #5E5E5E;">+</span></span>
+<span id="cb6-5">  <span class="fu" style="color: #4758AB;">geom_smooth</span>()<span class="sc" style="color: #5E5E5E;">+</span></span>
+<span id="cb6-6">  <span class="fu" style="color: #4758AB;">facet_wrap</span>(<span class="sc" style="color: #5E5E5E;">~</span>year)<span class="sc" style="color: #5E5E5E;">+</span></span>
+<span id="cb6-7">  <span class="fu" style="color: #4758AB;">labs</span>(<span class="at" style="color: #657422;">x =</span> <span class="st" style="color: #20794D;">"Engine Displacement (Liters)"</span>,</span>
+<span id="cb6-8">       <span class="at" style="color: #657422;">y =</span> <span class="st" style="color: #20794D;">"Highway MPG"</span>,</span>
+<span id="cb6-9">       <span class="at" style="color: #657422;">title =</span> <span class="st" style="color: #20794D;">"Car Mileage and Displacement"</span>,</span>
+<span id="cb6-10">       <span class="at" style="color: #657422;">subtitle =</span> <span class="st" style="color: #20794D;">"More Displacement Lowers Highway MPG"</span>,</span>
+<span id="cb6-11">       <span class="at" style="color: #657422;">caption =</span> <span class="st" style="color: #20794D;">"Source: EPA"</span>,</span>
+<span id="cb6-12">       <span class="at" style="color: #657422;">color =</span> <span class="st" style="color: #20794D;">"Vehicle Class"</span>)<span class="sc" style="color: #5E5E5E;">+</span></span>
+<span id="cb6-13">  <span class="fu" style="color: #4758AB;">scale_color_viridis_d</span>()<span class="sc" style="color: #5E5E5E;">+</span></span>
+<span id="cb6-14">  <span class="fu" style="color: #4758AB;">theme_minimal</span>()<span class="sc" style="color: #5E5E5E;">+</span></span>
+<span id="cb6-15">  <span class="fu" style="color: #4758AB;">theme</span>(<span class="at" style="color: #657422;">text =</span> <span class="fu" style="color: #4758AB;">element_text</span>(<span class="at" style="color: #657422;">family =</span> <span class="st" style="color: #20794D;">"Fira Sans"</span>),</span>
+<span id="cb6-16">        <span class="at" style="color: #657422;">legend.position=</span><span class="st" style="color: #20794D;">"bottom"</span>)</span></code></pre></div>
+</details>
+<div class="cell-output-display">
+<p><img src="https://ryansafner.com/posts/if-youre-going-to-learn-r-learn-the-tidyverse_files/figure-html/unnamed-chunk-4-1.png" class="img-fluid" width="672"></p>
+</div>
+</div>
+<p>This is also the students’ first exposure to <code>tidyverse</code>, though it is not yet apparent. My one regret, in retrospect, is that plot layers are combined with <code>+</code> instead of <code>%&gt;%</code>.<sup>3</sup> After learning other <code>tidyverse</code> packages such as <code>dplyr</code>, students would try to add plot layers with <code>%&gt;%</code> but I would continuously have to remind them that layers are combined with <code>+</code>.</p>
+<p>Recall, all of this is done well before we cover basic statistics or econometric theory. When I was teaching students <em>how</em> to construct various plots with <code>ggplot2</code>, this was before they knew <em>why</em> they needed a scatterplot or a boxplot.</p>
+</section>
+<section id="class-3-data-wrangling-with-tidyverse-mostly-dplyr" class="level2">
+<h2 class="anchored" data-anchor-id="class-3-data-wrangling-with-tidyverse-mostly-dplyr">Class 3: Data Wrangling with <code>tidyverse</code> (mostly <code>dplyr</code>)</h2>
+<p>The <a href="https://metricsf19.classes.ryansafner.com/class/05-class/">third class</a> was all about <code>tidyverse</code> as a unifying set of packages with a common philosophy and grammar. I did discuss several core packages:</p>
+<ol type="1">
+<li><code>tibble</code> for friendlier dataframes<sup>4</sup></li>
+<li><code>magrittr</code> for using the pipe <code>%&gt;%</code> to chain code together</li>
+<li><code>readr</code> for importing data (mostly <code>.csv</code><sup>5</sup></li>
+<li><code>tidyr</code> for reshaping data</li>
+</ol>
+<p>But the primary focus was on <code>dplyr</code> and its verbs:</p>
+<ol type="1">
+<li><code>filter()</code> to keep selected observations</li>
+<li><code>select()</code> to keep selected variables</li>
+<li><code>arrange()</code> to reorder observations by a value</li>
+<li><code>mutate()</code> to create new variables</li>
+<li><code>summarize()</code> to create summary statistics</li>
+<li><code>group_by()</code> for performing operations by group</li>
+</ol>
+<p>We worked with gapminder data to accomplish a wide variety of tasks using these commands.</p>
+</section>
+<section id="class-4-optimizing-workflow-r-projects-and-markdown" class="level2">
+<h2 class="anchored" data-anchor-id="class-4-optimizing-workflow-r-projects-and-markdown">Class 4: Optimizing Workflow: R Projects and Markdown</h2>
+<p>The <a href="https://metricsf19.classes.ryansafner.com/class/06-class/">fourth and final class</a> dedicated to R was all about optimizing workflow with a few tweaks. I have not used Microsoft Office products in about 10 years (more posts to come later), and in the last year, have migrated <strong>ALL</strong> of my document-preparation (that’s research papers, teaching materials, exams, slides, websites, <em>everything</em>) to markdown files I write inside of R Studio and track with version control on GitHub.</p>
+<p>When I show to students that there are other options to Microsoft Word and Powerpoint, their jaws drop, particularly when I show all that you can do with a single plain-text document (integrating text, code, commands, plots, citations and bibliography etc) that exports to pdf, html, slides, and other output. Last semester, after I showed them <code>R Markdown</code>, several students told me it was the best thing about the class, and some still use it for other assignments in other classes on their own. This deserves its own series of posts, so for now I will focus on the two or three things I tried to teach students <em>in addition</em> to how to use Markdown.</p>
+<p>First, <strong>R Projects</strong> are absolutely essential. I discovered these late in the game last year, but now realized that they solve far more problems than trying to do without them.</p>
+<p>The #1 unnecessary problem I encounter with students is trying to load data from external sources. The world is not full of tidy pre-cleaned data, or even data that only come in <code>.csv</code> formats. <code>tidyr</code> is great for that, and so is <code>readr</code>, but the problem actually is one of basic file operations on a computer: students (and R) don’t know where the data is saved on their computers! Rather than trying to teach them how to write out relative or absolute file paths to locate files on their computer, R Projects solve this problem by setting the default working directory to the folder where the project is stored on their computer. That means that if you store the data file in that folder, you only need to load it (with <code>readr</code> or equivalent) with (e.g.) <code>read_csv("thedata.csv"</code>), no more worrying about file paths!</p>
+<p>I also encourage students to create a logical folder hierarchy within their projects, similar to what I show in <a href="https://github.com/ryansafner/workflow">this repository</a>.</p>
+<p>Second, <strong>version control</strong> with Github. I never actually got around to showing this in class, but a number of students expressed interest in learning how to do this. I feel it’s a bit advanced and requires a bit more computing expertise (but not too much, since I’m able to pull it off!), but I use it constantly. Perhaps more posts on this later.</p>
+<p>In any case, after teaching these workflow methods, looking back on the first 3 R classes, I am tempted to just start from scratch with projects and markdown and make students use them from the beginning. Perhaps next year.</p>
+
+
+</section>
+
+
+<div id="quarto-appendix" class="default"><section class="footnotes footnotes-end-of-document"><h2 class="anchored quarto-appendix-heading">Footnotes</h2>
+
+<ol>
+<li id="fn1"><p>Though I allude to more complex examples to give them a taste of what’s to come!↩︎</p></li>
+<li id="fn2"><p>If it was not clear in my posts by now, I have high aesthetic standards.↩︎</p></li>
+<li id="fn3"><p>I believe this is due to the unique history of <code>ggplot2</code> coming before the <code>tidyverse</code> was a full idea. Though I hear in future versions, this may be fixed!↩︎</p></li>
+<li id="fn4"><p>I simply replaced all dataframes in the course with tibbles↩︎</p></li>
+<li id="fn5"><p>And derivative packages such as <code>readxl</code> and <code>haven</code> for importing other types of data such as <code>.xlsx</code> or Stata’s <code>.dat</code>.↩︎</p></li>
+</ol>
+</section></div> ]]></description>
+  <category>rstats</category>
+  <category>markdown</category>
+  <category>github</category>
+  <category>teaching</category>
+  <category>econometrics</category>
+  <guid>https://ryansafner.com/posts/if-youre-going-to-learn-r-learn-the-tidyverse.html</guid>
+  <pubDate>Fri, 18 Oct 2019 04:00:00 GMT</pubDate>
+</item>
+<item>
+  <title>New Course Websites</title>
+  <link>https://ryansafner.com/posts/new-course-websites.html</link>
+  <description><![CDATA[ 
+
+
+
+<p>This Fall semester, I have made dedicated websites for all of my courses at Hood College that host nearly all the course content. You can see them all <a href="https://ryansafner.com/#teaching">here</a>. My interest was sparked when I saw <a href="https://www.andrewheiss.com/teaching/">Andrew Heiss</a>’ amazing course websites.</p>
+<p>Until this point, all of my course content has lived on Blackboard for my students, though I have also tried to post syllabi and lecture slides (if not additional resources) on my <a href="http://ryansafner.com/teaching">personal website</a> over the past few years. This process has been manageable, but has had way too much pointing-and-clicking, unnecessary duplication, and is not very open-source.</p>
+<p>For each course website, I am using the (surprisingly painless) combination of <a href="https://rmarkdown.rstudio.com/">R markdown</a>, <a href="http://github,com">GitHub</a>, <a href="https://bookdown.org/yihui/blogdown/">Blogdown</a>, <a href="https://gohugo.io/">Hugo</a>, and <a href="http://netlify.com">Netlify</a> such that my entire workflow is reduced to:</p>
+<ol type="1">
+<li>Edit a plain text file with R Markdown (I like doing this in R Studio)</li>
+<li>Commit and push to GitHub (again, R Studio integrates this seamlessly)</li>
+<li>The new website is automatically updated by pushing my GitHub repository via Netlify</li>
+</ol>
+<p>Step three doesn’t even really count because once set up, I don’t have to do anything! I paid the fixed costs of extensively figuring out how everything works and experimenting over this past summer. If you are interested, I have attempted to explain the process of duplicating everything in this <a href="https://github.com/ryansafner/classwebtest">README file</a> in my testing repository on GitHub (automatically rendered on the main page). It assumes some working knowledge of R Markdown, but not much else. One day I may make a better step-by-step guide if there is any interest, but lots of great guides on each feature already exist (and are linked to in the README).</p>
+<p>Each course has a page for the syllabus, assignments, reference (guides, links, and other resources to come), and a schedule page that is organized into relevant slides, assignments, or other resources for each class meeting. I have found the schedule page in particular to be a great framework for making all aspects of the course cohere in a single place.</p>
+<p>Why have I decided to do this?</p>
+<p>For good or ill, I am a slave to aesthetics<sup>1</sup>, and think that form matters just as much as function. This is not so much a rational viewpoint of mine as a vice: Producing and perfecting lectures is a <em>consumption good</em> for me, not a means-to-an-end investment. I have delighted at learning <a href="http://github.com/yihui/xaringan">Xaringan</a> this summer for all of my slides (guides and blog posts coming soon), and as they live in <code>html</code>, hosting them on a single website made the most sense. I also made sure each course has its own custom hex sticker and workflow map (again, copying some killer design elements from Heiss). As a relevant side note, I have started to see the <a href="https://www.authorea.com/users/5713/articles/19359-latex-is-dead-long-live-latex-typesetting-in-the-digital-age/_show_article">limitations</a> and <a href="https://www.urban.org/urban-wire/your-data-deserve-better-pdf">ugliness</a> of <a href="https://yihui.name/en/2013/10/markdown-or-latex/">PDFs</a> in the age of the web, and have ditched <code>LaTeX</code> (admittedly, it was a long and loving relationship) for the elegance and beauty of <code>markdown</code> and <code>html</code> wherever possible (posts on that to come).</p>
+<p>The main side effect is that all of my materials will be available to anyone online for free. I have always been committed to free and open source teaching, and have benefitted an extraordinary amount from learning from materials that other academics or practitioners - who I may never meet - have posted online.<sup>2</sup> While they will be without lecture videos (no plans for that, sorry), or original copies of some readings (copyright, my favorite), or answer keys for major assignments (I do recycle some questions), these websites are otherwise complete self-contained courses.</p>
+<p>Another reason this made sense for me is that as I have gotten into a rhythm of teaching the same course multiple times, I have started to accumulate a lot of additional resources: guides, tutorials, handouts on more technical concepts, etc. These would kill a lot of trees to print out for students, and it would be nice to have a central repository for them - a website is the natural place.</p>
+<p>There are some limitations, as I can’t do <em>everything</em> on them. My major limitation is grading. Blackboard’s Grading Center is too convenient and centralized not to use (not to mention, secure, individualized, and FERPA-compliant). These new websites are primarily for broadcasting content to everyone, not using it as a personalized experience. Additionally, I will still use Blackboard for mass-emailing students. But my workflow of <code>1. write in plain text, 2. push to GitHub</code> available for everyone seems vastly superior to endless mouse clicks and writing of individual items to a page viewable by a single course section (and then duplicating everything for a second section).</p>
+<p>It remains to be seen how my students will recieve these, but for now, I am excited.</p>
+
+
+
+
+<div id="quarto-appendix" class="default"><section class="footnotes footnotes-end-of-document"><h2 class="anchored quarto-appendix-heading">Footnotes</h2>
+
+<ol>
+<li id="fn1"><p>I view lecture slides as a fine artform and have refused to use Microsoft Office products for over 8 years↩︎</p></li>
+<li id="fn2"><p>One of my guilty pleasures is to devour anyone’s lecture slides posted free online in areas that I teach or research and shamelessly steal what I like (I try to give credit if it is something major!). This confirms to me that I am a true academic.↩︎</p></li>
+</ol>
+</section></div> ]]></description>
+  <category>markdown</category>
+  <category>websites</category>
+  <category>teaching</category>
+  <category>workflow</category>
+  <category>blog</category>
+  <guid>https://ryansafner.com/posts/new-course-websites.html</guid>
+  <pubDate>Thu, 22 Aug 2019 04:00:00 GMT</pubDate>
+</item>
+<item>
+  <title>Econometrics, Data Science, and Causal Inference</title>
+  <link>https://ryansafner.com/posts/econometrics-data-science-and-causal-inference.html</link>
+  <description><![CDATA[ 
+
+
+
+<p>This summer, I am overhauling my econometrics class in many ways, in part because I was pleased to recieve a teaching grant from my college to make more R resources for my econometrics class. <a href="http://ryansafner.com/courses/ECON480">Last Fall</a> was the first time I had taught it using R, and I’ve learned a ton since then. Expect a flurry of posts in the coming weeks more on those topics.</p>
+<p>This post, however, explores some of the trends that I have been thinking about in teaching econometrics, and something monotonous that I have been struggling with that encapsulates the tension in these trends: what to name my course. I of course need to officially stick to the Procrustean Bed of the title in my college’s course catalog: ECON 480 - Econometrics, but in more causal conversation, or perhaps as a course subtitle, I have been torn between <strong>“data science”</strong> and <strong>“causal inference.”</strong> This class is an introduction to econometrics, and assumes students have taken basic statistics, so this “problem” is really just marketing on my part — it’s just a run-of-the-mill introductory econometrics course, but I like to add in a few bells and whistles!</p>
+<p>After thinking on this more, it seems to me there that we might be able to delineate a few possible directions that our field is heading. I hasten to qualify that I am thinking about this much more as a <em>teacher,</em> of these topics, less as a <em>practitioner</em>, as my own research niche is applied economic theory, albeit with a steadily-growing fascination with these methods. Nor am I a historian of econometric thought.</p>
+<p>These two trends or approaches I’ll call “data science” and “causal inference.” For the purposes of wrestling with this post, I will examine each of these forward-looking trends separately. I don’t want to rule out the possibility at all that these are entirely complementary, and I am making a big deal out of nothing. Nonetheless, I think it is an interesting distinction to examine.</p>
+<section id="data-science" class="level2">
+<h2 class="anchored" data-anchor-id="data-science">“Data Science”</h2>
+<p><a href="https://www.google.com/search?q=data+science">“Data science”</a> is the hip new catchall term for using statistical software to analyze data for a variety of purposes. It is commonly interpreted as <a href="https://www.google.com/search?q=data+science+venn+diagram">the intersection of statistics, computer science, and domain expertise (e.g.&nbsp;business, biology, etc)</a>. I personally like the definition offered by the following tweet:</p>
+<p></p>
+<p>The modal “data scientist” seems to be a young practitioner in industry or academia that use programming languages like R and Python to wrangle, visualize, and present data to solve empirical problems in their domain of expertise. On the academic/teaching side, self-styled “data scientists” seem to be trendy statisticians, computer scientists, or biologists (e.g.&nbsp;“bioinformatics”). <a href="https://www.google.com/search?q=data+science+certificate">New masters degrees and certifications</a> in “Data Science” or “Data Analytics” seem to be popping up left and right at major universities.</p>
+<p>A large part of me wants to ride the coattails of this cool new trend and call/subtitle my class something like “Introduction to Data Science.” I decided against it for a few reasons that I think are instructive.</p>
+<p>First, I would be encroaching the turf of my colleagues in Statistics and Computer Science departments that often have courses with explicit titles like this. These classes are often a rehash of classic introductory statistics classes (probability, the normal distribution, <img src="https://latex.codecogs.com/png.latex?t">-tests, the central limit theorem, etc) but where software and simulation tend to replace pure theory and statistical proofs in a much more student-friendly way. It is a lot more intuitive and less tedious to understand a <img src="https://latex.codecogs.com/png.latex?p">-value via programming commands or simulating a null distribution of 10,000 bootstrapped samples than to learn the theoretical Student’s <img src="https://latex.codecogs.com/png.latex?t">-distributions and look up critical values from a table (as I once had to!).</p>
+<p>Second, although some econometrics textbooks do teach introductory econometrics this way<sup>1</sup>, a good econometrics class, in my opinion, is much more than just an introductory statistics class (first review probability, distributions, statistical estimators, hypothesis testing, linear regression) that finally bleeds into the models that empirical econometricians <em>actually</em> — oh no, the semester’s already over!</p>
+<p>Econometrics has a particularly opinionated view of statistical models, and often uses them to a very different end than most “data science”-type uses. This is precisely what distinguishes uses of statistics in <em>economics</em> from its use in other domain areas<sup>2</sup>, the focus on the second major trend I discuss below, <strong>causal inference.</strong></p>
+<p>Perhaps the paradigmatic application of “data science” beyond mere descriptive statistics and causal inference is “machine learning” and associated terms and techniques (e.g.&nbsp;“big data,” “neural networks,” “artificial intelligence,” etc). These issues often deal with massive “wide” datasets, frequently with more variables than observations. Take a website such as Facebook, which has a ton of information about a user – locations they visit the website from, who their friends are, what pages they have interacted with, etc. <a href="https://www.youtube.com/watch?v=R9OHn5ZF4Uo">Machine learning techniques</a> such as neural networks, as I understand them, try to identify what characteristics predict a certain outcome. Facial recognition software seems to me to operate similarly: take a large number of pre-identified images (e.g.&nbsp;a human at some point determined the image indeed contained a face) for <em>training</em> an algorithm, pass those images through <img src="https://latex.codecogs.com/png.latex?n">-number of layers to detect common characteristics of “faces” vs.&nbsp;“not-faces”, and then additional subtleties that differentiate one face from another, and after <img src="https://latex.codecogs.com/png.latex?n">-layers and <img src="https://latex.codecogs.com/png.latex?m"> features are determined (where both <img src="https://latex.codecogs.com/png.latex?n"> and <img src="https://latex.codecogs.com/png.latex?m"> are massive numbers!), then the algorithm can take a <em>new</em> un-classified image and determine <em>if</em> it includes a face, or, if it is a very good algorithm, <em>whose</em> face it is. But, as <a href="https://www.youtube.com/watch?v=R9OHn5ZF4Uo">this excellent video</a> reiterates, <em>nobody understands</em> how the neural network that successfully identifies faces <em>works</em>.</p>
+<p>The key feature here is that it these technqiues are atheoretical, they are entirely empirical and judged on their rate of success. The algorithm itself has no underlying theory behind what “causes” a face or determines a face, only a purely <em>empirical</em> process of identifying patterns statistically by brute force. Nobody actually knows, or perhaps even could know, <em>why</em> or <em>how</em> an algorithm works.</p>
+</section>
+<section id="causal-inference" class="level2">
+<h2 class="anchored" data-anchor-id="causal-inference">“Causal Inference”</h2>
+<p>Causal inference, by contrast, whatever some hardcore practitioners might say about merely “letting the data speak for itself”, <em>necessitates</em> an underlying theory to explain a relationship or a process.</p>
+<p>Without going into a full post on methodology, economics is a theory-driven discipline in a way like few others. This is why I expect that “big data” and “machine learning” techniques will offer only marginal insights in economic research relative to the tried-and-true methods (and I am <a href="https://mru.org/courses/mastering-econometrics/are-machine-learning-and-big-data-changing-econometrics">in good company</a>). It is certainly true that some theories may be verified or disproven by data, or entirely new theories emerge via analyzing data that may never have otherwise been discovered. However, the main tool of empirical work is to identify and measure causal effects <em>already</em> theorized or hypothesized from solid economic theory.<sup>3</sup> Data can never “speak for itself,” because we wouldn’t know <em>what data</em> is worth collecting in the first place. I like to think about it with the (<a href="https://en.wikiquote.org/wiki/Immanuel_Kant#section_24">attributed</a>) Immanuel Kant quote:</p>
+<blockquote class="blockquote">
+<p>Experience without theory is blind, while theory without experience is mere intellectual play.</p>
+</blockquote>
+<p>Economists and econometricians have always emphasized the role of causal inference in econometrics. I recall learning - to my surprise - as an undergraduate and as a graduate in my courses that with clever identification strategies (instrumental variables, regression discontinuity, differences-in-differences, fixed effects, etc), we <em>can</em> do a lot more than just say things are “correlated,” and thus gore the sacred refrain of statistics professors everywhere (<em>“correlation does not imply causation”</em>). I never experienced what learning econometrics was like in the 1980s or 1990s, but this view has only grown stronger with the “credibility revolution” described by Angrist and Pischke (2010, 4):</p>
+<blockquote class="blockquote">
+<p>Empirical microeconomics has experienced a credibility revolution, with a consequent increase in policy relevance and scientific impact…[A]s we see it, the primary engine driving improvement has been a focus on the quality of empirical research designs.</p>
+</blockquote>
+<p>Having much more omnipresent and higher-quality micro-level data has also helped.</p>
+<p>However, I have noticed in recent years in a particular strand of econometrics teaching has gotten more pathological about causal inference (I don’t mean to use that term pejoratively!). Not all of the work in this trend is by economists, but it seems to finally be seeping into econometrics pedagogy.</p>
+<p>I think the quintessential tools for this new wave of teaching causal inference are the <a href="https://en.wikipedia.org/wiki/Directed_acyclic_graph">Directed Acyclic Graphs (DAGs)</a> popularized by famed computer scientist Judea Pearl, or the <a href="https://www.google.com/search?client=q=do+calculus">“do-calculus”</a> for more advanced treatments. I see this now showing up in excellent teaching materials like Scott Cunningham’s <a href="https://scunning.com/cunningham_mixtape.pdf"><em>Causal Inference: the Mixtape</em></a>, <a href="http://www.michaelnielsen.org/ddi/if-correlation-doesnt-imply-causation-then-what-does/">this great but technical blog post</a> by Michael Nielson, a lecture in Andrew Heiss’ <a href="https://econw19.classes.andrewheiss.com/class/27-class/">class</a>, and Nick Huntington-Klein’s excellent <a href="http://www.nickchk.com/econ305.html">lecture slides</a> for his course in Economics, Causality, and Analytics (now there’s a good title!). More and more people also seem to be linking to the great <a href="http://dagitty.net">daggity.net</a> tool for drawing and interpreting DAGs.</p>
+<p>After reading Pearl and Mackenzie (2018)’s <em>The Book of Why</em>, I briefly felt much more zealous about claiming that we can indeed argue “<em>X does cause Y, dammit!”</em>. The review of DAGs by <a href="https://arxiv.org/abs/1907.07271">Imbens (2019)</a> brought me back down to earth. DAGs are a great pedagogical tool<sup>4</sup> but aren’t the silver bullet for clarifying empirical work. Imbens makes a compelling case that DAGs have very little practicality beyond”toy models” such as those in Pearl and Mackenzie (2018) and standard econometric research designs since the “credibility revolution” (Angrist and Pischke, 2010) work far better in practice. For the moment, that’s fine for me — I may make a post later about the benefits<sup>5</sup> — I think my students will find them very useful. I am more convinced with Pearl’s argument that causal models are a necessary ingredient to the progress of artificial intelligence.</p>
+</section>
+<section id="a-compromise" class="level2">
+<h2 class="anchored" data-anchor-id="a-compromise">A Compromise</h2>
+<p>In any case, thinking about these two strands makes the development of the field seem richer and more dynamic. I again add that I am not trying to artificially carve out an antagonism between these two approaches, in fact I hope to marry them into the latest iteration of my econometrics course. One of the appeals I try to make to my students (some of whom are Economics majors, some Business majors, and a mixture of others such as Biology or Environmental Science) is that the tools we learn in this class will not only make you better consumers of science and studies, but also may be invaluable in the emerging job market. “Data science” again is one of the sexy trends of the 2010s and beyond. Learning how to import, wrangle, analyze, and present data with statistical software and programming languages like R already makes students budding “data scientists.” Futhermore, <em>causal inference</em> with empirical models and research designs is the <em>economist’s</em> comparative advantage that will set <em>economics</em> majors apart from your average “data science” or “data analytics” certificate-holder.</p>
+</section>
+<section id="references" class="level1">
+<h1>References</h1>
+<p>Angrist, Joshua D, and Jorn-Steffen Pischke, 2010, “The Credibility Revolution in Empirical Economics: How Better Research Design is Taking the Con out of Econometrics,” <em>Journal of Economic Perspectives</em> <em>24</em>(2), 3–30.</p>
+<p>Imbens, Guido W, 2019, “Potential Outcome and Directed Acyclic Graph Approaches to Causality: Relevance for Empirical Practice in Economics,” Manuscript</p>
+<p>Pearl, Judea and Dana Mackenzie, 2018, <em>The Book of Why</em>, Allen Lane</p>
+
+
+</section>
+
+
+<div id="quarto-appendix" class="default"><section class="footnotes footnotes-end-of-document"><h2 class="anchored quarto-appendix-heading">Footnotes</h2>
+
+<ol>
+<li id="fn1"><p><a href="https://www.pearson.com/us/higher-education/product/Stock-Introduction-to-Econometrics-3rd-Edition/9780138009007.html"><em>Stock and Watson</em></a>, for example, which I taught with for 2 years↩︎</p></li>
+<li id="fn2"><p>Epidemiology is perhaps closest to economics in this regard.↩︎</p></li>
+<li id="fn3"><p>I don’t want to take the hardcore position here that there is <em>no</em> validity to empirical work in economics. Sometimes multiple economic principles might be operating in combination or against each other through multiple channels in the real world - empirical work helps us to tease them out in a useful way.↩︎</p></li>
+<li id="fn4"><p>There are limitations to them, such as the inability to add cutoff variables for regression discontinuity design models, or interaction terms. Huntington-Klein seems to fudge this by creating nodes like <img src="https://latex.codecogs.com/png.latex?X%3Cc">, or <img src="https://latex.codecogs.com/png.latex?X%20*%20Z">, for the respective problems mentioned)↩︎</p></li>
+<li id="fn5"><p>Namely, 1. making model assumptions explicit, 2. using proper correlations in the data to falsify a proposed causal model, and 3. showing that there are not all variables need to be controlled for, indeed controlling for certain types of variables actually <em>introduces</em> bias!↩︎</p></li>
+</ol>
+</section></div> ]]></description>
+  <category>rstats</category>
+  <category>data science</category>
+  <category>causal inference</category>
+  <category>DAGs</category>
+  <category>blog</category>
+  <category>teaching</category>
+  <category>econometrics</category>
+  <guid>https://ryansafner.com/posts/econometrics-data-science-and-causal-inference.html</guid>
+  <pubDate>Tue, 06 Aug 2019 04:00:00 GMT</pubDate>
+</item>
+<item>
+  <title>Replicating Stata’s ‘Robust’ Option for OLS Standard Errors in R</title>
+  <link>https://ryansafner.com/posts/replicating-statas-robust-option-for-ols-standard-errors-in-r.html</link>
+  <description><![CDATA[ 
+
+
+
+<p>One of the advantages of using Stata for linear regression is that it can automatically use heteroskedasticity-robust standard errors simply by adding <code>, r</code> to the end of any regression command. Anyone can more or less use robust standard errors and make more accurate inferences without even thinking about what they represent or how they are determined since it’s so easy just to add the letter <code>r</code> to any regression.</p>
+<p>In <code>R</code>, robust standard errors are not “built in” to the base language. There are a few ways that I’ve discovered to try to replicate Stata’s “robust” command. None of them, unfortunately, are as simple as typing the letter <code>r</code> after a regression. Each has its ups and downs, but may serve different purposes.</p>
+<p>Below, I will demonstrate the two methods, but first, let’s create some random data that will have heteroskedastic residuals.</p>
+<div class="sourceCode" id="cb1" style="background: #f1f3f5;"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><span class="fu" style="color: #4758AB;">set.seed</span>(<span class="dv" style="color: #AD0000;">20</span>)</span>
+<span id="cb1-2"><span class="co" style="color: #5E5E5E;"># draw 500 observations from a random uniform distribution (runif) between 0 and 10.  </span></span>
+<span id="cb1-3">x<span class="ot" style="color: #003B4F;">&lt;-</span><span class="fu" style="color: #4758AB;">runif</span>(<span class="dv" style="color: #AD0000;">500</span>,<span class="dv" style="color: #AD0000;">0</span>,<span class="dv" style="color: #AD0000;">10</span>)</span>
+<span id="cb1-4"></span>
+<span id="cb1-5"><span class="co" style="color: #5E5E5E;"># draw 500 observations from a random normal distribution</span></span>
+<span id="cb1-6">y<span class="ot" style="color: #003B4F;">&lt;-</span><span class="fu" style="color: #4758AB;">rnorm</span>(<span class="dv" style="color: #AD0000;">500</span>,<span class="at" style="color: #657422;">mean=</span>x,<span class="at" style="color: #657422;">sd=</span>x) <span class="co" style="color: #5E5E5E;"># set mean and sd are set as the value of each x value</span></span>
+<span id="cb1-7"><span class="co" style="color: #5E5E5E;"># thus, as x gets larger, so does the sd, and thus the residuals</span></span>
+<span id="cb1-8"></span>
+<span id="cb1-9">data<span class="ot" style="color: #003B4F;">&lt;-</span><span class="fu" style="color: #4758AB;">data.frame</span>(x,y) <span class="co" style="color: #5E5E5E;"># make x and y variables in a dataframe called "data"</span></span></code></pre></div>
+<p>We then run a regression of <code>y</code> on <code>x</code>:</p>
+<pre class="{r}"><code>reg&lt;-lm(y~x)
+summary(reg)</code></pre>
+<pre><code>## 
+## Call:
+## lm(formula = y ~ x)
+## 
+## Residuals:
+##      Min       1Q   Median       3Q      Max 
+## -24.7115  -2.4865  -0.3479   2.9699  20.6123 
+## 
+## Coefficients:
+##             Estimate Std. Error t value Pr(&gt;|t|)    
+## (Intercept)  0.68508    0.52264   1.311    0.191    
+## x            0.76484    0.08887   8.607   &lt;2e-16 ***
+## ---
+## Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1
+## 
+## Residual standard error: 5.949 on 498 degrees of freedom
+## Multiple R-squared:  0.1295, Adjusted R-squared:  0.1277 
+## F-statistic: 74.08 on 1 and 498 DF,  p-value: &lt; 2.2e-16</code></pre>
+<p>Let’s plot a scatterplot to visualize the data and add the regression line. Clearly, the data is “fan” shaped, centered on the regression line, but with larger and larger residuals (distance between the regression line and the data point, <img src="https://latex.codecogs.com/png.latex?%5Chat%7B%5Cepsilon%7D_i=%5Chat%7BY%7D_i-Y_i">) as <img src="https://latex.codecogs.com/png.latex?X"> gets larger.</p>
+<p><img src="https://ryansafner.com/posts/plot-1.png" class="img-fluid"></p>
+<p>I have also broken up the scatterplot into 5 different sections over the range of <code>x</code> values. Below, I plot density plots of the residuals over each of the 5 different ranges of <code>x</code> values, and we can clearly see that the variance of the residuals dramatically increases as <code>x</code> increases.</p>
+<p><img src="https://ryansafner.com/posts/residualsplots.png" class="img-fluid"></p>
+<p>Using the <code>lmtest</code> package, we can also formally run a Breusch-Pagan test for heteroskedasticity.</p>
+<div class="sourceCode" id="cb4" style="background: #f1f3f5;"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb4-1"><span class="fu" style="color: #4758AB;">library</span>(<span class="st" style="color: #20794D;">"lmtest"</span>)</span>
+<span id="cb4-2"><span class="fu" style="color: #4758AB;">bptest</span>(reg)</span></code></pre></div>
+<pre><code>## 
+##  studentized Breusch-Pagan test
+## 
+## data:  reg
+## BP = 90.547, df = 1, p-value &lt; 2.2e-16</code></pre>
+<section id="method-1-sandwich-package" class="level2">
+<h2 class="anchored" data-anchor-id="method-1-sandwich-package">Method 1: <code>Sandwich</code> package</h2>
+<p>In order to understand what the “fix” in this method is actually doing, we also need to look “under the hood” of what <code>R</code> is doing when it runs OLS and stores everything in the <code>lm</code> regression object.</p>
+<p>One thing stored in <code>reg</code> is the variance-covariance matrix, estimating the covariance of each OLS estimator (the “betas”) with every other OLS estimator:</p>
+<p><img src="https://latex.codecogs.com/png.latex?%20%5Cbegin%7Bpmatrix%7D%20cov(%5Chat%7B%5Cbeta_0%7D,%5Chat%7B%5Cbeta_0%7D)%20&amp;%20cov(%5Chat%7B%5Cbeta_0%7D,%5Chat%7B%5Cbeta_1%7D)%20&amp;%20%5Ccdots%20&amp;%20cov(%5Chat%7B%5Cbeta_0%7D,%5Chat%7B%5Cbeta_k%7D)%5C%5C%5C%5C%5C%5C%20cov(%5Chat%7B%5Cbeta_1%7D,%5Chat%7B%5Cbeta_0%7D)%20&amp;%20cov(%5Chat%7B%5Cbeta_1%7D,%5Chat%7B%5Cbeta_1%7D)%20&amp;%20%5Ccdots%20&amp;%20cov(%5Chat%7B%5Cbeta_1%7D,%5Chat%7B%5Cbeta_k%7D)%5C%5C%5C%5C%5C%5C%20%5Cvdots%20&amp;%20%5Cvdots%20&amp;%20%5Cddots%20&amp;%20%5Cvdots%20%5C%5C%5C%5C%5C%5C%20cov(%5Chat%7B%5Cbeta_k%7D,%5Chat%7B%5Cbeta_0%7D)%20&amp;%20cov(%5Chat%7B%5Cbeta_k%7D,%5Chat%7B%5Cbeta_1%7D)%20&amp;%20%5Ccdots%20&amp;%20cov(%5Chat%7B%5Cbeta_k%7D,%5Chat%7B%5Cbeta_k%7D)%5C%5C%5C%5C%5C%5C%20%5Cend%7Bpmatrix%7D"></p>
+<p>Since the covariance of anything with itself is the variance, the <em>diagonal</em> elements of this matrix are the variances of the OLS estimators:</p>
+<p><img src="https://latex.codecogs.com/png.latex?%5Cbegin%7Bpmatrix%7Dvar(%5Chat%7B%5Cbeta_0%7D)%20&amp;%20cov(%5Chat%7B%5Cbeta_0%7D,%5Chat%7B%5Cbeta_1%7D)%20&amp;%20%5Ccdots%20&amp;%20cov(%5Chat%7B%5Cbeta_0%7D,%5Chat%7B%5Cbeta_k%7D)%5C%5C%5C%5C%5C%5C%20cov(%5Chat%7B%5Cbeta_1%7D,%20%5Chat%7B%5Cbeta_0%7D)%20&amp;%20var(%5Chat%7B%5Cbeta_1%7D)%20&amp;%20%5Ccdots%20&amp;%20cov(%5Chat%7B%5Cbeta_1%7D,%5Chat%7B%5Cbeta_k%7D)%5C%5C%5C%5C%5C%5C%20%5Cvdots%20&amp;%20%5Cvdots%20&amp;%20%5Cddots%20&amp;%20%5Cvdots%20%5C%5C%5C%5C%5C%5C%20cov(%5Chat%7B%5Cbeta_k%7D,%5Chat%7B%5Cbeta_0%7D)%20&amp;%20cov(%5Chat%7B%5Cbeta_k%7D,%5Chat%7B%5Cbeta_1%7D)%20&amp;%20%5Ccdots%20&amp;%20var(%5Chat%7B%5Cbeta_k%7D)%5C%5C%5C%5C%5C%5C%20%5Cend%7Bpmatrix%7D"></p>
+<p>So if we look at the simple <img src="https://latex.codecogs.com/png.latex?2%20%5Ctimes%202"> variance-covariance matrix in our simple <code>reg</code> using <code>vcov</code>, we see.</p>
+<div class="sourceCode" id="cb6" style="background: #f1f3f5;"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb6-1"><span class="fu" style="color: #4758AB;">vcov</span>(reg)</span></code></pre></div>
+<pre><code>##             (Intercept)            x
+## (Intercept)  0.27315741 -0.039976551
+## x           -0.03997655  0.007897029</code></pre>
+<p>We can extract just the diagonal of the matrix with <code>diag()</code>:</p>
+<div class="sourceCode" id="cb8" style="background: #f1f3f5;"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb8-1"><span class="fu" style="color: #4758AB;">diag</span>(<span class="fu" style="color: #4758AB;">vcov</span>(reg))</span></code></pre></div>
+<pre><code>## (Intercept)           x 
+## 0.273157410 0.007897029</code></pre>
+<p>These are the variances of <img src="https://latex.codecogs.com/png.latex?%5Chat%7B%5Cbeta_0%7D"> and <img src="https://latex.codecogs.com/png.latex?%5Chat%7B%5Cbeta_1%7D">. Since the standard error of an estimator is the square root of its variance, we simply square root these values to get the standard errors of <img src="https://latex.codecogs.com/png.latex?%5Chat%7B%5Cbeta_0%7D"> and <img src="https://latex.codecogs.com/png.latex?%5Chat%7B%5Cbeta_1%7D">, which were originally reported in our regression output next to the coefficient estimates.</p>
+<div class="sourceCode" id="cb10" style="background: #f1f3f5;"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb10-1"><span class="fu" style="color: #4758AB;">sqrt</span>(<span class="fu" style="color: #4758AB;">diag</span>(<span class="fu" style="color: #4758AB;">vcov</span>(reg)))</span></code></pre></div>
+<pre><code>## (Intercept)           x 
+##  0.52264463  0.08886523</code></pre>
+<p>Now, the whole problem is we know that due to heteroskedasticity, the standard errors are incorrectly estimated. To fix this, we use the <code>sandwich</code> package that allows us to manually recalculate the variance-covariance matrix using methods robust to heteroskedasticity. This is why I went through the trouble of describing the variance-covariance matrix above, as we will be recalculating it using a different method, the <code>HC1</code> method, which is how Stata calculates it. I then store these calculates as <code>rse</code> in my original <code>lm</code> object called <code>reg</code>.</p>
+<div class="sourceCode" id="cb12" style="background: #f1f3f5;"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb12-1"><span class="fu" style="color: #4758AB;">library</span>(<span class="st" style="color: #20794D;">"sandwich"</span>) <span class="co" style="color: #5E5E5E;"># package that allows for robust SE estimation</span></span>
+<span id="cb12-2"><span class="co" style="color: #5E5E5E;"># create Robust Standard Errors for regression as 'reg$rse'</span></span>
+<span id="cb12-3">reg<span class="sc" style="color: #5E5E5E;">$</span>rse <span class="ot" style="color: #003B4F;">&lt;-</span><span class="fu" style="color: #4758AB;">sqrt</span>(<span class="fu" style="color: #4758AB;">diag</span>(<span class="fu" style="color: #4758AB;">vcovHC</span>(reg, <span class="at" style="color: #657422;">type=</span><span class="st" style="color: #20794D;">"HC1"</span>)))</span>
+<span id="cb12-4"><span class="co" style="color: #5E5E5E;"># same procedure as above but now we generate vcov with "HC1" method</span></span></code></pre></div>
+<p>If we now want to recreate the regression output table produced by <code>summary(reg)</code>, we need to use the <code>coeftest</code> function, which is a part of the <code>lmtest</code> package. Just to verify, if we run <code>coeftest()</code> on our original <code>reg</code>, it prints the regression output table with coefficient estimates, standard errors, <img src="https://latex.codecogs.com/png.latex?t">-statistics, and <img src="https://latex.codecogs.com/png.latex?p">-values.</p>
+<div class="sourceCode" id="cb13" style="background: #f1f3f5;"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb13-1"><span class="fu" style="color: #4758AB;">coeftest</span>(reg) <span class="co" style="color: #5E5E5E;"># test with normal SEs</span></span></code></pre></div>
+<pre><code>## 
+## t test of coefficients:
+## 
+##             Estimate Std. Error t value Pr(&gt;|t|)    
+## (Intercept) 0.685077   0.522645  1.3108   0.1905    
+## x           0.764836   0.088865  8.6067   &lt;2e-16 ***
+## ---
+## Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1</code></pre>
+<p>If we run it again, but set the <code>vcov</code> option to <code>ccovHC(reg, "HC1")</code>, it will print the robust standard errors.</p>
+<div class="sourceCode" id="cb15" style="background: #f1f3f5;"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb15-1"><span class="fu" style="color: #4758AB;">coeftest</span>(reg,<span class="at" style="color: #657422;">vcov=</span><span class="fu" style="color: #4758AB;">vcovHC</span>(reg,<span class="st" style="color: #20794D;">"HC1"</span>)) <span class="co" style="color: #5E5E5E;"># tests with robust SEs</span></span></code></pre></div>
+<pre><code>## 
+## t test of coefficients:
+## 
+##             Estimate Std. Error t value  Pr(&gt;|t|)    
+## (Intercept) 0.685077   0.312060  2.1953    0.0286 *  
+## x           0.764836   0.093579  8.1732 2.504e-15 ***
+## ---
+## Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1</code></pre>
+<p>These command simply print the robust standard errors for us to see in the console as we run our analyses. If we want to take these and actually output them in a presentable regression table, we will use the well-known <code>stargazer</code> package, used to take <code>R</code> regression <code>lm</code> objects and print scholarly journal-quality regression tables.</p>
+<p>The nice thing is <code>stargazer</code> has an option to set where the standard errors are pulled from. We stored our robust standard errors in <code>reg</code> as a vector called <code>rse</code>. Below, I print the <code>stargazer</code> regression table (with several personalized options) for this webpage, showing the our regression twice, once with the normal standard errors, and the second time with the robust standard errors. For more, see <a href="https://www.jakeruss.com/cheatsheets/stargazer/#robust-standard-errors-replicating-statas-robust-option">Jake Russ’ cheat sheet</a>.</p>
+<div class="sourceCode" id="cb17" style="background: #f1f3f5;"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb17-1"><span class="fu" style="color: #4758AB;">library</span>(<span class="st" style="color: #20794D;">"stargazer"</span>)</span>
+<span id="cb17-2"><span class="fu" style="color: #4758AB;">stargazer</span>(reg, reg, </span>
+<span id="cb17-3">          <span class="at" style="color: #657422;">se=</span><span class="fu" style="color: #4758AB;">list</span>(<span class="cn" style="color: #8f5902;">NULL</span>,reg<span class="sc" style="color: #5E5E5E;">$</span>rse), </span>
+<span id="cb17-4">          <span class="at" style="color: #657422;">type=</span><span class="st" style="color: #20794D;">"html"</span>,</span>
+<span id="cb17-5">          <span class="at" style="color: #657422;">column.labels =</span> <span class="fu" style="color: #4758AB;">c</span>(<span class="st" style="color: #20794D;">"Normal"</span>, <span class="st" style="color: #20794D;">"Robust SEs"</span>), </span>
+<span id="cb17-6">          <span class="at" style="color: #657422;">title=</span><span class="st" style="color: #20794D;">"Regression Results"</span>, </span>
+<span id="cb17-7">          <span class="at" style="color: #657422;">dep.var.caption =</span> <span class="st" style="color: #20794D;">""</span>,</span>
+<span id="cb17-8">          <span class="at" style="color: #657422;">omit.stat=</span><span class="fu" style="color: #4758AB;">c</span>(<span class="st" style="color: #20794D;">"adj.rsq"</span>,<span class="st" style="color: #20794D;">"f"</span>)) </span></code></pre></div>
+<p>The key to notice is <code>se=list(NULL,reg$rse)</code>, which creates a list of objects from which to pull the standard errors for each regression in the table. The first regression uses the standard methods, needing no special source, so it is set to <code>NULL</code>. The second regression, also <code>reg</code>, uses our robust standard errors stored in <code>reg$rse</code>. The output of the table is below:</p>
+<table class="table">
+<caption><strong>Regression Results</strong></caption>
+<colgroup>
+<col style="width: 45%">
+</colgroup>
+<tbody>
+<tr class="odd">
+<td></td>
+</tr>
+<tr class="even">
+<td></td>
+</tr>
+<tr class="odd">
+<td></td>
+</tr>
+<tr class="even">
+<td></td>
+</tr>
+<tr class="odd">
+<td></td>
+</tr>
+<tr class="even">
+<td>x</td>
+</tr>
+<tr class="odd">
+<td></td>
+</tr>
+<tr class="even">
+<td></td>
+</tr>
+<tr class="odd">
+<td>Constant</td>
+</tr>
+<tr class="even">
+<td></td>
+</tr>
+<tr class="odd">
+<td></td>
+</tr>
+<tr class="even">
+<td></td>
+</tr>
+<tr class="odd">
+<td>Observations</td>
+</tr>
+<tr class="even">
+<td>R<sup>2</sup></td>
+</tr>
+<tr class="odd">
+<td>Residual Std. Error (df = 498)</td>
+</tr>
+<tr class="even">
+<td></td>
+</tr>
+<tr class="odd">
+<td><em>Note:</em></td>
+</tr>
+</tbody>
+</table>
+<p>A casual search around the internet, as well as the textbook that I use shows that this is the most common or reccomended method for achieving robust standard errors.</p>
+</section>
+<section id="method-2-using-estimatr" class="level2">
+<h2 class="anchored" data-anchor-id="method-2-using-estimatr">Method 2: Using <code>estimatr</code></h2>
+<p>I recently discovered another package called <a href="https://github.com/DeclareDesign/estimatr"><code>estimatr</code></a> that achieves the simplicity of changing a single word, just like in Stata.</p>
+<p>Loading the <code>estimatr</code> package, all we need to do is create a new regression (I’ll call it <code>reg.robust</code>) and instead of running a normal linear model with <code>lm</code>, we run <code>lm_robust</code>, and set the standard errors <code>se_type="stata"</code> to calculate using the HC1 method (same as above).</p>
+<div class="sourceCode" id="cb18" style="background: #f1f3f5;"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb18-1"><span class="fu" style="color: #4758AB;">library</span>(<span class="st" style="color: #20794D;">"estimatr"</span>)</span>
+<span id="cb18-2">reg.robust<span class="ot" style="color: #003B4F;">&lt;-</span><span class="fu" style="color: #4758AB;">lm_robust</span>(y<span class="sc" style="color: #5E5E5E;">~</span>x,<span class="at" style="color: #657422;">se_type =</span> <span class="st" style="color: #20794D;">"stata"</span>)</span>
+<span id="cb18-3"><span class="fu" style="color: #4758AB;">summary</span>(reg.robust)</span></code></pre></div>
+<pre><code>## 
+## Call:
+## lm_robust(formula = y ~ x, se_type = "stata")
+## 
+## Standard error type:  HC1 
+## 
+## Coefficients:
+##             Estimate Std. Error t value  Pr(&gt;|t|) CI Lower CI Upper  DF
+## (Intercept)   0.6851    0.31206   2.195 2.860e-02  0.07196   1.2982 498
+## x             0.7648    0.09358   8.173 2.504e-15  0.58098   0.9487 498
+## 
+## Multiple R-squared:  0.1295 ,    Adjusted R-squared:  0.1277 
+## F-statistic:  66.8 on 1 and 498 DF,  p-value: 2.504e-15</code></pre>
+<p>We can see the standard errors are now identical to the robust ones from the method above.</p>
+<p>One other nicety of <code>estimatr</code> is that <a href="https://declaredesign.org/r/estimatr/articles/estimatr-in-the-tidyverse.html">it can create <code>tidy data.frame</code> versions</a> of <code>R</code> default regression output tables, much like the <code>broom</code> package in the <code>tidyverse</code>. We do this simply with the <code>tidy()</code> command on our <code>reg.robust</code>.</p>
+<div class="sourceCode" id="cb20" style="background: #f1f3f5;"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb20-1"><span class="fu" style="color: #4758AB;">tidy</span>(reg.robust)</span></code></pre></div>
+<div data-pagedtable="false">
+
+<script data-pagedtable-source="" type="application/json">
+{"columns":[{"label":["term"],"name":[1],"type":["chr"],"align":["left"]},{"label":["estimate"],"name":[2],"type":["dbl"],"align":["right"]},{"label":["std.error"],"name":[3],"type":["dbl"],"align":["right"]},{"label":["statistic"],"name":[4],"type":["dbl"],"align":["right"]},{"label":["p.value"],"name":[5],"type":["dbl"],"align":["right"]},{"label":["conf.low"],"name":[6],"type":["dbl"],"align":["right"]},{"label":["conf.high"],"name":[7],"type":["dbl"],"align":["right"]},{"label":["df"],"name":[8],"type":["dbl"],"align":["right"]},{"label":["outcome"],"name":[9],"type":["chr"],"align":["left"]}],"data":[{"1":"(Intercept)","2":"0.6850766","3":"0.31205969","4":"2.195338","5":"2.860001e-02","6":"0.07196079","7":"1.2981925","8":"498","9":"y"},{"1":"x","2":"0.7648365","3":"0.09357893","4":"8.173169","5":"2.503856e-15","6":"0.58097828","7":"0.9486946","8":"498","9":"y"}],"options":{"columns":{"min":{},"max":[10]},"rows":{"min":[10],"max":[10]},"pages":{}}}
+  </script>
+</div>
+<p>Until today, I thought that was all <code>estimatr</code> could do: it could show us the robust standard errors, but we could not present it in an output table with <code>stargazer</code>. <code>lm_robust</code> objects do not get along well with <code>stargazer</code>, only <code>lm</code> objects.</p>
+<p>Documentation is extremely scarce, but there is a <code>starprep()</code> command to enable use of <code>estimatr</code> <code>lm_robust</code> objects with <code>stargazer</code>. After a lot of searching and trial and error, the process seems to be that using <code>starprep</code> extracts <em>only</em> the (robust) standard errors from the <code>lm_robust</code> regression, meaning we just need to insert this into <code>stargazer</code>’s <code>se=</code> option.</p>
+<div class="sourceCode" id="cb21" style="background: #f1f3f5;"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb21-1"><span class="co" style="color: #5E5E5E;"># this is what starprep extracts</span></span>
+<span id="cb21-2"><span class="fu" style="color: #4758AB;">starprep</span>(reg.robust)</span></code></pre></div>
+<pre><code>## [[1]]
+## (Intercept)           x 
+##  0.31205969  0.09357893</code></pre>
+<p>Below, again, I run <code>stargazer</code> on our original <code>reg</code> twice, with the second instance using robust standard errors via <code>estimatr</code>. Specifically notice the list for <code>se</code>; again, like the fist method above, we use the default for the first regression (hence <code>NULL</code>), and for the second, we use <code>starprep(reg.robust)</code> to extract from <code>estimatr</code>.</p>
+<div class="sourceCode" id="cb23" style="background: #f1f3f5;"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb23-1"><span class="fu" style="color: #4758AB;">stargazer</span>(reg, reg, </span>
+<span id="cb23-2">          <span class="at" style="color: #657422;">se=</span><span class="fu" style="color: #4758AB;">starprep</span>(reg,reg.robust), </span>
+<span id="cb23-3">          <span class="at" style="color: #657422;">type=</span><span class="st" style="color: #20794D;">"html"</span>,</span>
+<span id="cb23-4">          <span class="at" style="color: #657422;">column.labels =</span> <span class="fu" style="color: #4758AB;">c</span>(<span class="st" style="color: #20794D;">"Normal"</span>, <span class="st" style="color: #20794D;">"Robust SEs"</span>), </span>
+<span id="cb23-5">          <span class="at" style="color: #657422;">title=</span><span class="st" style="color: #20794D;">"Regression Results"</span>, </span>
+<span id="cb23-6">          <span class="at" style="color: #657422;">dep.var.caption =</span> <span class="st" style="color: #20794D;">""</span>,</span>
+<span id="cb23-7">          <span class="at" style="color: #657422;">omit.stat=</span><span class="fu" style="color: #4758AB;">c</span>(<span class="st" style="color: #20794D;">"adj.rsq"</span>,<span class="st" style="color: #20794D;">"f"</span>)) </span></code></pre></div>
+<table class="table">
+<caption><strong>Regression Results</strong></caption>
+<colgroup>
+<col style="width: 45%">
+</colgroup>
+<tbody>
+<tr class="odd">
+<td></td>
+</tr>
+<tr class="even">
+<td></td>
+</tr>
+<tr class="odd">
+<td></td>
+</tr>
+<tr class="even">
+<td></td>
+</tr>
+<tr class="odd">
+<td></td>
+</tr>
+<tr class="even">
+<td>x</td>
+</tr>
+<tr class="odd">
+<td></td>
+</tr>
+<tr class="even">
+<td></td>
+</tr>
+<tr class="odd">
+<td>Constant</td>
+</tr>
+<tr class="even">
+<td></td>
+</tr>
+<tr class="odd">
+<td></td>
+</tr>
+<tr class="even">
+<td></td>
+</tr>
+<tr class="odd">
+<td>Observations</td>
+</tr>
+<tr class="even">
+<td>R<sup>2</sup></td>
+</tr>
+<tr class="odd">
+<td>Residual Std. Error (df = 498)</td>
+</tr>
+<tr class="even">
+<td></td>
+</tr>
+<tr class="odd">
+<td><em>Note:</em></td>
+</tr>
+</tbody>
+</table>
+<p>Again, we can see both methods achieve results identical to Stata. The nice thing about <code>estimatr</code> is we do not need to mess around with the variance-covariance matrix!</p>
+
+
+</section>
+
+ ]]></description>
+  <category>rstats</category>
+  <category>teaching</category>
+  <category>stata</category>
+  <category>econometrics</category>
+  <guid>https://ryansafner.com/posts/replicating-statas-robust-option-for-ols-standard-errors-in-r.html</guid>
+  <pubDate>Fri, 28 Dec 2018 05:00:00 GMT</pubDate>
+  <media:content url="https://ryansafner.com/posts/plot-1.png" medium="image" type="image/png"/>
+</item>
+<item>
+  <title>Visualizing Tax Incidence with Shiny</title>
+  <link>https://ryansafner.com/posts/visualizing-tax-incidence-with-shiny.html</link>
+  <description><![CDATA[ 
+
+
+
+<p>With the new school year in full swing, I have redesigned my personal website, and plan to make occasional posts on the tools I use in my research and teaching. Over the summer, I made the full conversion to using <em>R</em>, <em>R Markdown</em>, and <em>Github</em> for nearly everything I do in my professional life (including managing my website with <a href="https://github.com/gcushen/hugo-academic/">Hugo/Academic</a>).</p>
+<p>This semester, I am teaching econometrics to my students using <em>R</em> for the first time, and optionally nudging them to use <em>R Markdown</em> for their homeworks and paper assignment. My training, both in undergraduate and graduate school, was with Stata, so I am particularly excited to shake things up a bit.</p>
+<p>I primarily see this blog as the venue to occasionally post about my experiences and as well as tutorials in using these tools for research and teaching. I have benefited enormously in the past year thanks to people like <a href="http://kieranhealy.org/resources/">Kieran Healey</a>, <a href="http://stat545.com/">Jenny Bryan</a>, <a href="http://r4ds.had.co.nz/">Hadley Wickham</a>, <a href="https://bookdown.org/yihui/rmarkdown/">Yihue Xie</a>, <a href="jakeruss.com/cheatsheets/stargazer">Jake Russ</a>, <a href="https://github.com/svmiller">Steven Miller</a>, <a href="https://github.com/jabranham/">J. Alexander Branham</a> and <a href="https://github.com/vladtarko/rtools">Vlad Tarko</a>. Most of these are academics that I have never met, but they were generous enough to make syllabi, lecture slides, source files, and blog posts public on their websites and on Github.</p>
+<p>I hope to do my small part to spread word about these useful tools and post examples I use in class or in my research here.</p>
+
+
+
+ ]]></description>
+  <category>rstats</category>
+  <category>teaching</category>
+  <category>shiny</category>
+  <category>economics</category>
+  <guid>https://ryansafner.com/posts/visualizing-tax-incidence-with-shiny.html</guid>
+  <pubDate>Sun, 07 Oct 2018 04:00:00 GMT</pubDate>
+</item>
+<item>
+  <title>Visualizing Linear Regression with Shiny</title>
+  <link>https://ryansafner.com/posts/visualizing-linear-regression-with-shiny.html</link>
+  <description><![CDATA[ 
+
+
+
+<p>For my <a href="http://ryansafner.com/courses/econ480">econometrics course</a> this semester, I have been using <code>R</code> to help students visualize linear regression models. Running a regression in <code>R</code> is quite simple, as is intepretting the results, with a little bit of training. However, I emphasize that I want students to <em>understand</em> what is happening “inside the black box” of regression. I discourage blindly trusting <code>R</code>’s opaquely simple input and output, and get students to learn what <code>R</code> is doing <em>under the hood</em>, even if they will never have to manually estimate the model themselves.</p>
+<section id="brief-econometrics-review-incoming" class="level3">
+<h3 class="anchored" data-anchor-id="brief-econometrics-review-incoming">Brief Econometrics Review Incoming:</h3>
+<p>Ordinary Least Squares (OLS) regression simply chooses the intercept (<img src="https://latex.codecogs.com/png.latex?%5Chat%7B%5Cbeta_0%7D">) and slope (<img src="https://latex.codecogs.com/png.latex?%5Chat%7B%5Cbeta_1%7D">) parameters for the equation of a line that best fits the data: <img src="https://latex.codecogs.com/png.latex?%5Chat%7BY_i%7D=%5Chat%7B%5Cbeta_0%7D+%5Chat%7B%5Cbeta_1%7DX_i"></p>
+<p>by trying to minimize the <strong>Sum of Squared Errors (SSE)</strong>. The error <img src="https://latex.codecogs.com/png.latex?%5Cepsilon"> (or residual) of an observation is defined as the difference between the <em>actual</em> value of <img src="https://latex.codecogs.com/png.latex?Y"> observed in the data associated with a given value of <img src="https://latex.codecogs.com/png.latex?X">, and the <em>predicted</em> value, <img src="https://latex.codecogs.com/png.latex?%5Chat%7BY%7D"> given <img src="https://latex.codecogs.com/png.latex?X">:</p>
+<p><img src="https://latex.codecogs.com/png.latex?%5Chat%7B%5Cepsilon%7D=Y_i-%5Chat%7BY_i%7D"></p>
+<p>So what OLS does is minimize the sum of the squared errors:</p>
+<p><img src="https://latex.codecogs.com/png.latex?%5Cmin%20%5Csum%5En_%7Bi=1%7D%20%5Chat%7B%5Cepsilon_i%7D%5E2"></p>
+<p>This is a calculus problem that is solvable, if tedious. But at least it should be intuitive to understand what OLS does.</p>
+</section>
+<section id="visualizing-with-shiny" class="level3">
+<h3 class="anchored" data-anchor-id="visualizing-with-shiny">Visualizing with Shiny</h3>
+<p>Beyond grinding students down with pure theory, I wrote an <a href="https://ryansafner.shinyapps.io/ols_estimation_by_min_sse/">interactive Shiny App</a> with <code>R</code> that demonstrates this process to choosing the optimal slope and intercept.</p>
+<p>With this example, I have a randomly-generated set of data (within specific parameters, to keep the graph scaled properly). I then allow users to choose a slope and intercept with sliders, to move the line accordingly. The graph also displays all of the errors as dashed red lines. Moving the slope or the intercept too much causes the generated line to create much larger errors. The graph also calculates the <strong>SSE</strong> (which again, OLS minimizes), in addition to the standard error of the regression (<strong>SER</strong>), which calculates the average size of the error.</p>
+<p>I would have loved to be able to graph the square of the errors, and display them, to show that OLS minimizes the area of those squares, if drawn. However, I was unable to figure out how to draw a square from each data point and the regression line (for squared error)| instead of a mere dashed line (for error).</p>
+<p>I love Shiny and have only begun to fully understand how it works and the benefits of its application. I have already coded several other models for intuitive visualization that I may post about later, namely a <a href="https://ryansafner.shinyapps.io/ccmodel/">Calculus of Consent model of the optimal voting rule</a> in <a href="https://ryansafner.com/courses/ECON410">public choice</a>, and ambitiously, the <a href="https://ryansafner.shinyapps.io/consumer/">consumer’s constrained optimization problem</a> in <a href="https://ryansafner.com/courses/ECON306">intermediate microeconomics</a>. Using sliders in shiny allow me to demonstrate the marginal effects of each parameter change on a model’s predicted outcome far better than just me proving several theoretical examples by way of equations. Students can instead see the change in real time.</p>
+
+
+</section>
+
+ ]]></description>
+  <category>rstats</category>
+  <category>shiny</category>
+  <category>teaching</category>
+  <category>econometrics</category>
+  <guid>https://ryansafner.com/posts/visualizing-linear-regression-with-shiny.html</guid>
+  <pubDate>Fri, 28 Sep 2018 04:00:00 GMT</pubDate>
+</item>
+<item>
+  <title>Econometrics Lecture Slides on GitHub</title>
+  <link>https://ryansafner.com/posts/econometrics-slides-on-github.html</link>
+  <description><![CDATA[ 
+
+
+
+<p>This semester, I am posting my lecture slides for my Econometrics class on <a href="http://www.github.com/ryansafner/ECON480Fall2018">GitHub</a>. While I usually post my lecture slides for my courses on my website or link to my Dropbox, those are the final PDF documents. On GitHub, I am posting both the final PDFs as well as the source <em>.rmd</em> files. I am primarily doing this for my econometrics students, who will be learning <em>R</em> and <em>R Markdown</em> for their assignments (which is how I write my slides), but this is also open to anyone.</p>
+<p>This brings two benefits. First, it provides an example of how to use <em>R Markdown</em> and the benefits of writing plain-text files to convert into PDFs, html and other outputs (more on that in later posts). Second, it is also an example of using GitHub as a version control system for maintaining backups, a platform for collaboration, and exposure to industry tools of the software trade.</p>
+<p>Over the summer, I also converted to writing my research papers in <em>R Markdown</em> and managing them on GitHub (and the same with this website). I have also attempted to begin collaborating with some of my coauthors via GitHub. They are presently in private repositories to keep research private until it is ready for publication, but I may consider making more public as examples.</p>
+<p>I have updated the Readme file on GitHub to provide more information for how to view, download, and read the <em>.rmd</em> source files used to generate the slides. In future posts, I will discuss more about version control with GitHub, writing with <em>R Markdown</em>, and managing workflow with these tools.</p>
+
+
+
+ ]]></description>
+  <category>rstats</category>
+  <category>markdown</category>
+  <category>github</category>
+  <category>teaching</category>
+  <category>econometrics</category>
+  <guid>https://ryansafner.com/posts/econometrics-slides-on-github.html</guid>
+  <pubDate>Sat, 08 Sep 2018 04:00:00 GMT</pubDate>
+</item>
+<item>
+  <title>Test Post Please Don’t Ignore</title>
+  <link>https://ryansafner.com/posts/test-post-please-dont-ignore.html</link>
+  <description><![CDATA[ 
+
+
+
+<p>With the new school year in full swing, I have redesigned my personal website, and plan to make occasional posts on the tools I use in my research and teaching. Over the summer, I made the full conversion to using <em>R</em>, <em>R Markdown</em>, and <em>Github</em> for nearly everything I do in my professional life (including managing my website with <a href="https://github.com/gcushen/hugo-academic/">Hugo/Academic</a>).</p>
+<p>This semester, I am teaching econometrics to my students using <em>R</em> for the first time, and optionally nudging them to use <em>R Markdown</em> for their homeworks and paper assignment. My training, both in undergraduate and graduate school, was with Stata, so I am particularly excited to shake things up a bit.</p>
+<p>I primarily see this blog as the venue to occasionally post about my experiences and as well as tutorials in using these tools for research and teaching. I have benefited enormously in the past year thanks to people like <a href="http://kieranhealy.org/resources/">Kieran Healey</a>, <a href="http://stat545.com/">Jenny Bryan</a>, <a href="http://r4ds.had.co.nz/">Hadley Wickham</a>, <a href="https://bookdown.org/yihui/rmarkdown/">Yihue Xie</a>, <a href="jakeruss.com/cheatsheets/stargazer">Jake Russ</a>, <a href="https://github.com/svmiller">Steven Miller</a>, <a href="https://github.com/jabranham/">J. Alexander Branham</a> and <a href="https://github.com/vladtarko/rtools">Vlad Tarko</a>. Most of these are academics that I have never met, but they were generous enough to make syllabi, lecture slides, source files, and blog posts public on their websites and on Github.</p>
+<p>I hope to do my small part to spread word about these useful tools and post examples I use in class or in my research here.</p>
+
+
+
+ ]]></description>
+  <category>rstats</category>
+  <category>rmarkdown</category>
+  <category>blog</category>
+  <guid>https://ryansafner.com/posts/test-post-please-dont-ignore.html</guid>
+  <pubDate>Sun, 02 Sep 2018 04:00:00 GMT</pubDate>
+  <media:content url="https://ryansafner.com/posts/myface2021.png" medium="image" type="image/png"/>
+</item>
+</channel>
+</rss>

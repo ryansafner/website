@@ -1,0 +1,26 @@
+# options apply to all posts in this folder
+
+# freeze computational output
+freeze: auto
+
+# Make a big title block
+title-block-banner: false
+
+# long dates
+date-format: long
+
+# smooth scroll
+smooth-scroll: true
+
+# Default author
+#author:
+#  - name: Ryan Safner
+#    url: https://ryansafner.com
+#    affiliation: Hood College
+#    affiliation-url: https://hood.edu/
+
+# citation
+#citation: true
+
+# Enable CC licence appendix
+#license: "CC BY"

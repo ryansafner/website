@@ -1,0 +1,33 @@
+project:
+  type: website
+
+website:
+  title: "Ryan Safner"
+  site-url: "https://ryansafner.com"
+  description-meta: "Personal website of Dr. Ryan Safner"
+  favicon: "myface2021.png"
+  twitter-card:
+    image: "myface2021.png"
+    creator: "@ryansafner"
+  open-graph:
+    image: "myface2021.png"
+  navbar:
+    left:
+      - href: index.qmd
+        text: Home
+      - href: https://raw.githubusercontent.com/ryansafner/CV/master/CV.pdf
+        text: CV
+      - teaching.qmd
+      - research.qmd
+      - blog.qmd
+
+format:
+  html:
+    theme: journal
+    css: styles.css
+    toc: true
+    include-in-header:
+      - includes.html
+      
+editor: visual
+
