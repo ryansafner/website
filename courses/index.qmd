@@ -1,0 +1,5 @@
+---
+title: "Courses"
+---
+
+These are course materials for courses I have taught that do not have their own dedicated course website. This means I haven't taught them since Fall 2019, when I started making course websites.

@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.0.37">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+<meta name="dcterms.date" content="2019-08-06">
+
+<title>Ryan Safner - Econometrics, Data Science, and Causal Inference</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+span.underline{text-decoration: underline;}
+div.column{display: inline-block; vertical-align: top; width: 50%;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+</style>
+
+
+<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../">
+<link href="../myface2021.png" rel="icon" type="image/png">
+<script src="../site_libs/quarto-html/quarto.js"></script>
+<script src="../site_libs/quarto-html/popper.min.js"></script>
+<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "navbar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "end",
+  "type": "overlay",
+  "limit": 20,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit"
+  }
+}</script>
+<style>html{ scroll-behavior: smooth; }</style>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<link rel="stylesheet" href="../styles.css">
+<meta property="og:title" content="Ryan Safner - Econometrics, Data Science, and Causal Inference">
+<meta property="og:description" content="This summer, I am overhauling my econometrics class in many ways, in part because I was pleased to recieve a teaching grant from my college to make more R resources for my econometrics class.">
+<meta property="og:image" content="https://ryansafner.com/myface2021.png">
+<meta property="og:site-name" content="Ryan Safner">
+<meta property="og:image:height" content="1990">
+<meta property="og:image:width" content="1624">
+<meta name="twitter:title" content="Ryan Safner - Econometrics, Data Science, and Causal Inference">
+<meta name="twitter:description" content="This summer, I am overhauling my econometrics class in many ways, in part because I was pleased to recieve a teaching grant from my college to make more R resources for my econometrics class.">
+<meta name="twitter:image" content="https://ryansafner.com/myface2021.png">
+<meta name="twitter:creator" content="@ryansafner">
+<meta name="twitter:image-height" content="1990">
+<meta name="twitter:image-width" content="1624">
+<meta name="twitter:card" content="summary_large_image">
+</head>
+
+<body class="nav-fixed">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+    <nav class="navbar navbar-expand-lg navbar-dark ">
+      <div class="navbar-container container-fluid">
+      <a class="navbar-brand" href="../index.html">
+    <span class="navbar-title">Ryan Safner</span>
+  </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll me-auto">
+  <li class="nav-item">
+    <a class="nav-link" href="../index.html">Home</a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="https://raw.githubusercontent.com/ryansafner/CV/master/CV.pdf">CV</a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../teaching.html">Teaching</a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../research.html">Research</a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../blog.html">Blog</a>
+  </li>  
+</ul>
+              <div id="quarto-search" class="" title="Search"></div>
+          </div> <!-- /navcollapse -->
+      </div> <!-- /container-fluid -->
+    </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<!-- sidebar -->
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#data-science" id="toc-data-science" class="nav-link active" data-scroll-target="#data-science">“Data Science”</a></li>
+  <li><a href="#causal-inference" id="toc-causal-inference" class="nav-link" data-scroll-target="#causal-inference">“Causal Inference”</a></li>
+  <li><a href="#a-compromise" id="toc-a-compromise" class="nav-link" data-scroll-target="#a-compromise">A Compromise</a></li>
+  <li><a href="#references" id="toc-references" class="nav-link" data-scroll-target="#references">References</a></li>
+  </ul>
+</nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">Econometrics, Data Science, and Causal Inference</h1>
+  <div class="quarto-categories">
+    <div class="quarto-category">rstats</div>
+    <div class="quarto-category">data science</div>
+    <div class="quarto-category">causal inference</div>
+    <div class="quarto-category">DAGs</div>
+    <div class="quarto-category">blog</div>
+    <div class="quarto-category">teaching</div>
+    <div class="quarto-category">econometrics</div>
+  </div>
+  </div>
+
+
+
+<div class="quarto-title-meta">
+
+    
+    <div>
+    <div class="quarto-title-meta-heading">Published</div>
+    <div class="quarto-title-meta-contents">
+      <p class="date">August 6, 2019</p>
+    </div>
+  </div>
+    
+  </div>
+  
+
+</header>
+
+<p>This summer, I am overhauling my econometrics class in many ways, in part because I was pleased to recieve a teaching grant from my college to make more R resources for my econometrics class. <a href="http://ryansafner.com/courses/ECON480">Last Fall</a> was the first time I had taught it using R, and I’ve learned a ton since then. Expect a flurry of posts in the coming weeks more on those topics.</p>
+<p>This post, however, explores some of the trends that I have been thinking about in teaching econometrics, and something monotonous that I have been struggling with that encapsulates the tension in these trends: what to name my course. I of course need to officially stick to the Procrustean Bed of the title in my college’s course catalog: ECON 480 - Econometrics, but in more causal conversation, or perhaps as a course subtitle, I have been torn between <strong>“data science”</strong> and <strong>“causal inference.”</strong> This class is an introduction to econometrics, and assumes students have taken basic statistics, so this “problem” is really just marketing on my part — it’s just a run-of-the-mill introductory econometrics course, but I like to add in a few bells and whistles!</p>
+<p>After thinking on this more, it seems to me there that we might be able to delineate a few possible directions that our field is heading. I hasten to qualify that I am thinking about this much more as a <em>teacher,</em> of these topics, less as a <em>practitioner</em>, as my own research niche is applied economic theory, albeit with a steadily-growing fascination with these methods. Nor am I a historian of econometric thought.</p>
+<p>These two trends or approaches I’ll call “data science” and “causal inference.” For the purposes of wrestling with this post, I will examine each of these forward-looking trends separately. I don’t want to rule out the possibility at all that these are entirely complementary, and I am making a big deal out of nothing. Nonetheless, I think it is an interesting distinction to examine.</p>
+<section id="data-science" class="level2">
+<h2 class="anchored" data-anchor-id="data-science">“Data Science”</h2>
+<p><a href="https://www.google.com/search?q=data+science">“Data science”</a> is the hip new catchall term for using statistical software to analyze data for a variety of purposes. It is commonly interpreted as <a href="https://www.google.com/search?q=data+science+venn+diagram">the intersection of statistics, computer science, and domain expertise (e.g.&nbsp;business, biology, etc)</a>. I personally like the definition offered by the following tweet:</p>
+<p></p>
+<p>The modal “data scientist” seems to be a young practitioner in industry or academia that use programming languages like R and Python to wrangle, visualize, and present data to solve empirical problems in their domain of expertise. On the academic/teaching side, self-styled “data scientists” seem to be trendy statisticians, computer scientists, or biologists (e.g.&nbsp;“bioinformatics”). <a href="https://www.google.com/search?q=data+science+certificate">New masters degrees and certifications</a> in “Data Science” or “Data Analytics” seem to be popping up left and right at major universities.</p>
+<p>A large part of me wants to ride the coattails of this cool new trend and call/subtitle my class something like “Introduction to Data Science.” I decided against it for a few reasons that I think are instructive.</p>
+<p>First, I would be encroaching the turf of my colleagues in Statistics and Computer Science departments that often have courses with explicit titles like this. These classes are often a rehash of classic introductory statistics classes (probability, the normal distribution, <span class="math inline">\(t\)</span>-tests, the central limit theorem, etc) but where software and simulation tend to replace pure theory and statistical proofs in a much more student-friendly way. It is a lot more intuitive and less tedious to understand a <span class="math inline">\(p\)</span>-value via programming commands or simulating a null distribution of 10,000 bootstrapped samples than to learn the theoretical Student’s <span class="math inline">\(t\)</span>-distributions and look up critical values from a table (as I once had to!).</p>
+<p>Second, although some econometrics textbooks do teach introductory econometrics this way<a href="#fn1" class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a>, a good econometrics class, in my opinion, is much more than just an introductory statistics class (first review probability, distributions, statistical estimators, hypothesis testing, linear regression) that finally bleeds into the models that empirical econometricians <em>actually</em> — oh no, the semester’s already over!</p>
+<p>Econometrics has a particularly opinionated view of statistical models, and often uses them to a very different end than most “data science”-type uses. This is precisely what distinguishes uses of statistics in <em>economics</em> from its use in other domain areas<a href="#fn2" class="footnote-ref" id="fnref2" role="doc-noteref"><sup>2</sup></a>, the focus on the second major trend I discuss below, <strong>causal inference.</strong></p>
+<p>Perhaps the paradigmatic application of “data science” beyond mere descriptive statistics and causal inference is “machine learning” and associated terms and techniques (e.g.&nbsp;“big data,” “neural networks,” “artificial intelligence,” etc). These issues often deal with massive “wide” datasets, frequently with more variables than observations. Take a website such as Facebook, which has a ton of information about a user – locations they visit the website from, who their friends are, what pages they have interacted with, etc. <a href="https://www.youtube.com/watch?v=R9OHn5ZF4Uo">Machine learning techniques</a> such as neural networks, as I understand them, try to identify what characteristics predict a certain outcome. Facial recognition software seems to me to operate similarly: take a large number of pre-identified images (e.g.&nbsp;a human at some point determined the image indeed contained a face) for <em>training</em> an algorithm, pass those images through <span class="math inline">\(n\)</span>-number of layers to detect common characteristics of “faces” vs.&nbsp;“not-faces”, and then additional subtleties that differentiate one face from another, and after <span class="math inline">\(n\)</span>-layers and <span class="math inline">\(m\)</span> features are determined (where both <span class="math inline">\(n\)</span> and <span class="math inline">\(m\)</span> are massive numbers!), then the algorithm can take a <em>new</em> un-classified image and determine <em>if</em> it includes a face, or, if it is a very good algorithm, <em>whose</em> face it is. But, as <a href="https://www.youtube.com/watch?v=R9OHn5ZF4Uo">this excellent video</a> reiterates, <em>nobody understands</em> how the neural network that successfully identifies faces <em>works</em>.</p>
+<p>The key feature here is that it these technqiues are atheoretical, they are entirely empirical and judged on their rate of success. The algorithm itself has no underlying theory behind what “causes” a face or determines a face, only a purely <em>empirical</em> process of identifying patterns statistically by brute force. Nobody actually knows, or perhaps even could know, <em>why</em> or <em>how</em> an algorithm works.</p>
+</section>
+<section id="causal-inference" class="level2">
+<h2 class="anchored" data-anchor-id="causal-inference">“Causal Inference”</h2>
+<p>Causal inference, by contrast, whatever some hardcore practitioners might say about merely “letting the data speak for itself”, <em>necessitates</em> an underlying theory to explain a relationship or a process.</p>
+<p>Without going into a full post on methodology, economics is a theory-driven discipline in a way like few others. This is why I expect that “big data” and “machine learning” techniques will offer only marginal insights in economic research relative to the tried-and-true methods (and I am <a href="https://mru.org/courses/mastering-econometrics/are-machine-learning-and-big-data-changing-econometrics">in good company</a>). It is certainly true that some theories may be verified or disproven by data, or entirely new theories emerge via analyzing data that may never have otherwise been discovered. However, the main tool of empirical work is to identify and measure causal effects <em>already</em> theorized or hypothesized from solid economic theory.<a href="#fn3" class="footnote-ref" id="fnref3" role="doc-noteref"><sup>3</sup></a> Data can never “speak for itself,” because we wouldn’t know <em>what data</em> is worth collecting in the first place. I like to think about it with the (<a href="https://en.wikiquote.org/wiki/Immanuel_Kant#section_24">attributed</a>) Immanuel Kant quote:</p>
+<blockquote class="blockquote">
+<p>Experience without theory is blind, while theory without experience is mere intellectual play.</p>
+</blockquote>
+<p>Economists and econometricians have always emphasized the role of causal inference in econometrics. I recall learning - to my surprise - as an undergraduate and as a graduate in my courses that with clever identification strategies (instrumental variables, regression discontinuity, differences-in-differences, fixed effects, etc), we <em>can</em> do a lot more than just say things are “correlated,” and thus gore the sacred refrain of statistics professors everywhere (<em>“correlation does not imply causation”</em>). I never experienced what learning econometrics was like in the 1980s or 1990s, but this view has only grown stronger with the “credibility revolution” described by Angrist and Pischke (2010, 4):</p>
+<blockquote class="blockquote">
+<p>Empirical microeconomics has experienced a credibility revolution, with a consequent increase in policy relevance and scientific impact…[A]s we see it, the primary engine driving improvement has been a focus on the quality of empirical research designs.</p>
+</blockquote>
+<p>Having much more omnipresent and higher-quality micro-level data has also helped.</p>
+<p>However, I have noticed in recent years in a particular strand of econometrics teaching has gotten more pathological about causal inference (I don’t mean to use that term pejoratively!). Not all of the work in this trend is by economists, but it seems to finally be seeping into econometrics pedagogy.</p>
+<p>I think the quintessential tools for this new wave of teaching causal inference are the <a href="https://en.wikipedia.org/wiki/Directed_acyclic_graph">Directed Acyclic Graphs (DAGs)</a> popularized by famed computer scientist Judea Pearl, or the <a href="https://www.google.com/search?client=q=do+calculus">“do-calculus”</a> for more advanced treatments. I see this now showing up in excellent teaching materials like Scott Cunningham’s <a href="https://scunning.com/cunningham_mixtape.pdf"><em>Causal Inference: the Mixtape</em></a>, <a href="http://www.michaelnielsen.org/ddi/if-correlation-doesnt-imply-causation-then-what-does/">this great but technical blog post</a> by Michael Nielson, a lecture in Andrew Heiss’ <a href="https://econw19.classes.andrewheiss.com/class/27-class/">class</a>, and Nick Huntington-Klein’s excellent <a href="http://www.nickchk.com/econ305.html">lecture slides</a> for his course in Economics, Causality, and Analytics (now there’s a good title!). More and more people also seem to be linking to the great <a href="http://dagitty.net">daggity.net</a> tool for drawing and interpreting DAGs.</p>
+<p>After reading Pearl and Mackenzie (2018)’s <em>The Book of Why</em>, I briefly felt much more zealous about claiming that we can indeed argue “<em>X does cause Y, dammit!”</em>. The review of DAGs by <a href="https://arxiv.org/abs/1907.07271">Imbens (2019)</a> brought me back down to earth. DAGs are a great pedagogical tool<a href="#fn4" class="footnote-ref" id="fnref4" role="doc-noteref"><sup>4</sup></a> but aren’t the silver bullet for clarifying empirical work. Imbens makes a compelling case that DAGs have very little practicality beyond”toy models” such as those in Pearl and Mackenzie (2018) and standard econometric research designs since the “credibility revolution” (Angrist and Pischke, 2010) work far better in practice. For the moment, that’s fine for me — I may make a post later about the benefits<a href="#fn5" class="footnote-ref" id="fnref5" role="doc-noteref"><sup>5</sup></a> — I think my students will find them very useful. I am more convinced with Pearl’s argument that causal models are a necessary ingredient to the progress of artificial intelligence.</p>
+</section>
+<section id="a-compromise" class="level2">
+<h2 class="anchored" data-anchor-id="a-compromise">A Compromise</h2>
+<p>In any case, thinking about these two strands makes the development of the field seem richer and more dynamic. I again add that I am not trying to artificially carve out an antagonism between these two approaches, in fact I hope to marry them into the latest iteration of my econometrics course. One of the appeals I try to make to my students (some of whom are Economics majors, some Business majors, and a mixture of others such as Biology or Environmental Science) is that the tools we learn in this class will not only make you better consumers of science and studies, but also may be invaluable in the emerging job market. “Data science” again is one of the sexy trends of the 2010s and beyond. Learning how to import, wrangle, analyze, and present data with statistical software and programming languages like R already makes students budding “data scientists.” Futhermore, <em>causal inference</em> with empirical models and research designs is the <em>economist’s</em> comparative advantage that will set <em>economics</em> majors apart from your average “data science” or “data analytics” certificate-holder.</p>
+</section>
+<section id="references" class="level1">
+<h1>References</h1>
+<p>Angrist, Joshua D, and Jorn-Steffen Pischke, 2010, “The Credibility Revolution in Empirical Economics: How Better Research Design is Taking the Con out of Econometrics,” <em>Journal of Economic Perspectives</em> <em>24</em>(2), 3–30.</p>
+<p>Imbens, Guido W, 2019, “Potential Outcome and Directed Acyclic Graph Approaches to Causality: Relevance for Empirical Practice in Economics,” Manuscript</p>
+<p>Pearl, Judea and Dana Mackenzie, 2018, <em>The Book of Why</em>, Allen Lane</p>
+
+
+</section>
+
+
+<div id="quarto-appendix" class="default"><section class="footnotes footnotes-end-of-document" role="doc-endnotes"><h2 class="anchored quarto-appendix-heading">Footnotes</h2>
+
+<ol>
+<li id="fn1" role="doc-endnote"><p><a href="https://www.pearson.com/us/higher-education/product/Stock-Introduction-to-Econometrics-3rd-Edition/9780138009007.html"><em>Stock and Watson</em></a>, for example, which I taught with for 2 years<a href="#fnref1" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn2" role="doc-endnote"><p>Epidemiology is perhaps closest to economics in this regard.<a href="#fnref2" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn3" role="doc-endnote"><p>I don’t want to take the hardcore position here that there is <em>no</em> validity to empirical work in economics. Sometimes multiple economic principles might be operating in combination or against each other through multiple channels in the real world - empirical work helps us to tease them out in a useful way.<a href="#fnref3" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn4" role="doc-endnote"><p>There are limitations to them, such as the inability to add cutoff variables for regression discontinuity design models, or interaction terms. Huntington-Klein seems to fudge this by creating nodes like <span class="math inline">\(X&lt;c\)</span>, or <span class="math inline">\(X * Z\)</span>, for the respective problems mentioned)<a href="#fnref4" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn5" role="doc-endnote"><p>Namely, 1. making model assumptions explicit, 2. using proper correlations in the data to falsify a proposed causal model, and 3. showing that there are not all variables need to be controlled for, indeed controlling for certain types of variables actually <em>introduces</em> bias!<a href="#fnref5" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+</ol>
+</section></div></main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+window.document.addEventListener("DOMContentLoaded", function (event) {
+  const toggleBodyColorMode = (bsSheetEl) => {
+    const mode = bsSheetEl.getAttribute("data-mode");
+    const bodyEl = window.document.querySelector("body");
+    if (mode === "dark") {
+      bodyEl.classList.add("quarto-dark");
+      bodyEl.classList.remove("quarto-light");
+    } else {
+      bodyEl.classList.add("quarto-light");
+      bodyEl.classList.remove("quarto-dark");
+    }
+  }
+  const toggleBodyColorPrimary = () => {
+    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+    if (bsSheetEl) {
+      toggleBodyColorMode(bsSheetEl);
+    }
+  }
+  toggleBodyColorPrimary();  
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
+  const clipboard = new window.ClipboardJS('.code-copy-button', {
+    target: function(trigger) {
+      return trigger.previousElementSibling;
+    }
+  });
+  clipboard.on('success', function(e) {
+    // button target
+    const button = e.trigger;
+    // don't keep focus
+    button.blur();
+    // flash "checked"
+    button.classList.add('code-copy-button-checked');
+    var currentTitle = button.getAttribute("title");
+    button.setAttribute("title", "Copied!");
+    setTimeout(function() {
+      button.setAttribute("title", currentTitle);
+      button.classList.remove('code-copy-button-checked');
+    }, 1000);
+    // clear code selection
+    e.clearSelection();
+  });
+  function tippyHover(el, contentFn) {
+    const config = {
+      allowHTML: true,
+      content: contentFn,
+      maxWidth: 500,
+      delay: 100,
+      arrow: false,
+      appendTo: function(el) {
+          return el.parentElement;
+      },
+      interactive: true,
+      interactiveBorder: 10,
+      theme: 'quarto',
+      placement: 'bottom-start'
+    };
+    window.tippy(el, config); 
+  }
+  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+  for (var i=0; i<noterefs.length; i++) {
+    const ref = noterefs[i];
+    tippyHover(ref, function() {
+      let href = ref.getAttribute('href');
+      try { href = new URL(href).hash; } catch {}
+      const id = href.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      return note.innerHTML;
+    });
+  }
+  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+  for (var i=0; i<bibliorefs.length; i++) {
+    const ref = bibliorefs[i];
+    const cites = ref.parentNode.getAttribute('data-cites').split(' ');
+    tippyHover(ref, function() {
+      var popup = window.document.createElement('div');
+      cites.forEach(function(cite) {
+        var citeDiv = window.document.createElement('div');
+        citeDiv.classList.add('hanging-indent');
+        citeDiv.classList.add('csl-entry');
+        var biblioDiv = window.document.getElementById('ref-' + cite);
+        if (biblioDiv) {
+          citeDiv.innerHTML = biblioDiv.innerHTML;
+        }
+        popup.appendChild(citeDiv);
+      });
+      return popup.innerHTML;
+    });
+  }
+});
+</script>
+</div> <!-- /content -->
+
+
+
+<script src="../site_libs/quarto-html/zenscroll-min.js"></script>
+</body></html>
