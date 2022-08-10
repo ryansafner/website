@@ -373,9 +373,9 @@ summary(reg)</code></pre>
 ## Multiple R-squared:  0.1295, Adjusted R-squared:  0.1277 
 ## F-statistic: 74.08 on 1 and 498 DF,  p-value: &lt; 2.2e-16</code></pre>
 <p>Let’s plot a scatterplot to visualize the data and add the regression line. Clearly, the data is “fan” shaped, centered on the regression line, but with larger and larger residuals (distance between the regression line and the data point, <img src="https://latex.codecogs.com/png.latex?%5Chat%7B%5Cepsilon%7D_i=%5Chat%7BY%7D_i-Y_i">) as <img src="https://latex.codecogs.com/png.latex?X"> gets larger.</p>
-<p><img src="https://ryansafner.com/posts/plot-1.png" class="img-fluid"></p>
+<p><img src="https://ryansafner.com/img/plot-1.png" class="img-fluid"></p>
 <p>I have also broken up the scatterplot into 5 different sections over the range of <code>x</code> values. Below, I plot density plots of the residuals over each of the 5 different ranges of <code>x</code> values, and we can clearly see that the variance of the residuals dramatically increases as <code>x</code> increases.</p>
-<p><img src="https://ryansafner.com/posts/residualsplots.png" class="img-fluid"></p>
+<p><img src="https://ryansafner.com/img/residualsplots.png" class="img-fluid"></p>
 <p>Using the <code>lmtest</code> package, we can also formally run a Breusch-Pagan test for heteroskedasticity.</p>
 <div class="sourceCode" id="cb4" style="background: #f1f3f5;"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb4-1"><span class="fu" style="color: #4758AB;">library</span>(<span class="st" style="color: #20794D;">"lmtest"</span>)</span>
 <span id="cb4-2"><span class="fu" style="color: #4758AB;">bptest</span>(reg)</span></code></pre></div>
@@ -442,9 +442,6 @@ summary(reg)</code></pre>
 <p>The key to notice is <code>se=list(NULL,reg$rse)</code>, which creates a list of objects from which to pull the standard errors for each regression in the table. The first regression uses the standard methods, needing no special source, so it is set to <code>NULL</code>. The second regression, also <code>reg</code>, uses our robust standard errors stored in <code>reg$rse</code>. The output of the table is below:</p>
 <table class="table">
 <caption><strong>Regression Results</strong></caption>
-<colgroup>
-<col style="width: 45%">
-</colgroup>
 <tbody>
 <tr class="odd">
 <td></td>
@@ -547,9 +544,6 @@ summary(reg)</code></pre>
 <span id="cb23-7">          <span class="at" style="color: #657422;">omit.stat=</span><span class="fu" style="color: #4758AB;">c</span>(<span class="st" style="color: #20794D;">"adj.rsq"</span>,<span class="st" style="color: #20794D;">"f"</span>)) </span></code></pre></div>
 <table class="table">
 <caption><strong>Regression Results</strong></caption>
-<colgroup>
-<col style="width: 45%">
-</colgroup>
 <tbody>
 <tr class="odd">
 <td></td>
@@ -616,7 +610,7 @@ summary(reg)</code></pre>
   <category>econometrics</category>
   <guid>https://ryansafner.com/posts/replicating-statas-robust-option-for-ols-standard-errors-in-r.html</guid>
   <pubDate>Fri, 28 Dec 2018 05:00:00 GMT</pubDate>
-  <media:content url="https://ryansafner.com/posts/plot-1.png" medium="image" type="image/png"/>
+  <media:content url="https://ryansafner.com/img/plot-1.png" medium="image" type="image/png" height="103" width="144"/>
 </item>
 <item>
   <title>Visualizing Tax Incidence with Shiny</title>

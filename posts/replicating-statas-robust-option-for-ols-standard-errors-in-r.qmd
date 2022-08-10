@@ -9,7 +9,7 @@ categories:
 engine: markdown
 code-fold: true
 execute:
-  freeze: true
+  freeze: auto
 ---
 
 One of the advantages of using Stata for linear regression is that it can automatically use heteroskedasticity-robust standard errors simply by adding `, r` to the end of any regression command. Anyone can more or less use robust standard errors and make more accurate inferences without even thinking about what they represent or how they are determined since it's so easy just to add the letter `r` to any regression.
@@ -58,11 +58,11 @@ summary(reg)
 
 Let's plot a scatterplot to visualize the data and add the regression line. Clearly, the data is "fan" shaped, centered on the regression line, but with larger and larger residuals (distance between the regression line and the data point, $\hat{\epsilon}_i=\hat{Y}_i-Y_i$) as $X$ gets larger.
 
-![](plot-1.png)
+![](../img/plot-1.png)
 
 I have also broken up the scatterplot into 5 different sections over the range of `x` values. Below, I plot density plots of the residuals over each of the 5 different ranges of `x` values, and we can clearly see that the variance of the residuals dramatically increases as `x` increases.
 
-![](residualsplots.png)
+![](../img/residualsplots.png)
 
 Using the `lmtest` package, we can also formally run a Breusch-Pagan test for heteroskedasticity.
 
@@ -173,41 +173,25 @@ stargazer(reg, reg,
 
 The key to notice is `se=list(NULL,reg$rse)`, which creates a list of objects from which to pull the standard errors for each regression in the table. The first regression uses the standard methods, needing no special source, so it is set to `NULL`. The second regression, also `reg`, uses our robust standard errors stored in `reg$rse`. The output of the table is below:
 
-+--------------------------------+
 |                                |
-+--------------------------------+
+|--------------------------------|
 |                                |
-+--------------------------------+
 |                                |
-+--------------------------------+
 |                                |
-+--------------------------------+
 |                                |
-+--------------------------------+
+|                                |
 | x                              |
-+--------------------------------+
 |                                |
-+--------------------------------+
 |                                |
-+--------------------------------+
 | Constant                       |
-+--------------------------------+
 |                                |
-+--------------------------------+
 |                                |
-+--------------------------------+
 |                                |
-+--------------------------------+
 | Observations                   |
-+--------------------------------+
 | R^2^                           |
-+--------------------------------+
 | Residual Std. Error (df = 498) |
-+--------------------------------+
 |                                |
-+--------------------------------+
 | *Note:*                        |
-+--------------------------------+
 
 : **Regression Results**
 
@@ -280,41 +264,25 @@ stargazer(reg, reg,
           omit.stat=c("adj.rsq","f")) 
 ```
 
-+--------------------------------+
 |                                |
-+--------------------------------+
+|--------------------------------|
 |                                |
-+--------------------------------+
 |                                |
-+--------------------------------+
 |                                |
-+--------------------------------+
 |                                |
-+--------------------------------+
+|                                |
 | x                              |
-+--------------------------------+
 |                                |
-+--------------------------------+
 |                                |
-+--------------------------------+
 | Constant                       |
-+--------------------------------+
 |                                |
-+--------------------------------+
 |                                |
-+--------------------------------+
 |                                |
-+--------------------------------+
 | Observations                   |
-+--------------------------------+
 | R^2^                           |
-+--------------------------------+
 | Residual Std. Error (df = 498) |
-+--------------------------------+
 |                                |
-+--------------------------------+
 | *Note:*                        |
-+--------------------------------+
 
 : **Regression Results**
 
