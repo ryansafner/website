@@ -13,9 +13,11 @@ title: "Teaching"
 
 ## All Courses Taught
 
-### Hood College (Fall 2016---)
+### Hood College (Fall 2016--Present)
 
 Course titles below link to latest version of course website (including courses in progress). Many courses may have prior website versions with full materials but are either password protected or answer keys are hidden. If you are interested in the materials (and are not a current student), I am happy to share them with you (just [email me](mailto:ryansafner@gmail.com))!
+
+![[<i class="fa-brands fa-github"></i> My Hextickers](https://github.com/ryansafner/hexstickers)](https://github.com/ryansafner/hexstickers/blob/master/README_files/figure-markdown_strict/unnamed-chunk-1-1.png?raw=true)
 
 |    |     |
 |:---:|:----|
@@ -33,14 +35,14 @@ Course titles below link to latest version of course website (including courses 
 | ![](img/metrics_hex.png) | [ECON 480 - Econometrics](http://metricsF22.classes.ryansafner.com) |
 |    | MGMT 399 - Internship for Business Administration |
 
-### Wake Forest University (Fall 2015---Spring 2016)
+### Wake Forest University (Fall 2015--Spring 2016)
 
 |     |
 |:----|
 | [ECN 150 - Introduction to Economics](https://www.dropbox.com/s/w03rizmeov387tb/ECN_150C_Syllabus_Safner.pdf?dl=0) |
 | [ECN 272 - Austrian Economics](https://www.dropbox.com/s/f1ddw84rggv7zod/Austrian_Economics_Syllabus.pdf?dl=0) |
 
-### George Mason University (Summer 2013---Summer 2015)
+### George Mason University (Summer 2013--Summer 2015)
 
 |     |
 |:----|
