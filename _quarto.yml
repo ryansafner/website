@@ -5,6 +5,7 @@ website:
   title: "Ryan Safner"
   site-url: "https://ryansafner.com"
   description-meta: "Personal website of Dr. Ryan Safner"
+  google-analytics: "UA-12760297-1"
   favicon: "myface2021.png"
   twitter-card:
     image: "myface2021.png"

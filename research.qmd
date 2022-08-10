@@ -3,7 +3,8 @@ title: "Research"
 echo: false
 jupyter: python3
 section-divs: false
-keep-md: true
+execution:
+  freeze: auto
 ---
 
 ```{python}
@@ -70,9 +71,7 @@ for year in sorted(pub_strs["pubs"].keys(), reverse=True):
     ))
 ```
 
-## Under Review
-
-## Working Papers
+## Working Papers/Under Review
 
 ```{python}
 #| label: "not-published-year"
