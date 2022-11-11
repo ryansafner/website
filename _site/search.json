@@ -18,7 +18,7 @@
     "href": "research.html",
     "title": "Research",
     "section": "",
-    "text": "2021\nRyan Safner. (2021) \"'Public Good,' or 'Good for the Public?' Political Entrepreneurship and the Public Funding of Scientific Research.\" Journal of Private Enterprise 36(1): 743-771\n        \n        Preprint\n     \n        \n        Published\n    \n2016\nRyan Safner. (2016) \"The Perils of Copyright Regulation.\" Review of Austrian Economics 29: 127-137\n        \n        Preprint\n     \n        \n        Published\n    \nRyan Safner. (2016) \"Institutional Entrepreneurship, Wikipedia, and the Opportunity of the Commons.\" Journal of Institutional Economics 12(4): 743-771\n        \n        Preprint\n     \n        \n        Published\n    \nWorking Papers/Under Review\n2022\nRyan Safner. (2022) \"Honor Among Thieves: How 19th Century American Pirate Publishers Simulated Copyright Protection.\"\n        \n        Preprint\n    \nVlad Tarko and Ryan Safner. (2022) \"The Variety of Regulatory Regimes.\" Revise & Resubmit requested\nRyan Safner. (2022) \"I Don't Always Teach the History of Economic Thought...But When I Do, I Prefer a Tournament.\"\nSantiago Gangotena and Ryan Safner. (2022) \"The Production of Increasing Returns: Physical Technology, Institutional Technology, and the Pitfalls of Production Functions.\" Revise & Resubmit requested\n        \n        Preprint\n    \nSantiago Gangotena and Ryan Safner. (2022) \"A Tale of Two Capitals: Modeling the Interaction between Ideas, Physical Capital, and Growth.\"\n        \n        Preprint"
+    "text": "Tarko, Vlad and Ryan Safner. (2022) “International Regulatory Diversity Over 50 Years: Political Entrepreneurship within Fiscal Constraints.” Public Choice 193(1-2): 79-108\n\n\n Published   Preprint\n\nSafner, Ryan. (2021) “‘Public Good,’ or ‘Good for the Public?’ Political Entrepreneurship and the Public Funding of Scientific Research.” Journal of Private Enterprise 36(1): 743-771\n\n\n Published   Preprint\n\nSafner, Ryan. (2016) “Institutional Entrepreneurship, Wikipedia, and the Opportunity of the Commons.” Journal of Institutional Economics 12(4): 743-771\n\n\n Published   Preprint\n\nSafner, Ryan. (2016) “The Perils of Copyright Regulation.” Review of Austrian Economics 29: 127-137\n\n\n Published   Preprint\n\nUnder Review\nGangotena, Santiago and Ryan Safner. (2022) “The Production of Increasing Returns: Physical Technology, Institutional Technology, and the Pitfalls of Production Functions.” Revise & Resubmit requested\n\n\n Preprint\n\nSafner, Ryan. (2022) “Honor Among Thieves: How 19th Century American Pirate Publishers Simulated Copyright Protection.” Economic Governance (conditional acceptance)\n\n\n Preprint\n\nSafner, Ryan. (2022) “I Don’t Always Teach the History of Economic Thought…But When I Do, I Prefer a Tournament.”\n\n\n Preprint\n\nWorking Papers\n“A Tale of Two Capitals: Modeling the Interaction between Ideas, Physical Capital, and Growth.” (with Santiago Gangotena)\nDistributing Patronage: Censorship, Freedom of the Press, and Copyright in the English Transition from Natural State to Open Access Order\nPirate Thy Neighbor: The Protectionist Roots of U.S. Recognition of Foreign Copyrights\nKickstart My Art: Is Crowdfunding a Substitute or a Complement to Intellectual Property Laws?\nCryptocopyright? The Prospects of Protecting Intellectual Property on the Blockchain\nThe Network Origins of Economic Growth (with Santiago Gangotena)\nIs Augury for the Birds? (with Sainabou Jallow)\nThe Division of Labor, Increasing Returns, and Competitive Firms"
   },
   {
     "objectID": "LICENSE.html",
@@ -68,6 +68,13 @@
     "title": "Visualizing Linear Regression with Shiny",
     "section": "",
     "text": "Brief Econometrics Review Incoming:\nOrdinary Least Squares (OLS) regression simply chooses the intercept (\\(\\hat{\\beta_0}\\)) and slope (\\(\\hat{\\beta_1}\\)) parameters for the equation of a line that best fits the data: \\[\\hat{Y_i}=\\hat{\\beta_0}+\\hat{\\beta_1}X_i\\]\nby trying to minimize the Sum of Squared Errors (SSE). The error \\(\\epsilon\\) (or residual) of an observation is defined as the difference between the actual value of \\(Y\\) observed in the data associated with a given value of \\(X\\), and the predicted value, \\(\\hat{Y}\\) given \\(X\\):\n\\[\\hat{\\epsilon}=Y_i-\\hat{Y_i}\\]\nSo what OLS does is minimize the sum of the squared errors:\n\\[\\min \\sum^n_{i=1} \\hat{\\epsilon_i}^2\\]\nThis is a calculus problem that is solvable, if tedious. But at least it should be intuitive to understand what OLS does.\n\n\nVisualizing with Shiny\nBeyond grinding students down with pure theory, I wrote an interactive Shiny App with R that demonstrates this process to choosing the optimal slope and intercept.\nWith this example, I have a randomly-generated set of data (within specific parameters, to keep the graph scaled properly). I then allow users to choose a slope and intercept with sliders, to move the line accordingly. The graph also displays all of the errors as dashed red lines. Moving the slope or the intercept too much causes the generated line to create much larger errors. The graph also calculates the SSE (which again, OLS minimizes), in addition to the standard error of the regression (SER), which calculates the average size of the error.\nI would have loved to be able to graph the square of the errors, and display them, to show that OLS minimizes the area of those squares, if drawn. However, I was unable to figure out how to draw a square from each data point and the regression line (for squared error)| instead of a mere dashed line (for error).\nI love Shiny and have only begun to fully understand how it works and the benefits of its application. I have already coded several other models for intuitive visualization that I may post about later, namely a Calculus of Consent model of the optimal voting rule in public choice, and ambitiously, the consumer’s constrained optimization problem in intermediate microeconomics. Using sliders in shiny allow me to demonstrate the marginal effects of each parameter change on a model’s predicted outcome far better than just me proving several theoretical examples by way of equations. Students can instead see the change in real time."
+  },
+  {
+    "objectID": "posts/two-blogs.html",
+    "href": "posts/two-blogs.html",
+    "title": "Two Blogs",
+    "section": "",
+    "text": "I have launched a new newsletter/blog on Substack called Increasing Returns, which will focus on issues and content"
   },
   {
     "objectID": "posts/if-youre-going-to-learn-r-learn-the-tidyverse.html",
@@ -158,7 +165,7 @@
     "href": "index.html",
     "title": "Ryan Safner",
     "section": "",
-    "text": "I am an Associate Professor of Economics at Hood College. I have a Ph.D and M.A. in Economics from George Mason University, and a B.A. in Economics from the University of Connecticut. Go Huskies!\nMy research broadly explores the political economy of innovation, technological growth, and intellectual property using the tools of new institutional economics, public choice, and market process economics. I blog about these issues at Increasing Returns.\nI regularly teach Microeconomic Analysis and Econometrics, rotating through economics electives such as Game Theory, International Trade, and Economics of Developments. I am a firm believer of providing public goods and promoting open source materials, so you can find all course materials on my course websites.\nI am a passionate user of R for data analysis, and R Markdown and GitHub for writing reproducible research, version control, and managing my workflow. I blog here about using these tools in my research and teaching, and learning new tools “out loud”."
+    "text": "I am an Associate Professor of Economics at Hood College. My research broadly explores the political economy of innovation, technological growth, and intellectual property using the tools of new institutional economics, public choice, and market process economics. I blog about these issues at Increasing Returns.\nI regularly teach Microeconomic Analysis and Econometrics, rotating through economics electives such as Game Theory, International Trade, and Economics of Developments. I am a firm believer of providing public goods and promoting open source materials, so you can find all course materials on my course websites.\nI am a passionate user of R for data analysis, and Quarto and GitHub for writing reproducible research, using version control, and managing my workflow. I blog here about using these tools in my research and teaching and about learning “out loud” to use new tools."
   },
   {
     "objectID": "courses/econ-304.html",
@@ -210,10 +217,38 @@
     "text": "Materials\n\n\n\nLesson\nSlides\nExcel Templates\n\n\n\n\n1. Sampling and Data\nSlides\n\n\n\n2. Descriptive Statistics\nSlides\nDescriptive Statistics; Boxplots\n\n\n3. Probability\nSlides\n\n\n\n4. Discrete Random Variables\nSlides\n\n\n\n5. Continuous Random Variables\nSlides\nModelling Distributions\n\n\n6. The Normal Distribution\nSlides\n\n\n\n7. The Central Limit Theorem\nSlides\n\n\n\n8. Confidence Intervals\nSlides\nRegression Example\n\n\n9. Hypothesis Testing\nSlides\n\n\n\n10. Linear Regression\nSlides"
   },
   {
+    "objectID": "software.html",
+    "href": "software.html",
+    "title": "Software",
+    "section": "",
+    "text": "These are largely shiny apps that I have written to demonstrate economic concepts for my economics courses:"
+  },
+  {
+    "objectID": "software.html#microeconomics-ggplot-graphs",
+    "href": "software.html#microeconomics-ggplot-graphs",
+    "title": "Software",
+    "section": "Microeconomics ggplot Graphs",
+    "text": "Microeconomics ggplot Graphs"
+  },
+  {
+    "objectID": "software.html#course-websites",
+    "href": "software.html#course-websites",
+    "title": "Software",
+    "section": "Course Websites",
+    "text": "Course Websites"
+  },
+  {
+    "objectID": "software.html#uses",
+    "href": "software.html#uses",
+    "title": "Software",
+    "section": "Uses",
+    "text": "Uses\nPeople often ask me what tools I like to use to get work done.\nWriting:"
+  },
+  {
     "objectID": "blog.html",
     "href": "blog.html",
     "title": "Blog",
     "section": "",
-    "text": "Order By\n       Default\n         \n          Date - Oldest\n        \n         \n          Date - Newest\n        \n         \n          Title\n        \n     \n  \n    \n      \n      \n    \n\n\n\n\n\n\nDate\n\n\nTitle\n\n\n\n\n\n\nOct 18, 2019\n\n\nIf You’re Going to Learn R, Learn the Tidyverse\n\n\n\n\nAug 22, 2019\n\n\nNew Course Websites\n\n\n\n\nAug 6, 2019\n\n\nEconometrics, Data Science, and Causal Inference\n\n\n\n\nDec 28, 2018\n\n\nReplicating Stata’s ‘Robust’ Option for OLS Standard Errors in R\n\n\n\n\nOct 7, 2018\n\n\nVisualizing Tax Incidence with Shiny\n\n\n\n\nSep 28, 2018\n\n\nVisualizing Linear Regression with Shiny\n\n\n\n\nSep 8, 2018\n\n\nEconometrics Lecture Slides on GitHub\n\n\n\n\nSep 2, 2018\n\n\nTest Post Please Don’t Ignore\n\n\n\n\n\n\nNo matching items"
+    "text": "Order By\n       Default\n         \n          Date - Oldest\n        \n         \n          Date - Newest\n        \n         \n          Title\n        \n     \n  \n    \n      \n      \n    \n\n\n\n\n\n\nDate\n\n\nTitle\n\n\n\n\n\n\nOct 2, 2022\n\n\nTwo Blogs\n\n\n\n\nOct 18, 2019\n\n\nIf You’re Going to Learn R, Learn the Tidyverse\n\n\n\n\nAug 22, 2019\n\n\nNew Course Websites\n\n\n\n\nAug 6, 2019\n\n\nEconometrics, Data Science, and Causal Inference\n\n\n\n\nDec 28, 2018\n\n\nReplicating Stata’s ‘Robust’ Option for OLS Standard Errors in R\n\n\n\n\nOct 7, 2018\n\n\nVisualizing Tax Incidence with Shiny\n\n\n\n\nSep 28, 2018\n\n\nVisualizing Linear Regression with Shiny\n\n\n\n\nSep 8, 2018\n\n\nEconometrics Lecture Slides on GitHub\n\n\n\n\nSep 2, 2018\n\n\nTest Post Please Don’t Ignore\n\n\n\n\n\n\nNo matching items"
   }
 ]

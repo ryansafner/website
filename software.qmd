@@ -1,0 +1,17 @@
+---
+title: "Software"
+---
+
+## Shiny Portfolio
+
+These are largely shiny apps that I have written to demonstrate economic concepts for my economics courses:
+
+## Microeconomics ggplot Graphs
+
+## Course Websites
+
+## Uses
+
+People often ask me what tools I like to use to get work done.
+
+Writing:

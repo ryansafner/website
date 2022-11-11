@@ -32,17 +32,17 @@ hat2022:
     year: 2022
     preprint: https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3775330
     published_url: 
-    venue:
+    venue: "Economic Governance (conditional acceptance)"
     github:
 pc2022:
-    title: "The Variety of Regulatory Regimes"
+    title: "International Regulatory Diversity Over 50 Years: Political Entrepreneurship within Fiscal Constraints"
     authors:
         - Vlad Tarko
         - me
     year: 2022
-    preprint: 
-    published_url: 
-    venue: Revise & Resubmit requested
+    preprint: https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3894687
+    published_url: https://link.springer.com/epdf/10.1007/s11127-022-01011-2?sharing_token=0PMazGn6dpbw8WWmSOLsYPe4RwlQNchNByi7wbcMAY6sM4iEqIYI0dMv-E9PvzDaltt8-HxXVpJtBBw8N3WxXoQuXY6rFWHLNbeEmS-MZlq11VW8XneB__PPi3kRJ_nLR07J2ZIZcwmQkHNQ9JN-0-v3DX27mJDdJ8pw8OE_P-U%3D
+    venue: "Public Choice (forthcoming)" 
     github:
 jet2022:
     title: "I Don't Always Teach the History of Economic Thought...But When I Do, I Prefer a Tournament"
