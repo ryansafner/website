@@ -10,7 +10,29 @@
 <atom:link href="https://ryansafner.com/blog.xml" rel="self" type="application/rss+xml"/>
 <description></description>
 <generator>quarto-1.0.37</generator>
-<lastBuildDate>Fri, 18 Oct 2019 04:00:00 GMT</lastBuildDate>
+<lastBuildDate>Sun, 02 Oct 2022 04:00:00 GMT</lastBuildDate>
+<item>
+  <title>Two Blogs</title>
+  <link>https://ryansafner.com/posts/two-blogs.html</link>
+  <description><![CDATA[ 
+
+
+
+<p>I have launched a new newsletter/blog on Substack called <a href="https://increasingreturns.substack.com">Increasing Returns</a>, which will focus on issues and content</p>
+
+
+
+ ]]></description>
+  <category>rstats</category>
+  <category>data science</category>
+  <category>causal inference</category>
+  <category>DAGs</category>
+  <category>blog</category>
+  <category>teaching</category>
+  <category>econometrics</category>
+  <guid>https://ryansafner.com/posts/two-blogs.html</guid>
+  <pubDate>Sun, 02 Oct 2022 04:00:00 GMT</pubDate>
+</item>
 <item>
   <title>If You’re Going to Learn R, Learn the Tidyverse</title>
   <link>https://ryansafner.com/posts/if-youre-going-to-learn-r-learn-the-tidyverse.html</link>
