@@ -6,7 +6,7 @@ execution:
   freeze: auto
 ---
 
-## Published
+## Peer-Reviewed Journal Articles
 
 Tarko, Vlad and **Ryan Safner**. (2022) "International Regulatory Diversity Over 50 Years: Political Entrepreneurship within Fiscal Constraints." *Public Choice 193(1-2): 79-108*
 
@@ -34,7 +34,7 @@ Tarko, Vlad and **Ryan Safner**. (2022) "International Regulatory Diversity Over
 
 <p style="text-align:left"><a target="_blank" href="http://papers.ssrn.com/abstract=2396874"><span class="btn btn-outline-dark btn-sm"><i class="fas fa-external-link-square-alt"></i> Published </a></span> <a target="_blank" href="https://doi.org/https://doi.org/10.1007/s11138-014-0293-5"><span class="btn btn-outline-dark btn-sm"><i class="fas fa-file-pdf"></i> Preprint</a></span></p>
 
-## Under Review
+## Articles Under Review
 
 Gangotena, Santiago and **Ryan Safner.** (2022) "The Production of Increasing Returns: Physical Technology, Institutional Technology, and the Pitfalls of Production Functions." (Revise & Resubmit requested)
 
@@ -54,7 +54,7 @@ Gangotena, Santiago and **Ryan Safner.** (2022) "The Production of Increasing Re
 
 <p style="text-align:left"><a target="_blank" href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3775330"><span class="btn btn-outline-dark btn-sm"><i class="fas fa-file-pdf"></i> Preprint</a></span></p>
 
-## Working Papers
+## Research in Progress
 
 "A Tale of Two Capitals: Modeling the Interaction between Ideas, Physical Capital, and Growth." (with Santiago Gangotena)
 
@@ -71,5 +71,3 @@ The Network Origins of Economic Growth (with Santiago Gangotena)
 Is Augury for the Birds? (with Sainabou Jallow)
 
 The Division of Labor, Increasing Returns, and Competitive Firms
-
-
