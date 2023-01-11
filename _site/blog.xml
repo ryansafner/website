@@ -8,8 +8,8 @@
 <title>Ryan Safner</title>
 <link>https://ryansafner.com/blog.html</link>
 <atom:link href="https://ryansafner.com/blog.xml" rel="self" type="application/rss+xml"/>
-<description></description>
-<generator>quarto-1.0.37</generator>
+<description>Personal website of Dr. Ryan Safner</description>
+<generator>quarto-1.2.269</generator>
 <lastBuildDate>Sun, 02 Oct 2022 04:00:00 GMT</lastBuildDate>
 <item>
   <title>Two Blogs</title>
@@ -221,7 +221,7 @@
 </section>
 
 
-<div id="quarto-appendix" class="default"><section class="footnotes footnotes-end-of-document"><h2 class="anchored quarto-appendix-heading">Footnotes</h2>
+<div id="quarto-appendix" class="default"><section id="footnotes" class="footnotes footnotes-end-of-document"><h2 class="anchored quarto-appendix-heading">Footnotes</h2>
 
 <ol>
 <li id="fn1"><p>Though I allude to more complex examples to give them a taste of what’s to come!↩︎</p></li>
@@ -266,7 +266,7 @@
 
 
 
-<div id="quarto-appendix" class="default"><section class="footnotes footnotes-end-of-document"><h2 class="anchored quarto-appendix-heading">Footnotes</h2>
+<div id="quarto-appendix" class="default"><section id="footnotes" class="footnotes footnotes-end-of-document"><h2 class="anchored quarto-appendix-heading">Footnotes</h2>
 
 <ol>
 <li id="fn1"><p>I view lecture slides as a fine artform and have refused to use Microsoft Office products for over 8 years↩︎</p></li>
@@ -334,7 +334,7 @@
 </section>
 
 
-<div id="quarto-appendix" class="default"><section class="footnotes footnotes-end-of-document"><h2 class="anchored quarto-appendix-heading">Footnotes</h2>
+<div id="quarto-appendix" class="default"><section id="footnotes" class="footnotes footnotes-end-of-document"><h2 class="anchored quarto-appendix-heading">Footnotes</h2>
 
 <ol>
 <li id="fn1"><p><a href="https://www.pearson.com/us/higher-education/product/Stock-Introduction-to-Econometrics-3rd-Edition/9780138009007.html"><em>Stock and Watson</em></a>, for example, which I taught with for 2 years↩︎</p></li>
