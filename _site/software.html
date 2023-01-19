@@ -75,16 +75,17 @@ ga('send', {
 </script>
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
 
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
 
 <link rel="stylesheet" href="styles.css">
 <meta property="og:title" content="Ryan Safner - Software">
-<meta property="og:description" content="These are largely shiny apps that I have written to demonstrate economic concepts for my economics courses:">
+<meta property="og:description" content="This page is under construction, but most of my projects are open source and can be found in my GitHub repositories. This includes all of the materials for my course websites and course content.">
 <meta property="og:image" content="https://ryansafner.com/myface2021.png">
 <meta property="og:site-name" content="Ryan Safner">
 <meta property="og:image:height" content="1990">
 <meta property="og:image:width" content="1624">
 <meta name="twitter:title" content="Ryan Safner - Software">
-<meta name="twitter:description" content="These are largely shiny apps that I have written to demonstrate economic concepts for my economics courses:">
+<meta name="twitter:description" content="This page is under construction, but most of my projects are open source and can be found in my GitHub repositories. This includes all of the materials for my course websites and course content.">
 <meta name="twitter:image" content="https://ryansafner.com/myface2021.png">
 <meta name="twitter:creator" content="@ryansafner">
 <meta name="twitter:image-height" content="1990">
@@ -125,6 +126,10 @@ ga('send', {
  <span class="menu-text">Research</span></a>
   </li>  
   <li class="nav-item">
+    <a class="nav-link active" href="./software.html" aria-current="page">
+ <span class="menu-text">Software</span></a>
+  </li>  
+  <li class="nav-item">
     <a class="nav-link" href="./blog.html">
  <span class="menu-text">Blog</span></a>
   </li>  
@@ -144,9 +149,9 @@ ga('send', {
    
   <ul>
   <li><a href="#shiny-portfolio" id="toc-shiny-portfolio" class="nav-link active" data-scroll-target="#shiny-portfolio">Shiny Portfolio</a></li>
-  <li><a href="#microeconomics-ggplot-graphs" id="toc-microeconomics-ggplot-graphs" class="nav-link" data-scroll-target="#microeconomics-ggplot-graphs">Microeconomics ggplot Graphs</a></li>
+  <li><a href="#economics-graphs-in-ggplot" id="toc-economics-graphs-in-ggplot" class="nav-link" data-scroll-target="#economics-graphs-in-ggplot">Economics Graphs in <code>ggplot</code></a></li>
   <li><a href="#course-websites" id="toc-course-websites" class="nav-link" data-scroll-target="#course-websites">Course Websites</a></li>
-  <li><a href="#uses" id="toc-uses" class="nav-link" data-scroll-target="#uses">Uses</a></li>
+  <li><a href="#hex-stickers" id="toc-hex-stickers" class="nav-link" data-scroll-target="#hex-stickers">Hex Stickers</a></li>
   </ul>
 </nav>
     </div>
@@ -170,20 +175,37 @@ ga('send', {
 
 </header>
 
+<p>This page is under construction, but most of my projects are open source and can be found in my <a href="https://github.com/ryansafner">GitHub repositories</a>. This includes all of the materials for my <a href="https://ryansafner.com/teaching">course websites</a> and course content.</p>
 <section id="shiny-portfolio" class="level2">
 <h2 class="anchored" data-anchor-id="shiny-portfolio">Shiny Portfolio</h2>
-<p>These are largely shiny apps that I have written to demonstrate economic concepts for my economics courses:</p>
+<p>These are largely <a href="https://shiny.rstudio.com/">R shiny</a> apps that I have written to demonstrate economic concepts for my economics courses. The main purpose is to visualize concepts in action (often through a graph) and especially show how key parameters affect the outcome by allowing users to change these values and see the graph update dynamically.</p>
+<ul>
+<li><p><a href="https://ryansafner.shinyapps.io/ols_estimation_by_min_sse/">Visualizing Ordinary Least Squares Regression</a></p></li>
+<li><p><a href="https://ryansafner.shinyapps.io/consumer/">Visualizing the Consumer’s Problem</a></p></li>
+<li><p><a href="https://ryansafner.shinyapps.io/Consumer_changes/">Visualizing changes in the Consumer’s Problem</a></p></li>
+<li><p><a href="https://ryansafner.shinyapps.io/Solow/">Visualizing the Solow Growth Model</a></p></li>
+<li><p><a href="https://ryansafner.shinyapps.io/monopoly_problem/">Visualizing the Monopoly Problem</a></p></li>
+<li><p><a href="https://ryansafner.shinyapps.io/Cournot_market_changes/">Visualizing the Cournot Model with Asymmetric Costs</a></p></li>
+<li><p><a href="https://ryansafner.shinyapps.io/Cournot_market_changes/">Visualizing the Cournot Model with (Symmetric) Market Changes</a></p></li>
+<li><p><a href="https://ryansafner.shinyapps.io/cournot_n_firms/">Visualizing the Cournot Model with <span class="math inline">\(n\)</span> Firms</a></p></li>
+<li><p><a href="https://ryansafner.shinyapps.io/elasticityandsurpluses/">Visualizing the Relationship Between Price Elasticity and Economic Surplus</a></p></li>
+<li><p><a href="https://ryansafner.shinyapps.io/tax-incidence/">Visualizing Tax Incidence</a></p></li>
+<li><p><a href="https://ryansafner.shinyapps.io/ccmodel/">Visualizing the Calculus of Consent Model</a></p></li>
+<li><p><a href="https://ryansafner.shinyapps.io/306_grade_calculator/">Grade Calculator &amp; Forecaster</a> (for ECON 306; with variants for each of courses)</p></li>
+</ul>
 </section>
-<section id="microeconomics-ggplot-graphs" class="level2">
-<h2 class="anchored" data-anchor-id="microeconomics-ggplot-graphs">Microeconomics ggplot Graphs</h2>
+<section id="economics-graphs-in-ggplot" class="level2">
+<h2 class="anchored" data-anchor-id="economics-graphs-in-ggplot">Economics Graphs in <code>ggplot</code></h2>
+<p>I have taught a variety of economics courses and make all of my slides and course materials in R/Xaringan/Quarto. This includes a wide variety of graphs of economic concepts, all of which I have drawn in <code>ggplot2</code>. I will begin creating a library of different graphs and the source code to make them.</p>
 </section>
 <section id="course-websites" class="level2">
 <h2 class="anchored" data-anchor-id="course-websites">Course Websites</h2>
+<p>Since the Fall of 2019, I have made individualized websites for each of my courses. You can find links to them on my <a href="https://ryansafner.com/teaching">teaching page</a>, and the repositories on <a href="https://github.com/ryansafner">my GitHub</a>.</p>
 </section>
-<section id="uses" class="level2">
-<h2 class="anchored" data-anchor-id="uses">Uses</h2>
-<p>People often ask me what tools I like to use to get work done.</p>
-<p>Writing:</p>
+<section id="hex-stickers" class="level2">
+<h2 class="anchored" data-anchor-id="hex-stickers">Hex Stickers</h2>
+<p>As part of my themeing for each of my courses, I have been making a custom hex stickers in the style that has become popular in the R/tidyverse community. You can find the image sources, outputs, and the code to render each one in <a href="https://github.com/ryansafner/hexstickers">this repository</a>.</p>
+<p><img src="https://github.com/ryansafner/hexstickers/raw/master/README_files/figure-markdown_strict/unnamed-chunk-1-1.png" class="img-fluid"></p>
 
 
 </section>

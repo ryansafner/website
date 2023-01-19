@@ -4,7 +4,7 @@
     "href": "teaching.html",
     "title": "Teaching",
     "section": "",
-    "text": "ECON 306 - Microeconomic Analysis\n\n\n\nECON 452 - History of Economic Thought\n\n\n\nECON 480 - Econometrics"
+    "text": "ECON 306 - Microeconomic Analysis\n\n\n\nECON 324 - International Trade\n\n\n\nECON 326 - Industrial Organization"
   },
   {
     "objectID": "teaching.html#all-courses-taught",
@@ -165,7 +165,7 @@
     "href": "index.html",
     "title": "Ryan Safner",
     "section": "",
-    "text": "Ph.D, Economics, 2015 (George Mason University)\nM.A., Economics, 2013 (George Mason University)\nB.A., Economics, 2011 (University of Connecticut)\n\n\n\n\n\nInnovation\nIntellectual Property\nEconomic Growth\nData Analysis with R\nI am an Associate Professor of Economics at Hood College. My research broadly explores the political economy of innovation, technological growth, and intellectual property using the tools of new institutional economics, public choice, and market process economics. I blog about these issues at Increasing Returns.\nI regularly teach Microeconomic Analysis and Econometrics and rotate through economics electives such as Game Theory, Industrial Organization, and Economics of the Law. I am a firm believer of providing public goods and promoting open source materials, so you can find all course materials on my custom course websites.\nI am a passionate user of R for data analysis, and Quarto and GitHub for writing reproducible research, using version control, and managing my workflow. I blog here about using these tools in my research & teaching as well as learning how to use new tools and software."
+    "text": "Ph.D, Economics, 2015 (George Mason University)\nM.A., Economics, 2013 (George Mason University)\nB.A., Economics, 2011 (University of Connecticut)\n\n\n\n\n\nInnovation\nIntellectual Property\nEconomic Growth\nData Analysis with R\n\n\n\n\n\nR, tidyverse, tidymodels, Stata, SQL, Git, LaTeX, Excel, Markdown, Quarto\nI am an Associate Professor of Economics at Hood College. My research broadly explores the political economy of innovation, technological growth, and intellectual property using the tools of new institutional economics, public choice, and market process economics. I blog about these issues at Increasing Returns.\nI regularly teach Microeconomic Analysis and Econometrics and rotate through economics electives such as Game Theory, Industrial Organization, and Economics of the Law. I am a firm believer of providing public goods and promoting open source materials, so you can find all course materials on my custom course websites.\nI am a passionate user of R for data analysis, and Quarto and GitHub for writing reproducible research, using version control, and managing my workflow. I blog here about using these tools in my research & teaching as well as learning how to use new tools and software."
   },
   {
     "objectID": "courses/econ-304.html",
@@ -221,28 +221,35 @@
     "href": "software.html",
     "title": "Software",
     "section": "",
-    "text": "These are largely shiny apps that I have written to demonstrate economic concepts for my economics courses:"
+    "text": "This page is under construction, but most of my projects are open source and can be found in my GitHub repositories. This includes all of the materials for my course websites and course content."
   },
   {
-    "objectID": "software.html#microeconomics-ggplot-graphs",
-    "href": "software.html#microeconomics-ggplot-graphs",
+    "objectID": "software.html#shiny-portfolio",
+    "href": "software.html#shiny-portfolio",
     "title": "Software",
-    "section": "Microeconomics ggplot Graphs",
-    "text": "Microeconomics ggplot Graphs"
+    "section": "Shiny Portfolio",
+    "text": "Shiny Portfolio\nThese are largely R shiny apps that I have written to demonstrate economic concepts for my economics courses. The main purpose is to visualize concepts in action (often through a graph) and especially show how key parameters affect the outcome by allowing users to change these values and see the graph update dynamically.\n\nVisualizing Ordinary Least Squares Regression\nVisualizing the Consumer’s Problem\nVisualizing changes in the Consumer’s Problem\nVisualizing the Solow Growth Model\nVisualizing the Monopoly Problem\nVisualizing the Cournot Model with Asymmetric Costs\nVisualizing the Cournot Model with (Symmetric) Market Changes\nVisualizing the Cournot Model with \\(n\\) Firms\nVisualizing the Relationship Between Price Elasticity and Economic Surplus\nVisualizing Tax Incidence\nVisualizing the Calculus of Consent Model\nGrade Calculator & Forecaster (for ECON 306; with variants for each of courses)"
+  },
+  {
+    "objectID": "software.html#economics-graphs-in-ggplot",
+    "href": "software.html#economics-graphs-in-ggplot",
+    "title": "Software",
+    "section": "Economics Graphs in ggplot",
+    "text": "Economics Graphs in ggplot\nI have taught a variety of economics courses and make all of my slides and course materials in R/Xaringan/Quarto. This includes a wide variety of graphs of economic concepts, all of which I have drawn in ggplot2. I will begin creating a library of different graphs and the source code to make them."
   },
   {
     "objectID": "software.html#course-websites",
     "href": "software.html#course-websites",
     "title": "Software",
     "section": "Course Websites",
-    "text": "Course Websites"
+    "text": "Course Websites\nSince the Fall of 2019, I have made individualized websites for each of my courses. You can find links to them on my teaching page, and the repositories on my GitHub."
   },
   {
-    "objectID": "software.html#uses",
-    "href": "software.html#uses",
+    "objectID": "software.html#hex-stickers",
+    "href": "software.html#hex-stickers",
     "title": "Software",
-    "section": "Uses",
-    "text": "Uses\nPeople often ask me what tools I like to use to get work done.\nWriting:"
+    "section": "Hex Stickers",
+    "text": "Hex Stickers\nAs part of my themeing for each of my courses, I have been making a custom hex stickers in the style that has become popular in the R/tidyverse community. You can find the image sources, outputs, and the code to render each one in this repository."
   },
   {
     "objectID": "blog.html",
