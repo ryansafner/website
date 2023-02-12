@@ -8,27 +8,35 @@ This page is under construction, but most of my projects are open source and can
 
 These are largely [R shiny](https://shiny.rstudio.com/) apps that I have written to demonstrate economic concepts for my economics courses. The main purpose is to visualize concepts in action (often through a graph) and especially show how key parameters affect the outcome by allowing users to change these values and see the graph update dynamically.
 
--   [Visualizing Ordinary Least Squares Regression](https://ryansafner.shinyapps.io/ols_estimation_by_min_sse/)
+### Consumer Theory
 
--   [Visualizing the Consumer's Problem](https://ryansafner.shinyapps.io/consumer/)
++--------------------------------------------------------------------------+--------------------------------------------------------------------------------------------------------------------------------+
+| [![](img/consumer_shiny.png)](https://ryansafner.shinyapps.io/consumer/) | [![Consumer\'s Problem](img/consumer_shiny.png){alt="Consumer's Problem"}](https://ryansafner.shinyapps.io/Consumer_changes/)\ |
+|                                                                          | [Changes in Consumer's Problem](https://ryansafner.shinyapps.io/Consumer_changes/)                                             |
+| [Consumer's Problem](https://ryansafner.shinyapps.io/consumer/)          |                                                                                                                                |
++--------------------------------------------------------------------------+--------------------------------------------------------------------------------------------------------------------------------+
 
--   [Visualizing changes in the Consumer's Problem](https://ryansafner.shinyapps.io/Consumer_changes/)
+### Industrial Organization
 
--   [Visualizing the Solow Growth Model](https://ryansafner.shinyapps.io/Solow/)
++--------------------------------------------------------------------------------------------+--------------------------------------------------------------------------------------------------+
+| [![](img/monopoly_shiny.png)](https://ryansafner.shinyapps.io/monopoly_problem/)           | [![](img/cournot_changes_shiny.png)](https://ryansafner.shinyapps.io/Cournot_market_changes/)    |
+|                                                                                            |                                                                                                  |
+| [Profit Maximization with Market Power](https://ryansafner.shinyapps.io/monopoly_problem/) | [Cournot Oligopoly with Market Changes](https://ryansafner.shinyapps.io/Cournot_market_changes/) |
++--------------------------------------------------------------------------------------------+--------------------------------------------------------------------------------------------------+
 
--   [Visualizing the Monopoly Problem](https://ryansafner.shinyapps.io/monopoly_problem/)
+### Microeconomics/Misc.
 
--   [Visualizing the Cournot Model with Asymmetric Costs](https://ryansafner.shinyapps.io/Cournot_market_changes/)
-
--   [Visualizing the Cournot Model with (Symmetric) Market Changes](https://ryansafner.shinyapps.io/Cournot_market_changes/)
-
--   [Visualizing the Cournot Model with $n$ Firms](https://ryansafner.shinyapps.io/cournot_n_firms/)
-
--   [Visualizing the Relationship Between Price Elasticity and Economic Surplus](https://ryansafner.shinyapps.io/elasticityandsurpluses/)
-
--   [Visualizing Tax Incidence](https://ryansafner.shinyapps.io/tax-incidence/)
-
--   [Visualizing the Calculus of Consent Model](https://ryansafner.shinyapps.io/ccmodel/)
++------------------------------------------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------------------------------------+
+| [![](img/surplus_shiny.png)](https://ryansafner.shinyapps.io/elasticityandsurpluses/)                                        | [![](img/tax_shiny.png)Tax Incidence](https://ryansafner.shinyapps.io/tax-incidence/)                                 |
+|                                                                                                                              |                                                                                                                       |
+| [Elasticity and Surpluses](https://ryansafner.shinyapps.io/elasticityandsurpluses/)                                          |                                                                                                                       |
++------------------------------------------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------------------------------------+
+| [![Calculus of Consent Model](img/cc_shiny.png){alt="Calculus of Consent Model"}](https://ryansafner.shinyapps.io/ccmodel/)\ | [![](img/ols_shiny.png)Ordinary Least Squares Regression](https://ryansafner.shinyapps.io/ols_estimation_by_min_sse/) |
+| [Calculus of Consent Model](https://ryansafner.shinyapps.io/ccmodel/)                                                        |                                                                                                                       |
++------------------------------------------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------------------------------------+
+| [![](img/solow_shiny.png)](https://ryansafner.shinyapps.io/Solow/)\                                                          |                                                                                                                       |
+| [Solow Growth Model](https://ryansafner.shinyapps.io/Solow/)                                                                 |                                                                                                                       |
++------------------------------------------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------------------------------------+
 
 -   [Grade Calculator & Forecaster](https://ryansafner.shinyapps.io/306_grade_calculator/) (for ECON 306; with variants for each of courses)
 
