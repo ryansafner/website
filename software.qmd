@@ -10,21 +10,22 @@ These are largely [R shiny](https://shiny.rstudio.com/) apps that I have written
 
 ### Consumer Theory
 
-+--------------------------------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------+
-| [![](img/consumer_shiny.png)](https://ryansafner.shinyapps.io/consumer/) | [![Consumer's Problem](img/consumer_shiny.png){alt="Consumer's Problem"}](https://ryansafner.shinyapps.io/Consumer_changes/)\ |
-|                                                                          | [Changes in Consumer's Problem](https://ryansafner.shinyapps.io/Consumer_changes/)                                            |
-| [Consumer's Problem](https://ryansafner.shinyapps.io/consumer/)          |                                                                                                                               |
-+--------------------------------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------+
++--------------------------------------------------------------------------+--------------------------------------------------------------------------------------------------------------------------------+
+| [![](img/consumer_shiny.png)](https://ryansafner.shinyapps.io/consumer/) | [![Consumer\'s Problem](img/consumer_shiny.png){alt="Consumer's Problem"}](https://ryansafner.shinyapps.io/Consumer_changes/)\ |
+|                                                                          | [Changes in Consumer's Problem](https://ryansafner.shinyapps.io/Consumer_changes/)                                             |
+| [Consumer's Problem](https://ryansafner.shinyapps.io/consumer/)          |                                                                                                                                |
++--------------------------------------------------------------------------+--------------------------------------------------------------------------------------------------------------------------------+
 
 ### Industrial Organization
 
-+------------------------------------------------------------------------------------------------------------------------+--------------------------------------------------------------------------------------------------+
-| [![](img/monopoly_shiny.png)](https://ryansafner.shinyapps.io/monopoly_problem/)                                       | [![](img/cournot_changes_shiny.png)](https://ryansafner.shinyapps.io/Cournot_market_changes/)    |
-|                                                                                                                        |                                                                                                  |
-| [Profit Maximization with Market Power](https://ryansafner.shinyapps.io/monopoly_problem/)                             | [Cournot Oligopoly with Market Changes](https://ryansafner.shinyapps.io/Cournot_market_changes/) |
-+------------------------------------------------------------------------------------------------------------------------+--------------------------------------------------------------------------------------------------+
-| [![](img/cournot_n_firms_shiny.png)Cournot Oligopoly with $N$ Firms](https://ryansafner.shinyapps.io/cournot_n_firms/) |                                                                                                  |
-+------------------------------------------------------------------------------------------------------------------------+--------------------------------------------------------------------------------------------------+
++------------------------------------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------------------------+
+| [![](img/monopoly_shiny.png)](https://ryansafner.shinyapps.io/monopoly_problem/)                                       | [![](img/cournot_changes_shiny.png)](https://ryansafner.shinyapps.io/Cournot_market_changes/)             |
+|                                                                                                                        |                                                                                                           |
+| [Profit Maximization with Market Power](https://ryansafner.shinyapps.io/monopoly_problem/)                             | [Cournot Oligopoly with Market Changes](https://ryansafner.shinyapps.io/Cournot_market_changes/)          |
++------------------------------------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------------------------+
+| [![](img/cournot_n_firms_shiny.png)Cournot Oligopoly with $N$ Firms](https://ryansafner.shinyapps.io/cournot_n_firms/) | [![](img/cournot_asymmetric_costs_shiny.png)](https://ryansafner.shinyapps.io/cournot_asymmetric_costs/)\ |
+|                                                                                                                        | [Cournot Oligopoly with Asymmetric Costs](https://ryansafner.shinyapps.io/cournot_asymmetric_costs/)      |
++------------------------------------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------------------------+
 
 ### Microeconomics/Misc.
 
