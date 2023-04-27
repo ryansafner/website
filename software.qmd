@@ -10,11 +10,11 @@ These are largely [R shiny](https://shiny.rstudio.com/) apps that I have written
 
 ### Consumer Theory
 
-+--------------------------------------------------------------------------+--------------------------------------------------------------------------------------------------------------------------------+
-| [![](img/consumer_shiny.png)](https://ryansafner.shinyapps.io/consumer/) | [![Consumer\'s Problem](img/consumer_shiny.png){alt="Consumer's Problem"}](https://ryansafner.shinyapps.io/Consumer_changes/)\ |
-|                                                                          | [Changes in Consumer's Problem](https://ryansafner.shinyapps.io/Consumer_changes/)                                             |
-| [Consumer's Problem](https://ryansafner.shinyapps.io/consumer/)          |                                                                                                                                |
-+--------------------------------------------------------------------------+--------------------------------------------------------------------------------------------------------------------------------+
++--------------------------------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------+
+| [![](img/consumer_shiny.png)](https://ryansafner.shinyapps.io/consumer/) | [![Consumer's Problem](img/consumer_shiny.png){alt="Consumer's Problem"}](https://ryansafner.shinyapps.io/Consumer_changes/)\ |
+|                                                                          | [Changes in Consumer's Problem](https://ryansafner.shinyapps.io/Consumer_changes/)                                            |
+| [Consumer's Problem](https://ryansafner.shinyapps.io/consumer/)          |                                                                                                                               |
++--------------------------------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------+
 
 ### Industrial Organization
 
