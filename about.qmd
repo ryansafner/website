@@ -1,0 +1,13 @@
+---
+title: "About Me"
+echo: false
+section-divs: false
+execution:
+  freeze: auto
+---
+
+I am originally from Connecticut, I got my bachelor's in Economics at UConn (Go Huskies!) and my Ph.D in Economics at George Mason, and taught at Wake Forest University before coming to Hood. I have lived in 5 states, and I currently live in Takoma Park, MD, so I listen to a lot of economics podcasts on my lengthy commute.
+
+I'm a big fan of Miami Hurricanes college football and UConn Huskies basketball. In my spare time, I enjoy running, cycling, eating (and cooking) good (mostly vegetarian) food, and enjoying lots of live music with my wife.
+As an economist, I am interested in understanding what institutions and policies best allow us to come up with inventions and ideas that benefit everyone, and that has led me to research copyrights & patents, piracy, and the political economy of innovation. You can find more about my research on my website, and my substack, Increasing Returns.
+I am also a big tech nerd, if you can't tell by the unnecessary amount of time I put into my slides and websites. I love open source software, I have not touched Microsoft Office since 2011, I write all of my materials in R and markdown, which I teach in my econometrics course every Fall. I very occasionally blog about these data science things on my website.

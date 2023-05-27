@@ -4,14 +4,7 @@
     "href": "teaching.html",
     "title": "Teaching",
     "section": "",
-    "text": "ECON 306 - Microeconomic Analysis\n\n\n\nECON 324 - International Trade\n\n\n\nECON 326 - Industrial Organization"
-  },
-  {
-    "objectID": "teaching.html#all-courses-taught",
-    "href": "teaching.html#all-courses-taught",
-    "title": "Teaching",
-    "section": "All Courses Taught",
-    "text": "All Courses Taught\n\nHood College (Fall 2016–Present)\nCourse titles below link to latest version of course website (including courses in progress). Many courses may have prior website versions with full materials but are either password protected or answer keys are hidden. If you are interested in the materials (and are not a current student), I am happy to share them with you (just email me)!\n\n\n\n My Hextickers\n\n\n\n\n\n\nECMG 212 - Statistics for Economics and Business\n\n\n\nECON 205 - Principles of Macroeconomics\n\n\n\nECON 304 - International Political Economy\n\n\n\nECON 306 - Microeconomic Analysis\n\n\n\nECON 315 - Economics of the Law\n\n\n\nECON 316 - Game Theory\n\n\n\nECON 317 - Economics of Development\n\n\n\nECON 324 - International Trade\n\n\n\nECON 326 - Industrial Organization\n\n\n\nECON 410 - Public Economics\n\n\n\nECON 452 - History of Economic Thought\n\n\n\nECON 480 - Econometrics\n\n\n\nMGMT 399 - Internship for Business Administration\n\n\n\n\n\nWake Forest University (Fall 2015–Spring 2016)\n\n\n\nECN 150 - Introduction to Economics\n\n\nECN 272 - Austrian Economics\n\n\n\n\n\nGeorge Mason University (Summer 2013–Summer 2015)\n\n\n\nECON 385 - International Economic Policy\n\n\nECON 403 - Austrian Economics\n\n\nICES High School Summer Workshops"
+    "text": "Course titles below link to the latest semester of each course website. Courses prior to Fall 2019 do not have a dedicated website, but slides and some assignments are posted here. Many courses may have prior website versions with full materials but are either password protected or answer keys are hidden. If you are interested in the answer keys/materials (and are not a current student), I am happy to share them with you (just email me)!\n\n\n\n My Hextickers\n\n\n\n\n\n\nECMG 212 - Statistics for Economics and Business\n\n\n\nECON 205 - Principles of Macroeconomics\n\n\n\nECON 304 - International Political Economy\n\n\n\nECON 306 - Microeconomic Analysis\n\n\n\nECON 315 - Economics of the Law\n\n\n\nECON 316 - Game Theory\n\n\n\nECON 317 - Economics of Development\n\n\n\nECON 324 - International Trade\n\n\n\nECON 326 - Industrial Organization\n\n\n\nECON 410 - Public Economics\n\n\n\nECON 452 - History of Economic Thought\n\n\n\nECON 480 - Econometrics\n\n\n\nMGMT 399 - Internship for Business Administration\n\n\n\n\n\n\n\n\n\nECN 150 - Introduction to Economics\n\n\nECN 272 - Austrian Economics\n\n\n\n\n\n\n\n\n\nECON 385 - International Economic Policy\n\n\nECON 403 - Austrian Economics\n\n\nICES High School Summer Workshops"
   },
   {
     "objectID": "research.html",
@@ -166,6 +159,13 @@
     "title": "Ryan Safner",
     "section": "",
     "text": "Ph.D, Economics, 2015 (George Mason University)\nM.A., Economics, 2013 (George Mason University)\nB.A., Economics, 2011 (University of Connecticut)\n\n\n\n\n\nInnovation\nIntellectual Property\nEconomic Growth\nData Analysis with R\n\n\n\n\n\nR, tidyverse, tidymodels, Stata, SQL, Git, LaTeX, Excel, Markdown, Quarto\nI am an Associate Professor of Economics at Hood College. My research broadly explores the political economy of innovation, technological growth, and intellectual property using the tools of new institutional economics, public choice, and market process economics. I blog about these issues at Increasing Returns.\nI regularly teach Microeconomic Analysis and Econometrics and rotate through economics electives such as Game Theory, Industrial Organization, and Economics of the Law. I am a firm believer of providing public goods and promoting open source materials, so you can find all course materials on my custom course websites.\nI am a passionate user of R for data analysis, and Quarto and GitHub for writing reproducible research, using version control, and managing my workflow. I blog here about using these tools in my research & teaching as well as learning how to use new tools and software."
+  },
+  {
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "About Me",
+    "section": "",
+    "text": "I am originally from Connecticut, I got my bachelor’s in Economics at UConn (Go Huskies!) and my Ph.D in Economics at George Mason, and taught at Wake Forest University before coming to Hood. I have lived in 5 states, and I currently live in Takoma Park, MD, so I listen to a lot of economics podcasts on my lengthy commute.\nI’m a big fan of Miami Hurricanes college football and UConn Huskies basketball. In my spare time, I enjoy running, cycling, eating (and cooking) good (mostly vegetarian) food, and enjoying lots of live music with my wife. As an economist, I am interested in understanding what institutions and policies best allow us to come up with inventions and ideas that benefit everyone, and that has led me to research copyrights & patents, piracy, and the political economy of innovation. You can find more about my research on my website, and my substack, Increasing Returns. I am also a big tech nerd, if you can’t tell by the unnecessary amount of time I put into my slides and websites. I love open source software, I have not touched Microsoft Office since 2011, I write all of my materials in R and markdown, which I teach in my econometrics course every Fall. I very occasionally blog about these data science things on my website."
   },
   {
     "objectID": "courses/econ-304.html",
