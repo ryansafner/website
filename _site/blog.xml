@@ -9,30 +9,8 @@
 <link>https://ryansafner.com/blog.html</link>
 <atom:link href="https://ryansafner.com/blog.xml" rel="self" type="application/rss+xml"/>
 <description>Personal website of Dr. Ryan Safner</description>
-<generator>quarto-1.2.475</generator>
-<lastBuildDate>Sun, 02 Oct 2022 06:00:00 GMT</lastBuildDate>
-<item>
-  <title>Two Blogs</title>
-  <link>https://ryansafner.com/posts/two-blogs.html</link>
-  <description><![CDATA[ 
-
-
-
-<p>I have launched a new newsletter/blog on Substack called <a href="https://increasingreturns.substack.com">Increasing Returns</a>, which will focus on issues and content</p>
-
-
-
- ]]></description>
-  <category>rstats</category>
-  <category>data science</category>
-  <category>causal inference</category>
-  <category>DAGs</category>
-  <category>blog</category>
-  <category>teaching</category>
-  <category>econometrics</category>
-  <guid>https://ryansafner.com/posts/two-blogs.html</guid>
-  <pubDate>Sun, 02 Oct 2022 06:00:00 GMT</pubDate>
-</item>
+<generator>quarto-1.3.353</generator>
+<lastBuildDate>Fri, 18 Oct 2019 06:00:00 GMT</lastBuildDate>
 <item>
   <title>If You’re Going to Learn R, Learn the Tidyverse</title>
   <link>https://ryansafner.com/posts/if-youre-going-to-learn-r-learn-the-tidyverse.html</link>
@@ -62,9 +40,35 @@
 <div class="cell">
 <details>
 <summary>Code</summary>
-<div class="sourceCode cell-code" id="cb1" style="background: #f1f3f5;"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1">gapminder1<span class="ot" style="color: #003B4F;">&lt;-</span>gapminder[gapminder<span class="sc" style="color: #5E5E5E;">$</span>country<span class="sc" style="color: #5E5E5E;">==</span><span class="st" style="color: #20794D;">"United States"</span>, <span class="fu" style="color: #4758AB;">c</span>(<span class="st" style="color: #20794D;">"year"</span>, <span class="st" style="color: #20794D;">"gdpPercap"</span>, <span class="st" style="color: #20794D;">"pop"</span>)]</span>
+<div class="sourceCode cell-code" id="cb1" style="background: #f1f3f5;"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1">gapminder1<span class="ot" style="color: #003B4F;
+background-color: null;
+font-style: inherit;">&lt;-</span>gapminder[gapminder<span class="sc" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">$</span>country<span class="sc" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">==</span><span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"United States"</span>, <span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">c</span>(<span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"year"</span>, <span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"gdpPercap"</span>, <span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"pop"</span>)]</span>
 <span id="cb1-2"></span>
-<span id="cb1-3">gapminder1<span class="sc" style="color: #5E5E5E;">$</span>gdp<span class="ot" style="color: #003B4F;">&lt;-</span>gapminder1<span class="sc" style="color: #5E5E5E;">$</span>gdpPercap<span class="sc" style="color: #5E5E5E;">*</span>gapminder1<span class="sc" style="color: #5E5E5E;">$</span>pop</span></code></pre></div>
+<span id="cb1-3">gapminder1<span class="sc" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">$</span>gdp<span class="ot" style="color: #003B4F;
+background-color: null;
+font-style: inherit;">&lt;-</span>gapminder1<span class="sc" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">$</span>gdpPercap<span class="sc" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">*</span>gapminder1<span class="sc" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">$</span>pop</span></code></pre></div>
 </details>
 </div>
 <p>This is doable in base R, and often requires saving the output as a new object for later use.</p>
@@ -72,10 +76,30 @@
 <div class="cell">
 <details>
 <summary>Code</summary>
-<div class="sourceCode cell-code" id="cb2" style="background: #f1f3f5;"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb2-1">gapminder <span class="sc" style="color: #5E5E5E;">%&gt;%</span></span>
-<span id="cb2-2">  <span class="fu" style="color: #4758AB;">filter</span>(country <span class="sc" style="color: #5E5E5E;">==</span> <span class="st" style="color: #20794D;">"United States"</span>) <span class="sc" style="color: #5E5E5E;">%&gt;%</span></span>
-<span id="cb2-3">  <span class="fu" style="color: #4758AB;">select</span>(year, gdpPercap, pop) <span class="sc" style="color: #5E5E5E;">%&gt;%</span></span>
-<span id="cb2-4">  <span class="fu" style="color: #4758AB;">mutate</span>(<span class="at" style="color: #657422;">GDP=</span>gdpPercap <span class="sc" style="color: #5E5E5E;">*</span> pop)</span></code></pre></div>
+<div class="sourceCode cell-code" id="cb2" style="background: #f1f3f5;"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb2-1">gapminder <span class="sc" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">%&gt;%</span></span>
+<span id="cb2-2">  <span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">filter</span>(country <span class="sc" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">==</span> <span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"United States"</span>) <span class="sc" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">%&gt;%</span></span>
+<span id="cb2-3">  <span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">select</span>(year, gdpPercap, pop) <span class="sc" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">%&gt;%</span></span>
+<span id="cb2-4">  <span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">mutate</span>(<span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;">GDP=</span>gdpPercap <span class="sc" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">*</span> pop)</span></code></pre></div>
 </details>
 <div class="cell-output cell-output-stdout">
 <pre><code># A tibble: 12 × 4
@@ -105,9 +129,29 @@
 <div class="cell">
 <details>
 <summary>Code</summary>
-<div class="sourceCode cell-code" id="cb4" style="background: #f1f3f5;"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb4-1">gapminder_US<span class="ot" style="color: #003B4F;">&lt;-</span><span class="fu" style="color: #4758AB;">filter</span>(gapminder, country <span class="sc" style="color: #5E5E5E;">==</span> <span class="st" style="color: #20794D;">"United States"</span>)</span>
-<span id="cb4-2">gapminder_US<span class="ot" style="color: #003B4F;">&lt;-</span><span class="fu" style="color: #4758AB;">select</span>(gapminder_US, year, gdpPercap, pop)</span>
-<span id="cb4-3">gapminder_US<span class="ot" style="color: #003B4F;">&lt;-</span><span class="fu" style="color: #4758AB;">mutate</span>(gapminder_US, <span class="at" style="color: #657422;">GDP=</span>gdpPercap <span class="sc" style="color: #5E5E5E;">*</span> pop)</span>
+<div class="sourceCode cell-code" id="cb4" style="background: #f1f3f5;"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb4-1">gapminder_US<span class="ot" style="color: #003B4F;
+background-color: null;
+font-style: inherit;">&lt;-</span><span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">filter</span>(gapminder, country <span class="sc" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">==</span> <span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"United States"</span>)</span>
+<span id="cb4-2">gapminder_US<span class="ot" style="color: #003B4F;
+background-color: null;
+font-style: inherit;">&lt;-</span><span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">select</span>(gapminder_US, year, gdpPercap, pop)</span>
+<span id="cb4-3">gapminder_US<span class="ot" style="color: #003B4F;
+background-color: null;
+font-style: inherit;">&lt;-</span><span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">mutate</span>(gapminder_US, <span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;">GDP=</span>gdpPercap <span class="sc" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">*</span> pop)</span>
 <span id="cb4-4">gapminder_US</span></code></pre></div>
 </details>
 <div class="cell-output cell-output-stdout">
@@ -163,22 +207,104 @@
 <div class="cell">
 <details>
 <summary>Code</summary>
-<div class="sourceCode cell-code" id="cb6" style="background: #f1f3f5;"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb6-1"><span class="fu" style="color: #4758AB;">ggplot</span>(<span class="at" style="color: #657422;">data =</span> mpg)<span class="sc" style="color: #5E5E5E;">+</span></span>
-<span id="cb6-2">  <span class="fu" style="color: #4758AB;">aes</span>(<span class="at" style="color: #657422;">x =</span> displ,</span>
-<span id="cb6-3">        <span class="at" style="color: #657422;">y =</span> hwy)<span class="sc" style="color: #5E5E5E;">+</span></span>
-<span id="cb6-4">  <span class="fu" style="color: #4758AB;">geom_point</span>(<span class="fu" style="color: #4758AB;">aes</span>(<span class="at" style="color: #657422;">color =</span> class))<span class="sc" style="color: #5E5E5E;">+</span></span>
-<span id="cb6-5">  <span class="fu" style="color: #4758AB;">geom_smooth</span>()<span class="sc" style="color: #5E5E5E;">+</span></span>
-<span id="cb6-6">  <span class="fu" style="color: #4758AB;">facet_wrap</span>(<span class="sc" style="color: #5E5E5E;">~</span>year)<span class="sc" style="color: #5E5E5E;">+</span></span>
-<span id="cb6-7">  <span class="fu" style="color: #4758AB;">labs</span>(<span class="at" style="color: #657422;">x =</span> <span class="st" style="color: #20794D;">"Engine Displacement (Liters)"</span>,</span>
-<span id="cb6-8">       <span class="at" style="color: #657422;">y =</span> <span class="st" style="color: #20794D;">"Highway MPG"</span>,</span>
-<span id="cb6-9">       <span class="at" style="color: #657422;">title =</span> <span class="st" style="color: #20794D;">"Car Mileage and Displacement"</span>,</span>
-<span id="cb6-10">       <span class="at" style="color: #657422;">subtitle =</span> <span class="st" style="color: #20794D;">"More Displacement Lowers Highway MPG"</span>,</span>
-<span id="cb6-11">       <span class="at" style="color: #657422;">caption =</span> <span class="st" style="color: #20794D;">"Source: EPA"</span>,</span>
-<span id="cb6-12">       <span class="at" style="color: #657422;">color =</span> <span class="st" style="color: #20794D;">"Vehicle Class"</span>)<span class="sc" style="color: #5E5E5E;">+</span></span>
-<span id="cb6-13">  <span class="fu" style="color: #4758AB;">scale_color_viridis_d</span>()<span class="sc" style="color: #5E5E5E;">+</span></span>
-<span id="cb6-14">  <span class="fu" style="color: #4758AB;">theme_minimal</span>()<span class="sc" style="color: #5E5E5E;">+</span></span>
-<span id="cb6-15">  <span class="fu" style="color: #4758AB;">theme</span>(<span class="at" style="color: #657422;">text =</span> <span class="fu" style="color: #4758AB;">element_text</span>(<span class="at" style="color: #657422;">family =</span> <span class="st" style="color: #20794D;">"Fira Sans"</span>),</span>
-<span id="cb6-16">        <span class="at" style="color: #657422;">legend.position=</span><span class="st" style="color: #20794D;">"bottom"</span>)</span></code></pre></div>
+<div class="sourceCode cell-code" id="cb6" style="background: #f1f3f5;"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb6-1"><span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">ggplot</span>(<span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;">data =</span> mpg)<span class="sc" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">+</span></span>
+<span id="cb6-2">  <span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">aes</span>(<span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;">x =</span> displ,</span>
+<span id="cb6-3">        <span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;">y =</span> hwy)<span class="sc" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">+</span></span>
+<span id="cb6-4">  <span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">geom_point</span>(<span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">aes</span>(<span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;">color =</span> class))<span class="sc" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">+</span></span>
+<span id="cb6-5">  <span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">geom_smooth</span>()<span class="sc" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">+</span></span>
+<span id="cb6-6">  <span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">facet_wrap</span>(<span class="sc" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">~</span>year)<span class="sc" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">+</span></span>
+<span id="cb6-7">  <span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">labs</span>(<span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;">x =</span> <span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"Engine Displacement (Liters)"</span>,</span>
+<span id="cb6-8">       <span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;">y =</span> <span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"Highway MPG"</span>,</span>
+<span id="cb6-9">       <span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;">title =</span> <span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"Car Mileage and Displacement"</span>,</span>
+<span id="cb6-10">       <span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;">subtitle =</span> <span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"More Displacement Lowers Highway MPG"</span>,</span>
+<span id="cb6-11">       <span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;">caption =</span> <span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"Source: EPA"</span>,</span>
+<span id="cb6-12">       <span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;">color =</span> <span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"Vehicle Class"</span>)<span class="sc" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">+</span></span>
+<span id="cb6-13">  <span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">scale_color_viridis_d</span>()<span class="sc" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">+</span></span>
+<span id="cb6-14">  <span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">theme_minimal</span>()<span class="sc" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">+</span></span>
+<span id="cb6-15">  <span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">theme</span>(<span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;">text =</span> <span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">element_text</span>(<span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;">family =</span> <span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"Fira Sans"</span>),</span>
+<span id="cb6-16">        <span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;">legend.position=</span><span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"bottom"</span>)</span></code></pre></div>
 </details>
 <div class="cell-output-display">
 <p><img src="https://ryansafner.com/posts/if-youre-going-to-learn-r-learn-the-tidyverse_files/figure-html/unnamed-chunk-4-1.png" class="img-fluid" width="672"></p>
@@ -364,15 +490,53 @@
 <p>One of the advantages of using Stata for linear regression is that it can automatically use heteroskedasticity-robust standard errors simply by adding <code>, r</code> to the end of any regression command. Anyone can more or less use robust standard errors and make more accurate inferences without even thinking about what they represent or how they are determined since it’s so easy just to add the letter <code>r</code> to any regression.</p>
 <p>In <code>R</code>, robust standard errors are not “built in” to the base language. There are a few ways that I’ve discovered to try to replicate Stata’s “robust” command. None of them, unfortunately, are as simple as typing the letter <code>r</code> after a regression. Each has its ups and downs, but may serve different purposes.</p>
 <p>Below, I will demonstrate the two methods, but first, let’s create some random data that will have heteroskedastic residuals.</p>
-<div class="sourceCode" id="cb1" style="background: #f1f3f5;"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><span class="fu" style="color: #4758AB;">set.seed</span>(<span class="dv" style="color: #AD0000;">20</span>)</span>
-<span id="cb1-2"><span class="co" style="color: #5E5E5E;"># draw 500 observations from a random uniform distribution (runif) between 0 and 10.  </span></span>
-<span id="cb1-3">x<span class="ot" style="color: #003B4F;">&lt;-</span><span class="fu" style="color: #4758AB;">runif</span>(<span class="dv" style="color: #AD0000;">500</span>,<span class="dv" style="color: #AD0000;">0</span>,<span class="dv" style="color: #AD0000;">10</span>)</span>
+<div class="sourceCode" id="cb1" style="background: #f1f3f5;"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">set.seed</span>(<span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">20</span>)</span>
+<span id="cb1-2"><span class="co" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;"># draw 500 observations from a random uniform distribution (runif) between 0 and 10.  </span></span>
+<span id="cb1-3">x<span class="ot" style="color: #003B4F;
+background-color: null;
+font-style: inherit;">&lt;-</span><span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">runif</span>(<span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">500</span>,<span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">0</span>,<span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">10</span>)</span>
 <span id="cb1-4"></span>
-<span id="cb1-5"><span class="co" style="color: #5E5E5E;"># draw 500 observations from a random normal distribution</span></span>
-<span id="cb1-6">y<span class="ot" style="color: #003B4F;">&lt;-</span><span class="fu" style="color: #4758AB;">rnorm</span>(<span class="dv" style="color: #AD0000;">500</span>,<span class="at" style="color: #657422;">mean=</span>x,<span class="at" style="color: #657422;">sd=</span>x) <span class="co" style="color: #5E5E5E;"># set mean and sd are set as the value of each x value</span></span>
-<span id="cb1-7"><span class="co" style="color: #5E5E5E;"># thus, as x gets larger, so does the sd, and thus the residuals</span></span>
+<span id="cb1-5"><span class="co" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;"># draw 500 observations from a random normal distribution</span></span>
+<span id="cb1-6">y<span class="ot" style="color: #003B4F;
+background-color: null;
+font-style: inherit;">&lt;-</span><span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">rnorm</span>(<span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">500</span>,<span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;">mean=</span>x,<span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;">sd=</span>x) <span class="co" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;"># set mean and sd are set as the value of each x value</span></span>
+<span id="cb1-7"><span class="co" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;"># thus, as x gets larger, so does the sd, and thus the residuals</span></span>
 <span id="cb1-8"></span>
-<span id="cb1-9">data<span class="ot" style="color: #003B4F;">&lt;-</span><span class="fu" style="color: #4758AB;">data.frame</span>(x,y) <span class="co" style="color: #5E5E5E;"># make x and y variables in a dataframe called "data"</span></span></code></pre></div>
+<span id="cb1-9">data<span class="ot" style="color: #003B4F;
+background-color: null;
+font-style: inherit;">&lt;-</span><span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">data.frame</span>(x,y) <span class="co" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;"># make x and y variables in a dataframe called "data"</span></span></code></pre></div>
 <p>We then run a regression of <code>y</code> on <code>x</code>:</p>
 <pre class="{r}"><code>reg&lt;-lm(y~x)
 summary(reg)</code></pre>
@@ -399,8 +563,14 @@ summary(reg)</code></pre>
 <p>I have also broken up the scatterplot into 5 different sections over the range of <code>x</code> values. Below, I plot density plots of the residuals over each of the 5 different ranges of <code>x</code> values, and we can clearly see that the variance of the residuals dramatically increases as <code>x</code> increases.</p>
 <p><img src="https://ryansafner.com/img/residualsplots.png" class="img-fluid"></p>
 <p>Using the <code>lmtest</code> package, we can also formally run a Breusch-Pagan test for heteroskedasticity.</p>
-<div class="sourceCode" id="cb4" style="background: #f1f3f5;"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb4-1"><span class="fu" style="color: #4758AB;">library</span>(<span class="st" style="color: #20794D;">"lmtest"</span>)</span>
-<span id="cb4-2"><span class="fu" style="color: #4758AB;">bptest</span>(reg)</span></code></pre></div>
+<div class="sourceCode" id="cb4" style="background: #f1f3f5;"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb4-1"><span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">library</span>(<span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"lmtest"</span>)</span>
+<span id="cb4-2"><span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">bptest</span>(reg)</span></code></pre></div>
 <pre><code>## 
 ##  studentized Breusch-Pagan test
 ## 
@@ -414,25 +584,65 @@ summary(reg)</code></pre>
 <p>Since the covariance of anything with itself is the variance, the <em>diagonal</em> elements of this matrix are the variances of the OLS estimators:</p>
 <p><img src="https://latex.codecogs.com/png.latex?%5Cbegin%7Bpmatrix%7Dvar(%5Chat%7B%5Cbeta_0%7D)%20&amp;%20cov(%5Chat%7B%5Cbeta_0%7D,%5Chat%7B%5Cbeta_1%7D)%20&amp;%20%5Ccdots%20&amp;%20cov(%5Chat%7B%5Cbeta_0%7D,%5Chat%7B%5Cbeta_k%7D)%5C%5C%5C%5C%5C%5C%20cov(%5Chat%7B%5Cbeta_1%7D,%20%5Chat%7B%5Cbeta_0%7D)%20&amp;%20var(%5Chat%7B%5Cbeta_1%7D)%20&amp;%20%5Ccdots%20&amp;%20cov(%5Chat%7B%5Cbeta_1%7D,%5Chat%7B%5Cbeta_k%7D)%5C%5C%5C%5C%5C%5C%20%5Cvdots%20&amp;%20%5Cvdots%20&amp;%20%5Cddots%20&amp;%20%5Cvdots%20%5C%5C%5C%5C%5C%5C%20cov(%5Chat%7B%5Cbeta_k%7D,%5Chat%7B%5Cbeta_0%7D)%20&amp;%20cov(%5Chat%7B%5Cbeta_k%7D,%5Chat%7B%5Cbeta_1%7D)%20&amp;%20%5Ccdots%20&amp;%20var(%5Chat%7B%5Cbeta_k%7D)%5C%5C%5C%5C%5C%5C%20%5Cend%7Bpmatrix%7D"></p>
 <p>So if we look at the simple <img src="https://latex.codecogs.com/png.latex?2%20%5Ctimes%202"> variance-covariance matrix in our simple <code>reg</code> using <code>vcov</code>, we see.</p>
-<div class="sourceCode" id="cb6" style="background: #f1f3f5;"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb6-1"><span class="fu" style="color: #4758AB;">vcov</span>(reg)</span></code></pre></div>
+<div class="sourceCode" id="cb6" style="background: #f1f3f5;"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb6-1"><span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">vcov</span>(reg)</span></code></pre></div>
 <pre><code>##             (Intercept)            x
 ## (Intercept)  0.27315741 -0.039976551
 ## x           -0.03997655  0.007897029</code></pre>
 <p>We can extract just the diagonal of the matrix with <code>diag()</code>:</p>
-<div class="sourceCode" id="cb8" style="background: #f1f3f5;"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb8-1"><span class="fu" style="color: #4758AB;">diag</span>(<span class="fu" style="color: #4758AB;">vcov</span>(reg))</span></code></pre></div>
+<div class="sourceCode" id="cb8" style="background: #f1f3f5;"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb8-1"><span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">diag</span>(<span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">vcov</span>(reg))</span></code></pre></div>
 <pre><code>## (Intercept)           x 
 ## 0.273157410 0.007897029</code></pre>
 <p>These are the variances of <img src="https://latex.codecogs.com/png.latex?%5Chat%7B%5Cbeta_0%7D"> and <img src="https://latex.codecogs.com/png.latex?%5Chat%7B%5Cbeta_1%7D">. Since the standard error of an estimator is the square root of its variance, we simply square root these values to get the standard errors of <img src="https://latex.codecogs.com/png.latex?%5Chat%7B%5Cbeta_0%7D"> and <img src="https://latex.codecogs.com/png.latex?%5Chat%7B%5Cbeta_1%7D">, which were originally reported in our regression output next to the coefficient estimates.</p>
-<div class="sourceCode" id="cb10" style="background: #f1f3f5;"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb10-1"><span class="fu" style="color: #4758AB;">sqrt</span>(<span class="fu" style="color: #4758AB;">diag</span>(<span class="fu" style="color: #4758AB;">vcov</span>(reg)))</span></code></pre></div>
+<div class="sourceCode" id="cb10" style="background: #f1f3f5;"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb10-1"><span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">sqrt</span>(<span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">diag</span>(<span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">vcov</span>(reg)))</span></code></pre></div>
 <pre><code>## (Intercept)           x 
 ##  0.52264463  0.08886523</code></pre>
 <p>Now, the whole problem is we know that due to heteroskedasticity, the standard errors are incorrectly estimated. To fix this, we use the <code>sandwich</code> package that allows us to manually recalculate the variance-covariance matrix using methods robust to heteroskedasticity. This is why I went through the trouble of describing the variance-covariance matrix above, as we will be recalculating it using a different method, the <code>HC1</code> method, which is how Stata calculates it. I then store these calculates as <code>rse</code> in my original <code>lm</code> object called <code>reg</code>.</p>
-<div class="sourceCode" id="cb12" style="background: #f1f3f5;"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb12-1"><span class="fu" style="color: #4758AB;">library</span>(<span class="st" style="color: #20794D;">"sandwich"</span>) <span class="co" style="color: #5E5E5E;"># package that allows for robust SE estimation</span></span>
-<span id="cb12-2"><span class="co" style="color: #5E5E5E;"># create Robust Standard Errors for regression as 'reg$rse'</span></span>
-<span id="cb12-3">reg<span class="sc" style="color: #5E5E5E;">$</span>rse <span class="ot" style="color: #003B4F;">&lt;-</span><span class="fu" style="color: #4758AB;">sqrt</span>(<span class="fu" style="color: #4758AB;">diag</span>(<span class="fu" style="color: #4758AB;">vcovHC</span>(reg, <span class="at" style="color: #657422;">type=</span><span class="st" style="color: #20794D;">"HC1"</span>)))</span>
-<span id="cb12-4"><span class="co" style="color: #5E5E5E;"># same procedure as above but now we generate vcov with "HC1" method</span></span></code></pre></div>
+<div class="sourceCode" id="cb12" style="background: #f1f3f5;"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb12-1"><span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">library</span>(<span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"sandwich"</span>) <span class="co" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;"># package that allows for robust SE estimation</span></span>
+<span id="cb12-2"><span class="co" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;"># create Robust Standard Errors for regression as 'reg$rse'</span></span>
+<span id="cb12-3">reg<span class="sc" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">$</span>rse <span class="ot" style="color: #003B4F;
+background-color: null;
+font-style: inherit;">&lt;-</span><span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">sqrt</span>(<span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">diag</span>(<span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">vcovHC</span>(reg, <span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;">type=</span><span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"HC1"</span>)))</span>
+<span id="cb12-4"><span class="co" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;"># same procedure as above but now we generate vcov with "HC1" method</span></span></code></pre></div>
 <p>If we now want to recreate the regression output table produced by <code>summary(reg)</code>, we need to use the <code>coeftest</code> function, which is a part of the <code>lmtest</code> package. Just to verify, if we run <code>coeftest()</code> on our original <code>reg</code>, it prints the regression output table with coefficient estimates, standard errors, <img src="https://latex.codecogs.com/png.latex?t">-statistics, and <img src="https://latex.codecogs.com/png.latex?p">-values.</p>
-<div class="sourceCode" id="cb13" style="background: #f1f3f5;"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb13-1"><span class="fu" style="color: #4758AB;">coeftest</span>(reg) <span class="co" style="color: #5E5E5E;"># test with normal SEs</span></span></code></pre></div>
+<div class="sourceCode" id="cb13" style="background: #f1f3f5;"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb13-1"><span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">coeftest</span>(reg) <span class="co" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;"># test with normal SEs</span></span></code></pre></div>
 <pre><code>## 
 ## t test of coefficients:
 ## 
@@ -442,7 +652,17 @@ summary(reg)</code></pre>
 ## ---
 ## Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1</code></pre>
 <p>If we run it again, but set the <code>vcov</code> option to <code>ccovHC(reg, "HC1")</code>, it will print the robust standard errors.</p>
-<div class="sourceCode" id="cb15" style="background: #f1f3f5;"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb15-1"><span class="fu" style="color: #4758AB;">coeftest</span>(reg,<span class="at" style="color: #657422;">vcov=</span><span class="fu" style="color: #4758AB;">vcovHC</span>(reg,<span class="st" style="color: #20794D;">"HC1"</span>)) <span class="co" style="color: #5E5E5E;"># tests with robust SEs</span></span></code></pre></div>
+<div class="sourceCode" id="cb15" style="background: #f1f3f5;"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb15-1"><span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">coeftest</span>(reg,<span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;">vcov=</span><span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">vcovHC</span>(reg,<span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"HC1"</span>)) <span class="co" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;"># tests with robust SEs</span></span></code></pre></div>
 <pre><code>## 
 ## t test of coefficients:
 ## 
@@ -453,14 +673,56 @@ summary(reg)</code></pre>
 ## Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1</code></pre>
 <p>These command simply print the robust standard errors for us to see in the console as we run our analyses. If we want to take these and actually output them in a presentable regression table, we will use the well-known <code>stargazer</code> package, used to take <code>R</code> regression <code>lm</code> objects and print scholarly journal-quality regression tables.</p>
 <p>The nice thing is <code>stargazer</code> has an option to set where the standard errors are pulled from. We stored our robust standard errors in <code>reg</code> as a vector called <code>rse</code>. Below, I print the <code>stargazer</code> regression table (with several personalized options) for this webpage, showing the our regression twice, once with the normal standard errors, and the second time with the robust standard errors. For more, see <a href="https://www.jakeruss.com/cheatsheets/stargazer/#robust-standard-errors-replicating-statas-robust-option">Jake Russ’ cheat sheet</a>.</p>
-<div class="sourceCode" id="cb17" style="background: #f1f3f5;"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb17-1"><span class="fu" style="color: #4758AB;">library</span>(<span class="st" style="color: #20794D;">"stargazer"</span>)</span>
-<span id="cb17-2"><span class="fu" style="color: #4758AB;">stargazer</span>(reg, reg, </span>
-<span id="cb17-3">          <span class="at" style="color: #657422;">se=</span><span class="fu" style="color: #4758AB;">list</span>(<span class="cn" style="color: #8f5902;">NULL</span>,reg<span class="sc" style="color: #5E5E5E;">$</span>rse), </span>
-<span id="cb17-4">          <span class="at" style="color: #657422;">type=</span><span class="st" style="color: #20794D;">"html"</span>,</span>
-<span id="cb17-5">          <span class="at" style="color: #657422;">column.labels =</span> <span class="fu" style="color: #4758AB;">c</span>(<span class="st" style="color: #20794D;">"Normal"</span>, <span class="st" style="color: #20794D;">"Robust SEs"</span>), </span>
-<span id="cb17-6">          <span class="at" style="color: #657422;">title=</span><span class="st" style="color: #20794D;">"Regression Results"</span>, </span>
-<span id="cb17-7">          <span class="at" style="color: #657422;">dep.var.caption =</span> <span class="st" style="color: #20794D;">""</span>,</span>
-<span id="cb17-8">          <span class="at" style="color: #657422;">omit.stat=</span><span class="fu" style="color: #4758AB;">c</span>(<span class="st" style="color: #20794D;">"adj.rsq"</span>,<span class="st" style="color: #20794D;">"f"</span>)) </span></code></pre></div>
+<div class="sourceCode" id="cb17" style="background: #f1f3f5;"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb17-1"><span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">library</span>(<span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"stargazer"</span>)</span>
+<span id="cb17-2"><span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">stargazer</span>(reg, reg, </span>
+<span id="cb17-3">          <span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;">se=</span><span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">list</span>(<span class="cn" style="color: #8f5902;
+background-color: null;
+font-style: inherit;">NULL</span>,reg<span class="sc" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">$</span>rse), </span>
+<span id="cb17-4">          <span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;">type=</span><span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"html"</span>,</span>
+<span id="cb17-5">          <span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;">column.labels =</span> <span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">c</span>(<span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"Normal"</span>, <span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"Robust SEs"</span>), </span>
+<span id="cb17-6">          <span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;">title=</span><span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"Regression Results"</span>, </span>
+<span id="cb17-7">          <span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;">dep.var.caption =</span> <span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">""</span>,</span>
+<span id="cb17-8">          <span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;">omit.stat=</span><span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">c</span>(<span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"adj.rsq"</span>,<span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"f"</span>)) </span></code></pre></div>
 <p>The key to notice is <code>se=list(NULL,reg$rse)</code>, which creates a list of objects from which to pull the standard errors for each regression in the table. The first regression uses the standard methods, needing no special source, so it is set to <code>NULL</code>. The second regression, also <code>reg</code>, uses our robust standard errors stored in <code>reg$rse</code>. The output of the table is below:</p>
 <table class="table">
 <caption><strong>Regression Results</strong></caption>
@@ -524,9 +786,25 @@ summary(reg)</code></pre>
 <h2 class="anchored" data-anchor-id="method-2-using-estimatr">Method 2: Using <code>estimatr</code></h2>
 <p>I recently discovered another package called <a href="https://github.com/DeclareDesign/estimatr"><code>estimatr</code></a> that achieves the simplicity of changing a single word, just like in Stata.</p>
 <p>Loading the <code>estimatr</code> package, all we need to do is create a new regression (I’ll call it <code>reg.robust</code>) and instead of running a normal linear model with <code>lm</code>, we run <code>lm_robust</code>, and set the standard errors <code>se_type="stata"</code> to calculate using the HC1 method (same as above).</p>
-<div class="sourceCode" id="cb18" style="background: #f1f3f5;"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb18-1"><span class="fu" style="color: #4758AB;">library</span>(<span class="st" style="color: #20794D;">"estimatr"</span>)</span>
-<span id="cb18-2">reg.robust<span class="ot" style="color: #003B4F;">&lt;-</span><span class="fu" style="color: #4758AB;">lm_robust</span>(y<span class="sc" style="color: #5E5E5E;">~</span>x,<span class="at" style="color: #657422;">se_type =</span> <span class="st" style="color: #20794D;">"stata"</span>)</span>
-<span id="cb18-3"><span class="fu" style="color: #4758AB;">summary</span>(reg.robust)</span></code></pre></div>
+<div class="sourceCode" id="cb18" style="background: #f1f3f5;"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb18-1"><span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">library</span>(<span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"estimatr"</span>)</span>
+<span id="cb18-2">reg.robust<span class="ot" style="color: #003B4F;
+background-color: null;
+font-style: inherit;">&lt;-</span><span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">lm_robust</span>(y<span class="sc" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">~</span>x,<span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;">se_type =</span> <span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"stata"</span>)</span>
+<span id="cb18-3"><span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">summary</span>(reg.robust)</span></code></pre></div>
 <pre><code>## 
 ## Call:
 ## lm_robust(formula = y ~ x, se_type = "stata")
@@ -542,7 +820,9 @@ summary(reg)</code></pre>
 ## F-statistic:  66.8 on 1 and 498 DF,  p-value: 2.504e-15</code></pre>
 <p>We can see the standard errors are now identical to the robust ones from the method above.</p>
 <p>One other nicety of <code>estimatr</code> is that <a href="https://declaredesign.org/r/estimatr/articles/estimatr-in-the-tidyverse.html">it can create <code>tidy data.frame</code> versions</a> of <code>R</code> default regression output tables, much like the <code>broom</code> package in the <code>tidyverse</code>. We do this simply with the <code>tidy()</code> command on our <code>reg.robust</code>.</p>
-<div class="sourceCode" id="cb20" style="background: #f1f3f5;"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb20-1"><span class="fu" style="color: #4758AB;">tidy</span>(reg.robust)</span></code></pre></div>
+<div class="sourceCode" id="cb20" style="background: #f1f3f5;"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb20-1"><span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">tidy</span>(reg.robust)</span></code></pre></div>
 <div data-pagedtable="false">
 
 <script data-pagedtable-source="" type="application/json">
@@ -551,19 +831,57 @@ summary(reg)</code></pre>
 </div>
 <p>Until today, I thought that was all <code>estimatr</code> could do: it could show us the robust standard errors, but we could not present it in an output table with <code>stargazer</code>. <code>lm_robust</code> objects do not get along well with <code>stargazer</code>, only <code>lm</code> objects.</p>
 <p>Documentation is extremely scarce, but there is a <code>starprep()</code> command to enable use of <code>estimatr</code> <code>lm_robust</code> objects with <code>stargazer</code>. After a lot of searching and trial and error, the process seems to be that using <code>starprep</code> extracts <em>only</em> the (robust) standard errors from the <code>lm_robust</code> regression, meaning we just need to insert this into <code>stargazer</code>’s <code>se=</code> option.</p>
-<div class="sourceCode" id="cb21" style="background: #f1f3f5;"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb21-1"><span class="co" style="color: #5E5E5E;"># this is what starprep extracts</span></span>
-<span id="cb21-2"><span class="fu" style="color: #4758AB;">starprep</span>(reg.robust)</span></code></pre></div>
+<div class="sourceCode" id="cb21" style="background: #f1f3f5;"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb21-1"><span class="co" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;"># this is what starprep extracts</span></span>
+<span id="cb21-2"><span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">starprep</span>(reg.robust)</span></code></pre></div>
 <pre><code>## [[1]]
 ## (Intercept)           x 
 ##  0.31205969  0.09357893</code></pre>
 <p>Below, again, I run <code>stargazer</code> on our original <code>reg</code> twice, with the second instance using robust standard errors via <code>estimatr</code>. Specifically notice the list for <code>se</code>; again, like the fist method above, we use the default for the first regression (hence <code>NULL</code>), and for the second, we use <code>starprep(reg.robust)</code> to extract from <code>estimatr</code>.</p>
-<div class="sourceCode" id="cb23" style="background: #f1f3f5;"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb23-1"><span class="fu" style="color: #4758AB;">stargazer</span>(reg, reg, </span>
-<span id="cb23-2">          <span class="at" style="color: #657422;">se=</span><span class="fu" style="color: #4758AB;">starprep</span>(reg,reg.robust), </span>
-<span id="cb23-3">          <span class="at" style="color: #657422;">type=</span><span class="st" style="color: #20794D;">"html"</span>,</span>
-<span id="cb23-4">          <span class="at" style="color: #657422;">column.labels =</span> <span class="fu" style="color: #4758AB;">c</span>(<span class="st" style="color: #20794D;">"Normal"</span>, <span class="st" style="color: #20794D;">"Robust SEs"</span>), </span>
-<span id="cb23-5">          <span class="at" style="color: #657422;">title=</span><span class="st" style="color: #20794D;">"Regression Results"</span>, </span>
-<span id="cb23-6">          <span class="at" style="color: #657422;">dep.var.caption =</span> <span class="st" style="color: #20794D;">""</span>,</span>
-<span id="cb23-7">          <span class="at" style="color: #657422;">omit.stat=</span><span class="fu" style="color: #4758AB;">c</span>(<span class="st" style="color: #20794D;">"adj.rsq"</span>,<span class="st" style="color: #20794D;">"f"</span>)) </span></code></pre></div>
+<div class="sourceCode" id="cb23" style="background: #f1f3f5;"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb23-1"><span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">stargazer</span>(reg, reg, </span>
+<span id="cb23-2">          <span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;">se=</span><span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">starprep</span>(reg,reg.robust), </span>
+<span id="cb23-3">          <span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;">type=</span><span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"html"</span>,</span>
+<span id="cb23-4">          <span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;">column.labels =</span> <span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">c</span>(<span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"Normal"</span>, <span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"Robust SEs"</span>), </span>
+<span id="cb23-5">          <span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;">title=</span><span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"Regression Results"</span>, </span>
+<span id="cb23-6">          <span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;">dep.var.caption =</span> <span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">""</span>,</span>
+<span id="cb23-7">          <span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;">omit.stat=</span><span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">c</span>(<span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"adj.rsq"</span>,<span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"f"</span>)) </span></code></pre></div>
 <table class="table">
 <caption><strong>Regression Results</strong></caption>
 <tbody>
@@ -632,7 +950,6 @@ summary(reg)</code></pre>
   <category>econometrics</category>
   <guid>https://ryansafner.com/posts/replicating-statas-robust-option-for-ols-standard-errors-in-r.html</guid>
   <pubDate>Fri, 28 Dec 2018 07:00:00 GMT</pubDate>
-  <media:content url="https://ryansafner.com/img/plot-1.png" medium="image" type="image/png" height="103" width="144"/>
 </item>
 <item>
   <title>Visualizing Tax Incidence with Shiny</title>

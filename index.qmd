@@ -41,8 +41,12 @@ about:
 
 <!-- This part is below the two columns --> 
 
-I am an Associate Professor of Economics at [Hood College](https://www.hood.edu/academics/faculty/ryan-safner). My research broadly explores the political economy of innovation, technological growth, and intellectual property using the tools of [new institutional economics](https://en.wikipedia.org/wiki/New_institutional_economics), [public choice](https://en.wikipedia.org/wiki/Public_choice), and [market process economics](http://www.econlib.org/library/Enc/AustrianSchoolofEconomics.html). I blog about these issues at [Increasing Returns](https://increasingreturns.substack.com).
+I am an Economist at the [U.S. Copyright Office](https://copyright.gov).
 
-I regularly teach Microeconomic Analysis and Econometrics and rotate through economics electives such as Game Theory, Industrial Organization, and Economics of the Law. I am a firm believer of providing public goods and promoting open source materials, so you can find all course materials on my custom [course websites](teaching.qmd).
+Previously, I was Associate Professor of Economics at [Hood College](https://www.hood.edu/academics/faculty/ryan-safner). I taught 17 different economics courses, regularly teaching Intermediate Microeconomics and Econometrics and various electives such as Game Theory, Industrial Organization, and Economics of the Law. I am a firm believer of providing public goods and promoting open source materials, so you can find all course materials on my custom [course websites](teaching.qmd).
+ 
+My research broadly explores the political economy of innovation, technological growth, and intellectual property using the tools of [new institutional economics](https://en.wikipedia.org/wiki/New_institutional_economics), [public choice](https://en.wikipedia.org/wiki/Public_choice), and [market process economics](http://www.econlib.org/library/Enc/AustrianSchoolofEconomics.html). I blog about these issues at [Increasing Returns](https://increasingreturns.substack.com).
 
 I am a passionate user of [*R*](https://www.r-project.org/) for data analysis, and [Quarto](https://quarto.org/) and [GitHub](https://github.com) for writing reproducible research, using version control, and managing my workflow. I blog [here](/blog.html) about using these tools in my research & teaching as well as learning how to use new tools and software.
+
+Feel free to contact me at ryansafner [at] gmail [dot] com.

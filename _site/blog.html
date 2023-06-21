@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.2.475">
+<meta name="generator" content="quarto-1.3.353">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -17,7 +17,7 @@ div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
 ul.task-list{list-style: none;}
 ul.task-list li input[type="checkbox"] {
   width: 0.8em;
-  margin: 0 0.8em 0.2em -1.6em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
 </style>
@@ -106,6 +106,7 @@ ga('send', {
 </script>
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
 
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
   <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
 
 <link rel="stylesheet" href="styles.css">
@@ -133,37 +134,39 @@ ga('send', {
     <span class="navbar-title">Ryan Safner</span>
     </a>
   </div>
+            <div id="quarto-search" class="" title="Search"></div>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
   <span class="navbar-toggler-icon"></span>
 </button>
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll me-auto">
   <li class="nav-item">
-    <a class="nav-link" href="./index.html">
+    <a class="nav-link" href="./index.html" rel="" target="">
  <span class="menu-text">Home</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./CV.pdf">
+    <a class="nav-link" href="./CV.pdf" rel="" target="">
  <span class="menu-text">CV</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./teaching.html">
+    <a class="nav-link" href="./teaching.html" rel="" target="">
  <span class="menu-text">Teaching</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./research.html">
+    <a class="nav-link" href="./research.html" rel="" target="">
  <span class="menu-text">Research</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./software.html">
+    <a class="nav-link" href="./software.html" rel="" target="">
  <span class="menu-text">Software</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link active" href="./blog.html" aria-current="page">
+    <a class="nav-link active" href="./blog.html" rel="" target="" aria-current="page">
  <span class="menu-text">Blog</span></a>
   </li>  
 </ul>
-              <div id="quarto-search" class="" title="Search"></div>
+            <div class="quarto-navbar-tools ms-auto">
+</div>
           </div> <!-- /navcollapse -->
       </div> <!-- /container-fluid -->
     </nav>
@@ -174,7 +177,7 @@ ga('send', {
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
         
-    <h5 class="quarto-listing-category-title">Categories</h5><div class="quarto-listing-category category-default"><div class="category" data-category="">All <span class="quarto-category-count">(9)</span></div><div class="category" data-category="DAGs">DAGs <span class="quarto-category-count">(2)</span></div><div class="category" data-category="blog">blog <span class="quarto-category-count">(4)</span></div><div class="category" data-category="causal inference">causal inference <span class="quarto-category-count">(2)</span></div><div class="category" data-category="data science">data science <span class="quarto-category-count">(2)</span></div><div class="category" data-category="econometrics">econometrics <span class="quarto-category-count">(6)</span></div><div class="category" data-category="economics">economics <span class="quarto-category-count">(1)</span></div><div class="category" data-category="github">github <span class="quarto-category-count">(2)</span></div><div class="category" data-category="markdown">markdown <span class="quarto-category-count">(3)</span></div><div class="category" data-category="rmarkdown">rmarkdown <span class="quarto-category-count">(1)</span></div><div class="category" data-category="rstats">rstats <span class="quarto-category-count">(8)</span></div><div class="category" data-category="shiny">shiny <span class="quarto-category-count">(2)</span></div><div class="category" data-category="stata">stata <span class="quarto-category-count">(1)</span></div><div class="category" data-category="teaching">teaching <span class="quarto-category-count">(8)</span></div><div class="category" data-category="websites">websites <span class="quarto-category-count">(1)</span></div><div class="category" data-category="workflow">workflow <span class="quarto-category-count">(1)</span></div></div></div>
+    <h5 class="quarto-listing-category-title">Categories</h5><div class="quarto-listing-category category-default"><div class="category" data-category="">All <span class="quarto-category-count">(8)</span></div><div class="category" data-category="DAGs">DAGs <span class="quarto-category-count">(1)</span></div><div class="category" data-category="blog">blog <span class="quarto-category-count">(3)</span></div><div class="category" data-category="causal inference">causal inference <span class="quarto-category-count">(1)</span></div><div class="category" data-category="data science">data science <span class="quarto-category-count">(1)</span></div><div class="category" data-category="econometrics">econometrics <span class="quarto-category-count">(5)</span></div><div class="category" data-category="economics">economics <span class="quarto-category-count">(1)</span></div><div class="category" data-category="github">github <span class="quarto-category-count">(2)</span></div><div class="category" data-category="markdown">markdown <span class="quarto-category-count">(3)</span></div><div class="category" data-category="rmarkdown">rmarkdown <span class="quarto-category-count">(1)</span></div><div class="category" data-category="rstats">rstats <span class="quarto-category-count">(7)</span></div><div class="category" data-category="shiny">shiny <span class="quarto-category-count">(2)</span></div><div class="category" data-category="stata">stata <span class="quarto-category-count">(1)</span></div><div class="category" data-category="teaching">teaching <span class="quarto-category-count">(7)</span></div><div class="category" data-category="websites">websites <span class="quarto-category-count">(1)</span></div><div class="category" data-category="workflow">workflow <span class="quarto-category-count">(1)</span></div></div></div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
@@ -235,76 +238,68 @@ ga('send', {
 </tr>
 </thead>
 <tbody class="list">
-<tr data-index="0" data-categories="rstats,data science,causal inference,DAGs,blog,teaching,econometrics" data-listing-date-sort="1664690400000" data-listing-file-modified-sort="1665889075867" data-listing-reading-time-sort="0.09" data-listing-title-sort="Two Blogs" data-listing-filename-sort="two-blogs.qmd">
-<td class="listing-date">
-Oct 2, 2022
+<tr data-index="0" data-categories="rstats,markdown,github,teaching,econometrics" data-listing-date-sort="1571378400000" data-listing-file-modified-sort="1660095252507" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="11" data-listing-title-sort="If You're Going to Learn R, Learn the Tidyverse" data-listing-filename-sort="if-youre-going-to-learn-r-learn-the-tidyverse.qmd">
+<td>
+<span class="listing-date">Oct 18, 2019</span>
 </td>
-<td class="listing-title">
-<a href="./posts/two-blogs.html" class="title">Two Blogs</a>
-</td>
-</tr>
-<tr data-index="1" data-categories="rstats,markdown,github,teaching,econometrics" data-listing-date-sort="1571378400000" data-listing-file-modified-sort="1660095252507" data-listing-reading-time-sort="10.645" data-listing-title-sort="If You're Going to Learn R, Learn the Tidyverse" data-listing-filename-sort="if-youre-going-to-learn-r-learn-the-tidyverse.qmd">
-<td class="listing-date">
-Oct 18, 2019
-</td>
-<td class="listing-title">
-<a href="./posts/if-youre-going-to-learn-r-learn-the-tidyverse.html" class="title">If You’re Going to Learn R, Learn the Tidyverse</a>
+<td>
+<a href="./posts/if-youre-going-to-learn-r-learn-the-tidyverse.html" class="title listing-title">If You’re Going to Learn R, Learn the Tidyverse</a>
 </td>
 </tr>
-<tr data-index="2" data-categories="markdown,websites,teaching,workflow,blog" data-listing-date-sort="1566453600000" data-listing-file-modified-sort="1660095252507" data-listing-reading-time-sort="4.195" data-listing-title-sort="New Course Websites" data-listing-filename-sort="new-course-websites.qmd">
-<td class="listing-date">
-Aug 22, 2019
+<tr data-index="1" data-categories="markdown,websites,teaching,workflow,blog" data-listing-date-sort="1566453600000" data-listing-file-modified-sort="1660095252507" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="5" data-listing-title-sort="New Course Websites" data-listing-filename-sort="new-course-websites.qmd">
+<td>
+<span class="listing-date">Aug 22, 2019</span>
 </td>
-<td class="listing-title">
-<a href="./posts/new-course-websites.html" class="title">New Course Websites</a>
-</td>
-</tr>
-<tr data-index="3" data-categories="rstats,data science,causal inference,DAGs,blog,teaching,econometrics" data-listing-date-sort="1565071200000" data-listing-file-modified-sort="1660095252506" data-listing-reading-time-sort="9.94" data-listing-title-sort="Econometrics, Data Science, and Causal Inference" data-listing-filename-sort="econometrics-data-science-and-causal-inference.qmd">
-<td class="listing-date">
-Aug 6, 2019
-</td>
-<td class="listing-title">
-<a href="./posts/econometrics-data-science-and-causal-inference.html" class="title">Econometrics, Data Science, and Causal Inference</a>
+<td>
+<a href="./posts/new-course-websites.html" class="title listing-title">New Course Websites</a>
 </td>
 </tr>
-<tr data-index="4" data-categories="rstats,teaching,stata,econometrics" data-listing-date-sort="1545980400000" data-listing-file-modified-sort="1660095459299" data-listing-reading-time-sort="16.185" data-listing-title-sort="Replicating Stata's 'Robust' Option for OLS Standard Errors in R" data-listing-filename-sort="replicating-statas-robust-option-for-ols-standard-errors-in-r.qmd">
-<td class="listing-date">
-Dec 28, 2018
+<tr data-index="2" data-categories="rstats,data science,causal inference,DAGs,blog,teaching,econometrics" data-listing-date-sort="1565071200000" data-listing-file-modified-sort="1660095252506" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="10" data-listing-title-sort="Econometrics, Data Science, and Causal Inference" data-listing-filename-sort="econometrics-data-science-and-causal-inference.qmd">
+<td>
+<span class="listing-date">Aug 6, 2019</span>
 </td>
-<td class="listing-title">
-<a href="./posts/replicating-statas-robust-option-for-ols-standard-errors-in-r.html" class="title">Replicating Stata’s ‘Robust’ Option for OLS Standard Errors in R</a>
-</td>
-</tr>
-<tr data-index="5" data-categories="rstats,teaching,shiny,economics" data-listing-date-sort="1538892000000" data-listing-file-modified-sort="1660095252508" data-listing-reading-time-sort="1.115" data-listing-title-sort="Visualizing Tax Incidence with Shiny" data-listing-filename-sort="visualizing-tax-incidence-with-shiny.qmd">
-<td class="listing-date">
-Oct 7, 2018
-</td>
-<td class="listing-title">
-<a href="./posts/visualizing-tax-incidence-with-shiny.html" class="title">Visualizing Tax Incidence with Shiny</a>
+<td>
+<a href="./posts/econometrics-data-science-and-causal-inference.html" class="title listing-title">Econometrics, Data Science, and Causal Inference</a>
 </td>
 </tr>
-<tr data-index="6" data-categories="rstats,shiny,teaching,econometrics" data-listing-date-sort="1538114400000" data-listing-file-modified-sort="1660095252507" data-listing-reading-time-sort="2.365" data-listing-title-sort="Visualizing Linear Regression with Shiny" data-listing-filename-sort="visualizing-linear-regression-with-shiny.qmd">
-<td class="listing-date">
-Sep 28, 2018
+<tr data-index="3" data-categories="rstats,teaching,stata,econometrics" data-listing-date-sort="1545980400000" data-listing-file-modified-sort="1660095459299" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="17" data-listing-title-sort="Replicating Stata's 'Robust' Option for OLS Standard Errors in R" data-listing-filename-sort="replicating-statas-robust-option-for-ols-standard-errors-in-r.qmd">
+<td>
+<span class="listing-date">Dec 28, 2018</span>
 </td>
-<td class="listing-title">
-<a href="./posts/visualizing-linear-regression-with-shiny.html" class="title">Visualizing Linear Regression with Shiny</a>
-</td>
-</tr>
-<tr data-index="7" data-categories="rstats,markdown,github,teaching,econometrics" data-listing-date-sort="1536386400000" data-listing-file-modified-sort="1660095252506" data-listing-reading-time-sort="1.335" data-listing-title-sort="Econometrics Lecture Slides on GitHub" data-listing-filename-sort="econometrics-slides-on-github.qmd">
-<td class="listing-date">
-Sep 8, 2018
-</td>
-<td class="listing-title">
-<a href="./posts/econometrics-slides-on-github.html" class="title">Econometrics Lecture Slides on GitHub</a>
+<td>
+<a href="./posts/replicating-statas-robust-option-for-ols-standard-errors-in-r.html" class="title listing-title">Replicating Stata’s ‘Robust’ Option for OLS Standard Errors in R</a>
 </td>
 </tr>
-<tr data-index="8" data-categories="rstats,rmarkdown,blog" data-listing-date-sort="1535868000000" data-listing-file-modified-sort="1660095252507" data-listing-reading-time-sort="1.135" data-listing-title-sort="Test Post Please Don't Ignore" data-listing-filename-sort="test-post-please-dont-ignore.qmd">
-<td class="listing-date">
-Sep 2, 2018
+<tr data-index="4" data-categories="rstats,teaching,shiny,economics" data-listing-date-sort="1538892000000" data-listing-file-modified-sort="1660095252508" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-title-sort="Visualizing Tax Incidence with Shiny" data-listing-filename-sort="visualizing-tax-incidence-with-shiny.qmd">
+<td>
+<span class="listing-date">Oct 7, 2018</span>
 </td>
-<td class="listing-title">
-<a href="./posts/test-post-please-dont-ignore.html" class="title">Test Post Please Don’t Ignore</a>
+<td>
+<a href="./posts/visualizing-tax-incidence-with-shiny.html" class="title listing-title">Visualizing Tax Incidence with Shiny</a>
+</td>
+</tr>
+<tr data-index="5" data-categories="rstats,shiny,teaching,econometrics" data-listing-date-sort="1538114400000" data-listing-file-modified-sort="1660095252507" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3" data-listing-title-sort="Visualizing Linear Regression with Shiny" data-listing-filename-sort="visualizing-linear-regression-with-shiny.qmd">
+<td>
+<span class="listing-date">Sep 28, 2018</span>
+</td>
+<td>
+<a href="./posts/visualizing-linear-regression-with-shiny.html" class="title listing-title">Visualizing Linear Regression with Shiny</a>
+</td>
+</tr>
+<tr data-index="6" data-categories="rstats,markdown,github,teaching,econometrics" data-listing-date-sort="1536386400000" data-listing-file-modified-sort="1660095252506" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-title-sort="Econometrics Lecture Slides on GitHub" data-listing-filename-sort="econometrics-slides-on-github.qmd">
+<td>
+<span class="listing-date">Sep 8, 2018</span>
+</td>
+<td>
+<a href="./posts/econometrics-slides-on-github.html" class="title listing-title">Econometrics Lecture Slides on GitHub</a>
+</td>
+</tr>
+<tr data-index="7" data-categories="rstats,rmarkdown,blog" data-listing-date-sort="1535868000000" data-listing-file-modified-sort="1660095252507" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-title-sort="Test Post Please Don't Ignore" data-listing-filename-sort="test-post-please-dont-ignore.qmd">
+<td>
+<span class="listing-date">Sep 2, 2018</span>
+</td>
+<td>
+<a href="./posts/test-post-please-dont-ignore.html" class="title listing-title">Test Post Please Don’t Ignore</a>
 </td>
 </tr>
 </tbody>
@@ -341,9 +336,23 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     icon: icon
   };
   anchorJS.add('.anchored');
+  const isCodeAnnotation = (el) => {
+    for (const clz of el.classList) {
+      if (clz.startsWith('code-annotation-')) {                     
+        return true;
+      }
+    }
+    return false;
+  }
   const clipboard = new window.ClipboardJS('.code-copy-button', {
-    target: function(trigger) {
-      return trigger.previousElementSibling;
+    text: function(trigger) {
+      const codeEl = trigger.previousElementSibling.cloneNode(true);
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
     }
   });
   clipboard.on('success', function(e) {
@@ -408,6 +417,92 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       return note.innerHTML;
     });
   }
+      let selectedAnnoteEl;
+      const selectorForAnnotation = ( cell, annotation) => {
+        let cellAttr = 'data-code-cell="' + cell + '"';
+        let lineAttr = 'data-code-annotation="' +  annotation + '"';
+        const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+        return selector;
+      }
+      const selectCodeLines = (annoteEl) => {
+        const doc = window.document;
+        const targetCell = annoteEl.getAttribute("data-target-cell");
+        const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+        const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+        const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+        const lineIds = lines.map((line) => {
+          return targetCell + "-" + line;
+        })
+        let top = null;
+        let height = null;
+        let parent = null;
+        if (lineIds.length > 0) {
+            //compute the position of the single el (top and bottom and make a div)
+            const el = window.document.getElementById(lineIds[0]);
+            top = el.offsetTop;
+            height = el.offsetHeight;
+            parent = el.parentElement.parentElement;
+          if (lineIds.length > 1) {
+            const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+            const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+            height = bottom - top;
+          }
+          if (top !== null && height !== null && parent !== null) {
+            // cook up a div (if necessary) and position it 
+            let div = window.document.getElementById("code-annotation-line-highlight");
+            if (div === null) {
+              div = window.document.createElement("div");
+              div.setAttribute("id", "code-annotation-line-highlight");
+              div.style.position = 'absolute';
+              parent.appendChild(div);
+            }
+            div.style.top = top - 2 + "px";
+            div.style.height = height + 4 + "px";
+            let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+            if (gutterDiv === null) {
+              gutterDiv = window.document.createElement("div");
+              gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+              gutterDiv.style.position = 'absolute';
+              const codeCell = window.document.getElementById(targetCell);
+              const gutter = codeCell.querySelector('.code-annotation-gutter');
+              gutter.appendChild(gutterDiv);
+            }
+            gutterDiv.style.top = top - 2 + "px";
+            gutterDiv.style.height = height + 4 + "px";
+          }
+          selectedAnnoteEl = annoteEl;
+        }
+      };
+      const unselectCodeLines = () => {
+        const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+        elementsIds.forEach((elId) => {
+          const div = window.document.getElementById(elId);
+          if (div) {
+            div.remove();
+          }
+        });
+        selectedAnnoteEl = undefined;
+      };
+      // Attach click handler to the DT
+      const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+      for (const annoteDlNode of annoteDls) {
+        annoteDlNode.addEventListener('click', (event) => {
+          const clickedEl = event.target;
+          if (clickedEl !== selectedAnnoteEl) {
+            unselectCodeLines();
+            const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+            if (activeEl) {
+              activeEl.classList.remove('code-annotation-active');
+            }
+            selectCodeLines(clickedEl);
+            clickedEl.classList.add('code-annotation-active');
+          } else {
+            // Unselect the line
+            unselectCodeLines();
+            clickedEl.classList.remove('code-annotation-active');
+          }
+        });
+      }
   const findCites = (el) => {
     const parentEl = el.parentElement;
     if (parentEl) {
