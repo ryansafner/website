@@ -10,7 +10,7 @@
 <atom:link href="https://ryansafner.com/blog.xml" rel="self" type="application/rss+xml"/>
 <description>Personal website of Dr. Ryan Safner</description>
 <generator>quarto-1.3.353</generator>
-<lastBuildDate>Fri, 18 Oct 2019 06:00:00 GMT</lastBuildDate>
+<lastBuildDate>Fri, 18 Oct 2019 04:00:00 GMT</lastBuildDate>
 <item>
   <title>If You’re Going to Learn R, Learn the Tidyverse</title>
   <link>https://ryansafner.com/posts/if-youre-going-to-learn-r-learn-the-tidyverse.html</link>
@@ -363,7 +363,7 @@ font-style: inherit;">"bottom"</span>)</span></code></pre></div>
   <category>teaching</category>
   <category>econometrics</category>
   <guid>https://ryansafner.com/posts/if-youre-going-to-learn-r-learn-the-tidyverse.html</guid>
-  <pubDate>Fri, 18 Oct 2019 06:00:00 GMT</pubDate>
+  <pubDate>Fri, 18 Oct 2019 04:00:00 GMT</pubDate>
 </item>
 <item>
   <title>New Course Websites</title>
@@ -405,7 +405,7 @@ font-style: inherit;">"bottom"</span>)</span></code></pre></div>
   <category>workflow</category>
   <category>blog</category>
   <guid>https://ryansafner.com/posts/new-course-websites.html</guid>
-  <pubDate>Thu, 22 Aug 2019 06:00:00 GMT</pubDate>
+  <pubDate>Thu, 22 Aug 2019 04:00:00 GMT</pubDate>
 </item>
 <item>
   <title>Econometrics, Data Science, and Causal Inference</title>
@@ -478,7 +478,7 @@ font-style: inherit;">"bottom"</span>)</span></code></pre></div>
   <category>teaching</category>
   <category>econometrics</category>
   <guid>https://ryansafner.com/posts/econometrics-data-science-and-causal-inference.html</guid>
-  <pubDate>Tue, 06 Aug 2019 06:00:00 GMT</pubDate>
+  <pubDate>Tue, 06 Aug 2019 04:00:00 GMT</pubDate>
 </item>
 <item>
   <title>Replicating Stata’s ‘Robust’ Option for OLS Standard Errors in R</title>
@@ -949,7 +949,7 @@ font-style: inherit;">"f"</span>)) </span></code></pre></div>
   <category>stata</category>
   <category>econometrics</category>
   <guid>https://ryansafner.com/posts/replicating-statas-robust-option-for-ols-standard-errors-in-r.html</guid>
-  <pubDate>Fri, 28 Dec 2018 07:00:00 GMT</pubDate>
+  <pubDate>Fri, 28 Dec 2018 05:00:00 GMT</pubDate>
 </item>
 <item>
   <title>Visualizing Tax Incidence with Shiny</title>
@@ -971,7 +971,7 @@ font-style: inherit;">"f"</span>)) </span></code></pre></div>
   <category>shiny</category>
   <category>economics</category>
   <guid>https://ryansafner.com/posts/visualizing-tax-incidence-with-shiny.html</guid>
-  <pubDate>Sun, 07 Oct 2018 06:00:00 GMT</pubDate>
+  <pubDate>Sun, 07 Oct 2018 04:00:00 GMT</pubDate>
 </item>
 <item>
   <title>Visualizing Linear Regression with Shiny</title>
@@ -1006,7 +1006,7 @@ font-style: inherit;">"f"</span>)) </span></code></pre></div>
   <category>teaching</category>
   <category>econometrics</category>
   <guid>https://ryansafner.com/posts/visualizing-linear-regression-with-shiny.html</guid>
-  <pubDate>Fri, 28 Sep 2018 06:00:00 GMT</pubDate>
+  <pubDate>Fri, 28 Sep 2018 04:00:00 GMT</pubDate>
 </item>
 <item>
   <title>Econometrics Lecture Slides on GitHub</title>
@@ -1029,7 +1029,7 @@ font-style: inherit;">"f"</span>)) </span></code></pre></div>
   <category>teaching</category>
   <category>econometrics</category>
   <guid>https://ryansafner.com/posts/econometrics-slides-on-github.html</guid>
-  <pubDate>Sat, 08 Sep 2018 06:00:00 GMT</pubDate>
+  <pubDate>Sat, 08 Sep 2018 04:00:00 GMT</pubDate>
 </item>
 <item>
   <title>Test Post Please Don’t Ignore</title>
@@ -1050,7 +1050,7 @@ font-style: inherit;">"f"</span>)) </span></code></pre></div>
   <category>rmarkdown</category>
   <category>blog</category>
   <guid>https://ryansafner.com/posts/test-post-please-dont-ignore.html</guid>
-  <pubDate>Sun, 02 Sep 2018 06:00:00 GMT</pubDate>
+  <pubDate>Sun, 02 Sep 2018 04:00:00 GMT</pubDate>
   <media:content url="https://ryansafner.com/posts/myface2021.png" medium="image" type="image/png"/>
 </item>
 </channel>
