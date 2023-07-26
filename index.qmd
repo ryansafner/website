@@ -3,7 +3,7 @@ title: "Ryan Safner"
 about:
     id: hero-heading # having a written section below the two-columns format
     template: trestles
-    image: myface2021.png
+    image: me2023.jpg
     links:
       - icon: twitter
         href: https://twitter.com/ryansafner
@@ -22,9 +22,9 @@ about:
 :::{#hero-heading} 
 ## Education
 
-- Ph.D, Economics, 2015 (George Mason University)
-- M.A., Economics, 2013 (George Mason University)
-- B.A., Economics, 2011 (University of Connecticut)
+- Ph.D, Economics, George Mason University
+- M.A., Economics, George Mason University
+- B.A., Economics, University of Connecticut
 
 ## Interests
 
