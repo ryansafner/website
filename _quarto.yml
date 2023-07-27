@@ -6,12 +6,12 @@ website:
   site-url: "https://ryansafner.com"
   description: "Personal website of Dr. Ryan Safner"
   google-analytics: "UA-12760297-1"
-  favicon: "myface2021.png"
+  favicon: "me2023.jpg"
   twitter-card:
-    image: "myface2021.png"
+    image: "me2023.jpg"
     creator: "@ryansafner"
   open-graph:
-    image: "myface2021.png"
+    image: "me2023.jpg"
   navbar:
     left:
       - href: index.qmd
