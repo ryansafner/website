@@ -10,11 +10,11 @@ These are largely [R shiny](https://shiny.rstudio.com/) apps that I have written
 
 ### Consumer Theory
 
-+--------------------------------------------------------------------------+--------------------------------------------------------------------------------------------------------------------------------+
-| [![](img/consumer_shiny.png)](https://ryansafner.shinyapps.io/consumer/) | [![Consumer\'s Problem](img/consumer_shiny.png){alt="Consumer's Problem"}](https://ryansafner.shinyapps.io/Consumer_changes/)\ |
-|                                                                          | [Changes in Consumer's Problem](https://ryansafner.shinyapps.io/Consumer_changes/)                                             |
-| [Consumer's Problem](https://ryansafner.shinyapps.io/consumer/)          |                                                                                                                                |
-+--------------------------------------------------------------------------+--------------------------------------------------------------------------------------------------------------------------------+
++--------------------------------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------+
+| [![](img/consumer_shiny.png)](https://ryansafner.shinyapps.io/consumer/) | [![Consumer's Problem](img/consumer_shiny.png){alt="Consumer's Problem"}](https://ryansafner.shinyapps.io/Consumer_changes/)\ |
+|                                                                          | [Changes in Consumer's Problem](https://ryansafner.shinyapps.io/Consumer_changes/)                                            |
+| [Consumer's Problem](https://ryansafner.shinyapps.io/consumer/)          |                                                                                                                               |
++--------------------------------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------+
 
 ### Industrial Organization
 
@@ -26,6 +26,13 @@ These are largely [R shiny](https://shiny.rstudio.com/) apps that I have written
 | [![](img/cournot_n_firms_shiny.png)Cournot Oligopoly with $N$ Firms](https://ryansafner.shinyapps.io/cournot_n_firms/) | [![](img/cournot_asymmetric_costs_shiny.png)](https://ryansafner.shinyapps.io/cournot_asymmetric_costs/)\ |
 |                                                                                                                        | [Cournot Oligopoly with Asymmetric Costs](https://ryansafner.shinyapps.io/cournot_asymmetric_costs/)      |
 +------------------------------------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------------------------+
+
+### Game Theory
+
++------------------------------------------------------------------------------+--------------------------------------------------------------------------+
+| ![](images/repeated_pd_shiny.png)\                                           | ![](images/hawk_dove_shiny.png)\                                         |
+| [Repeated Prisoners' Dilemma](https://ryansafner.shinyapps.io/repeated_pd/)  | [Evolutionary Hawk Dove Game](https://ryansafner.shinyapps.io/hawkdove/) |
++------------------------------------------------------------------------------+--------------------------------------------------------------------------+
 
 ### Microeconomics/Misc.
 
@@ -41,11 +48,15 @@ These are largely [R shiny](https://shiny.rstudio.com/) apps that I have written
 | [Solow Growth Model](https://ryansafner.shinyapps.io/Solow/)                                                                 |                                                                                                                       |
 +------------------------------------------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------------------------------------+
 
--   [Grade Calculator & Forecaster](https://ryansafner.shinyapps.io/306_grade_calculator/) (for ECON 306; with variants for each of courses)
+-   [Grade Calculator & Forecaster](https://ryansafner.shinyapps.io/306_grade_calculator/) (for ECON 306; with variants for each of courses, found on respective course websites)
 
 ## Economics Graphs in `ggplot`
 
-I have taught a variety of economics courses and make all of my slides and course materials in R/Xaringan/Quarto. This includes a wide variety of graphs of economic concepts, all of which I have drawn in `ggplot2`. I will begin creating a library of different graphs and the source code to make them.
+\[IN PROGRESS\]
+
+I have taught a variety of economics courses and make all of my slides and course materials in R/Xaringan/Quarto. This includes a very wide variety of graphs and illustrations of economic concepts, all of which I have drawn using `ggplot2`. I will begin creating a library of different graphs and the source code to make them (and one day make a package with dedicated functions to easily make each of them).
+
+Until I have that ready, it's best just to poke around the slides for all of my courses.
 
 ## Course Websites
 

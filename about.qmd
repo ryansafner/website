@@ -1,13 +1,11 @@
----
-title: "About Me"
-echo: false
-section-divs: false
-execution:
-  freeze: auto
----
+I am originally from Connecticut, I got my bachelor's in Economics at UConn and my Ph.D in Economics at George Mason University in 2015. Between graduate school and my family's careers, I have lived in 5 states (if you include the District of Columbia) and I currently live in Takoma Park, MD with my wife and kid.
 
-I am originally from Connecticut, I got my bachelor's in Economics at UConn (Go Huskies!) and my Ph.D in Economics at George Mason, and taught at Wake Forest University before coming to Hood. I have lived in 5 states, and I currently live in Takoma Park, MD, so I listen to a lot of economics podcasts on my lengthy commute.
+I'm a big fan of Miami Hurricanes college football (my wife's undergrad alma mater) and UConn Huskies basketball. In my spare time, I enjoy running, cycling, reading, eating (and trying to cook) good (mostly vegetarian) food, traveling, and enjoying lots of live music with my wife.
 
-I'm a big fan of Miami Hurricanes college football and UConn Huskies basketball. In my spare time, I enjoy running, cycling, eating (and cooking) good (mostly vegetarian) food, and enjoying lots of live music with my wife.
-As an economist, I am interested in understanding what institutions and policies best allow us to come up with inventions and ideas that benefit everyone, and that has led me to research copyrights & patents, piracy, and the political economy of innovation. You can find more about my research on my website, and my substack, Increasing Returns.
-I am also a big tech nerd, if you can't tell by the unnecessary amount of time I put into my slides and websites. I love open source software, I have not touched Microsoft Office since 2011, I write all of my materials in R and markdown, which I teach in my econometrics course every Fall. I very occasionally blog about these data science things on my website.
+As an economist, I am interested in understanding what institutions and policies best allow us to come up with inventions and ideas that benefit everyone. This has led me down rabbit holes ranging from 17th century English institutional change, to 19th century American literary piracy, to the success of Wikipedia, to crowdfunding, blockchains, & generative AI. Aspirationally, I am trying to expand my research and software skill horizons into more computational social science themes with agent-based modeling. You can find more about my research interests from a high-level, non-technical perspective at [Increasing Returns](https://increasingreturns.substack.com).
+
+I consider myself a lifelong educator (& humble student) of economics and social science. Most of my post-graduate life was focused on the conveyor belt of academia, ultimately earning tenure at Hood College in 2022. Despite this achievement (or perhaps because of it), I decided I needed a change in perspective and wanted to experience life outside the ivory tower while still learning, researching, and contributing to the public good. Despite no longer being in the classroom with students (which I miss), I still enjoy keeping up with the scholarly literature (my wife tells me I read too much non-fiction) and writing about economic issues well beyond my day job.
+
+I am also an amateur tech nerd. With no formal training in computer science or software engineering, I have put disproportionate time into learning and practicing open source data science software. I enjoy tinkering around in R and producing useful visualizations and simulations, many of which I have posted on my [software page](software.qmd). Except when absolutely required in my current job, I have not touched Microsoft Office since 2011, I write all of my research papers, teaching materials, even this website, in R and markdown (which I fully explain in my [econometrics course](https://metricsf22.classes.ryansafner.com)). I very occasionally [blog](/posts/) about these tools here.
+
+I enjoy meeting new people with different interests and backgrounds, so feel free to reach out to me by email or on LinkedIn!
