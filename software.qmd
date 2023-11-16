@@ -10,11 +10,11 @@ These are largely [R shiny](https://shiny.rstudio.com/) apps that I have written
 
 ### Consumer Theory
 
-+--------------------------------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------+
-| [![](img/consumer_shiny.png)](https://ryansafner.shinyapps.io/consumer/) | [![Consumer's Problem](img/consumer_shiny.png){alt="Consumer's Problem"}](https://ryansafner.shinyapps.io/Consumer_changes/)\ |
-|                                                                          | [Changes in Consumer's Problem](https://ryansafner.shinyapps.io/Consumer_changes/)                                            |
-| [Consumer's Problem](https://ryansafner.shinyapps.io/consumer/)          |                                                                                                                               |
-+--------------------------------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------+
++--------------------------------------------------------------------------+--------------------------------------------------------------------------------------------------------------------------------+
+| [![](img/consumer_shiny.png)](https://ryansafner.shinyapps.io/consumer/) | [![Consumer\'s Problem](img/consumer_shiny.png){alt="Consumer's Problem"}](https://ryansafner.shinyapps.io/Consumer_changes/)\ |
+|                                                                          | [Changes in Consumer's Problem](https://ryansafner.shinyapps.io/Consumer_changes/)                                             |
+| [Consumer's Problem](https://ryansafner.shinyapps.io/consumer/)          |                                                                                                                                |
++--------------------------------------------------------------------------+--------------------------------------------------------------------------------------------------------------------------------+
 
 ### Industrial Organization
 
@@ -29,10 +29,10 @@ These are largely [R shiny](https://shiny.rstudio.com/) apps that I have written
 
 ### Game Theory
 
-+------------------------------------------------------------------------------+--------------------------------------------------------------------------+
-| ![](images/repeated_pd_shiny.png)\                                           | ![](images/hawk_dove_shiny.png)\                                         |
-| [Repeated Prisoners' Dilemma](https://ryansafner.shinyapps.io/repeated_pd/)  | [Evolutionary Hawk Dove Game](https://ryansafner.shinyapps.io/hawkdove/) |
-+------------------------------------------------------------------------------+--------------------------------------------------------------------------+
++------------------------------------------------------------------------------------------------------------------------+-------------------------------------------------------------------------+
+| ![](img/repeated_pd_shiny.png){width="347"}[Repeated Prisoners' Dilemma](https://ryansafner.shinyapps.io/repeated_pd)  | ![](img/hawk_dove_shiny.png){width="470"}\                              |
+|                                                                                                                        | [Evolutionary Hawk Dove Game](https://ryansafner.shinyapps.io/hawkdove) |
++------------------------------------------------------------------------------------------------------------------------+-------------------------------------------------------------------------+
 
 ### Microeconomics/Misc.
 

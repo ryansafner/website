@@ -1,15 +1,6 @@
 [
   {
     "listing": "/blog.html",
-    "items": [
-      "/posts/if-youre-going-to-learn-r-learn-the-tidyverse.html",
-      "/posts/new-course-websites.html",
-      "/posts/econometrics-data-science-and-causal-inference.html",
-      "/posts/replicating-statas-robust-option-for-ols-standard-errors-in-r.html",
-      "/posts/visualizing-tax-incidence-with-shiny.html",
-      "/posts/visualizing-linear-regression-with-shiny.html",
-      "/posts/econometrics-slides-on-github.html",
-      "/posts/test-post-please-dont-ignore.html"
-    ]
+    "items": []
   }
 ]

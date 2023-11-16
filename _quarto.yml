@@ -1,5 +1,9 @@
 project:
   type: website
+  render:
+    - "*.qmd" # dont't render the below when site is built (pre-render each)
+    - "!posts/" 
+    - "!files/" 
 
 website:
   title: "Ryan Safner"
@@ -18,8 +22,8 @@ website:
         text: Home
       - href: CV.pdf
         text: CV
-      - teaching.qmd
       - research.qmd
+      - teaching.qmd
       - software.qmd
       - blog.qmd
 

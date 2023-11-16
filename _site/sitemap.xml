@@ -1,79 +1,43 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://ryansafner.com/blog.html</loc>
-    <lastmod>2023-11-16T22:30:15.256Z</lastmod>
-  </url>
-  <url>
-    <loc>https://ryansafner.com/courses/ecmg-212.html</loc>
-    <lastmod>2023-11-16T22:30:14.499Z</lastmod>
-  </url>
-  <url>
-    <loc>https://ryansafner.com/courses/econ-205.html</loc>
-    <lastmod>2023-11-16T22:30:13.871Z</lastmod>
-  </url>
-  <url>
-    <loc>https://ryansafner.com/about.html</loc>
-    <lastmod>2023-11-16T22:30:13.168Z</lastmod>
-  </url>
-  <url>
-    <loc>https://ryansafner.com/posts/econometrics-data-science-and-causal-inference.html</loc>
-    <lastmod>2023-11-16T22:30:12.507Z</lastmod>
-  </url>
-  <url>
-    <loc>https://ryansafner.com/posts/test-post-please-dont-ignore.html</loc>
-    <lastmod>2023-11-16T22:30:11.546Z</lastmod>
-  </url>
-  <url>
-    <loc>https://ryansafner.com/posts/visualizing-linear-regression-with-shiny.html</loc>
-    <lastmod>2023-11-16T22:30:10.322Z</lastmod>
-  </url>
-  <url>
-    <loc>https://ryansafner.com/posts/econometrics-slides-on-github.html</loc>
-    <lastmod>2023-11-16T22:30:09.536Z</lastmod>
-  </url>
-  <url>
-    <loc>https://ryansafner.com/LICENSE.html</loc>
-    <lastmod>2023-11-16T22:30:08.387Z</lastmod>
-  </url>
-  <url>
     <loc>https://ryansafner.com/teaching.html</loc>
-    <lastmod>2023-11-16T22:30:07.757Z</lastmod>
+    <lastmod>2023-11-16T23:11:23.120Z</lastmod>
   </url>
   <url>
     <loc>https://ryansafner.com/research.html</loc>
-    <lastmod>2023-11-16T22:30:08.098Z</lastmod>
-  </url>
-  <url>
-    <loc>https://ryansafner.com/posts/replicating-statas-robust-option-for-ols-standard-errors-in-r.html</loc>
-    <lastmod>2023-11-16T22:30:09.239Z</lastmod>
-  </url>
-  <url>
-    <loc>https://ryansafner.com/posts/new-course-websites.html</loc>
-    <lastmod>2023-11-16T22:30:09.959Z</lastmod>
-  </url>
-  <url>
-    <loc>https://ryansafner.com/posts/if-youre-going-to-learn-r-learn-the-tidyverse.html</loc>
-    <lastmod>2023-11-16T22:30:11.236Z</lastmod>
-  </url>
-  <url>
-    <loc>https://ryansafner.com/posts/visualizing-tax-incidence-with-shiny.html</loc>
-    <lastmod>2023-11-16T22:30:11.862Z</lastmod>
-  </url>
-  <url>
-    <loc>https://ryansafner.com/index.html</loc>
-    <lastmod>2023-11-16T22:30:12.828Z</lastmod>
-  </url>
-  <url>
-    <loc>https://ryansafner.com/courses/econ-304.html</loc>
-    <lastmod>2023-11-16T22:30:13.506Z</lastmod>
+    <lastmod>2023-11-16T23:11:22.397Z</lastmod>
   </url>
   <url>
     <loc>https://ryansafner.com/courses/index.html</loc>
-    <lastmod>2023-11-16T22:30:14.132Z</lastmod>
+    <lastmod>2023-11-16T23:11:21.726Z</lastmod>
+  </url>
+  <url>
+    <loc>https://ryansafner.com/courses/econ-205.html</loc>
+    <lastmod>2023-11-16T23:11:21.067Z</lastmod>
+  </url>
+  <url>
+    <loc>https://ryansafner.com/blog.html</loc>
+    <lastmod>2023-11-16T23:11:20.241Z</lastmod>
+  </url>
+  <url>
+    <loc>https://ryansafner.com/about.html</loc>
+    <lastmod>2023-11-16T23:11:19.947Z</lastmod>
+  </url>
+  <url>
+    <loc>https://ryansafner.com/courses/ecmg-212.html</loc>
+    <lastmod>2023-11-16T23:11:20.636Z</lastmod>
+  </url>
+  <url>
+    <loc>https://ryansafner.com/courses/econ-304.html</loc>
+    <lastmod>2023-11-16T23:11:21.442Z</lastmod>
+  </url>
+  <url>
+    <loc>https://ryansafner.com/index.html</loc>
+    <lastmod>2023-11-16T23:11:22.034Z</lastmod>
   </url>
   <url>
     <loc>https://ryansafner.com/software.html</loc>
-    <lastmod>2023-11-16T22:30:14.875Z</lastmod>
+    <lastmod>2023-11-16T23:11:22.779Z</lastmod>
   </url>
 </urlset>
