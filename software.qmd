@@ -2,6 +2,8 @@
 title: "Software"
 ---
 
+While I am no software engineer and have no formal training in computer science, I enjoy 
+
 This page is under construction, but most of my projects are open source and can be found in my [GitHub repositories](https://github.com/ryansafner). This includes all of the materials for my [course websites](https://ryansafner.com/teaching) and course content.
 
 ## Shiny Portfolio

@@ -23,7 +23,7 @@ about:
 
 I am an Economist at the [U.S. Copyright Office](https://copyright.gov), conducting research on economic implications of copyright-relevant issues (such as generative AI).
 
-Previously, I was Associate Professor of Economics at [Hood College](https://www.hood.edu/academics/departments/george-b-delaplaine-jr-school-business), where I taught 17 different economics courses over the years. I am a firm believer of providing public goods & promoting open source materials, so you can find all course materials on my custom [course websites](teaching.qmd).
+Previously, I was Associate Professor of Economics at [Hood College](https://www.hood.edu/academics/departments/george-b-delaplaine-jr-school-business), and I have taught 17 different economics courses over the last 10 years. I am a firm believer of providing public goods & promoting open source materials, so you can find all course materials on my custom [course websites](teaching.qmd).
  
 My personal research agenda explores the political economy of innovation, technological growth, and intellectual property using the tools of [new institutional economics](https://en.wikipedia.org/wiki/New_institutional_economics), [public choice](https://en.wikipedia.org/wiki/Public_choice), and [market process economics](http://www.econlib.org/library/Enc/AustrianSchoolofEconomics.html). I blog about these issues in a non-technical way at [Increasing Returns](https://increasingreturns.substack.com).
 
