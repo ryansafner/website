@@ -20,7 +20,7 @@ website:
     left:
       - href: index.qmd
         text: Home
-      - href: CV.pdf
+      - href: https://raw.githubusercontent.com/ryansafner/CV/master/CV.pdf
         text: CV
       - research.qmd
       - teaching.qmd

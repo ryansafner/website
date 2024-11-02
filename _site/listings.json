@@ -2,6 +2,7 @@
   {
     "listing": "/blog.html",
     "items": [
+      "/posts/dashboards.html",
       "/posts/if-youre-going-to-learn-r-learn-the-tidyverse.html",
       "/posts/new-course-websites.html",
       "/posts/econometrics-data-science-and-causal-inference.html",

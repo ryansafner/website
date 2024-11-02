@@ -9,12 +9,13 @@
 <link>https://ryansafner.com/blog.html</link>
 <atom:link href="https://ryansafner.com/blog.xml" rel="self" type="application/rss+xml"/>
 <description>Personal website of Dr. Ryan Safner</description>
-<generator>quarto-1.3.450</generator>
+<generator>quarto-1.4.553</generator>
 <lastBuildDate>Fri, 18 Oct 2019 04:00:00 GMT</lastBuildDate>
 <item>
   <title>If You’re Going to Learn R, Learn the Tidyverse</title>
   <link>https://ryansafner.com/posts/if-youre-going-to-learn-r-learn-the-tidyverse.html</link>
   <description><![CDATA[ 
+
 
 
 
@@ -38,7 +39,7 @@
 <li>create a new variable called <code>GDP</code> by multiplying <code>gdpPercap</code> and <code>pop</code></li>
 </ol>
 <div class="cell">
-<details>
+<details class="code-fold">
 <summary>Code</summary>
 <div class="sourceCode cell-code" id="cb1" style="background: #f1f3f5;"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1">gapminder1<span class="ot" style="color: #003B4F;
 background-color: null;
@@ -74,7 +75,7 @@ font-style: inherit;">$</span>pop</span></code></pre></div>
 <p>This is doable in base R, and often requires saving the output as a new object for later use.</p>
 <p>Below, the same procedure is done with <code>dplyr</code> and using the pipe <code>%&gt;%</code> from <code>magrittr</code> (both part of the <code>tidyverse</code>).</p>
 <div class="cell">
-<details>
+<details class="code-fold">
 <summary>Code</summary>
 <div class="sourceCode cell-code" id="cb2" style="background: #f1f3f5;"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb2-1">gapminder <span class="sc" style="color: #5E5E5E;
 background-color: null;
@@ -127,7 +128,7 @@ font-style: inherit;">*</span> pop)</span></code></pre></div>
 </ol>
 <p>Note that this can be done without use of the pipe, and by storing objects, as such:</p>
 <div class="cell">
-<details>
+<details class="code-fold">
 <summary>Code</summary>
 <div class="sourceCode cell-code" id="cb4" style="background: #f1f3f5;"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb4-1">gapminder_US<span class="ot" style="color: #003B4F;
 background-color: null;
@@ -205,7 +206,7 @@ font-style: inherit;">*</span> pop)</span>
 </ol>
 <p>At each layer, I explain what each layer does and many of the possibilities for each layer.</p>
 <div class="cell">
-<details>
+<details class="code-fold">
 <summary>Code</summary>
 <div class="sourceCode cell-code" id="cb6" style="background: #f1f3f5;"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb6-1"><span class="fu" style="color: #4758AB;
 background-color: null;
@@ -307,7 +308,11 @@ background-color: null;
 font-style: inherit;">"bottom"</span>)</span></code></pre></div>
 </details>
 <div class="cell-output-display">
-<p><img src="https://ryansafner.com/posts/if-youre-going-to-learn-r-learn-the-tidyverse_files/figure-html/unnamed-chunk-4-1.png" class="img-fluid" width="672"></p>
+<div>
+<figure class="figure">
+<p><img src="https://ryansafner.com/posts/if-youre-going-to-learn-r-learn-the-tidyverse_files/figure-html/unnamed-chunk-4-1.png" class="img-fluid figure-img" width="672"></p>
+</figure>
+</div>
 </div>
 </div>
 <p>This is also the students’ first exposure to <code>tidyverse</code>, though it is not yet apparent. My one regret, in retrospect, is that plot layers are combined with <code>+</code> instead of <code>%&gt;%</code>.<sup>3</sup> After learning other <code>tidyverse</code> packages such as <code>dplyr</code>, students would try to add plot layers with <code>%&gt;%</code> but I would continuously have to remind them that layers are combined with <code>+</code>.</p>
@@ -372,6 +377,7 @@ font-style: inherit;">"bottom"</span>)</span></code></pre></div>
 
 
 
+
 <p>This Fall semester, I have made dedicated websites for all of my courses at Hood College that host nearly all the course content. You can see them all <a href="https://ryansafner.com/#teaching">here</a>. My interest was sparked when I saw <a href="https://www.andrewheiss.com/teaching/">Andrew Heiss</a>’ amazing course websites.</p>
 <p>Until this point, all of my course content has lived on Blackboard for my students, though I have also tried to post syllabi and lecture slides (if not additional resources) on my <a href="http://ryansafner.com/teaching">personal website</a> over the past few years. This process has been manageable, but has had way too much pointing-and-clicking, unnecessary duplication, and is not very open-source.</p>
 <p>For each course website, I am using the (surprisingly painless) combination of <a href="https://rmarkdown.rstudio.com/">R markdown</a>, <a href="http://github,com">GitHub</a>, <a href="https://bookdown.org/yihui/blogdown/">Blogdown</a>, <a href="https://gohugo.io/">Hugo</a>, and <a href="http://netlify.com">Netlify</a> such that my entire workflow is reduced to:</p>
@@ -414,6 +420,7 @@ font-style: inherit;">"bottom"</span>)</span></code></pre></div>
 
 
 
+
 <p>This summer, I am overhauling my econometrics class in many ways, in part because I was pleased to recieve a teaching grant from my college to make more R resources for my econometrics class. <a href="http://ryansafner.com/courses/ECON480">Last Fall</a> was the first time I had taught it using R, and I’ve learned a ton since then. Expect a flurry of posts in the coming weeks more on those topics.</p>
 <p>This post, however, explores some of the trends that I have been thinking about in teaching econometrics, and something monotonous that I have been struggling with that encapsulates the tension in these trends: what to name my course. I of course need to officially stick to the Procrustean Bed of the title in my college’s course catalog: ECON 480 - Econometrics, but in more causal conversation, or perhaps as a course subtitle, I have been torn between <strong>“data science”</strong> and <strong>“causal inference.”</strong> This class is an introduction to econometrics, and assumes students have taken basic statistics, so this “problem” is really just marketing on my part — it’s just a run-of-the-mill introductory econometrics course, but I like to add in a few bells and whistles!</p>
 <p>After thinking on this more, it seems to me there that we might be able to delineate a few possible directions that our field is heading. I hasten to qualify that I am thinking about this much more as a <em>teacher,</em> of these topics, less as a <em>practitioner</em>, as my own research niche is applied economic theory, albeit with a steadily-growing fascination with these methods. Nor am I a historian of econometric thought.</p>
@@ -421,7 +428,7 @@ font-style: inherit;">"bottom"</span>)</span></code></pre></div>
 <section id="data-science" class="level2">
 <h2 class="anchored" data-anchor-id="data-science">“Data Science”</h2>
 <p><a href="https://www.google.com/search?q=data+science">“Data science”</a> is the hip new catchall term for using statistical software to analyze data for a variety of purposes. It is commonly interpreted as <a href="https://www.google.com/search?q=data+science+venn+diagram">the intersection of statistics, computer science, and domain expertise (e.g.&nbsp;business, biology, etc)</a>. I personally like the definition offered by the following tweet:</p>
-<p></p>
+{{&lt; tweet 198093512149958656 &gt;}}
 <p>The modal “data scientist” seems to be a young practitioner in industry or academia that use programming languages like R and Python to wrangle, visualize, and present data to solve empirical problems in their domain of expertise. On the academic/teaching side, self-styled “data scientists” seem to be trendy statisticians, computer scientists, or biologists (e.g.&nbsp;“bioinformatics”). <a href="https://www.google.com/search?q=data+science+certificate">New masters degrees and certifications</a> in “Data Science” or “Data Analytics” seem to be popping up left and right at major universities.</p>
 <p>A large part of me wants to ride the coattails of this cool new trend and call/subtitle my class something like “Introduction to Data Science.” I decided against it for a few reasons that I think are instructive.</p>
 <p>First, I would be encroaching the turf of my colleagues in Statistics and Computer Science departments that often have courses with explicit titles like this. These classes are often a rehash of classic introductory statistics classes (probability, the normal distribution, <img src="https://latex.codecogs.com/png.latex?t">-tests, the central limit theorem, etc) but where software and simulation tend to replace pure theory and statistical proofs in a much more student-friendly way. It is a lot more intuitive and less tedious to understand a <img src="https://latex.codecogs.com/png.latex?p">-value via programming commands or simulating a null distribution of 10,000 bootstrapped samples than to learn the theoretical Student’s <img src="https://latex.codecogs.com/png.latex?t">-distributions and look up critical values from a table (as I once had to!).</p>
@@ -484,6 +491,7 @@ font-style: inherit;">"bottom"</span>)</span></code></pre></div>
   <title>Replicating Stata’s ‘Robust’ Option for OLS Standard Errors in R</title>
   <link>https://ryansafner.com/posts/replicating-statas-robust-option-for-ols-standard-errors-in-r.html</link>
   <description><![CDATA[ 
+
 
 
 
@@ -824,7 +832,6 @@ font-style: inherit;">summary</span>(reg.robust)</span></code></pre></div>
 background-color: null;
 font-style: inherit;">tidy</span>(reg.robust)</span></code></pre></div>
 <div data-pagedtable="false">
-
 <script data-pagedtable-source="" type="application/json">
 {"columns":[{"label":["term"],"name":[1],"type":["chr"],"align":["left"]},{"label":["estimate"],"name":[2],"type":["dbl"],"align":["right"]},{"label":["std.error"],"name":[3],"type":["dbl"],"align":["right"]},{"label":["statistic"],"name":[4],"type":["dbl"],"align":["right"]},{"label":["p.value"],"name":[5],"type":["dbl"],"align":["right"]},{"label":["conf.low"],"name":[6],"type":["dbl"],"align":["right"]},{"label":["conf.high"],"name":[7],"type":["dbl"],"align":["right"]},{"label":["df"],"name":[8],"type":["dbl"],"align":["right"]},{"label":["outcome"],"name":[9],"type":["chr"],"align":["left"]}],"data":[{"1":"(Intercept)","2":"0.6850766","3":"0.31205969","4":"2.195338","5":"2.860001e-02","6":"0.07196079","7":"1.2981925","8":"498","9":"y"},{"1":"x","2":"0.7648365","3":"0.09357893","4":"8.173169","5":"2.503856e-15","6":"0.58097828","7":"0.9486946","8":"498","9":"y"}],"options":{"columns":{"min":{},"max":[10]},"rows":{"min":[10],"max":[10]},"pages":{}}}
   </script>
@@ -958,6 +965,7 @@ font-style: inherit;">"f"</span>)) </span></code></pre></div>
 
 
 
+
 <p>With the new school year in full swing, I have redesigned my personal website, and plan to make occasional posts on the tools I use in my research and teaching. Over the summer, I made the full conversion to using <em>R</em>, <em>R Markdown</em>, and <em>Github</em> for nearly everything I do in my professional life (including managing my website with <a href="https://github.com/gcushen/hugo-academic/">Hugo/Academic</a>).</p>
 <p>This semester, I am teaching econometrics to my students using <em>R</em> for the first time, and optionally nudging them to use <em>R Markdown</em> for their homeworks and paper assignment. My training, both in undergraduate and graduate school, was with Stata, so I am particularly excited to shake things up a bit.</p>
 <p>I primarily see this blog as the venue to occasionally post about my experiences and as well as tutorials in using these tools for research and teaching. I have benefited enormously in the past year thanks to people like <a href="http://kieranhealy.org/resources/">Kieran Healey</a>, <a href="http://stat545.com/">Jenny Bryan</a>, <a href="http://r4ds.had.co.nz/">Hadley Wickham</a>, <a href="https://bookdown.org/yihui/rmarkdown/">Yihue Xie</a>, <a href="jakeruss.com/cheatsheets/stargazer">Jake Russ</a>, <a href="https://github.com/svmiller">Steven Miller</a>, <a href="https://github.com/jabranham/">J. Alexander Branham</a> and <a href="https://github.com/vladtarko/rtools">Vlad Tarko</a>. Most of these are academics that I have never met, but they were generous enough to make syllabi, lecture slides, source files, and blog posts public on their websites and on Github.</p>
@@ -977,6 +985,7 @@ font-style: inherit;">"f"</span>)) </span></code></pre></div>
   <title>Visualizing Linear Regression with Shiny</title>
   <link>https://ryansafner.com/posts/visualizing-linear-regression-with-shiny.html</link>
   <description><![CDATA[ 
+
 
 
 
@@ -1015,6 +1024,7 @@ font-style: inherit;">"f"</span>)) </span></code></pre></div>
 
 
 
+
 <p>This semester, I am posting my lecture slides for my Econometrics class on <a href="http://www.github.com/ryansafner/ECON480Fall2018">GitHub</a>. While I usually post my lecture slides for my courses on my website or link to my Dropbox, those are the final PDF documents. On GitHub, I am posting both the final PDFs as well as the source <em>.rmd</em> files. I am primarily doing this for my econometrics students, who will be learning <em>R</em> and <em>R Markdown</em> for their assignments (which is how I write my slides), but this is also open to anyone.</p>
 <p>This brings two benefits. First, it provides an example of how to use <em>R Markdown</em> and the benefits of writing plain-text files to convert into PDFs, html and other outputs (more on that in later posts). Second, it is also an example of using GitHub as a version control system for maintaining backups, a platform for collaboration, and exposure to industry tools of the software trade.</p>
 <p>Over the summer, I also converted to writing my research papers in <em>R Markdown</em> and managing them on GitHub (and the same with this website). I have also attempted to begin collaborating with some of my coauthors via GitHub. They are presently in private repositories to keep research private until it is ready for publication, but I may consider making more public as examples.</p>
@@ -1035,6 +1045,7 @@ font-style: inherit;">"f"</span>)) </span></code></pre></div>
   <title>Test Post Please Don’t Ignore</title>
   <link>https://ryansafner.com/posts/test-post-please-dont-ignore.html</link>
   <description><![CDATA[ 
+
 
 
 
