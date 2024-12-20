@@ -22,10 +22,14 @@ website:
         text: Home
       - href: https://raw.githubusercontent.com/ryansafner/CV/master/CV.pdf
         text: CV
+      - href: https://ryansafner.substack.com
+        text: Substack
       - research.qmd
       - teaching.qmd
       - software.qmd
-      - blog.qmd
+      - href: https://safnerscripts.substack.com
+        text: safneR scripts
+
 
 format:
   html:
