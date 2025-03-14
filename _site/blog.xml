@@ -9,7 +9,7 @@
 <link>https://ryansafner.com/blog.html</link>
 <atom:link href="https://ryansafner.com/blog.xml" rel="self" type="application/rss+xml"/>
 <description>Personal website of Dr. Ryan Safner</description>
-<generator>quarto-1.4.553</generator>
+<generator>quarto-1.6.40</generator>
 <lastBuildDate>Fri, 18 Oct 2019 04:00:00 GMT</lastBuildDate>
 <item>
   <title>If You’re Going to Learn R, Learn the Tidyverse</title>
@@ -732,7 +732,7 @@ font-style: inherit;">"adj.rsq"</span>,<span class="st" style="color: #20794D;
 background-color: null;
 font-style: inherit;">"f"</span>)) </span></code></pre></div>
 <p>The key to notice is <code>se=list(NULL,reg$rse)</code>, which creates a list of objects from which to pull the standard errors for each regression in the table. The first regression uses the standard methods, needing no special source, so it is set to <code>NULL</code>. The second regression, also <code>reg</code>, uses our robust standard errors stored in <code>reg$rse</code>. The output of the table is below:</p>
-<table class="table">
+<table class="caption-top table">
 <caption><strong>Regression Results</strong></caption>
 <tbody>
 <tr class="odd">
@@ -889,7 +889,7 @@ background-color: null;
 font-style: inherit;">"adj.rsq"</span>,<span class="st" style="color: #20794D;
 background-color: null;
 font-style: inherit;">"f"</span>)) </span></code></pre></div>
-<table class="table">
+<table class="caption-top table">
 <caption><strong>Regression Results</strong></caption>
 <tbody>
 <tr class="odd">
