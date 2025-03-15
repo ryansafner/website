@@ -13,8 +13,8 @@ about:
         href: mailto:ryansafner@gmail.com
       - icon: github
         href: https://github.com/ryansafner
-      - icon: book
-        href: https://scholar.google.co.uk/citations?user=GDbo0gsAAAAJ&hl=en
+      - icon: google
+        href: https://scholar.google.com/citations?user=GDbo0gsAAAAJ&hl=en
 ---
 
 <!-- This part is above the two-columns  -->
