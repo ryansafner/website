@@ -5,16 +5,24 @@ about:
     template: trestles
     image: me2023.jpg
     links:
-      - icon: twitter
-        href: https://twitter.com/ryansafner
+      #- icon: twitter
+      #  href: https://twitter.com/ryansafner
+      #  target: _blank
       - icon: linkedin
         href: https://linkedin.com/in/ryansafner
+        target: _blank
       - icon: envelope
         href: mailto:ryansafner@gmail.com
       - icon: github
         href: https://github.com/ryansafner
-      - icon: google
+        target: _blank
+      - text: "{{< ai google-scholar >}}"
         href: https://scholar.google.com/citations?user=GDbo0gsAAAAJ&hl=en
+        target: _blank
+      - text: "{{< ai ssrn >}}"
+        href: https://papers.ssrn.com/sol3/cf_dev/AbsByAuth.cfm?per_id=2161677
+        target: _blank
+
 ---
 
 <!-- This part is above the two-columns  -->
@@ -23,11 +31,11 @@ about:
 
 I am an Economist at the Office of the Chief Economist at the [U.S. Copyright Office](https://copyright.gov/economic-research).
 
-Previously, I was Associate Professor of Economics at [Hood College](https://www.hood.edu/academics/departments/george-b-delaplaine-jr-school-business), and I have taught 17 different economics courses over the last 10 years. I am a firm believer of providing public goods & promoting open source materials, so you can find all course materials on my custom [course websites](teaching.qmd).
+Outside of my day job, I am a lifelong learner, researcher, and communicator of economic ideas. Previously, I was Associate Professor of Economics at [Hood College](https://www.hood.edu/academics/departments/george-b-delaplaine-jr-school-business), and have taught 17 different economics (and adjacent) courses over 10 years. I am a firm believer of providing public goods & promoting open source materials, so you can find all course materials on my custom [course websites](teaching.qmd). I write about economic ideas and understanding the world in a non-technical way at my Substack, [Safnerism](https://ryansafner.substack.com).
  
-My personal research explores the political economy of innovation, technological growth, and intellectual property using the tools of [new institutional economics](https://en.wikipedia.org/wiki/New_institutional_economics), [public choice](https://en.wikipedia.org/wiki/Public_choice), and [market process economics](http://www.econlib.org/library/Enc/AustrianSchoolofEconomics.html). I write about these issues in a non-technical way at my Substack, [Safnerism](https://ryansafner.substack.com).
+My *personal* research agendas explore the political economy of innovation, economic growth, and intellectual property using tools & frameworks like [new institutional economics](https://en.wikipedia.org/wiki/New_institutional_economics), [public choice](https://en.wikipedia.org/wiki/Public_choice), [market process economics](http://www.econlib.org/library/Enc/AustrianSchoolofEconomics.html), and (more experimentally) [computational models](https://en.wikipedia.org/wiki/Agent-based_model).
 
-I am a passionate user of [*R*](https://www.r-project.org/) for data analysis, and [Quarto](https://quarto.org/) and [GitHub](https://github.com) for writing reproducible research, using version control, and managing my workflow. I keep a repository of information and tips about using these tools, as well as write about data science and economics at [safneR scripts](https://safnerscripts.substack.com).
+I am a passionate user of [*R*](https://www.r-project.org/) for data analysis, and [Quarto](https://quarto.org/) and [GitHub](https://github.com) for managing my workflow. I try to share some things I have built for educational purposes on my [software page](software.qmd). I maintain a repository of guides & write about the practice of data science & economics at [safneR scripts](https://safnerscripts.substack.com).
 
 <!--## Education
 

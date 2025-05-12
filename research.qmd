@@ -8,11 +8,13 @@ execution:
 
 Disclaimer: All opinions expressed in published (and unpublished) articles are my own (along with my coauthors, if applicable) and do not represent the views or policies of the U.S. Copyright Office or any other institution. 
 
+My *personal* research agendas explore the political economy of innovation, economic growth, and intellectual property using tools & frameworks like [new institutional economics](https://en.wikipedia.org/wiki/New_institutional_economics), [public choice](https://en.wikipedia.org/wiki/Public_choice), [market process economics](http://www.econlib.org/library/Enc/AustrianSchoolofEconomics.html), and (more experimentally) [computational models](https://en.wikipedia.org/wiki/Agent-based_model).
+
 ## Peer-Reviewed Journal Articles
 
-6. **Safner, Ryan**. 2024/forthcoming. "The Most Interesting Economist in History: Using an NCAA-Style Tournament Assignment to Teach the History of Economic Thought" *Journal of Economics Teaching*
+6. **Safner, Ryan**. (2025) "The Most Interesting Economist in History: Using an NCAA-Style Tournament Assignment to Teach the History of Economic Thought" *Journal of Economics Teaching* 10: 1-19
 
-<p style="text-align:left"><a target="_blank" href="http://downloads.journalofeconomicsteaching.org/2024/2024-19.pdf"><i class="fas fa-external-link-square-alt"></i> Published </a></span> 
+<p style="text-align:left"><a target="_blank" href="http://downloads.journalofeconomicsteaching.org/2024/2024-19.pdf"><span class="btn btn-outline-dark btn-sm"><i class="fas fa-external-link-square-alt"></i> Published </a></span> </p>
 
 ---
 
@@ -22,7 +24,7 @@ Disclaimer: All opinions expressed in published (and unpublished) articles are m
 
 ---
 
-4. Tarko, Vlad and **Ryan Safner**. (2022) "International Regulatory Diversity Over 50 Years: Political Entrepreneurship within Fiscal Constraints." *Public Choice 193(1-2): 79-108*
+4. [Tarko, Vlad](https://vladtarko.com/) and **Ryan Safner**. (2022) "International Regulatory Diversity Over 50 Years: Political Entrepreneurship within Fiscal Constraints." *Public Choice 193(1-2): 79-108*
 
 <p style="text-align:left"><a target="_blank" href="https://link.springer.com/article/10.1007/s11127-022-01011-2"><span class="btn btn-outline-dark btn-sm"><i class="fas fa-external-link-square-alt"></i> Published </a></span> <a target="_blank" href="https://link.springer.com/epdf/10.1007/s11127-022-01011-2?sharing_token=0PMazGn6dpbw8WWmSOLsYPe4RwlQNchNByi7wbcMAY6sM4iEqIYI0dMv-E9PvzDaltt8-HxXVpJtBBw8N3WxXoQuXY6rFWHLNbeEmS-MZlq11VW8XneB__PPi3kRJ_nLR07J2ZIZcwmQkHNQ9JN-0-v3DX27mJDdJ8pw8OE_P-U%3D"><span class="btn btn-outline-dark btn-sm"><i class="fas fa-file-pdf"></i> Preprint</a></span></p>
 
@@ -46,17 +48,26 @@ Disclaimer: All opinions expressed in published (and unpublished) articles are m
 
 ---
 
-## Articles Under Review
+## Government Publications
 
-Gangotena, Santiago and **Ryan Safner.** (2022) "The Production of Increasing Returns: Physical Technology, Institutional Technology, and the Pitfalls of Production Functions." (Revise & Resubmit requested)
+Lutes, Brent (Ed.). (2025) [*Identifying the Economic Implications of Artificial Intelligence for Copyright Policy: Context and Direction for Economic Research.*](https://www.copyright.gov/economic-research/economic-implications-of-ai/)
 
-<p style="text-align:left"><a target="_blank" href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=2626587"><span class="btn btn-outline-dark btn-sm"><i class="fas fa-file-pdf"></i> Preprint</a></span></p>
+U.S. Copyright Office. (2024) [*The Geography of Copyright Registrations.*](https://copyright.gov/economic-research/geography/)
 
----
+U.S. Copyright Office. (2024) [*The Resilience of Creativity: An Examination of the COVID-19 Impact on Copyright-Reliant Industries and Their Subsequent Recovery.*](https://copyright.gov/economic-research/resilience-of-creativity/)
+
+<!--## Book Chapters
+
+Lutes, Brent, Palmedo, Michael, & **Ryan Safner.** (2025/forthcoming). "The State of Inclusion and Diversity in Copyright" in *Inclusive Innovation in the Age of AI and Big Data.* Oxford University Press. [Under contract]
+-->
 
 ## Research in Progress
 
-"A Tale of Two Capitals: Modeling the Interaction between Ideas, Physical Capital, and Growth." (with Santiago Gangotena)
+*Below is my own independent research only. For research at the Copyright Office, see the [Office of the Chief Economist](https://copyright.gov/economic-research)*
+
+The Production of Increasing Returns: Physical Technology, Institutional Technology, and the Pitfalls of Production Functions. (with [Santiago Gangotena](https://www.usfq.edu.ec/es/perfiles/santiago-jose-gangotena-ruiz))
+
+"A Tale of Two Capitals: Modeling the Interaction between Ideas, Physical Capital, and Growth." (with [Santiago Gangotena](https://www.usfq.edu.ec/es/perfiles/santiago-jose-gangotena-ruiz))
 
 Distributing Patronage: Censorship, Freedom of the Press, and Copyright in the English Transition from Natural State to Open Access Order
 
@@ -66,4 +77,4 @@ Kickstart My Art: Is Crowdfunding a Substitute or a Complement to Intellectual P
 
 Cryptocopyright? The Prospects of Protecting Intellectual Property on the Blockchain
 
-The Network Origins of Economic Growth (with Santiago Gangotena)
+The Network Origins of Economic Growth (with [Santiago Gangotena](https://www.usfq.edu.ec/es/perfiles/santiago-jose-gangotena-ruiz))

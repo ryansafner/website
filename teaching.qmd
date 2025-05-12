@@ -2,7 +2,9 @@
 title: "Teaching"
 ---
 
-[<i class="fa-solid fa-file-pdf"></i> Read my Statement of Teaching Philosophy](teaching_philosophy.pdf)
+I have been an economics educator since 2013 with my first official teaching gig. I have taught at George Mason University, Wake Forest University, and most recently at Hood College, where I acheived tenure as an Associate Professor. Since leaving academia, I try to keep my teaching muscles from atrophying by writing on Substack - both about [economics](https://ryansafner.substack.com) and [data science](https://safnerscripts.substack.com). Below you can find all of my course materials, including course websites for my most recent courses at Hood College. 
+
+[<i class="fas fa-file-pdf"></i> Read my Statement of Teaching Philosophy](teaching_philosophy.pdf)
 
 # Hood College (2016--2023)
 
