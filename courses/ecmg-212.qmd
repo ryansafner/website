@@ -1,5 +1,7 @@
 ---
 title: "ECMG 212 — Statistics for Economics and Business"
+execute:
+  freeze: true
 ---
 
 ## Overview

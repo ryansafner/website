@@ -14,7 +14,7 @@ Course titles below link to the latest semester of each course website. Courses 
 
 |    |     |
 |:---:|:----|
-|     | [ECMG 212 - Statistics for Economics and Business](courses/ecmg-212.html) |
+|     | [ECMG 212 - Statistics for Economics and Business](courses/ecmg-212.qmd) |
 |     | [ECON 205 - Principles of Macroeconomics](courses/econ-205.html) |
 |     | [ECON 304 - International Political Economy](courses/econ-304.html) |
 | ![](img/micro_hex.png) | [ECON 306 - Microeconomic Analysis](http://micros23.classes.ryansafner.com) |

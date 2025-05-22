@@ -2,11 +2,19 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://ryansafner.com/teaching.html</loc>
-    <lastmod>2025-05-09T17:05:11.749Z</lastmod>
+    <lastmod>2025-05-22T15:07:24.702Z</lastmod>
   </url>
   <url>
     <loc>https://ryansafner.com/research.html</loc>
     <lastmod>2025-05-12T14:58:22.255Z</lastmod>
+  </url>
+  <url>
+    <loc>https://ryansafner.com/courses/index.html</loc>
+    <lastmod>2023-11-16T22:23:41.138Z</lastmod>
+  </url>
+  <url>
+    <loc>https://ryansafner.com/courses/econ-205.html</loc>
+    <lastmod>2023-11-16T22:23:41.138Z</lastmod>
   </url>
   <url>
     <loc>https://ryansafner.com/blog.html</loc>
@@ -15,6 +23,14 @@
   <url>
     <loc>https://ryansafner.com/about.html</loc>
     <lastmod>2023-11-16T22:28:39.620Z</lastmod>
+  </url>
+  <url>
+    <loc>https://ryansafner.com/courses/ecmg-212.html</loc>
+    <lastmod>2025-05-22T15:09:19.616Z</lastmod>
+  </url>
+  <url>
+    <loc>https://ryansafner.com/courses/econ-304.html</loc>
+    <lastmod>2023-11-16T22:23:41.138Z</lastmod>
   </url>
   <url>
     <loc>https://ryansafner.com/index.html</loc>
