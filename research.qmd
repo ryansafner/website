@@ -12,6 +12,13 @@ My *personal* research agendas explore the political economy of innovation, econ
 
 ## Peer-Reviewed Journal Articles
 
+7. Palmedo, Michael, Brent Lutes, and **Ryan Safner**. (2026) "AI Skill Demand and Employment Stratification in Copyright-Intensive Information Industries: Evidence from Job Postings and Industry-Level Employment Data" *Work and Occupations* Forthcoming
+
+<p style="text-align:left"><a target="_blank" href="https://journals.sagepub.com/doi/10.1177/07308884261447535"><span class="btn btn-outline-dark btn-sm">{{< fa external-link-square-alt >}} Published </a></span> </p>
+
+---
+
+
 6. **Safner, Ryan**. (2025) "The Most Interesting Economist in History: Using an NCAA-Style Tournament Assignment to Teach the History of Economic Thought" *Journal of Economics Teaching* 10: 1-19
 
 <p style="text-align:left"><a target="_blank" href="http://downloads.journalofeconomicsteaching.org/2024/2024-19.pdf"><span class="btn btn-outline-dark btn-sm">{{< fa external-link-square-alt >}} Published </a></span> </p>
@@ -56,10 +63,9 @@ U.S. Copyright Office. (2024) [*The Geography of Copyright Registrations.*](http
 
 U.S. Copyright Office. (2024) [*The Resilience of Creativity: An Examination of the COVID-19 Impact on Copyright-Reliant Industries and Their Subsequent Recovery.*](https://copyright.gov/economic-research/resilience-of-creativity/)
 
-<!--## Book Chapters
+## Book Chapters
 
-Lutes, Brent, Palmedo, Michael, & **Ryan Safner.** (2025/forthcoming). "The State of Inclusion and Diversity in Copyright" in *Inclusive Innovation in the Age of AI and Big Data.* Oxford University Press. [Under contract]
--->
+Lutes, Brent, Michael Palmedo, and **Ryan Safner.** 2026. "The State of Inclusion and Diversity in Copyright" in Daryl Lim and Peter K Yu, eds, [*Inclusive Innovation in the Age of AI and Big Data*](https://academic.oup.com/book/62459), Oxford University Press.
 
 ## Research in Progress
 
