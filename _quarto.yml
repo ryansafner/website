@@ -28,9 +28,6 @@ website:
       - research.qmd
       - teaching.qmd
       - software.qmd
-      - href: https://safnerscripts.substack.com
-        text: safneR scripts
-
 
 format:
   html:

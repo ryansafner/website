@@ -31,11 +31,11 @@ about:
 
 I am an Economist at the Office of the Chief Economist at the [U.S. Copyright Office](https://copyright.gov/economic-research).
 
-Outside of my day job, I am a lifelong learner, researcher, and communicator of economic ideas. Previously, I was Associate Professor of Economics at [Hood College](https://www.hood.edu/academics/departments/george-b-delaplaine-jr-school-business), and have taught 17 different economics (and adjacent) courses over 10 years. I am a firm believer of providing public goods & promoting open source materials, so you can find all course materials on my custom [course websites](teaching.qmd). I write about economic ideas and understanding the world in a non-technical way at my Substack, [Safnerism](https://ryansafner.substack.com).
+Outside of my day job, I am a lifelong learner, researcher, and communicator of economic ideas. Previously, I was Associate Professor of Economics at [Hood College](https://www.hood.edu/academics/departments/george-b-delaplaine-jr-school-business), and have taught 17 different economics (and adjacent) courses over 10 years. I am a firm believer of providing public goods & promoting open source materials, so you can find all course materials on my custom [course websites](teaching.qmd). I write about economic ideas and understanding the world in a non-technical way at my [Substack](https://ryansafner.substack.com).
  
 My *personal* research agendas explore the political economy of innovation, economic growth, and intellectual property using tools & frameworks like [new institutional economics](https://en.wikipedia.org/wiki/New_institutional_economics), [public choice](https://en.wikipedia.org/wiki/Public_choice), [market process economics](http://www.econlib.org/library/Enc/AustrianSchoolofEconomics.html), and (more experimentally) [computational models](https://en.wikipedia.org/wiki/Agent-based_model).
 
-I am a passionate user of [*R*](https://www.r-project.org/) for data analysis, and [Quarto](https://quarto.org/) and [GitHub](https://github.com) for managing my workflow. I try to share some things I have built for educational purposes on my [software page](software.qmd). I maintain a repository of guides & write about the practice of data science & economics at [safneR scripts](https://safnerscripts.substack.com).
+I am a passionate user of [*R*](https://www.r-project.org/) for data analysis, and [Quarto](https://quarto.org/) and [GitHub](https://github.com) for managing my workflow. I try to share some things I have built for educational purposes on my [software page](software.qmd). <!--I maintain a repository of guides & write about the practice of data science & economics at [safneR scripts](https://safnerscripts.substack.com).-->
 
 <!--## Education
 
