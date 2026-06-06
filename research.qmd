@@ -18,14 +18,13 @@ My *personal* research agendas explore the political economy of innovation, econ
 
 ---
 
-
 6. **Safner, Ryan**. (2025) "The Most Interesting Economist in History: Using an NCAA-Style Tournament Assignment to Teach the History of Economic Thought" *Journal of Economics Teaching* 10: 1-19
 
 <p style="text-align:left"><a target="_blank" href="http://downloads.journalofeconomicsteaching.org/2024/2024-19.pdf"><span class="btn btn-outline-dark btn-sm">{{< fa external-link-square-alt >}} Published </a></span> </p>
 
 ---
 
-5. **Safner, Ryan**. (2023) "Honor Among Thieves: How 19th Century American Pirate Publishers Simulated Copyright Protection." *Economic Governance* 24: 119-141
+5. **Safner, Ryan**. (2023) "Honor Among Thieves: How 19th Century American Pirate Publishers Simulated Copyright Protection." *Economics of Governance* 24: 119-141
 
 <p style="text-align:left"><a target="_blank" href="https://link.springer.com/epdf/10.1007/s10101-023-00289-2?sharing_token=YB0-ABEvC_1o05V4UWFd8_e4RwlQNchNByi7wbcMAY7YvsnIiykwCQ5vVJulNSIvW05T2YVZFk-Ef_1JbkN9Jt7LLTcBnZ9GkogkMkYK6w6djwteWDFjYjjBSqeALIOuBKKqjCXz88lyJ_1ezEnLwFbUGNe2jB8hXoMH98V29AY%3D"><span class="btn btn-outline-dark btn-sm">{{< fa external-link-square-alt >}} Published </a></span> <a target="_blank" href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3775330"><span class="btn btn-outline-dark btn-sm"> {{< fa file-pdf >}} Preprint</a></span></p>
 
