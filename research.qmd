@@ -12,7 +12,7 @@ My *personal* research agendas explore the political economy of innovation, econ
 
 ## Peer-Reviewed Journal Articles
 
-7. Palmedo, Michael, Brent Lutes, and **Ryan Safner**. (2026) "AI Skill Demand and Employment Stratification in Copyright-Intensive Information Industries: Evidence from Job Postings and Industry-Level Employment Data" *Work and Occupations* Forthcoming
+7. Palmedo, Michael, Brent Lutes, and **Ryan Safner**. (2026) "AI Skill Demand and Employment Stratification in Copyright-Intensive Information Industries: Evidence from Job Postings and Industry-Level Employment Data" *Work and Occupations* 53(3): 707-744
 
 <p style="text-align:left"><a target="_blank" href="https://journals.sagepub.com/doi/10.1177/07308884261447535"><span class="btn btn-outline-dark btn-sm">{{< fa external-link-square-alt >}} Published </a></span> </p>
 
