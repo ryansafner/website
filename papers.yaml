@@ -1,67 +1,370 @@
-rae2016:
-    title: "The Perils of Copyright Regulation"
-    authors:
-        - me
-    year: 2016
-    preprint: http://papers.ssrn.com/abstract=2396874
-    published_url: https://doi.org/https://doi.org/10.1007/s11138-014-0293-5
-    venue: "Review of Austrian Economics 29: 127-137"
-    github:
-joie2016:
-    title: "Institutional Entrepreneurship, Wikipedia, and the Opportunity of the Commons"
-    authors:
-        - me
-    year: 2016
-    preprint: http://papers.ssrn.com/abstract=2396874
-    published_url: https://doi.org/https://doi.org/10.1017/S1744137416000096
-    venue: "Journal of Institutional Economics 12(4): 743-771"
-    github:
-jpe2021:
-    title: "'Public Good,' or 'Good for the Public?' Political Entrepreneurship and the Public Funding of Scientific Research"
-    authors:
-        - me
-    year: 2021
-    preprint: https://papers.ssrn.com/sol3/papers.cfm?abstract_id=2488655
-    published_url: https://papers.ssrn.com/sol3/papers.cfm?abstract_id=2488655
-    venue: "Journal of Private Enterprise 36(1): 743-771"
-    github:
-hat2022:
-    title: "Honor Among Thieves: How 19th Century American Pirate Publishers Simulated Copyright Protection"
-    authors:
-        - me
-    year: 2022
-    preprint: https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3775330
-    published_url: 
-    venue: "Economic Governance (conditional acceptance)"
-    github:
-pc2022:
-    title: "International Regulatory Diversity Over 50 Years: Political Entrepreneurship within Fiscal Constraints"
-    authors:
-        - Vlad Tarko
-        - me
-    year: 2022
-    preprint: https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3894687
-    published_url: https://link.springer.com/epdf/10.1007/s11127-022-01011-2?sharing_token=0PMazGn6dpbw8WWmSOLsYPe4RwlQNchNByi7wbcMAY6sM4iEqIYI0dMv-E9PvzDaltt8-HxXVpJtBBw8N3WxXoQuXY6rFWHLNbeEmS-MZlq11VW8XneB__PPi3kRJ_nLR07J2ZIZcwmQkHNQ9JN-0-v3DX27mJDdJ8pw8OE_P-U%3D
-    venue: "Public Choice (forthcoming)" 
-    github:
-jet2022:
-    title: "I Don't Always Teach the History of Economic Thought...But When I Do, I Prefer a Tournament"
-    authors:
-        - me
-    year: 2022
-    preprint: 
-sced2022:
-    title: "The Production of Increasing Returns: Physical Technology, Institutional Technology, and the Pitfalls of Production Functions"
-    authors:
-        - Santiago Gangotena
-        - me
-    year: 2022
-    venue: Revise & Resubmit requested
-    preprint: https://papers.ssrn.com/sol3/papers.cfm?abstract_id=2626587
-ttc2022:
-    title: "A Tale of Two Capitals: Modeling the Interaction between Ideas, Physical Capital, and Growth"
-    authors:
-        - Santiago Gangotena
-        - me
-    year: 2022
-    preprint: https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3789195
+# Data for research.qmd -- the page is generated from this file.
+#
+# Fields
+#   id:        unique slug. Also the PDF filename: a pre-publication version
+#              saved as files/papers/<id>.pdf gets a "PDF" button automatically
+#              (the button is hidden until the file exists).
+#   type:      article | government | chapter | wip  (which section it goes in)
+#   authors:   markdown; bold yourself with **...**. For wip, list coauthors only.
+#   title, year
+#   journal, issue:  journal name (italicized on the page) and volume/issue/pages
+#   published_url:   the journal's page for the published version
+#   abstract:  markdown, optional (no Abstract button if left blank)
+#   topics:    list of topics, e.g. [Intellectual property, Economic history].
+#              Reuse the same small set so the filter bar at the top stays useful;
+#              it's built automatically from every topic used here.
+#
+# Within each section, entries appear in the order listed here.
+# Journal articles are numbered automatically (newest = highest number).
+
+# ---------- Peer-Reviewed Journal Articles ----------
+
+- id: palmedo-lutes-safner-2026-ai-skill-demand
+  type: article
+  topics: [Artificial intelligence, Creative industries]
+  authors: "Palmedo, Michael, Brent Lutes, and **Ryan Safner**"
+  year: 2026
+  title: "AI Skill Demand and Employment Stratification in Copyright-Intensive Information Industries: Evidence from Job Postings and Industry-Level Employment Data"
+  journal: "Work and Occupations"
+  issue: "53(3): 707-744"
+  published_url: https://doi.org/10.1177/07308884261447535
+  abstract: >
+    This paper examines how employer demand for workers skilled in the use of
+    artificial intelligence (AI) is associated with employment patterns in
+    copyright-intensive industries within the U.S. information sector. Using
+    panel data from the Census Bureau's Quarterly Workforce Indicators combined
+    with data on AI-related job postings, we analyze how the relationship
+    between employer demand for AI skills and employment levels varies across
+    worker groups between 2018 and 2024. Furthermore, we document changes in
+    this relationship following the widespread introduction of generative AI in
+    late 2022. We find that employment in copyright-reliant information
+    industries declined relative to other industries after late 2022, and that
+    the association between AI-related job postings and employment is highly
+    heterogeneous. Initial findings indicate that employment relationships were
+    negative or statistically insignificant for workers who had not completed a
+    four-year college degree, for women, and for the youngest and oldest age
+    cohorts. A positive relationship existed for college educated workers, men,
+    and prime-age workers, though this weakened in the periods after the
+    introduction of generative AI. These findings provide early insights into
+    how demand for generative AI skills may reshape labor market stratification
+    within creative and information-intensive industries and underscore the
+    importance of examining technological change in future research.
+
+- id: safner-2025-most-interesting-economist
+  type: article
+  topics: [Teaching]
+  authors: "**Safner, Ryan**"
+  year: 2025
+  title: "The Most Interesting Economist in History: Using an NCAA-Style Tournament Assignment to Teach the History of Economic Thought"
+  journal: "Journal of Economics Teaching"
+  issue: "10: 1-19"
+  published_url: http://downloads.journalofeconomicsteaching.org/2024/2024-19.pdf
+  abstract: >
+    I describe an assignment for a history of economic thought (HET) course,
+    "The Most Interesting Economist in History," modeled on the National
+    Collegiate Athletic Association (NCAA) College Basketball Tournament.
+    Economic thinkers are paired in head-to-head matchups for each era and
+    students vote for those they find to be more "interesting" and must explain
+    the reasoning behind their votes. This assignment promotes active learning
+    and is a more engaging way to juggle complex themes with a large list of
+    thinkers over a semester-long seminar.
+
+- id: safner-2023-honor-among-thieves
+  type: article
+  topics: [Intellectual property, Economic history, Institutions and governance]
+  authors: "**Safner, Ryan**"
+  year: 2023
+  title: "Honor Among Thieves: How 19th Century American Pirate Publishers Simulated Copyright Protection"
+  journal: "Economics of Governance"
+  issue: "24: 119-141"
+  published_url: https://doi.org/10.1007/s10101-023-00289-2
+  abstract: >
+    From 1790 to 1891, the United States prevented foreign authors from obtaining 
+    domestic copyright protection, implicitly subsidizing a domestic reprinting industry. 
+    With foreign works a “free” and unprotected resource, American publishers created a system of 
+    voluntary norms, known as “trade courtesy” to create and enforce pseudo-property rights in 
+    uncopyrighted foreign works, simulating the effects of legal copyright protection. 
+    This paper analyzes this system using the Bloomington School’s institutional design 
+    principles to understand its effectiveness and pitfalls in managing the commons of 
+    unprotected foreign works in 19th Century America.
+
+- id: tarko-safner-2022-regulatory-diversity
+  type: article
+  topics: [Political economy]
+  authors: "[Tarko, Vlad](https://vladtarko.com/) and **Ryan Safner**"
+  year: 2022
+  title: "International Regulatory Diversity Over 50 Years: Political Entrepreneurship within Fiscal Constraints"
+  journal: "Public Choice"
+  issue: "193(1-2): 79-108"
+  published_url: https://doi.org/10.1007/s11127-022-01011-2
+  abstract: >
+    Over the last 50 years, economic freedom in modern capitalist democracies has increased although 
+    the regulatory state has expanded considerably, resulting in the paradox of “freer markets, 
+    more rules” (Vogel, 1996). We provide a hierarchical cluster analysis of the policy trajectories 
+    of OECD countries over the last 50 years, as well as a theoretical framework that builds on 
+    Stigler’s (1971) theory of economic regulation. Our findings suggest that these developments 
+    are not the result of ideological narratives such as “neoliberalism,” but instead we confirm 
+    some claims from the “varieties of capitalism” and “regulatory capitalism” literatures using 
+    independent methods. Our approach is better able to explain the diversity of regulatory regimes 
+    across countries than existing approaches that focus on either national patterns or policy sectors, 
+    and we also provide a fuller account of government crowding-out and crowding-in effects across the 
+    entire structure of production.
+
+- id: safner-2021-public-good
+  type: article
+  topics: [Political economy]
+  authors: "**Safner, Ryan**"
+  year: 2021
+  title: "'Public Good,' or 'Good for the Public?' Political Entrepreneurship and the Public Funding of Scientific Research"
+  journal: "Journal of Private Enterprise"
+  issue: "36(1): 743-771"
+  published_url: http://journal.apee.org/index.php/2021_Journal_of_Private_Enterprise_Vol_36_No_1_Spring_parte2
+  abstract: >
+    Public goods are traditionally classified according to an exogenous, technological definition of 
+    possessing the characteristics of nonrivalry and nonexcludability. This paper takes a more 
+    endogenous approach, where goods are defined by the political purposes that specific actors 
+    have regarding these goods, and emerge through political entrepreneurship. I use government 
+    sponsorship of basic scientific research as a case study. Proponents argue that scientific 
+    research constitutes a public good requiring government assistance, but in fact, government 
+    provision of science is endogenous, and better explained by the political entrepreneurship 
+    involved in convincing the public of the superiority of political over private provision.
+
+- id: safner-2016-wikipedia
+  type: article
+  topics: [Intellectual property, Institutions and governance]
+  authors: "**Safner, Ryan**"
+  year: 2016
+  title: "Institutional Entrepreneurship, Wikipedia, and the Opportunity of the Commons"
+  journal: "Journal of Institutional Economics"
+  issue: "12(4): 743-771"
+  published_url: https://doi.org/10.1017/S1744137416000096
+  abstract: >
+    Copyright laws traditionally attempt to incentivize expression and minimize
+    free rider problems through legal restrictions, at the expense of closing
+    off access to cultural history. However, entrepreneurial changes to
+    institutions and the creation of alternative governance structures can
+    allow for spaces that facilitate expression without resorting to the
+    copyright approach. Wikipedia, the free online encyclopedia, stands as a
+    highly visible example of such institutional entrepreneurship, leveraging
+    copyright law *against* its intended purpose. This paper uses the
+    Bloomington School's IAD framework to explain the success of Wikipedia's
+    alternative model of managing a common resource of free encyclopedia
+    articles, and suggests a roadmap for understanding the role of
+    institutional entrepreneurship in crafting alternative governance
+    structures to foster expression.
+
+- id: safner-2016-perils-of-copyright
+  type: article
+  topics: [Intellectual property, Political economy]
+  authors: "**Safner, Ryan**"
+  year: 2016
+  title: "The Perils of Copyright Regulation"
+  journal: "Review of Austrian Economics"
+  issue: "29(2): 121-137"
+  published_url: https://doi.org/10.1007/s11138-014-0293-5
+  abstract: >
+    The most robust framework for understanding the evolution and consequences of 
+    copyright statutes in the United States is the dynamics of interventionism. I 
+    apply the framework of Kirzner’s (1985) perils of regulation to the general revision of 
+    copyright law in 1976, and explore its effects on entrepreneurship and discovery processes. 
+    Critics of copyright commonly recognize the distortions of rent-seeking, but I emphasize 
+    the utility of interventionism to explain the“unsimulated” and the “stifled” discovery 
+    processes set in motion by copyright interventions, which use legal processes to 
+    allocate resources, and deter future discovery by raising transaction costs.
+
+# ---------- Government Publications ----------
+
+- id: usco-2026-characteristics-of-authors
+  type: government
+  topics: [Creative industries, Intellectual property]
+  authors: "U.S. Copyright Office"
+  year: 2026
+  title: "The Characteristics of Authors Reflected in Copyright Registrations"
+  published_url: https://www.copyright.gov/economic-research/characteristics-of-authors/
+  abstract: >
+    This research note, produced by the U.S. Copyright Office’s Office of the Chief Economist, 
+    examines socioeconomic patterns of authors who register copyrights. It is based on copyright 
+    registrations submitted by individuals (as compared to corporate or other organizational claimants) 
+    between 2011 and 2024,1 which have been aggregated by zip code, year, and type of creative work. 
+    Statistical analyses of these data produce the following key findings: More copyright registrations 
+    originate from areas where people have higher levels of educational attainment, earn higher incomes, 
+    are older, and work in the information and entertainment industries. More copyright registrations 
+    per person originate from urban areas than rural or suburban ones, suggesting certain productive 
+    efficiency gains from agglomeration (the tendency for economic activity to cluster geographically).
+    The relationship between copyright registrations and socioeconomic characteristics varies 
+    substantially for different types of creative works.
+
+- id: lutes-2025-economic-implications-of-ai
+  type: government
+  topics: [Artificial intelligence, Intellectual property, Creative industries]
+  authors: "Lutes, Brent (Ed.)"
+  year: 2025
+  title: "Identifying the Economic Implications of Artificial Intelligence for Copyright Policy: Context and Direction for Economic Research"
+  published_url: https://www.copyright.gov/economic-research/economic-implications-of-ai/
+  abstract: > 
+    The Copyright Office released Identifying the Economic Implications of Artificial Intelligence 
+    for Copyright Policy, produced by a group of economic scholars discussing the economic issues 
+    at the intersection of artificial intelligence and copyright policy. The group engaged in 
+    several months of substantive discussions, consultation with technical experts, and research, 
+    culminating in a daylong roundtable event. The group’s goal was identifying the most 
+    consequential economic characteristics of AI and copyright and what factors may inform policy 
+    decisions. The roundtable discussion aimed to provide a structured and rigorous framework for 
+    considering economic evidence so that the broader economic research community can effectively 
+    answer specific questions and identify optimal policy choices. This publication serves as a 
+    platform for articulating the ideas expressed by participants as part of the roundtable. All 
+    principal contributors submitted written materials summarizing the group’s prior discussions 
+    on a particular topic, with editorial support provided by the Office of the Chief Economist. 
+    The many ideas and views discussed in this project do not necessarily represent the views of 
+    every roundtable participant or their respective institutions. The Copyright Office does not 
+    take a position on these ideas for the purposes of this project. 
+
+- id: usco-2024-geography
+  type: government
+  topics: [Creative industries, Intellectual property]
+  authors: "U.S. Copyright Office"
+  year: 2024
+  title: "The Geography of Copyright Registrations"
+  published_url: https://copyright.gov/economic-research/geography/
+  abstract: >
+    The U.S. Copyright Office has released a report, The Geography of Copyright Registrations. 
+    The study examines the geographic distribution of copyright claims registered by individuals 
+    and organizations within the United States. The purpose of the report is to better understand 
+    where the copyright system is used and how patterns of registrations differ across areas 
+    within the country. The report reveals: The majority of copyright registrations originate 
+    from a handful of large metropolitan areas. Approximately 40 percent of all copyright 
+    registrations originate from just five: New York, Los Angeles, Philadelphia, Washington, 
+    DC, and Chicago. Within the United States, certain geographic areas specialize in different 
+    types of creative works. For example, registrants in the South register many copyrights for 
+    musical works, registrants in the Northeast and Mid-Atlantic states register many literary 
+    works, and registrants in California specialize in film and dramatic works.
+    Some areas have a high volume of registrations simply because of their large populations. 
+    When controlling for population, numerous locations at the city level emerge where 
+    individuals, companies, or universities are registering high concentrations of creative works. 
+    This report uses data from copyright claims registered between 2009 and 2022. A forthcoming 
+    report will focus on the demographics of copyright registrations in the United States. 
+
+- id: usco-2024-resilience-of-creativity
+  type: government
+  topics: [Creative industries, Intellectual property]
+  authors: "U.S. Copyright Office"
+  year: 2024
+  title: "The Resilience of Creativity: An Examination of the COVID-19 Impact on Copyright-Reliant Industries and Their Subsequent Recovery"
+  published_url: https://copyright.gov/economic-research/resilience-of-creativity/
+  abstract: >
+    The U.S. Copyright Office has released The Resilience of Creativity: An Examination of 
+    the COVID-19 Impact on Copyright-Reliant Industries and Their Subsequent Recovery. The 
+    study examines the impact and subsequent recovery from the COVID-19 pandemic in terms 
+    of employment, revenues, and creative outputs in copyright-reliant industries. It uses 
+    data from the Bureau of Labor Statistics, U.S. Census, and U.S. Copyright Office 
+    pertaining to eighteen industries that produce the types of works registered with 
+    the U.S. Copyright Office. The report reveals: As a whole, copyright-reliant industries 
+    experienced a substantial downturn resulting from the COVID-19 pandemic, but the effect 
+    was decidedly smaller than that on the broader U.S. economy. Copyright-reliant 
+    industries, as a whole, recovered from the pandemic-induced downturn substantially 
+    quicker than the broader U.S. economy. The pandemic impact on employees was 
+    substantially larger than the impact on copyright-reliant firms (which is consistent 
+    with the experience of non-copyright reliant industries). The pandemic effects were 
+    significantly varied among industries.
+
+
+# ---------- Book Chapters ----------
+
+- id: lutes-palmedo-safner-2026-inclusion-diversity
+  type: chapter
+  topics: [Creative industries, Intellectual property]
+  authors: "Lutes, Brent, Michael Palmedo, and **Ryan Safner**"
+  year: 2026
+  title: "The State of Inclusion and Diversity in Copyright"
+  book: "in Daryl Lim and Peter K Yu, eds, *Inclusive Innovation in the Age of AI and Big Data*, Oxford University Press"
+  published_url: https://academic.oup.com/book/62459
+  abstract:
+
+# ---------- Research in Progress ----------
+# authors: coauthors only (shown as "with ...")
+
+- id: gangotena-safner-increasing-returns
+  type: wip
+  topics: [Innovation and growth, Institutions and governance]
+  authors: "[Santiago Gangotena](https://www.usfq.edu.ec/es/perfiles/santiago-jose-gangotena-ruiz)"
+  title: "The Production of Increasing Returns: Physical Technology, Institutional Technology, and the Pitfalls of Production Functions"
+  abstract: >
+    Economists often model the delicate relationship between production, innovation, and economic
+    growth as a production function that exhibits increasing returns to scale (IRS). The existence of 
+    knowldge spillovers or learning by doing implies conclusions about the optimal use of protectionist trade and 
+    industrial policies that increase national welfare by reallocating productive resources in order to exploit IRS. 
+    We claim that all physical technologies, understood as recipes that produce a specified output from given inputs, 
+    exhibit constant returns to scale. Increasing returns to scale comes from institutions that enable entrepreneurial 
+    discovery and choice to switch between physical technologies. We examine several case studies of apparently successful 
+    infant industries and clarify the nature and economic relationships behind the phenomena of increasing returns and 
+    the limitations of existing models of production, we contribute a new understanding of research with applications 
+    to innovation, economic growth, and trade policy.
+
+- id: gangotena-safner-two-capitals
+  type: wip
+  topics: [Innovation and growth]
+  authors: "[Santiago Gangotena](https://www.usfq.edu.ec/es/perfiles/santiago-jose-gangotena-ruiz)"
+  title: "A Tale of Two Capitals: Modeling the Interaction between Ideas, Physical Capital, and Growth"
+  abstract: >
+    This paper models the relationship between innovation and sustained economic growth through as being mediated by 
+    institutions that calibrate a ‘structure of technological production’ analogous to capital-based models of the 
+    structure of production. Our framework discusses two types of capital: physical capital and ethereal capital 
+    (productivity-enhancing ideas). We cast these two structures in a network, the structure of which is determined 
+    by the institutions of a society. Predictions derived from this model may resolve some puzzles in the history 
+    of economic growth, such as ancient inventions ‘far ahead of their time’ failing to stimulate sustained growth, 
+    the phenomena of simultaneous independent invention, and failures of technology transfers.
+
+- id: safner-patrons-bargain
+  type: wip
+  topics: [Intellectual property, Economic history, Political economy]
+  title: "The Patron's Bargain: Towards a Comparative Political Economy of Copy-Protecting Institutions"
+  abstract: >
+
+- id: safner-wikipedia-ai
+  type: wip
+  topics: [Intellectual property, Institutions and governance, Political economy]
+  title: "Poisoning the Knowledge Commons? Wikipedia in the Age of Generative AI"
+  abstract: >
+
+- id: safner-wikipedia-evolution
+  type: wip
+  topics: [Intellectual property, Institutions and governance, Political economy]
+  title: "Wikipedia as a Long-Enduring Commons-Governing Institution"
+  abstract: >
+
+- id: safner-postal
+  type: wip
+  topics: [Intellectual property, Economic history, Political economy]
+  title: "The Post Office as Copyright Policeman? Newspaper Rates and the Mammoth Weeklies in 1840s America"
+  abstract: 
+
+- id: safner-abm-dictionary
+  type: wip
+  topics: [Innovation and growth, Agent-based model]
+  title: "An Agent-Based Model of Innovation by Lexical Metaphor"
+  abstract: 
+
+- id: safner-distributing-patronage
+  type: wip
+  topics: [Intellectual property, Economic history, Political economy]
+  title: "Distributing Patronage: Censorship, Freedom of the Press, and Copyright in the English Transition from Natural State to Open Access Order"
+  abstract:
+
+- id: safner-pirate-thy-neighbor
+  type: wip
+  topics: [Intellectual property, Economic history, Political economy]
+  title: "Pirate Thy Neighbor: The Protectionist Roots of U.S. Recognition of Foreign Copyrights"
+  abstract: >
+
+- id: safner-ai-collapse
+  type: wip
+  topics: [Creative industries, Artificial intelligence, Agent-based model]
+  title: "AI Model Collapse Risk with Endogenous Human Creative Supply: An Agent-Based Approach"
+  abstract: >
+
+- id: gangotena-safner-network-origins
+  type: wip
+  topics: [Innovation and growth, Agent-based model]
+  authors: "[Santiago Gangotena](https://www.usfq.edu.ec/es/perfiles/santiago-jose-gangotena-ruiz)"
+  title: "The Network Origins of Economic Growth"
+  abstract: >
+

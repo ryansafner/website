@@ -1,1 +1,130 @@
 /* css styles */
+
+/* ---------- research.qmd ---------- */
+:root {
+  --research-accent: #eb6864;       /* journal theme's red */
+  --research-accent-dark: #b8433f;  /* darker shade for text on light tints */
+  --research-muted: #8a8a8a;
+}
+
+/* topic filter bar */
+.topic-filter {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.4rem;
+  margin: 1.5rem 0 0.5rem;
+  scroll-margin-top: 5rem; /* clear the fixed navbar when a tag click scrolls here */
+}
+
+.topic-chip {
+  font-size: 0.8rem;
+  line-height: 1.5;
+  padding: 0.15rem 0.75rem;
+  border: 1px solid #d6d6d6;
+  border-radius: 999px;
+  background: transparent;
+  color: #555;
+  cursor: pointer;
+  transition: border-color 0.15s, color 0.15s, background-color 0.15s;
+}
+
+.topic-chip:hover {
+  border-color: var(--research-accent);
+  color: var(--research-accent-dark);
+}
+
+.topic-chip.active {
+  background: rgba(235, 104, 100, 0.12);
+  border-color: var(--research-accent);
+  color: var(--research-accent-dark);
+}
+
+#toggle-abstracts {
+  margin-left: auto;
+}
+
+/* one paper */
+.paper {
+  margin-bottom: 1.4rem;
+}
+
+.paper p,
+.paper ol {
+  margin-bottom: 0.3rem;
+}
+
+/* line up links and abstract with the citation text after the article number */
+.paper.numbered > :not(ol) {
+  margin-left: 2rem;
+}
+
+.paper-meta {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 0.2rem 1rem;
+  font-size: 0.85rem;
+}
+
+.paper-link {
+  margin-right: 1.1rem;
+  padding: 0;
+  border: 0;
+  background: none;
+  font: inherit;
+  font-size: 0.85rem;
+  color: var(--research-accent);
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.paper-meta .paper-link:last-child {
+  margin-right: 0;
+}
+
+.paper-link:hover {
+  color: var(--research-accent-dark);
+  text-decoration: underline;
+}
+
+.paper-link .fa-chevron-down {
+  font-size: 0.75em;
+  transition: transform 0.2s;
+}
+
+.paper-link[aria-expanded="true"] .fa-chevron-down {
+  transform: rotate(180deg);
+}
+
+.paper-topics {
+  color: var(--research-muted);
+}
+
+.topic-link {
+  padding: 0;
+  border: 0;
+  background: none;
+  font: inherit;
+  color: inherit;
+  cursor: pointer;
+}
+
+.topic-link:hover {
+  color: var(--research-accent-dark);
+  text-decoration: underline;
+}
+
+/* collapsible abstract */
+.abstract {
+  border-left: 2px solid var(--research-accent);
+  padding: 0.25rem 0 0.25rem 1rem;
+  margin: 0.5rem 0 0.5rem 0;
+  font-size: 0.92em;
+  color: #555;
+}
+
+.abstract p:last-child {
+  margin-bottom: 0;
+}

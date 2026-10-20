@@ -2,86 +2,197 @@
 title: "Research"
 echo: false
 section-divs: false
-execution:
-  freeze: auto
+execute:
+  freeze: false # re-run every render so edits to papers.yaml and new PDFs show up
 ---
 
-Disclaimer: All opinions expressed in published (and unpublished) articles are my own (along with my coauthors, if applicable) and do not represent the views or policies of the U.S. Copyright Office or any other institution. 
+```{r}
+#| include: false
+# Entries on this page are generated from papers.yaml (see the notes at its top).
+# A pre-publication PDF saved as files/papers/<id>.pdf gets a button automatically.
+papers <- yaml::read_yaml("papers.yaml")
+
+has_value <- function(x) !is.null(x) && !identical(trimws(x), "")
+
+text_link <- function(href, icon, label) {
+  sprintf('<a class="paper-link" target="_blank" href="%s">{{< fa %s >}} %s</a>', href, icon, label)
+}
+
+all_topics <- function() {
+  # most-used topics first; ties keep the order they first appear in papers.yaml
+  ts <- unlist(lapply(papers, `[[`, "topics"))
+  counts <- table(factor(ts, levels = unique(ts)))
+  names(counts)[order(-counts)]
+}
+
+render_filter <- function() {
+  chip <- function(t, active = FALSE) sprintf(
+    '<button type="button" class="topic-chip%s" data-topic="%s" aria-pressed="%s">%s</button>',
+    if (active) " active" else "", htmltools::htmlEscape(t), tolower(active), htmltools::htmlEscape(t))
+  cat('<div class="topic-filter" id="topic-filter">',
+      chip("All", TRUE), vapply(all_topics(), chip, character(1)),
+      '<button type="button" id="toggle-abstracts" class="paper-link">{{< fa chevron-down >}} <span>Expand all abstracts</span></button>',
+      "</div>\n", sep = "\n")
+}
+
+render_paper <- function(p, number = NULL) {
+  # citation line
+  if (p$type == "wip") {
+    with <- if (has_value(p$authors)) paste0(" (with ", p$authors, ")") else ""
+    citation <- paste0('"', p$title, '"', with)
+  } else if (p$type == "article") {
+    citation <- sprintf('%s. (%s) "%s." *%s* %s', p$authors, p$year, p$title, p$journal, p$issue)
+  } else if (p$type == "chapter") {
+    citation <- sprintf('%s. (%s) "%s" %s.', p$authors, p$year, p$title, p$book)
+  } else { # government
+    citation <- sprintf("%s. (%s) [*%s.*](%s)", p$authors, p$year, p$title, p$published_url)
+  }
+  if (!is.null(number)) citation <- paste0(number, ". ", citation)
+
+  # links: PDF, Published, Abstract
+  links <- character()
+  pdf <- file.path("files", "papers", paste0(p$id, ".pdf"))
+  if (file.exists(pdf)) links <- c(links, text_link(pdf, "file-lines", "PDF"))
+  if (p$type %in% c("article", "chapter") && has_value(p$published_url)) {
+    links <- c(links, text_link(p$published_url, "arrow-up-right-from-square", "Published"))
+  }
+  abs_id <- paste0("abs-", p$id)
+  if (has_value(p$abstract)) {
+    links <- c(links, sprintf(
+      '<button class="paper-link" type="button" data-bs-toggle="collapse" data-bs-target="#%s" aria-expanded="false" aria-controls="%s">{{< fa chevron-down >}} Abstract</button>',
+      abs_id, abs_id))
+  }
+
+  # topics: clicking one filters the page to it
+  topics <- unlist(p$topics)
+  topic_html <- paste(vapply(topics, function(t) sprintf(
+    '<button type="button" class="topic-link" data-topic="%1$s">%1$s</button>', htmltools::htmlEscape(t)),
+    character(1)), collapse = " · ")
+
+  out <- citation
+  if (length(links) || length(topics)) {
+    out <- c(out, sprintf('<div class="paper-meta"><span class="paper-links">%s</span><span class="paper-topics">%s</span></div>',
+                          paste(links, collapse = ""), topic_html))
+  }
+  if (has_value(p$abstract)) out <- c(out, sprintf("::: {#%s .collapse .abstract}\n%s\n:::", abs_id, trimws(p$abstract)))
+  sprintf('::::: {.paper%s data-topics="%s"}\n\n%s\n\n:::::',
+          if (is.null(number)) "" else " .numbered",
+          htmltools::htmlEscape(paste(topics, collapse = "|"), attribute = TRUE),
+          paste(out, collapse = "\n\n"))
+}
+
+render_section <- function(type, numbered = FALSE) {
+  ps <- Filter(function(p) p$type == type, papers)
+  n <- length(ps)
+  entries <- vapply(seq_len(n), function(i) render_paper(ps[[i]], if (numbered) n - i + 1), character(1))
+  cat("::::::: {.paper-group}\n\n", paste(entries, collapse = "\n\n"), "\n\n:::::::\n", sep = "")
+}
+```
+
+Disclaimer: All views expressed in published (and unpublished) articles are my own (along with my coauthors, if applicable) and do not represent the views of the U.S. Copyright Office or any other institution.
 
 My *personal* research agendas explore the political economy of innovation, economic growth, and intellectual property using tools & frameworks like [new institutional economics](https://en.wikipedia.org/wiki/New_institutional_economics), [public choice](https://en.wikipedia.org/wiki/Public_choice), [market process economics](http://www.econlib.org/library/Enc/AustrianSchoolofEconomics.html), and (more experimentally) [computational models](https://en.wikipedia.org/wiki/Agent-based_model).
 
+Below, you can find my research publications and research in progress, organized by publication type, along with tags to filter by relevant category of interest. 
+
+```{r}
+#| results: asis
+render_filter()
+```
+
 ## Peer-Reviewed Journal Articles
 
-7. Palmedo, Michael, Brent Lutes, and **Ryan Safner**. (2026) "AI Skill Demand and Employment Stratification in Copyright-Intensive Information Industries: Evidence from Job Postings and Industry-Level Employment Data" *Work and Occupations* 53(3): 707-744
-
-<p style="text-align:left"><a target="_blank" href="https://journals.sagepub.com/doi/10.1177/07308884261447535"><span class="btn btn-outline-dark btn-sm">{{< fa external-link-square-alt >}} Published </a></span> </p>
-
----
-
-6. **Safner, Ryan**. (2025) "The Most Interesting Economist in History: Using an NCAA-Style Tournament Assignment to Teach the History of Economic Thought" *Journal of Economics Teaching* 10: 1-19
-
-<p style="text-align:left"><a target="_blank" href="http://downloads.journalofeconomicsteaching.org/2024/2024-19.pdf"><span class="btn btn-outline-dark btn-sm">{{< fa external-link-square-alt >}} Published </a></span> </p>
-
----
-
-5. **Safner, Ryan**. (2023) "Honor Among Thieves: How 19th Century American Pirate Publishers Simulated Copyright Protection." *Economics of Governance* 24: 119-141
-
-<p style="text-align:left"><a target="_blank" href="https://link.springer.com/epdf/10.1007/s10101-023-00289-2?sharing_token=YB0-ABEvC_1o05V4UWFd8_e4RwlQNchNByi7wbcMAY7YvsnIiykwCQ5vVJulNSIvW05T2YVZFk-Ef_1JbkN9Jt7LLTcBnZ9GkogkMkYK6w6djwteWDFjYjjBSqeALIOuBKKqjCXz88lyJ_1ezEnLwFbUGNe2jB8hXoMH98V29AY%3D"><span class="btn btn-outline-dark btn-sm">{{< fa external-link-square-alt >}} Published </a></span> <a target="_blank" href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3775330"><span class="btn btn-outline-dark btn-sm"> {{< fa file-pdf >}} Preprint</a></span></p>
-
----
-
-4. [Tarko, Vlad](https://vladtarko.com/) and **Ryan Safner**. (2022) "International Regulatory Diversity Over 50 Years: Political Entrepreneurship within Fiscal Constraints." *Public Choice 193(1-2): 79-108*
-
-<p style="text-align:left"><a target="_blank" href="https://link.springer.com/article/10.1007/s11127-022-01011-2"><span class="btn btn-outline-dark btn-sm">{{< fa external-link-square-alt >}} Published </a></span> <a target="_blank" href="https://link.springer.com/epdf/10.1007/s11127-022-01011-2?sharing_token=0PMazGn6dpbw8WWmSOLsYPe4RwlQNchNByi7wbcMAY6sM4iEqIYI0dMv-E9PvzDaltt8-HxXVpJtBBw8N3WxXoQuXY6rFWHLNbeEmS-MZlq11VW8XneB__PPi3kRJ_nLR07J2ZIZcwmQkHNQ9JN-0-v3DX27mJDdJ8pw8OE_P-U%3D"><span class="btn btn-outline-dark btn-sm">{{< fa file-pdf >}} Preprint</a></span></p>
-
----
-
-3. **Safner, Ryan**. (2021) "'Public Good,' or 'Good for the Public?' Political Entrepreneurship and the Public Funding of Scientific Research." *Journal of Private Enterprise 36(1): 743-771*
-
-<p style="text-align:left"><a target="_blank" href="http://journal.apee.org/index.php/2021_Journal_of_Private_Enterprise_Vol_36_No_1_Spring_parte2"><span class="btn btn-outline-dark btn-sm">{{< fa external-link-square-alt >}} Published </a></span> <a target="_blank" href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=2488655"><span class="btn btn-outline-dark btn-sm">{{< fa file-pdf >}} Preprint</a></span></p>
-
----
-
-2. **Safner, Ryan**. (2016) "Institutional Entrepreneurship, Wikipedia, and the Opportunity of the Commons." *Journal of Institutional Economics 12(4): 743-771*
-
-<p style="text-align:left"><a target="_blank" href="https://doi.org/https://doi.org/10.1017/S1744137416000096"><span class="btn btn-outline-dark btn-sm">{{< fa external-link-square-alt >}} Published </a></span> <a target="_blank" href="http://papers.ssrn.com/abstract=2396874"><span class="btn btn-outline-dark btn-sm">{{< fa file-pdf >}} Preprint</a></span></p>
-
----
-
-1. **Safner, Ryan**. (2016) "The Perils of Copyright Regulation." *Review of Austrian Economics 29: 127-137*
-
-<p style="text-align:left"><a target="_blank" href="https://doi.org/https://doi.org/10.1007/s11138-014-0293-5"><span class="btn btn-outline-dark btn-sm">{{< fa external-link-square-alt >}} Published </a></span> <a target="_blank" href="http://papers.ssrn.com/abstract=2396874"><span class="btn btn-outline-dark btn-sm">{{< fa file-pdf >}} Preprint</a></span></p>
-
----
+```{r}
+#| results: asis
+render_section("article", numbered = TRUE)
+```
 
 ## Government Publications
 
-U.S. Copyright Office. (2026) [*The Characteristics of Authors Reflected in Copyright Registrations.*](https://www.copyright.gov/economic-research/characteristics-of-authors/)
-
-Lutes, Brent (Ed.). (2025) [*Identifying the Economic Implications of Artificial Intelligence for Copyright Policy: Context and Direction for Economic Research.*](https://www.copyright.gov/economic-research/economic-implications-of-ai/)
-
-U.S. Copyright Office. (2024) [*The Geography of Copyright Registrations.*](https://copyright.gov/economic-research/geography/)
-
-U.S. Copyright Office. (2024) [*The Resilience of Creativity: An Examination of the COVID-19 Impact on Copyright-Reliant Industries and Their Subsequent Recovery.*](https://copyright.gov/economic-research/resilience-of-creativity/)
+```{r}
+#| results: asis
+render_section("government")
+```
 
 ## Book Chapters
 
-Lutes, Brent, Michael Palmedo, and **Ryan Safner.** 2026. "The State of Inclusion and Diversity in Copyright" in Daryl Lim and Peter K Yu, eds, [*Inclusive Innovation in the Age of AI and Big Data*](https://academic.oup.com/book/62459), Oxford University Press.
+```{r}
+#| results: asis
+render_section("chapter")
+```
 
 ## Research in Progress
 
-*Below is my own independent research only. For research at the Copyright Office, see the [Office of the Chief Economist](https://copyright.gov/economic-research)*
+*Below is my own independent research only. For research at the Copyright Office, see the [Office of the Chief Economist](https://copyright.gov/economic-research).*
 
-The Production of Increasing Returns: Physical Technology, Institutional Technology, and the Pitfalls of Production Functions. (with [Santiago Gangotena](https://www.usfq.edu.ec/es/perfiles/santiago-jose-gangotena-ruiz))
+```{r}
+#| results: asis
+render_section("wip")
+```
 
-"A Tale of Two Capitals: Modeling the Interaction between Ideas, Physical Capital, and Growth." (with [Santiago Gangotena](https://www.usfq.edu.ec/es/perfiles/santiago-jose-gangotena-ruiz))
+```{=html}
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+  const papers = [...document.querySelectorAll(".paper")];
+  const groups = [...document.querySelectorAll(".paper-group")];
+  const chips = [...document.querySelectorAll(".topic-chip")];
+  const filterBar = document.getElementById("topic-filter");
+  const toggle = document.getElementById("toggle-abstracts");
+  const label = toggle.querySelector("span");
 
-Distributing Patronage: Censorship, Freedom of the Press, and Copyright in the English Transition from Natural State to Open Access Order
+  // Each group's heading and intro text, hidden along with it when a filter leaves it empty.
+  const leadIns = groups.map(g => {
+    const els = [];
+    for (let el = g.previousElementSibling; el; el = el.previousElementSibling) {
+      els.push(el);
+      if (el.tagName === "H2") break;
+    }
+    return els;
+  });
 
-Pirate Thy Neighbor: The Protectionist Roots of U.S. Recognition of Foreign Copyrights
+  // Topic filter: show only papers tagged with the chosen topic.
+  let current = "All";
+  function filter(topic) {
+    current = topic;
+    papers.forEach(p => { p.hidden = topic !== "All" && !p.dataset.topics.split("|").includes(topic); });
+    groups.forEach((g, i) => {
+      const empty = !g.querySelector(".paper:not([hidden])");
+      g.hidden = empty;
+      leadIns[i].forEach(el => {
+        el.hidden = empty;
+        const tocItem = el.id && document.querySelector(`#TOC a[data-scroll-target="#${el.id}"]`);
+        if (tocItem) tocItem.parentElement.hidden = empty;
+      });
+    });
+    chips.forEach(c => {
+      const on = c.dataset.topic === topic;
+      c.classList.toggle("active", on);
+      c.setAttribute("aria-pressed", on);
+    });
+    refresh();
+  }
+  chips.forEach(c => c.addEventListener("click", () => filter(c.dataset.topic)));
+  // Tags under a paper filter too (clicking the active one again clears it).
+  document.querySelectorAll(".topic-link").forEach(t => t.addEventListener("click", () => {
+    filter(current === t.dataset.topic ? "All" : t.dataset.topic);
+    filterBar.scrollIntoView({ behavior: "smooth", block: "start" });
+  }));
 
-Kickstart My Art: Is Crowdfunding a Substitute or a Complement to Intellectual Property Laws?
-
-Cryptocopyright? The Prospects of Protecting Intellectual Property on the Blockchain
-
-The Network Origins of Economic Growth (with [Santiago Gangotena](https://www.usfq.edu.ec/es/perfiles/santiago-jose-gangotena-ruiz))
+  // "Expand all" opens/closes the visible abstracts; its label follows whether they're all open.
+  const abstracts = [...document.querySelectorAll(".abstract.collapse")];
+  if (!abstracts.length) toggle.hidden = true;
+  const visible = () => abstracts.filter(a => !a.closest(".paper").hidden);
+  const allOpen = () => visible().length > 0 && visible().every(a => a.classList.contains("show"));
+  function refresh() {
+    const open = allOpen();
+    label.textContent = open ? "Collapse all abstracts" : "Expand all abstracts";
+    toggle.setAttribute("aria-expanded", open);
+  }
+  toggle.addEventListener("click", () => {
+    const open = !allOpen();
+    visible().forEach(a => bootstrap.Collapse.getOrCreateInstance(a, { toggle: false })[open ? "show" : "hide"]());
+  });
+  abstracts.forEach(a => { a.addEventListener("shown.bs.collapse", refresh); a.addEventListener("hidden.bs.collapse", refresh); });
+});
+</script>
+```

@@ -5,6 +5,8 @@ project:
     #- "!posts/" 
     - "!files/" 
     - "!posts/"
+  resources:
+    - "files/papers/*.pdf" # pre-publication PDFs linked from research.qmd
 
 website:
   title: "Ryan Safner"

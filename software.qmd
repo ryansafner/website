@@ -2,7 +2,7 @@
 title: "Software"
 ---
 
-This page is under construction, but most of my projects are open source and can be found in my [GitHub repositories](https://github.com/ryansafner). This includes all of the materials for my [course websites](https://ryansafner.com/teaching) and course content.
+This page is **under construction**, but most of my projects are open source and can be found in my [GitHub repositories](https://github.com/ryansafner). This includes all of the materials for my [course websites](https://ryansafner.com/teaching) and course content.
 
 ## Shiny Portfolio
 
@@ -50,7 +50,7 @@ These are largely [R shiny](https://shiny.rstudio.com/) apps that I have written
 
 -   [Grade Calculator & Forecaster](https://ryansafner.shinyapps.io/306_grade_calculator/) (for ECON 306; with variants for each of courses, found on respective course websites)
 
-## Economics Graphs in `ggplot`
+## `ggecon`
 
 \[IN PROGRESS\]
 
