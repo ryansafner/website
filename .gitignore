@@ -9,3 +9,8 @@
 
 # Claude Code local config
 .claude/
+
+# RStudio / R session leftovers (Quarto-only now)
+*.Rproj
+.RData
+.Rhistory
