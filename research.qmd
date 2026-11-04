@@ -91,7 +91,7 @@ render_section <- function(type, numbered = FALSE) {
 
 Disclaimer: All views expressed in published (and unpublished) articles are my own (along with my coauthors, if applicable) and do not represent the views of the U.S. Copyright Office or any other institution.
 
-My *personal* research agendas explore the political economy of innovation, economic growth, and intellectual property using tools & frameworks like [new institutional economics](https://en.wikipedia.org/wiki/New_institutional_economics), [public choice](https://en.wikipedia.org/wiki/Public_choice), [market process economics](http://www.econlib.org/library/Enc/AustrianSchoolofEconomics.html), and (more experimentally) [computational models](https://en.wikipedia.org/wiki/Agent-based_model).
+As an economist, I am primarily interested in understanding what institutions and policies best allow societies to facilitate inventions, ideas, and cultural expressions that lead to economic growth and benefits for everyone. This has led me down rabbit holes ranging from 17^th^ century English institutional change, to 19^th^ century American literary piracy, to the success of Wikipedia, to deciphering the impact of generative AI, and to simulating innovation at a macroeconomic level with agent-based models. 
 
 Below, you can find my research publications and research in progress, organized by publication type, along with tags to filter by relevant category of interest. 
 

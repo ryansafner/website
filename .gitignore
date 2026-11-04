@@ -3,3 +3,9 @@
 .Rproj
 
 /.quarto/
+
+# Dropbox sync conflicts
+*conflicted copy*
+
+# Claude Code local config
+.claude/
