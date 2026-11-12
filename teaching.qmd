@@ -2,9 +2,11 @@
 title: "Teaching"
 ---
 
-I have been an economics educator since 2013 with my first official teaching gig. I have taught at George Mason University, Wake Forest University, and most recently at Hood College, where I acheived tenure as an Associate Professor. Since leaving academia, I try to keep my teaching muscles from atrophying by writing on Substack - both about [economics](https://ryansafner.substack.com) and [data science](https://safnerscripts.substack.com). Below you can find all of my course materials, including course websites for my most recent courses at Hood College. 
+I have been an economics educator since my first professional teaching gig in 2013. I have taught at [George Mason University](https://economics.gmu.edu), [Wake Forest University](https://economics.wfu.edu/), and most recently at [Hood College](https://www.hood.edu/academics/departments/george-b-delaplaine-jr-school-business), where I earned tenure in 2022. Since leaving academia, I try to keep my teaching muscles from atrophying by writing on [Substack](https://ryansafner.substack.com). 
 
-[<i class="fas fa-file-pdf"></i> Read my Statement of Teaching Philosophy](teaching_philosophy.pdf)
+I am a firm believer of providing public goods & promoting open source materials, and a nerd for research & educational software tools and workflows. Below, you can find all of my course materials, and for my most recent courses at Hood College, course websites (built with [R](https://www.r-project.org/), Markdown, and [Quarto](https://quarto.org/)). Some [resources](/software.qmd#shiny-portfolio) I created for visualizing economic concepts with Shiny also might be of interest.
+
+<!--[<i class="fas fa-file-pdf"></i> Read my Statement of Teaching Philosophy](teaching_philosophy.pdf)-->
 
 # Hood College (2016--2023)
 

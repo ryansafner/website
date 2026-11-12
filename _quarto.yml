@@ -30,10 +30,13 @@ website:
       - research.qmd
       - teaching.qmd
       - software.qmd
+  page-footer: "Disclaimer: All views expressed on this website are my own and do not represent the views of the U.S. Copyright Office or any other institution."
 
 format:
   html:
-    theme: journal
+    theme: 
+      light: journal
+      dark: darkly
     css: styles.css
     toc: true
     include-in-header: "files/includes/_academic.qmd"

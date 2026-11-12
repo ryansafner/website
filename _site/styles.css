@@ -128,3 +128,8 @@
 .abstract p:last-child {
   margin-bottom: 0;
 }
+
+.feature-card { text-decoration: none; color: inherit; border-top: 3px solid var(--research-accent); }
+.feature-card:hover { box-shadow: 0 4px 14px rgba(0,0,0,.08); }
+.feature-card .card-subtitle { font-size: .8rem; color: var(--research-muted); text-transform: uppercase; }
+.feature-card .card-text { font-size: .9rem; color: #555; }

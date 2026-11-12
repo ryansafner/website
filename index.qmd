@@ -22,20 +22,20 @@ about:
       - text: "{{< ai ssrn >}}"
         href: https://papers.ssrn.com/sol3/cf_dev/AbsByAuth.cfm?per_id=2161677
         target: _blank
-
+execute:
+  freeze: false
+toc: false
 ---
 
 <!-- This part is above the two-columns  -->
 
 :::{#hero-heading} 
 
-I am an Economist at the Office of the Chief Economist at the [U.S. Copyright Office](https://copyright.gov/economic-research).
+I am an Economist at the [Office of the Chief Economist](https://copyright.gov/economic-research) at the U.S. Copyright Office, where I study copyright's economic impacts and make data on copyright registrations more accessible to researchers.
 
-Outside of my day job, I am a lifelong learner, researcher, and communicator of economic ideas. Previously, I was Associate Professor of Economics at [Hood College](https://www.hood.edu/academics/departments/george-b-delaplaine-jr-school-business), and have taught 17 different economics (and adjacent) courses over 10 years. I am a firm believer of providing public goods & promoting open source materials, so you can find all course materials on my custom [course websites](teaching.qmd). I write about economic ideas and understanding the world in a non-technical way at my [Substack](https://ryansafner.substack.com).
- 
-My *personal* research agenda explores the political economy of innovation, economic growth, and intellectual property using tools & frameworks like [new institutional economics](https://en.wikipedia.org/wiki/New_institutional_economics), [public choice](https://en.wikipedia.org/wiki/Public_choice), [market process economics](http://www.econlib.org/library/Enc/AustrianSchoolofEconomics.html), and (more experimentally) [computational models](https://en.wikipedia.org/wiki/Agent-based_model).
+Before this, I spent about a decade teaching economics, most recently as Associate Professor of Economics at [Hood College](https://www.hood.edu/academics/departments/george-b-delaplaine-jr-school-business). My [course materials](teaching.qmd) and other [software tools](software.qmd) are freely available and I now write for a general audience on [Substack](https://ryansafner.substack.com).
 
-I am a passionate user of [*R*](https://www.r-project.org/) for data analysis, and [Quarto](https://quarto.org/) and [GitHub](https://github.com) for managing my workflow. I try to share some things I have built for educational purposes on my [software page](software.qmd). <!--I maintain a repository of guides & write about the practice of data science & economics at [safneR scripts](https://safnerscripts.substack.com).-->
+I consider myself a lifelong learner and tinkerer. My own research projects explore the political economy of innovation and economic growth, from 17^th^ century English institutions to generative AI using frameworks like [new institutional economics](https://en.wikipedia.org/wiki/New_institutional_economics), [public choice](https://en.wikipedia.org/wiki/Public_choice), [market process economics](http://www.econlib.org/library/Enc/AustrianSchoolofEconomics.html), and [computational models](https://en.wikipedia.org/wiki/Agent-based_model).
 
 <!--## Education
 
@@ -58,4 +58,63 @@ I am a passionate user of [*R*](https://www.r-project.org/) for data analysis, a
 
 <!-- This part is below the two columns --> 
 
-Disclaimer: All views expressed on this website are my own and do not represent the views of the U.S. Copyright Office or any other institution.
+<!-- Ideas
+## Recently
+
+- **Oct 2026** — New working paper: "[Title](research.qmd)"
+- **Sep 2026** — Copyright Office report on [topic](https://copyright.gov/...)
+- **Aug 2026** — Spoke at [conference] 
+
+## Featured Research!
+
+```{r}
+#| echo: false
+#| results: asis
+library(htmltools)
+papers <- yaml::read_yaml("papers.yaml")
+feat <- Filter(function(p) isTRUE(p$featured), papers)
+
+# first ~n characters of the abstract, cut at a word boundary, markdown stripped
+snippet <- function(x, n = 220) {
+  if (is.null(x)) return(NULL)
+  x <- gsub("[*_]", "", trimws(x))
+  if (nchar(x) <= n) return(x)
+  paste0(sub("\\s+\\S*$", "", substr(x, 1, n)), "…")
+}
+
+card <- function(p) {
+  venue <- if (!is.null(p$journal)) p$journal else if (p$type == "wip") "Working paper" else ""
+  if (!is.null(p$year)) venue <- paste(c(venue, p$year), collapse = " · ")
+  link  <- if (!is.null(p$published_url)) p$published_url else "research.html"
+  div(class = "col",
+    a(class = "card h-100 feature-card", href = link,
+      div(class = "card-body",
+        div(class = "card-subtitle", venue),
+        h5(class = "card-title", p$title),
+        if (!is.null(p$abstract)) p(class = "card-text", snippet(p$abstract))
+      )))
+}
+
+cards <- div(class = "row row-cols-1 row-cols-md-3 g-3", lapply(feat, card))
+cat("```{=html}\n", as.character(cards), "\n```\n", sep = "")
+```
+
+## Latest from Substack
+
+```{r}
+#| echo: false
+#| results: asis
+feed  <- xml2::read_xml("https://ryansafner.substack.com/feed")
+items <- head(xml2::xml_find_all(feed, "//item"), 3)
+get   <- function(i, tag) xml2::xml_text(xml2::xml_find_first(i, tag))
+
+for (i in items) {
+  d <- format(as.Date(strptime(get(i, "pubDate"), "%a, %d %b %Y %H:%M:%S", tz = "GMT")), "%b %d, %Y")
+  cat(sprintf("- [%s](%s) <span class='text-muted small'>%s</span>  \n  %s\n",
+              get(i, "title"), get(i, "link"), d, get(i, "description")))
+}
+```
+
+[More on Substack →](https://ryansafner.substack.com)
+
+-->

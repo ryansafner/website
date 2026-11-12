@@ -4,6 +4,12 @@ title: "Software"
 
 This page is **under construction**, but most of my projects are open source and can be found in my [GitHub repositories](https://github.com/ryansafner). This includes all of the materials for my [course websites](https://ryansafner.com/teaching) and course content.
 
+<!-- # Notes
+
+Here are some notes and guides to help with R, python, agent based modeling.  
+
+-->
+
 ## Shiny Portfolio
 
 These are largely [R shiny](https://shiny.rstudio.com/) apps that I have written to demonstrate economic concepts for my economics courses. The main purpose is to visualize concepts in action (often through a graph) and especially show how key parameters affect the outcome by allowing users to change these values and see the graph update dynamically.
